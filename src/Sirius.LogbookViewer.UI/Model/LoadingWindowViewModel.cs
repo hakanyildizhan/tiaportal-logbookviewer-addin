@@ -8,7 +8,9 @@ namespace Sirius.LogbookViewer.UI.Model
         private bool _canAnimate;
         private bool _prompt;
         private string _message;
+        private string _messageTitle;
         private Uri _loadingAnimationSource;
+        private Uri _imageSource;
         private ICommand _acknowledgeCommand;
 
         /// <summary>
@@ -30,8 +32,19 @@ namespace Sirius.LogbookViewer.UI.Model
         /// <summary>
         /// Text to show on the dialog.
         /// </summary>
-        public string MessageTitle { get; set; }
-        
+        public string MessageTitle
+        {
+            get { return _messageTitle; }
+            set
+            {
+                if (_messageTitle != value)
+                {
+                    _messageTitle = value;
+                    OnPropertyChanged(nameof(MessageTitle));
+                }
+            }
+        }
+
         public string WindowTitle { get; set; }
 
         /// <summary>
@@ -59,6 +72,19 @@ namespace Sirius.LogbookViewer.UI.Model
                 {
                     _loadingAnimationSource = value;
                     OnPropertyChanged(nameof(LoadingAnimationSource));
+                }
+            }
+        }
+
+        public Uri ImageSource 
+        { 
+            get { return _imageSource; }
+            set 
+            {
+                if (_imageSource != value)
+                {
+                    _imageSource = value;
+                    OnPropertyChanged(nameof(ImageSource));
                 }
             }
         }

@@ -13,6 +13,8 @@ namespace Sirius.LogbookViewer.UI.Service
         Task ShowAsync(string windowTitle, string header, string message);
         void ShowMessage(string message);
         void Prompt(string message);
+        void Prompt(string message, Prompt promptType);
+        void Prompt(string header, string message, Prompt promptType);
         void Close();
     }
 }

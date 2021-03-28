@@ -30,11 +30,11 @@
 
             <Grid Grid.Column="0" x:Name="AnimationGrid">
 
-                <Image Width="65"
+                <Image Width="55"
                        Height="65"
-                       Source="{StaticResource HourglassImage}"
+                       Source="{Binding ImageSource, FallbackValue={StaticResource HourglassImage}}"
                        Margin="0 0 0 20"
-                       Visibility="{Binding CanAnimate, Converter={local:CanAnimateToVisibilityConverter}, ConverterParameter=False, FallbackValue=False}"/>
+                       Visibility="{Binding CanAnimate, Converter={local:CanAnimateToVisibilityConverter}, ConverterParameter=False, FallbackValue={x:Static Visibility.Visible}}"/>
 
                 <MediaElement x:Name="gif"
                               Height="65"
@@ -43,7 +43,7 @@
                               Margin="0 0 0 20"
                               UnloadedBehavior="Manual"
                               MediaEnded="gif_MediaEnded"
-                              Visibility="{Binding CanAnimate, Converter={local:CanAnimateToVisibilityConverter}, FallbackValue=False}"/>
+                              Visibility="{Binding CanAnimate, Converter={local:CanAnimateToVisibilityConverter}, FallbackValue={x:Static Visibility.Hidden}}"/>
 
             </Grid>
 

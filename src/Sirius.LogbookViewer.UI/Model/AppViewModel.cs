@@ -205,9 +205,11 @@ namespace Sirius.LogbookViewer.UI.Model
 
             await RunCommandAsync(() => IsInBackground, false, async () =>
             {
+                Task loadingTask = null;
+
                 try
                 {
-                    var loadingTask = _waitIndicator?.ShowAsync("Logbook Import", "Importing logbook entries", $"Importing file '{fileName}'. Please wait.");
+                    loadingTask = _waitIndicator?.ShowAsync("Logbook Import", "Importing logbook entries", $"Importing file '{fileName}'. Please wait.");
                     var waitTask = Task.Delay(TimeSpan.FromSeconds(1));
                     var parser = await ParserFactory.GetParser(fileName);
                     var messages = parser.Parse();
@@ -232,11 +234,19 @@ namespace Sirius.LogbookViewer.UI.Model
                 }
                 catch (System.Exception ex)
                 {
+                    await loadingTask;
+
+                    if (ex is IOException)
+                    {
+                        _waitIndicator?.Prompt("An error occured during import!", ex.Message, Prompt.Error);
+                        return;
+                    }
+
                     string appDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
                     string errorFile = $"Sirius_LogbookViewer_errorlog_{DateTime.UtcNow.ToString("yyyyMMdd_HH_mm_ss")}.txt";
-                    string filePath = System.IO.Path.Combine(appDataFolder, "Siemens", "SafetyLogbookViewerAddin", errorFile);
+                    string filePath = Path.Combine(appDataFolder, "Siemens", "SafetyLogbookViewerAddin", errorFile);
                     File.WriteAllText(filePath, ex.Message + "\r\n" + ex.StackTrace + "\r\n" + ex.InnerException?.Message + "\r\n" + ex.InnerException?.StackTrace);
-                    _waitIndicator?.Prompt("An error occured during import!\r\nSee the error log for details: " + filePath);
+                    _waitIndicator?.Prompt("An error occured during import!", "See the error log for details: " + filePath, Prompt.Error);
                 }
             });
         }

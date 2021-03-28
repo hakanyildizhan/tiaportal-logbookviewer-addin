@@ -9,5 +9,6 @@
     <BitmapImage x:Key="WarningIcon" UriSource="pack://application:,,,/Sirius.LogbookViewer.UI;component/Resource/Icon/trip.png" />
 
     <BitmapImage x:Key="HourglassImage" UriSource="pack://application:,,,/Sirius.LogbookViewer.UI;component/Resource/Image/Hourglass.png" />
+    <BitmapImage x:Key="PromptError" UriSource="pack://application:,,,/Sirius.LogbookViewer.UI;component/Resource/Icon/PromptError.ico" />
 
 </ResourceDictionary>

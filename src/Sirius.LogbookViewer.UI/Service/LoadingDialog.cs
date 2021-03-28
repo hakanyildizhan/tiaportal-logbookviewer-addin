@@ -3,6 +3,8 @@ using System;
 using System.IO;
 using System.Reflection;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Media.Imaging;
 
 namespace Sirius.LogbookViewer.UI.Service
 {
@@ -90,6 +92,16 @@ namespace Sirius.LogbookViewer.UI.Service
 
         public void Prompt(string message)
         {
+            Prompt(message, Service.Prompt.None);
+        }
+
+        public void Prompt(string message, Prompt promptType)
+        {
+            Prompt(string.Empty, message, promptType);
+        }
+
+        public void Prompt(string header, string message, Prompt promptType)
+        {
             if (_window == null)
             {
                 return;
@@ -97,13 +109,38 @@ namespace Sirius.LogbookViewer.UI.Service
 
             (_window.DataContext as LoadingWindowViewModel).AcknowledgeCommand = new RelayCommand(() => Close());
             (_window.DataContext as LoadingWindowViewModel).Message = message;
+
+            if (!string.IsNullOrEmpty(header))
+            {
+                (_window.DataContext as LoadingWindowViewModel).MessageTitle = header;
+            }
+
             (_window.DataContext as LoadingWindowViewModel).Prompt = true;
             (_window.DataContext as LoadingWindowViewModel).CanAnimate = false;
+            (_window.DataContext as LoadingWindowViewModel).ImageSource = GetImageSourceForPrompt(promptType);
         }
 
         public void Close()
         {
             _window?.Close();
+        }
+
+        private Uri GetImageSourceForPrompt(Prompt prompt)
+        {
+            object resource = null;
+
+            switch (prompt)
+            {
+                case Service.Prompt.Error:
+                    resource = Application.Current.Resources["PromptError"];
+                    break;
+                case Service.Prompt.None:
+                default:
+                    resource = Application.Current.Resources["HourglassImage"];
+                    break;
+            }
+
+            return ((BitmapImage)resource).UriSource;
         }
 
         private async Task<string> GetAnimationFilePath()

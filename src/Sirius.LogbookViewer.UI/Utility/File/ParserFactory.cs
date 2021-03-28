@@ -126,25 +126,9 @@ namespace Sirius.LogbookViewer.UI
 
         private static void CheckFile(string filePath)
         {
-            if (!File.Exists(filePath))
+            using (FileStream stream = new FileInfo(filePath).Open(FileMode.Open, FileAccess.Read, FileShare.None))
             {
-                throw new Exception("File does not exist.");
-            }
-            else if (new FileInfo(filePath).Extension != ".csv")
-            {
-                throw new Exception("File is not in the correct format.");
-            }
-
-            try
-            {
-                using (FileStream stream = new FileInfo(filePath).Open(FileMode.Open, FileAccess.Read, FileShare.None))
-                {
-                    stream.Close();
-                }
-            }
-            catch (IOException)
-            {
-                throw new Exception("File is being used by another process.");
+                stream.Close();
             }
         }
     }
