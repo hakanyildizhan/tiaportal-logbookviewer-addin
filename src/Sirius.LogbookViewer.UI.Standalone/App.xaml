@@ -1,0 +1,22 @@
+﻿<Application x:Class="Sirius.LogbookViewer.UI.Standalone.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Sirius.LogbookViewer.UI.Standalone"
+             StartupUri="pack://application:,,,/Sirius.LogbookViewer.UI;component/MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/Sirius.LogbookViewer.UI.Standalone;component/Style/StandaloneStyle.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Sirius.LogbookViewer.UI;component/Style/Text.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Sirius.LogbookViewer.UI;component/Style/Color.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Sirius.LogbookViewer.UI;component/Style/Icon.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Sirius.LogbookViewer.UI;component/Style/Window.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Sirius.LogbookViewer.UI;component/Style/Checkbox.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Sirius.LogbookViewer.UI;component/Style/Grid.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Sirius.LogbookViewer.UI;component/Style/Panel.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Sirius.LogbookViewer.UI;component/Style/GroupBox.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Sirius.LogbookViewer.UI;component/Style/Button.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

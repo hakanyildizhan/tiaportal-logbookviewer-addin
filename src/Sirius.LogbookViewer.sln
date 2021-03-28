@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sirius.LogbookViewer", "Sirius.LogbookViewer\Sirius.LogbookViewer.csproj", "{B13F5655-0C5A-4F67-9164-F9A90E35DE3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sirius.LogbookViewer.UI", "Sirius.LogbookViewer.UI\Sirius.LogbookViewer.UI.csproj", "{13CE41A5-EBEE-461C-86A2-A6DC00925702}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sirius.LogbookViewer.UI.Standalone", "Sirius.LogbookViewer.UI.Standalone\Sirius.LogbookViewer.UI.Standalone.csproj", "{70EBB3A2-C80D-4F86-8809-3167859A3F49}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B13F5655-0C5A-4F67-9164-F9A90E35DE3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B13F5655-0C5A-4F67-9164-F9A90E35DE3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B13F5655-0C5A-4F67-9164-F9A90E35DE3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B13F5655-0C5A-4F67-9164-F9A90E35DE3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13CE41A5-EBEE-461C-86A2-A6DC00925702}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13CE41A5-EBEE-461C-86A2-A6DC00925702}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13CE41A5-EBEE-461C-86A2-A6DC00925702}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13CE41A5-EBEE-461C-86A2-A6DC00925702}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70EBB3A2-C80D-4F86-8809-3167859A3F49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70EBB3A2-C80D-4F86-8809-3167859A3F49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70EBB3A2-C80D-4F86-8809-3167859A3F49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70EBB3A2-C80D-4F86-8809-3167859A3F49}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9FEBE778-451E-43A9-9146-1834F6F960C4}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,121 @@
+﻿<UserControl x:Class="Sirius.LogbookViewer.UI.SafetyGrid"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:model="clr-namespace:Sirius.LogbookViewer.UI.Model"
+             xmlns:local="clr-namespace:Sirius.LogbookViewer.UI"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" 
+             d:DesignWidth="800"
+             d:DataContext="{x:Static model:MessageListDesignModelSafety.Instance}">
+
+    <DockPanel VerticalAlignment="Top" 
+               Background="#F0F0F0">
+
+        <ListView HorizontalContentAlignment="Stretch"
+                  ItemsSource="{Binding Messages}" >
+
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="Height" Value="20" />
+                </Style>
+            </ListView.ItemContainerStyle>
+
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="50">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <ContentControl Height="25" Margin="0 -4 -8 -4">
+                                    <Image Source="{Binding Type, Converter={local:MessageTypeToIconConverter}}"
+                                               HorizontalAlignment="Left"
+                                               VerticalAlignment="Center"/>
+                                </ContentControl>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                        <GridViewColumnHeader Content="Type"
+                                              Command="{Binding SortCommand}"
+                                              CommandParameter="{Binding Content, RelativeSource={RelativeSource Self}}"
+                                              local:SortProperty.Value="{Binding SortStatusType}"/>
+                    </GridViewColumn>
+                    <GridViewColumn Width="50">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Index}"
+                                               Padding="4 0 0 0"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                        <GridViewColumnHeader Content="Index"
+                                              local:SortProperty.Value="{x:Null}"/>
+                    </GridViewColumn>
+                    <GridViewColumn Width="80">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Source}"
+                                               Padding="4 0 0 0"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                        <GridViewColumnHeader Content="Source"
+                                              Command="{Binding SortCommand}"
+                                              CommandParameter="{Binding Content, RelativeSource={RelativeSource Self}}"
+                                              local:SortProperty.Value="{Binding SortStatusSource}"/>
+                    </GridViewColumn>
+                    <GridViewColumn Width="110">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding OperatingHours}"
+                                               Padding="4 0 0 0"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                        <GridViewColumnHeader Content="Operating Hours"
+                                              Command="{Binding SortCommand}"
+                                              CommandParameter="{Binding Content, RelativeSource={RelativeSource Self}}"
+                                              local:SortProperty.Value="{Binding SortStatusOperatingHours}"/>
+                    </GridViewColumn>
+                    <GridViewColumn Width="80">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding ElementNumber}"
+                                               Padding="4 0 0 0"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                        <GridViewColumnHeader Content="Element Number"
+                                              local:SortProperty.Value="{x:Null}"/>
+                    </GridViewColumn>
+                    <GridViewColumn Width="80">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding ElementFunction}"
+                                               Padding="4 0 0 0"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                        <GridViewColumnHeader Content="Element Function"
+                                              local:SortProperty.Value="{x:Null}"/>
+                    </GridViewColumn>
+                    <GridViewColumn Width="105">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding ObjectNumber}"
+                                               Padding="4 0 0 0"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                        <GridViewColumnHeader Content="Object Number"
+                                              local:SortProperty.Value="{x:Null}"/>
+                    </GridViewColumn>
+                    <GridViewColumn Width="230">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Message}"
+                                               Padding="4 0 0 0"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                        <GridViewColumnHeader Content="Message"
+                                              local:SortProperty.Value="{x:Null}"/>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </DockPanel>
+
+</UserControl>
