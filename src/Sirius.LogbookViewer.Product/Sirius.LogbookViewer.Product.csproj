@@ -39,6 +39,7 @@
   <ItemGroup>
     <Compile Include="Column.cs" />
     <Compile Include="FileParser.cs" />
+    <Compile Include="FilterOption.cs" />
     <Compile Include="IParser.cs" />
     <Compile Include="IResourceManager.cs" />
     <Compile Include="LogbookData.cs" />

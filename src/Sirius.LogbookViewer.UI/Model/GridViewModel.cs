@@ -18,7 +18,7 @@ namespace Sirius.LogbookViewer.UI.Model
         private IResourceManager _resourceManager => (IResourceManager)ServiceProvider?.Resolve<IResourceManager>();
 
         protected List<Column> ColumnData { get; set; }
-        protected List<List<object>> AllMessages { get; set; }
+        protected List<ExpandoObject> AllMessages { get; set; }
 
         public ObservableCollection<ExpandoObject> Messages
         {
@@ -43,17 +43,18 @@ namespace Sirius.LogbookViewer.UI.Model
         public Dictionary<string, bool?> SortStatus { get; set; }
 
         public ICommand SortCommand { get; set; }
+        public ICommand FilterCommand { get; set; }
 
         public GridViewModel()
         {
             SortCommand = new RelayParameterizedCommand((parameter) => Sort((string)parameter));
+            FilterCommand = new RelayParameterizedCommand((parameter) => Toggle((FilterCommandParameter)parameter));
             SortStatus = new Dictionary<string, bool?>();
         }
 
         public void Initialize(LogbookData data)
         {
             ColumnData = data.ColumnData;
-            AllMessages = data.RowData;
 
             List<ExpandoObject> messages = new List<ExpandoObject>();
             for (int i = 0; i < data.RowData.Count; i++)
@@ -67,13 +68,15 @@ namespace Sirius.LogbookViewer.UI.Model
             }
 
             Messages = new ObservableCollection<ExpandoObject>(messages);
+            AllMessages = messages;
+
             var gridView = new GridView();
 
             for (int i = 0; i < ColumnData.Count; i++)
             {
                 Column column = ColumnData[i];
                 var gridViewColumn = new GridViewColumn();
-                gridViewColumn.Width = i != ColumnData.Count - 1 ? column.Name.Length * 10 : column.Name.Length * 20;
+                gridViewColumn.Width = i != ColumnData.Count - 1 ? column.Name.Length * 8 : column.Name.Length * 35;
                 string columnNameShort = column.Name.Replace(" ", "");
 
                 // create datatemplate contents
@@ -89,7 +92,7 @@ namespace Sirius.LogbookViewer.UI.Model
 
                     Binding imageBinding = new Binding(columnNameShort);
                     imageBinding.Converter = new DataToIconConverter();
-                    imageBinding.ConverterParameter = new DataToIconConverterParameter() { IconData = column.IconData, AssemblyName = _resourceManager != null ? _resourceManager.GetType().Assembly.GetName().Name : "Sirius.LogbookViewer.Safety" };
+                    imageBinding.ConverterParameter = new DataToIconConverterParameter() { IconData = column.IconData, AssemblyName = _resourceManager != null ? _resourceManager.GetType().Assembly.GetName().Name : string.Empty };
                     imageFactory.SetBinding(Image.SourceProperty, imageBinding);
 
                     contentControlFactory.AppendChild(imageFactory);
@@ -208,6 +211,47 @@ namespace Sirius.LogbookViewer.UI.Model
 
             Messages.Clear();
             updatedMessages.ForEach(m => Messages.Add(m));
+        }
+
+        private void Toggle(FilterCommandParameter arguments)
+        {
+            if (AllMessages == null || AllMessages.Count == 0)
+            {
+                return;
+            }
+
+            string columnDisplayValue = arguments.ColumnValue; // Error
+            string columnValue = ColumnData.First(c => c.Filter).FilterData.First(d => d.Value.DisplayValue.Equals(columnDisplayValue)).Key; // "1"
+            string filterColumn = ColumnData.First(c => c.Filter).Name.Replace(" ", ""); // Type
+            string indexColumnName = ColumnData.First(c => c.IsIndex).Name.Replace(" ", ""); // Index
+
+            if (!arguments.Selected)
+            {
+                var newMessages = _messages.Where(m => ((IDictionary<string, object>)m)[filterColumn].ToString() != columnValue).ToList();
+
+                if (ColumnData.Any(c => c.IsIndex))
+                {
+                    for (int i = 1; i <= newMessages.Count(); i++)
+                    {
+                        ((IDictionary<string, object>)newMessages[i - 1])[indexColumnName] = i;
+                    }
+                }
+
+                Messages.Clear();
+                newMessages.ForEach(m => Messages.Add(m));
+            }
+            else
+            {
+                var messagesToShow = AllMessages.Where(m => ((IDictionary<string, object>)m)[filterColumn].ToString() == columnValue);
+                messagesToShow.ToList().ForEach(m => Messages.Add(m));
+
+                for (int i = 1; i <= Messages.Count(); i++)
+                {
+                    ((IDictionary<string, object>)Messages[i - 1])[indexColumnName] = i;
+                }
+
+                OnPropertyChanged(nameof(Messages));
+            }
         }
     }
 }

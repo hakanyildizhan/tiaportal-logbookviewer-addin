@@ -1,13 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:Sirius.LogbookViewer.UI">
-
-    <BitmapImage x:Key="ErrorIcon" UriSource="pack://application:,,,/Sirius.LogbookViewer.UI;component/Resource/Icon/error.png" />
-    <BitmapImage x:Key="EventIcon" UriSource="pack://application:,,,/Sirius.LogbookViewer.UI;component/Resource/Icon/event.png" />
-    <BitmapImage x:Key="FaultIcon" UriSource="pack://application:,,,/Sirius.LogbookViewer.UI;component/Resource/Icon/fault.png" />
-    <BitmapImage x:Key="PreWarningIcon" UriSource="pack://application:,,,/Sirius.LogbookViewer.UI;component/Resource/Icon/prewarn.png" />
-    <BitmapImage x:Key="WarningIcon" UriSource="pack://application:,,,/Sirius.LogbookViewer.UI;component/Resource/Icon/trip.png" />
-
+    
     <BitmapImage x:Key="HourglassImage" UriSource="pack://application:,,,/Sirius.LogbookViewer.UI;component/Resource/Image/Hourglass.png" />
     <BitmapImage x:Key="PromptError" UriSource="pack://application:,,,/Sirius.LogbookViewer.UI;component/Resource/Icon/PromptError.ico" />
 

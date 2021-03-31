@@ -17,9 +17,13 @@ namespace Sirius.LogbookViewer.UI.Model
         private IFilePicker _filePicker => (IFilePicker)ServiceProvider?.Resolve<IFilePicker>();
         private IWaitIndicator _waitIndicator => (IWaitIndicator)ServiceProvider?.Resolve<IWaitIndicator>();
         private IParser _parser => (IParser)ServiceProvider?.Resolve<IParser>();
+        
         private GridViewModel _grid;
+        private FilterViewModel _filter;
         private bool _topmost;
         private WindowState _windowState;
+        private bool _gridIsInitialized;
+
         public WindowState WindowState
         {
             get => _windowState;
@@ -27,6 +31,16 @@ namespace Sirius.LogbookViewer.UI.Model
             {
                 _windowState = value;
                 OnPropertyChanged(nameof(WindowState));
+            }
+        }
+
+        public bool GridIsInitialized
+        {
+            get => _gridIsInitialized;
+            set
+            {
+                _gridIsInitialized = value;
+                OnPropertyChanged(nameof(GridIsInitialized));
             }
         }
 
@@ -71,14 +85,20 @@ namespace Sirius.LogbookViewer.UI.Model
             }
         }
 
+        public FilterViewModel Filter
+        {
+            get => _filter;
+            set
+            {
+                _filter = value;
+                OnPropertyChanged(nameof(Filter));
+            }
+        }
+
         public bool IsBusy { get; set; }
         public ICommand ImportCommand { get; set; }
         public ICommand CloseCommand { get; set; }
         public ICommand MinimizeCommand { get; set; }
-
-        public bool? SortStatusSource { get; set; }
-        public bool? SortStatusType { get; set; }
-        public bool? SortStatusOperatingHours { get; set; }
 
         public AppViewModel()
         {
@@ -124,9 +144,11 @@ namespace Sirius.LogbookViewer.UI.Model
 
                     if (data.RowData.Any())
                     {
+                        GridIsInitialized = true;
+                        Filter = new FilterViewModel();
+                        Filter.Initialize(data);
                         Grid = new GridViewModel();
                         Grid.Initialize(data);
-                        OnPropertyChanged(nameof(Grid));
                     }
 
                     _waitIndicator?.Close();

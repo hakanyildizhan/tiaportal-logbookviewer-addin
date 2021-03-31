@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sirius.LogbookViewer.UI"
         mc:Ignorable="d"
-        Title="MainWindow" 
+        Title="Logbook Viewer" 
         WindowStyle="None"
         Height="800" 
         Width="880"
@@ -30,82 +30,7 @@
         <local:TitleBarMinimizeClose Grid.Row="0" 
                                      MouseLeftButtonDown="UIElement_OnMouseLeftButtonDown"/>
 
-        <GroupBox Header="Displayed logbooks" 
-                  Grid.Row="1">
-            
-            <StackPanel Orientation="Horizontal">
-                
-                <StackPanel.Resources>
-                    <Style TargetType="{x:Type StackPanel}">
-                        <Setter Property="Margin" Value="5 0 64 0"></Setter>
-                        <Setter Property="Orientation" Value="Horizontal"></Setter>
-                    </Style>
-
-                </StackPanel.Resources>
-
-                <StackPanel>
-                    <ContentControl Margin="-3 -1 0 -2" VerticalAlignment="Center">
-                        <Image Source="{StaticResource ErrorIcon}" Width="30" />
-                    </ContentControl>
-
-                    <CheckBox Content="Error" 
-                              VerticalAlignment="Center"
-                              IsChecked="True"
-                              Command="{Binding ToggleErrorsCommand}"
-                              CommandParameter="{Binding IsChecked, RelativeSource={RelativeSource Self}}"/>
-                </StackPanel>
-
-                <StackPanel>
-                    <ContentControl Margin="-3 -1 0 -2" VerticalAlignment="Center">
-                        <Image Source="{StaticResource FaultIcon}" Width="30" />
-                    </ContentControl>
-
-                    <CheckBox Content="Operating Error" 
-                              VerticalAlignment="Center"
-                              IsChecked="True"
-                              Command="{Binding ToggleOperatingErrorsCommand}"
-                              CommandParameter="{Binding IsChecked, RelativeSource={RelativeSource Self}}"/>
-                </StackPanel>
-
-                <StackPanel>
-                    <ContentControl Margin="-3 -1 0 -2" VerticalAlignment="Center">
-                        <Image Source="{StaticResource WarningIcon}" Width="30" />
-                    </ContentControl>
-
-                    <CheckBox Content="Warning" 
-                              VerticalAlignment="Center"
-                              IsChecked="True"
-                              Command="{Binding ToggleWarningsCommand}"
-                              CommandParameter="{Binding IsChecked, RelativeSource={RelativeSource Self}}"/>
-                </StackPanel>
-
-                <StackPanel>
-                    <ContentControl Margin="-3 -1 0 -2" VerticalAlignment="Center">
-                        <Image Source="{StaticResource PreWarningIcon}" Width="30" />
-                    </ContentControl>
-
-                    <CheckBox Content="Prewarning"
-                              VerticalAlignment="Center"
-                              IsChecked="True"
-                              Command="{Binding TogglePrewarningsCommand}"
-                              CommandParameter="{Binding IsChecked, RelativeSource={RelativeSource Self}}"/>
-                </StackPanel>
-
-                <StackPanel>
-                    <ContentControl Margin="-3 -1 0 -2" VerticalAlignment="Center">
-                        <Image Source="{StaticResource EventIcon}" Width="30" />
-                    </ContentControl>
-
-                    <CheckBox Content="Event"
-                              VerticalAlignment="Center"
-                              IsChecked="True"
-                              Command="{Binding ToggleEventsCommand}"
-                              CommandParameter="{Binding IsChecked, RelativeSource={RelativeSource Self}}"/>
-                </StackPanel>
-
-            </StackPanel>
-
-        </GroupBox>
+        <local:FilterSection Grid.Row="1"/>
 
         <local:MessageGrid Grid.Row="2"
                        Margin="5 10 5 5"/>

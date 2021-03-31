@@ -1,0 +1,158 @@
+﻿<UserControl x:Class="Sirius.LogbookViewer.UI.FilterSection"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Sirius.LogbookViewer.UI"
+             mc:Ignorable="d" 
+             d:DesignHeight="80" 
+             d:DesignWidth="850"
+             Background="{DynamicResource WindowBackground}">
+    
+    <Grid>
+
+        <!-- Wrapper for the groupbox to be dynamically created -->
+        <ContentControl Content="{Binding Filter.FilterSection}">
+
+            <ContentControl.Visibility>
+                <MultiBinding Converter="{local:DesignModeAndBoolToVisibilityConverter}">
+                    <Binding RelativeSource="{RelativeSource Self}"/>
+                    <Binding Path="Filter.IsVisible"/>
+                </MultiBinding>
+            </ContentControl.Visibility>
+
+        </ContentControl>
+
+        <!-- concrete groupbox for design view only -->
+        <GroupBox Header="Displayed logbooks" 
+                  Visibility="{Binding RelativeSource={RelativeSource Self}, 
+                        Converter={local:DesignModeToVisibilityConverter}}">
+
+            <!-- Safety specific icons just for design view -->
+            <GroupBox.Resources>
+                <ResourceDictionary>
+                    <BitmapImage x:Key="Error" UriSource="pack://application:,,,/Sirius.LogbookViewer.Safety;component/Resources/Icon/error.png"/>
+                    <BitmapImage x:Key="OperatingError" UriSource="pack://application:,,,/Sirius.LogbookViewer.Safety;component/Resources/Icon/fault.png"/>
+                    <BitmapImage x:Key="Warning" UriSource="pack://application:,,,/Sirius.LogbookViewer.Safety;component/Resources/Icon/trip.png"/>
+                    <BitmapImage x:Key="Prewarning" UriSource="pack://application:,,,/Sirius.LogbookViewer.Safety;component/Resources/Icon/prewarn.png"/>
+                    <BitmapImage x:Key="Event" UriSource="pack://application:,,,/Sirius.LogbookViewer.Safety;component/Resources/Icon/event.png"/>
+                </ResourceDictionary>
+            </GroupBox.Resources>
+            
+            <StackPanel Orientation="Horizontal">
+
+                <StackPanel.Resources>
+                    <Style TargetType="{x:Type StackPanel}">
+                        <Setter Property="Margin" Value="5 0 64 0"></Setter>
+                        <Setter Property="Orientation" Value="Horizontal"></Setter>
+                    </Style>
+
+                </StackPanel.Resources>
+
+                <StackPanel>
+                    <ContentControl Margin="-3 -1 0 -2" VerticalAlignment="Center">
+                        <Image Source="{StaticResource Error}" Width="30" />
+                    </ContentControl>
+
+                    <CheckBox Content="Error" 
+                              VerticalAlignment="Center"
+                              IsChecked="True"
+                              Command="{Binding FilterCommand}">
+
+                        <CheckBox.CommandParameter>
+                            <MultiBinding Converter="{local:FilterCommandParameterConverter}">
+                                <Binding Path="IsChecked" RelativeSource="{RelativeSource Self}"/>
+                                <Binding Path="Content" RelativeSource="{RelativeSource Self}"/>
+                            </MultiBinding>
+                        </CheckBox.CommandParameter>
+
+                    </CheckBox>
+                </StackPanel>
+
+                <StackPanel>
+                    <ContentControl Margin="-3 -1 0 -2" VerticalAlignment="Center">
+                        <Image Source="{StaticResource OperatingError}" Width="30" />
+                    </ContentControl>
+
+                    <CheckBox Content="Operating Error" 
+                              VerticalAlignment="Center"
+                              IsChecked="True"
+                              Command="{Binding FilterCommand}">
+
+                        <CheckBox.CommandParameter>
+                            <MultiBinding Converter="{local:FilterCommandParameterConverter}">
+                                <Binding Path="IsChecked" RelativeSource="{RelativeSource Self}"/>
+                                <Binding Path="Content" RelativeSource="{RelativeSource Self}"/>
+                            </MultiBinding>
+                        </CheckBox.CommandParameter>
+
+                    </CheckBox>
+                </StackPanel>
+
+                <StackPanel>
+                    <ContentControl Margin="-3 -1 0 -2" VerticalAlignment="Center">
+                        <Image Source="{StaticResource Warning}" Width="30" />
+                    </ContentControl>
+
+                    <CheckBox Content="Warning" 
+                              VerticalAlignment="Center"
+                              IsChecked="True"
+                              Command="{Binding FilterCommand}">
+
+                        <CheckBox.CommandParameter>
+                            <MultiBinding Converter="{local:FilterCommandParameterConverter}">
+                                <Binding Path="IsChecked" RelativeSource="{RelativeSource Self}"/>
+                                <Binding Path="Content" RelativeSource="{RelativeSource Self}"/>
+                            </MultiBinding>
+                        </CheckBox.CommandParameter>
+
+                    </CheckBox>
+                </StackPanel>
+
+                <StackPanel>
+                    <ContentControl Margin="-3 -1 0 -2" VerticalAlignment="Center">
+                        <Image Source="{StaticResource Prewarning}" Width="30" />
+                    </ContentControl>
+
+                    <CheckBox Content="Prewarning"
+                              VerticalAlignment="Center"
+                              IsChecked="True"
+                              Command="{Binding FilterCommand}">
+
+                        <CheckBox.CommandParameter>
+                            <MultiBinding Converter="{local:FilterCommandParameterConverter}">
+                                <Binding Path="IsChecked" RelativeSource="{RelativeSource Self}"/>
+                                <Binding Path="Content" RelativeSource="{RelativeSource Self}"/>
+                            </MultiBinding>
+                        </CheckBox.CommandParameter>
+
+                    </CheckBox>
+                </StackPanel>
+
+                <StackPanel>
+                    <ContentControl Margin="-3 -1 0 -2" VerticalAlignment="Center">
+                        <Image Source="{StaticResource Event}" Width="30" />
+                    </ContentControl>
+
+                    <CheckBox Content="Event"
+                              VerticalAlignment="Center"
+                              IsChecked="True"
+                              Command="{Binding FilterCommand}">
+
+                        <CheckBox.CommandParameter>
+                            <MultiBinding Converter="{local:FilterCommandParameterConverter}">
+                                <Binding Path="IsChecked" RelativeSource="{RelativeSource Self}"/>
+                                <Binding Path="Content" RelativeSource="{RelativeSource Self}"/>
+                            </MultiBinding>
+                        </CheckBox.CommandParameter>
+
+                    </CheckBox>
+                </StackPanel>
+
+            </StackPanel>
+
+        </GroupBox>
+
+    </Grid>
+    
+</UserControl>

@@ -25,6 +25,14 @@ namespace Sirius.LogbookViewer.Safety
                 Type = typeof(int), 
                 Name = "Type", 
                 Filter = true,
+                FilterData = new Dictionary<string, FilterOption>()
+                {
+                    { "1", new FilterOption() { DisplayValue = "Error", IconPath = "Resources/Icon/error.png" } },
+                    { "2", new FilterOption() { DisplayValue = "Operating Error", IconPath = "Resources/Icon/fault.png" } },
+                    { "3", new FilterOption() { DisplayValue = "Warning", IconPath = "Resources/Icon/trip.png" } },
+                    { "4", new FilterOption() { DisplayValue = "Prewarning", IconPath = "Resources/Icon/prewarn.png" } },
+                    { "5", new FilterOption() { DisplayValue = "Event", IconPath = "Resources/Icon/event.png" } }
+                },
                 Sortable = true,
                 UseIcon = true, 
                 IconData = new Dictionary<string, string>() 
