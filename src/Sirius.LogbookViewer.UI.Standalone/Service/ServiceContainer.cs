@@ -1,7 +1,10 @@
-﻿using Sirius.LogbookViewer.UI.Service;
+﻿using Sirius.LogbookViewer.Product;
+using Sirius.LogbookViewer.UI.Service;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.ComponentModel.Composition;
+using System.ComponentModel.Composition.Hosting;
 using System.Linq;
 using System.Reflection;
 
@@ -16,6 +19,12 @@ namespace Sirius.LogbookViewer.UI.Standalone.Service
         private ConcurrentDictionary<Type, Type> _registeredTypes;
         private ConcurrentDictionary<Type, object> _registeredInstances;
 
+        [Import(AllowDefault = true)]
+        private IResourceManager _productSpecificResourceManager;
+
+        [Import]
+        private IParser _fileParser;
+
         public static IServiceContainer Instance { get { return lazy.Value; } }
 
         private ServiceContainer()
@@ -29,6 +38,15 @@ namespace Sirius.LogbookViewer.UI.Standalone.Service
             _registeredInstances = new ConcurrentDictionary<Type, object>();
             Register<IFilePicker, StandaloneFileDialog>();
             Register<IWaitIndicator, LoadingDialog>();
+
+            var catalog = new DirectoryCatalog(".");
+            using (var container = new CompositionContainer(catalog))
+            {
+                container.ComposeParts(this);
+            }
+
+            Register<IResourceManager>(_productSpecificResourceManager);
+            Register<IParser>(_fileParser);
         }
 
         /// <summary>
@@ -57,6 +75,11 @@ namespace Sirius.LogbookViewer.UI.Standalone.Service
 
         public T Resolve<T>()
         {
+            if (_registeredInstances.ContainsKey(typeof(T)))
+            {
+                return (T)_registeredInstances[typeof(T)];
+            }
+
             return (T)CreateInstance(typeof(T));
         }
 

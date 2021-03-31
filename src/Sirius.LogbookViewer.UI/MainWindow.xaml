@@ -18,8 +18,6 @@
         ShowActivated="True"
         Style="{StaticResource MainWindowStyle}">
 
-    <!-- Topmost="{Binding Topmost}" -->
-    <!-- Style="{StaticResource MainWindowStyle}" -->
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
@@ -109,7 +107,7 @@
 
         </GroupBox>
 
-        <local:SafetyGrid Grid.Row="2"
+        <local:MessageGrid Grid.Row="2"
                        Margin="5 10 5 5"/>
 
         <StackPanel Grid.Row="3" 

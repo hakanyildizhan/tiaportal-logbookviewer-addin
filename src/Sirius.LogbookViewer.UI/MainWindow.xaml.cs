@@ -15,11 +15,6 @@ namespace Sirius.LogbookViewer.UI
             this.DataContext = new AppViewModel();
         }
 
-        //public MainWindow(BaseViewModel viewModel) : this()
-        //{
-        //    this.DataContext = viewModel;
-        //}
-
         private void UIElement_OnMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             base.OnMouseLeftButtonDown(e);

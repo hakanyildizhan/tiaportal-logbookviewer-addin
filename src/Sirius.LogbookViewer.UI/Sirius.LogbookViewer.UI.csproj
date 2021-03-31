@@ -38,15 +38,21 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Projects\TestStreamingApp\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Xml" />
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -54,8 +60,8 @@
   <ItemGroup>
     <Compile Include="AttachedProperty\BaseAttachedProperty.cs" />
     <Compile Include="AttachedProperty\SortProperty.cs" />
-    <Compile Include="Control\SafetyGrid.xaml.cs">
-      <DependentUpon>SafetyGrid.xaml</DependentUpon>
+    <Compile Include="Control\MessageGrid.xaml.cs">
+      <DependentUpon>MessageGrid.xaml</DependentUpon>
     </Compile>
     <Compile Include="Control\TitleBar.xaml.cs">
       <DependentUpon>TitleBar.xaml</DependentUpon>
@@ -65,10 +71,8 @@
     </Compile>
     <Compile Include="Model\BaseViewModel.cs" />
     <Compile Include="Model\Design\MessageListDesignModelSafety.cs" />
+    <Compile Include="Model\GridViewModel.cs" />
     <Compile Include="Model\LoadingWindowViewModel.cs" />
-    <Compile Include="Model\Message\SoftstarterLogbookMessage.cs" />
-    <Compile Include="Model\Message\SafetyLogbookMessage.cs" />
-    <Compile Include="Model\Message\LogbookMessage.cs" />
     <Compile Include="Model\AppViewModel.cs" />
     <Compile Include="Service\Abstract\IFilePicker.cs" />
     <Compile Include="Service\Abstract\IServiceContainer.cs" />
@@ -78,24 +82,20 @@
     <Compile Include="TIAWindow.xaml.cs">
       <DependentUpon>TIAWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Utility\File\FileMeta.cs" />
-    <Compile Include="Utility\File\ParserFactory.cs" />
-    <Compile Include="Utility\File\ParserType.cs" />
-    <Compile Include="Utility\File\SafetyParser.cs" />
     <Compile Include="Utility\HelperMethods.cs" />
-    <Compile Include="Utility\File\IParser.cs" />
     <Compile Include="Utility\RelayCommand.cs" />
-    <Compile Include="Utility\File\SoftstarterParser.cs" />
     <Compile Include="Utility\RelayParameterizedCommand.cs" />
     <Compile Include="ValueConverter\BaseValueConverter.cs" />
+    <Compile Include="ValueConverter\Parameter\DataToIconConverterParameter.cs" />
     <Compile Include="ValueConverter\PromptButtonVisibilityConverter.cs" />
-    <Compile Include="ValueConverter\MessageTypeToIconConverter.cs" />
+    <Compile Include="ValueConverter\DataToIconConverter.cs" />
     <Compile Include="ValueConverter\CanAnimateToVisibilityConverter.cs" />
+    <Compile Include="ValueConverter\DesignModeToVisibilityConverter.cs" />
     <Compile Include="ValueConverter\SortIconVisibilityConverter.cs" />
     <Compile Include="Window\LoadingWindow.xaml.cs">
       <DependentUpon>LoadingWindow.xaml</DependentUpon>
     </Compile>
-    <Page Include="Control\SafetyGrid.xaml">
+    <Page Include="Control\MessageGrid.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -195,15 +195,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resource\Icon\error.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resource\Icon\event.png" />
-    <Resource Include="Resource\Icon\fault.png" />
-    <Resource Include="Resource\Icon\prewarn.png" />
-    <Resource Include="Resource\Icon\trip.png" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resource\Animation\Hourglass.gif" />
   </ItemGroup>
   <ItemGroup>
@@ -211,6 +202,27 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resource\Image\Hourglass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sirius.LogbookViewer.Product\Sirius.LogbookViewer.Product.csproj">
+      <Project>{f181fa0b-4dcd-4eb0-b298-62f292a42e5c}</Project>
+      <Name>Sirius.LogbookViewer.Product</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Icon\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Icon\event.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Icon\fault.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Icon\prewarn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Icon\trip.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

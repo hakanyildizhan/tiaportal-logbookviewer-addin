@@ -3,11 +3,11 @@
 namespace Sirius.LogbookViewer.UI
 {
     /// <summary>
-    /// Interaction logic for SafetyGrid.xaml
+    /// Interaction logic for MessageGrid.xaml
     /// </summary>
-    public partial class SafetyGrid : UserControl
+    public partial class MessageGrid : UserControl
     {
-        public SafetyGrid()
+        public MessageGrid()
         {
             InitializeComponent();
         }

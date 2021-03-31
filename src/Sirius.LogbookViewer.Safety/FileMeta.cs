@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Sirius.LogbookViewer.UI
+namespace Sirius.LogbookViewer.Safety
 {
     /// <summary>
     /// Column & row data for the exported file.

@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="UI.Close" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="UI.DisplayedLogbooks" xml:space="preserve">
+    <value>Journaux affichés</value>
+  </data>
+  <data name="UI.ElementFunction" xml:space="preserve">
+    <value>Fonction de l'élément</value>
+  </data>
+  <data name="UI.ElementNumber" xml:space="preserve">
+    <value>Numéro d'élément</value>
+  </data>
+  <data name="UI.Error" xml:space="preserve">
+    <value>Défault</value>
+  </data>
+  <data name="UI.Event" xml:space="preserve">
+    <value>Evénement</value>
+  </data>
+  <data name="UI.Import" xml:space="preserve">
+    <value>Importation</value>
+  </data>
+  <data name="UI.Index" xml:space="preserve">
+    <value>Indice</value>
+  </data>
+  <data name="UI.Message" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="UI.ObjectNumber" xml:space="preserve">
+    <value>Numéro d'objet</value>
+  </data>
+  <data name="UI.OperatingError" xml:space="preserve">
+    <value>Défault d'exploitation</value>
+  </data>
+  <data name="UI.OperatingHours" xml:space="preserve">
+    <value>Heures de fonctionnement</value>
+  </data>
+  <data name="UI.Prewarning" xml:space="preserve">
+    <value>Préalarme</value>
+  </data>
+  <data name="UI.Source" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="UI.Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="UI.Warning" xml:space="preserve">
+    <value>Alarme</value>
+  </data>
+	<data name="Message.Device1" xml:space="preserve">    <value>Réglage usine</value></data>
+	<data name="Message.Device2" xml:space="preserve">    <value>Redémarrage</value></data>
+	<data name="Message.Device3" xml:space="preserve">    <value>Réinitialisation</value></data>
+	<data name="Message.Device4" xml:space="preserve">    <value>Effacer la mémoire mini/maxi</value></data>
+	<data name="Message.Device5" xml:space="preserve">    <value>Effacer le compteur de maintenance</value></data>
+	<data name="Message.Device6" xml:space="preserve">    <value>Effacer la cartouche mémoire</value></data>
+	<data name="Message.Device7" xml:space="preserve">    <value>Programmer cartouche mémoire</value></data>
+	<data name="Message.Device8" xml:space="preserve">    <value>Valider la configuration</value></data>
+	<data name="Message.Device9" xml:space="preserve">    <value>Annuler la validation de la configuration</value></data>
+	<data name="Message.Device10" xml:space="preserve">    <value>Annuler les droits d'accès</value></data>
+	<data name="Message.Device11" xml:space="preserve">    <value>Appliquer configuration REELLE comme configuration CONSIGNE</value></data>
+	<data name="Message.Device12" xml:space="preserve">    <value>Démarrer l'apprentissage des tables de code ASIsafe</value></data>
+	<data name="Message.Device13" xml:space="preserve">    <value>Arrêter l'apprentissage des tables de code ASIsafe</value></data>
+	<data name="Message.Device14" xml:space="preserve">    <value>Application des séquences de code ASIsafe apprises</value></data>
+	<data name="Message.Device15" xml:space="preserve">    <value>Commande "Effacer journal appareil-défault"</value></data>
+	<data name="Message.Device16" xml:space="preserve">    <value>Commande "Effacer journal appareil-erreur de l‘opérateur"</value></data>
+	<data name="Message.Device17" xml:space="preserve">    <value>Commande "Effacer journal appareil-alarme"</value></data>
+	<data name="Message.Device18" xml:space="preserve">    <value>Commande "Effacer journal appareil-préalarme"</value></data>
+	<data name="Message.Device19" xml:space="preserve">    <value>Commande "Effacer journal appareil-évènement"</value></data>
+	<data name="Message.Device20" xml:space="preserve">    <value>Commande "Effacer journal élément-défault"</value></data>
+	<data name="Message.Device21" xml:space="preserve">    <value>Commande "Effacer journal élément-erreur de l‘opérateur"</value></data>
+	<data name="Message.Device22" xml:space="preserve">    <value>Commande "Effacer journal élément-alarme"</value></data>
+	<data name="Message.Device23" xml:space="preserve">    <value>Commande "Effacer journal élément-préalarme"</value></data>
+	<data name="Message.Device24" xml:space="preserve">    <value>Commande "Effacer journal élément-évènement"</value></data>
+	<data name="Message.Device25" xml:space="preserve">    <value>Commande "Effacer journal communication-défault"</value></data>
+	<data name="Message.Device26" xml:space="preserve">    <value>Commande "Effacer journal communication-erreur de l‘opérateur"</value></data>
+	<data name="Message.Device27" xml:space="preserve">    <value>Commande "Effacer journal communication-alarme"</value></data>
+	<data name="Message.Device28" xml:space="preserve">    <value>Commande "Effacer journal communication-préalarme"</value></data>
+	<data name="Message.Device29" xml:space="preserve">    <value>Commande "Effacer journal communication-évènement"</value></data>
+	<data name="Message.Device30" xml:space="preserve">    <value>Commande "Effacer journal produit-défault"</value></data>
+	<data name="Message.Device31" xml:space="preserve">    <value>Commande "Effacer journal produit-erreur de l‘opérateur"</value></data>
+	<data name="Message.Device32" xml:space="preserve">    <value>Commande "Effacer journal produit-alarme"</value></data>
+	<data name="Message.Device33" xml:space="preserve">    <value>Commande "Effacer journal produit-préalarme"</value></data>
+	<data name="Message.Device34" xml:space="preserve">    <value>Commande "Effacer journal produit-évènement"</value></data>
+	<data name="Message.Device35" xml:space="preserve">    <value>Ouvrir le chemin d'accès</value></data>
+	<data name="Message.Device36" xml:space="preserve">    <value>Fermer le chemin d'accès</value></data>
+	<data name="Message.Device37" xml:space="preserve">    <value>Mode test-MARCHE</value></data>
+	<data name="Message.Device38" xml:space="preserve">    <value>Mode test-ARRET</value></data>
+	<data name="Message.Device39" xml:space="preserve">    <value>Programme utilisateur-DEMARRAGE</value></data>
+	<data name="Message.Device40" xml:space="preserve">    <value>Programme utilisateur-ARRET</value></data>
+	<data name="Message.Device41" xml:space="preserve">    <value>Erreur d'initialisation</value></data>
+	<data name="Message.Device42" xml:space="preserve">    <value>Erreur de configuration de périphérie décentralisée</value></data>
+	<data name="Message.Device43" xml:space="preserve">    <value>Erreur de conception</value></data>
+	<data name="Message.Device44" xml:space="preserve">    <value>Mode configuration activé</value></data>
+	<data name="Message.Device45" xml:space="preserve">    <value>Activer mode test</value></data>
+	<data name="Message.Device46" xml:space="preserve">    <value>Activer le mode protégé</value></data>
+	<data name="Message.Device47" xml:space="preserve">    <value>Programme utilisateur arrêté</value></data>
+	<data name="Message.Device48" xml:space="preserve">    <value>Changement d'état de service refusé</value></data>
+	<data name="Message.Device49" xml:space="preserve">    <value>Alarmes groupées du programme utilisateur</value></data>
+	<data name="Message.Device50" xml:space="preserve">    <value>Défaut de connexion</value></data>
+	<data name="Message.Device51" xml:space="preserve">    <value>Mot de passe pour l'accès au bloc logique inactif</value></data>
+	<data name="Message.Device52" xml:space="preserve">    <value>Mot de passe pour l'accès étendu au bloc logique inactif</value></data>
+	<data name="Message.Device53" xml:space="preserve">    <value>Mot de passe pour changement de mode de fonctionnement inactif</value></data>
+	<data name="Message.Device54" xml:space="preserve">    <value>Mot de passe incorrect</value></data>
+	<data name="Message.Device55" xml:space="preserve">    <value>Configuration manquante</value></data>
+	<data name="Message.Device56" xml:space="preserve">    <value>Configuration non validée</value></data>
+	<data name="Message.Device57" xml:space="preserve">    <value>Validation refusée car état de service incorrect</value></data>
+	<data name="Message.Device58" xml:space="preserve">    <value>Validation refusée car CRC de configuration incorrect</value></data>
+	<data name="Message.Device59" xml:space="preserve">    <value>Validation refusée car déjà validé</value></data>
+	<data name="Message.Device60" xml:space="preserve">    <value>Validation retirée</value></data>
+	<data name="Message.Device61" xml:space="preserve">    <value>Validation retirée car CRC de validation de la configuration incorrect</value></data>
+	<data name="Message.Device62" xml:space="preserve">    <value>Nombre d'éléments max. dépassé</value></data>
+	<data name="Message.Device63" xml:space="preserve">    <value>Capacité mémoire max. dépassée</value></data>
+	<data name="Message.Device64" xml:space="preserve">    <value>Temps de cycle du programme dépassé</value></data>
+	<data name="Message.Device65" xml:space="preserve">    <value>Extension d'emplacements PRESCRITE différente de l'extension REELLE</value></data>
+	<data name="Message.Device66" xml:space="preserve">    <value>Configuration de subslot PRESCRITE différente de la configuration REELLE</value></data>
+	<data name="Message.Device67" xml:space="preserve">    <value>Valeur de paramètre incorrecte</value></data>
+	<data name="Message.Device68" xml:space="preserve">    <value>Modification de param. non autorisée</value></data>
+	<data name="Message.Device69" xml:space="preserve">    <value>Règle de connexion pas respectée</value></data>
+	<data name="Message.Device70" xml:space="preserve">    <value>Structure de données défectueuse</value></data>
+	<data name="Message.Device71" xml:space="preserve">    <value>Pas reçu de param. de démarrage ext.</value></data>
+	<data name="Message.Device72" xml:space="preserve">    <value>Cartouche mémoire non enfichée</value></data>
+	<data name="Message.Device73" xml:space="preserve">    <value>Cartouche mémoire défectueuse</value></data>
+	<data name="Message.Device74" xml:space="preserve">    <value>Cartouche mémoire Configuration défectueuse</value></data>
+	<data name="Message.Device75" xml:space="preserve">    <value>Mémoire utilisateur trop petite</value></data>
+	<data name="Message.Device76" xml:space="preserve">    <value>Cartouche mémoire mal organisée</value></data>
+	<data name="Message.Device77" xml:space="preserve">    <value>Reset impossible</value></data>
+	<data name="Message.Device78" xml:space="preserve">    <value>Erreur à l'autotest</value></data>
+	<data name="Message.Device79" xml:space="preserve">    <value>Demande de maintenance</value></data>
+	<data name="Message.Device80" xml:space="preserve">    <value>Dépassement négatif de la pile</value></data>
+	<data name="Message.Device81" xml:space="preserve">    <value>Erreur de bus d'adresse/de données</value></data>
+	<data name="Message.Device82" xml:space="preserve">    <value>Erreur CRC</value></data>
+	<data name="Message.Device83" xml:space="preserve">    <value>Débordement du chien de garde</value></data>
+	<data name="Message.Device84" xml:space="preserve">    <value>Erreur de l'interface bus de terrain</value></data>
+	<data name="Message.Device85" xml:space="preserve">    <value>Erreur du bus système (SAFETYconnect)</value></data>
+	<data name="Message.Device86" xml:space="preserve">    <value>Erreur de l'interface appareil</value></data>
+	<data name="Message.Device87" xml:space="preserve">    <value>Erreur FW</value></data>
+	<data name="Message.Device88" xml:space="preserve">    <value>Mémoire défectueuse</value></data>
+	<data name="Message.Device89" xml:space="preserve">    <value>Télégramme Prm trop court</value></data>
+	<data name="Message.Device90" xml:space="preserve">    <value>Télégramme Prm trop long</value></data>
+	<data name="Message.Device91" xml:space="preserve">    <value>Le DS paramètres de démarrage manque</value></data>
+	<data name="Message.Device92" xml:space="preserve">    <value>réservé</value></data>
+	<data name="Message.Device93" xml:space="preserve">    <value>En-tête de structure des données non cohérente</value></data>
+	<data name="Message.Device94" xml:space="preserve">    <value>CRC de structure des données non cohérente</value></data>
+	<data name="Message.Device95" xml:space="preserve">    <value>En-tête de bloc de données d'éléments non cohérente</value></data>
+	<data name="Message.Device96" xml:space="preserve">    <value>CRC d'élément non cohérente</value></data>
+	<data name="Message.Device97" xml:space="preserve">    <value>Nombre d'éléments configurés différent de PRESCRIT</value></data>
+	<data name="Message.Device98" xml:space="preserve">    <value>Nombre d'emplacements de modules configurés différent de PRESCRIT</value></data>
+	<data name="Message.Device99" xml:space="preserve">    <value>Nombre d'emplacements de sous-modules configurés différent de PRESCRIT</value></data>
+	<data name="Message.Device100" xml:space="preserve">    <value>Démarrage de l’appareil</value></data>
+	<data name="Message.Device101" xml:space="preserve">    <value>Mise hors tension</value></data>
+	<data name="Message.Device102" xml:space="preserve">    <value>Configuration modifiée</value></data>
+</root>

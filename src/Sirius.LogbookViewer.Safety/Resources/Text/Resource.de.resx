@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="UI.Close" xml:space="preserve">
+    <value>Abbrechen</value>
+  </data>
+  <data name="UI.DisplayedLogbooks" xml:space="preserve">
+    <value>Angezeigte Logbücher</value>
+  </data>
+  <data name="UI.ElementFunction" xml:space="preserve">
+    <value>Element-Funktion</value>
+  </data>
+  <data name="UI.ElementNumber" xml:space="preserve">
+    <value>Element-Nummer</value>
+  </data>
+  <data name="UI.Error" xml:space="preserve">
+    <value>Fehler</value>
+  </data>
+  <data name="UI.Event" xml:space="preserve">
+    <value>Ereignis</value>
+  </data>
+  <data name="UI.Import" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="UI.Index" xml:space="preserve">
+    <value>Indice</value>
+  </data>
+  <data name="UI.Message" xml:space="preserve">
+    <value>Meldung</value>
+  </data>
+  <data name="UI.ObjectNumber" xml:space="preserve">
+    <value>Objekt-Nummer</value>
+  </data>
+  <data name="UI.OperatingError" xml:space="preserve">
+    <value>Bedienfehler</value>
+  </data>
+  <data name="UI.OperatingHours" xml:space="preserve">
+    <value>Betriebsstunden</value>
+  </data>
+  <data name="UI.Prewarning" xml:space="preserve">
+    <value>Vorwarnung</value>
+  </data>
+  <data name="UI.Source" xml:space="preserve">
+    <value>Quelle</value>
+  </data>
+  <data name="UI.Type" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="UI.Warning" xml:space="preserve">
+    <value>Warnung</value>
+  </data>
+	<data name="Message.Device1" xml:space="preserve">    <value>Werksgrundeinstellung</value></data>
+	<data name="Message.Device2" xml:space="preserve">    <value>Neustart</value></data>
+	<data name="Message.Device3" xml:space="preserve">    <value>Reset</value></data>
+	<data name="Message.Device4" xml:space="preserve">    <value>Schleppzeiger löschen</value></data>
+	<data name="Message.Device5" xml:space="preserve">    <value>Wartungstimer löschen</value></data>
+	<data name="Message.Device6" xml:space="preserve">    <value>Speichermodul löschen</value></data>
+	<data name="Message.Device7" xml:space="preserve">    <value>Speichermodul programmieren</value></data>
+	<data name="Message.Device8" xml:space="preserve">    <value>Projektierung freigeben</value></data>
+	<data name="Message.Device9" xml:space="preserve">    <value>Projektierungsfreigabe aufheben</value></data>
+	<data name="Message.Device10" xml:space="preserve">    <value>Zugangsberechtigungen aufheben</value></data>
+	<data name="Message.Device11" xml:space="preserve">    <value>ST- als SOLL-Konfiguration übernehmen</value></data>
+	<data name="Message.Device12" xml:space="preserve">    <value>Einlernen der ASIsafe-Codetabellen starten</value></data>
+	<data name="Message.Device13" xml:space="preserve">    <value>Einlernen der ASIsafe-Codetabellen beenden</value></data>
+	<data name="Message.Device14" xml:space="preserve">    <value>Eingelernte ASIsafe-Codetabellen über-nehmen</value></data>
+	<data name="Message.Device15" xml:space="preserve">    <value>Kommando „Logbuch Gerät-Störung löschen“</value></data>
+	<data name="Message.Device16" xml:space="preserve">    <value>Kommando „Logbuch Gerät-Bedienfehler löschen“</value></data>
+	<data name="Message.Device17" xml:space="preserve">    <value>Kommando „Logbuch Gerät-Warnung löschen“</value></data>
+	<data name="Message.Device18" xml:space="preserve">    <value>Kommando „Logbuch Gerät-Vorwarnung löschen“</value></data>
+	<data name="Message.Device19" xml:space="preserve">    <value>Kommando „Logbuch Gerät-Ereignis löschen“</value></data>
+	<data name="Message.Device20" xml:space="preserve">    <value>Kommando „Logbuch Elemente-Störung löschen“</value></data>
+	<data name="Message.Device21" xml:space="preserve">    <value>Kommando „Logbuch Elemente-Bedienfehler löschen“</value></data>
+	<data name="Message.Device22" xml:space="preserve">    <value>Kommando „Logbuch Elemente-Warnung löschen“</value></data>
+	<data name="Message.Device23" xml:space="preserve">    <value>Kommando „Logbuch Elemente-Vorwarnung löschen“</value></data>
+	<data name="Message.Device24" xml:space="preserve">    <value>Kommando „Logbuch Elemente-Ereignis löschen“</value></data>
+	<data name="Message.Device25" xml:space="preserve">    <value>Kommando „Logbuch Kommunikation-Störung löschen“</value></data>
+	<data name="Message.Device26" xml:space="preserve">    <value>Kommando „Logbuch Kommunikation-Bedienfehler löschen“</value></data>
+	<data name="Message.Device27" xml:space="preserve">    <value>Kommando „Logbuch Kommunikation-Warnung löschen“</value></data>
+	<data name="Message.Device28" xml:space="preserve">    <value>Kommando „Logbuch Kommunikation-Vorwarnung löschen“</value></data>
+	<data name="Message.Device29" xml:space="preserve">    <value>Kommando „Logbuch Kommunikation-Ereignis löschen“</value></data>
+	<data name="Message.Device30" xml:space="preserve">    <value>Kommando „Logbuch Produktspezifisch-Störung löschen“</value></data>
+	<data name="Message.Device31" xml:space="preserve">    <value>Kommando „Logbuch Produktspezifisch-Bedienfehler löschen“</value></data>
+	<data name="Message.Device32" xml:space="preserve">    <value>Kommando „Logbuch Produktspezifisch-Warnung löschen“</value></data>
+	<data name="Message.Device33" xml:space="preserve">    <value>Kommando „Logbuch Produktspezifisch-Vorwarnung löschen“</value></data>
+	<data name="Message.Device34" xml:space="preserve">    <value>Kommando „Logbuch Produktspezifisch-Ereignis löschen“</value></data>
+	<data name="Message.Device35" xml:space="preserve">    <value>Zugriffsweg öffnen</value></data>
+	<data name="Message.Device36" xml:space="preserve">    <value>Zugriffsweg schließen</value></data>
+	<data name="Message.Device37" xml:space="preserve">    <value>Testbetrieb-EIN</value></data>
+	<data name="Message.Device38" xml:space="preserve">    <value>Testbetrieb-AUS</value></data>
+	<data name="Message.Device39" xml:space="preserve">    <value>Anwenderprogramm-START</value></data>
+	<data name="Message.Device40" xml:space="preserve">    <value>Anwenderprogramm-STOP</value></data>
+	<data name="Message.Device41" xml:space="preserve">    <value>Initialisierungsfehler</value></data>
+	<data name="Message.Device42" xml:space="preserve">    <value>Konfigurationsfehler</value></data>
+	<data name="Message.Device43" xml:space="preserve">    <value>Projektierungsfehler</value></data>
+	<data name="Message.Device44" xml:space="preserve">    <value>Projektierungsbetrieb aktiv</value></data>
+	<data name="Message.Device45" xml:space="preserve">    <value>Testbetrieb aktiv</value></data>
+	<data name="Message.Device46" xml:space="preserve">    <value>Schutzbetrieb aktiv</value></data>
+	<data name="Message.Device47" xml:space="preserve">    <value>Anwenderprogramm gestoppt</value></data>
+	<data name="Message.Device48" xml:space="preserve">    <value>Betriebszustandswechsel abgelehnt</value></data>
+	<data name="Message.Device49" xml:space="preserve">    <value>Verbindungsabbruch</value></data>
+	<data name="Message.Device50" xml:space="preserve">    <value>Handshake-Fehler</value></data>
+	<data name="Message.Device51" xml:space="preserve">    <value>Passwortschutz für Gerätezugriff inaktiv</value></data>
+	<data name="Message.Device52" xml:space="preserve">    <value>Passwortschutz für erweiterten Gerätezugriff inaktiv</value></data>
+	<data name="Message.Device53" xml:space="preserve">    <value>Passwortschutz für Betriebszustandswechsel inaktiv</value></data>
+	<data name="Message.Device54" xml:space="preserve">    <value>Passworteingabe falsch</value></data>
+	<data name="Message.Device55" xml:space="preserve">    <value>Projektierung fehlt</value></data>
+	<data name="Message.Device56" xml:space="preserve">    <value>Projektierung nicht freigegeben</value></data>
+	<data name="Message.Device57" xml:space="preserve">    <value>Freigabe verweigert wegen falschem Betriebszustand</value></data>
+	<data name="Message.Device58" xml:space="preserve">    <value>Freigabe verweigert wegen falschem Projektierungs-CRC</value></data>
+	<data name="Message.Device59" xml:space="preserve">    <value>Freigabe verweigert da bereits freigegeben</value></data>
+	<data name="Message.Device60" xml:space="preserve">    <value>Freigabe zurückgezogen</value></data>
+	<data name="Message.Device61" xml:space="preserve">    <value>Freigabe zurückgezogen wegen falschem Projektierungsfreigabe-CRC</value></data>
+	<data name="Message.Device62" xml:space="preserve">    <value>max. Elementanzahl überschritten</value></data>
+	<data name="Message.Device63" xml:space="preserve">    <value>max. Speichergröße überschritten</value></data>
+	<data name="Message.Device64" xml:space="preserve">    <value>Programmzykluszeit überschritten</value></data>
+	<data name="Message.Device65" xml:space="preserve">    <value>SOLL- ungleich IST-Slotausbau</value></data>
+	<data name="Message.Device66" xml:space="preserve">    <value>SOLL- ungleich IST-Subslotausbau</value></data>
+	<data name="Message.Device67" xml:space="preserve">    <value>Falscher Parameterwert</value></data>
+	<data name="Message.Device68" xml:space="preserve">    <value>Parameteränderung unzulässig</value></data>
+	<data name="Message.Device69" xml:space="preserve">    <value>Verschaltungsregel verletzt</value></data>
+	<data name="Message.Device70" xml:space="preserve">    <value>Datenstruktur fehlerhaft</value></data>
+	<data name="Message.Device71" xml:space="preserve">    <value>Keine externen Anlaufparameter erhalten</value></data>
+	<data name="Message.Device72" xml:space="preserve">    <value>Speichermodul nicht gesteckt</value></data>
+	<data name="Message.Device73" xml:space="preserve">    <value>Speichermodul defek</value></data>
+	<data name="Message.Device74" xml:space="preserve">    <value>Speichermodul Programmierung fehlerhaft</value></data>
+	<data name="Message.Device75" xml:space="preserve">    <value>Projektierungsspeicher zu klein</value></data>
+	<data name="Message.Device76" xml:space="preserve">    <value>Speichermodul falsch organisiert</value></data>
+	<data name="Message.Device77" xml:space="preserve">    <value>Reset war nicht möglich</value></data>
+	<data name="Message.Device78" xml:space="preserve">    <value>Selbsttestfehler</value></data>
+	<data name="Message.Device79" xml:space="preserve">    <value>Wartungsanforderung</value></data>
+	<data name="Message.Device80" xml:space="preserve">    <value>Stack underflow</value></data>
+	<data name="Message.Device81" xml:space="preserve">    <value>Adreß-/Datenbus gestört</value></data>
+	<data name="Message.Device82" xml:space="preserve">    <value>CRC-Fehler</value></data>
+	<data name="Message.Device83" xml:space="preserve">    <value>Watchdog-Überlauf</value></data>
+	<data name="Message.Device84" xml:space="preserve">    <value>Feldbusschnittstelle gestört</value></data>
+	<data name="Message.Device85" xml:space="preserve">    <value>Systembus gestört (SAFETYconnect)</value></data>
+	<data name="Message.Device86" xml:space="preserve">    <value>Geräteschnittstelle gestört</value></data>
+	<data name="Message.Device87" xml:space="preserve">    <value>FW-Fehler</value></data>
+	<data name="Message.Device88" xml:space="preserve">    <value>Speicher defekt</value></data>
+	<data name="Message.Device89" xml:space="preserve">    <value>Prm-Telegramm zu kurz</value></data>
+	<data name="Message.Device90" xml:space="preserve">    <value>Prm-Telegramm zu lang</value></data>
+	<data name="Message.Device91" xml:space="preserve">    <value>Anlaufparameter-DS fehlt</value></data>
+	<data name="Message.Device92" xml:space="preserve">    <value>reserviert</value></data>
+	<data name="Message.Device93" xml:space="preserve">    <value>Datenstruktur-Header unstimmig</value></data>
+	<data name="Message.Device94" xml:space="preserve">    <value>Datenstruktur-CRC unstimmig</value></data>
+	<data name="Message.Device95" xml:space="preserve">    <value>Elementdatenblock-Header unstimmig</value></data>
+	<data name="Message.Device96" xml:space="preserve">    <value>Element-CRC unstimmig</value></data>
+	<data name="Message.Device97" xml:space="preserve">    <value>Projektierte ungleich SOLL-Elementanzahl</value></data>
+	<data name="Message.Device98" xml:space="preserve">    <value>Projektierte ungleich SOLL-Slotbaugruppenanzahl</value></data>
+	<data name="Message.Device99" xml:space="preserve">    <value>Projektierte ungleich SOLL-Subslotbaugruppenanzahl</value></data>
+	<data name="Message.Device100" xml:space="preserve">    <value>Geräteanlauf</value></data>
+	<data name="Message.Device101" xml:space="preserve">    <value>Power OFF</value></data>
+	<data name="Message.Device102" xml:space="preserve">    <value>Projektierung geändert</value></data>
+
+</root>

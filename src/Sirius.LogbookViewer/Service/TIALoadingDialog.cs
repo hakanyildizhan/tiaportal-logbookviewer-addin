@@ -58,5 +58,15 @@ namespace Sirius.LogbookViewer.Service
         {
             _exclusiveAccess?.Dispose();
         }
+
+        public void Prompt(string message, Prompt promptType)
+        {
+            Prompt(message);
+        }
+
+        public void Prompt(string header, string message, Prompt promptType)
+        {
+            Prompt(message);
+        }
     }
 }

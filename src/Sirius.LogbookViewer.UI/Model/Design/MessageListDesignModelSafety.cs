@@ -1,35 +1,51 @@
-﻿using System.Collections.ObjectModel;
+﻿using Sirius.LogbookViewer.Product;
+using System.Collections.Generic;
 
 namespace Sirius.LogbookViewer.UI.Model
 {
     /// <summary>
     /// A sample list of Safety specific logbook messages for Safety Logbook grid.
     /// </summary>
-    public class MessageListDesignModelSafety : BaseViewModel
+    public class MessageListDesignModelSafety : GridViewModel
     {
-        private ObservableCollection<SafetyLogbookMessage> _messages;
-
         public static MessageListDesignModelSafety Instance => new MessageListDesignModelSafety();
-        
-        public ObservableCollection<SafetyLogbookMessage> Messages
-        {
-            get => _messages;
-            set
-            {
-                _messages = value;
-                OnPropertyChanged(nameof(Messages));
-            }
-        }
 
-        public MessageListDesignModelSafety()
+        public MessageListDesignModelSafety() : base()
         {
-            Messages = new ObservableCollection<SafetyLogbookMessage>()
+            var columnData = new List<Column>();
+            columnData.Add(new Column() { Type = typeof(int), Name = "Index", IsIndex = true });
+            columnData.Add(new Column()
             {
-                new SafetyLogbookMessage() { Type = 1, Index = 1, Source = "Device", OperatingHours = "836:36:53", ElementNumber = "-", ElementFunction = "-", ObjectNumber = 7004, Message = "+Operating mode change rejected"},
-                new SafetyLogbookMessage() { Type = 3, Index = 2, Source = "Device", OperatingHours = "837:36:53", ElementNumber = "-", ElementFunction = "-", ObjectNumber = 15674, Message = "+Configuration not released"},
-                new SafetyLogbookMessage() { Type = 2, Index = 3, Source = "Elements", OperatingHours = "837:38:53", ElementNumber = "-", ElementFunction = "-", ObjectNumber = 4007, Message = "+User program stopped"},
-                new SafetyLogbookMessage() { Type = 4, Index = 4, Source = "Product", OperatingHours = "838:26:02", ElementNumber = "-", ElementFunction = "-", ObjectNumber = 7004, Message = "+Password protection for device access is inactive"},
+                Type = typeof(int),
+                Name = "Type",
+                Filter = true,
+                Sortable = true,
+                UseIcon = true,
+                IconData = new Dictionary<string, string>()
+                {
+                    { "1", "Resources/Icon/error.png" },
+                    { "2", "Resources/Icon/fault.png" },
+                    { "3", "Resources/Icon/trip.png" },
+                    { "4", "Resources/Icon/prewarn.png" },
+                    { "5", "Resources/Icon/event.png" }
+                }
+            });
+            columnData.Add(new Column() { Type = typeof(string), Name = "Source", Sortable = true });
+            columnData.Add(new Column() { Type = typeof(string), Name = "Operating Hours", Sortable = true });
+            columnData.Add(new Column() { Type = typeof(int), Name = "Element Number" });
+            columnData.Add(new Column() { Type = typeof(string), Name = "Element Function" });
+            columnData.Add(new Column() { Type = typeof(int), Name = "Object Number" });
+            columnData.Add(new Column() { Type = typeof(string), Name = "Message" });
+
+            var messages = new List<List<object>>()
+            {
+                new List<object>() { 1, 1, "Device", "836:36:53", "-", "-", 7004, "+Operating mode change rejected" },
+                new List<object>() { 3, 2, "Device", "837:36:53", "-", "-", 15674, "+Configuration not released" },
+                new List<object>() { 2, 3, "Elements", "837:38:53", "-", "-", 4007, "+User program stopped" },
+                new List<object>() { 4, 4, "Product", "838:26:02", "-", "-", 7004, "+Password protection for device access is inactive" }
             };
+
+            Initialize(new LogbookData() { ColumnData = columnData, RowData = messages });
         }
     }
 }
