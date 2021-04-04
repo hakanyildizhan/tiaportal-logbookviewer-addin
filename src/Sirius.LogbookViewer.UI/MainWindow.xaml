@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sirius.LogbookViewer.UI"
         mc:Ignorable="d"
-        Title="Logbook Viewer" 
+        Title="Offline Logbook Viewer" 
         WindowStyle="None"
         Height="800" 
         Width="880"
@@ -39,11 +39,11 @@
                     Orientation="Horizontal"
                     HorizontalAlignment="Center">
 
-            <Button Content="Import"
+            <Button Content="{Binding ImportButtonContent}"
                     Command="{Binding ImportCommand}"
                     Margin="0 0 50 0"/>
 
-            <Button Content="Close"
+            <Button Content="{Binding CloseButtonContent}"
                     Command="{Binding CloseCommand}"
                     Margin="50 0 0 0"/>
 

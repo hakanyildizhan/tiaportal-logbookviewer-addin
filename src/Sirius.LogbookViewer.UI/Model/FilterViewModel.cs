@@ -43,7 +43,7 @@ namespace Sirius.LogbookViewer.UI.Model
             }
 
             var groupBox = new GroupBox();
-            groupBox.Header = "Displayed logbooks";
+            groupBox.Header = _resourceManager.GetStringInCurrentCulture("Displayed logbooks");
 
             var stackPanel = new StackPanel();
             stackPanel.Orientation = Orientation.Horizontal;
@@ -79,7 +79,7 @@ namespace Sirius.LogbookViewer.UI.Model
                 }
 
                 var checkbox = new CheckBox();
-                checkbox.Content = columnFilterData.DisplayValue;
+                checkbox.Content = _resourceManager.GetStringInCurrentCulture(columnFilterData.DisplayValue);
                 checkbox.VerticalAlignment = VerticalAlignment.Center;
                 checkbox.IsChecked = true;
                 BindingOperations.SetBinding(checkbox, Button.CommandProperty, new Binding("Grid.FilterCommand"));

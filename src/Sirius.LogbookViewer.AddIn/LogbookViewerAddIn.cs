@@ -5,6 +5,7 @@ using System.Reflection;
 using System.Linq;
 using System.IO;
 using System.IO.Compression;
+using System.Globalization;
 
 namespace Sirius.LogbookViewer.AddIn
 {
@@ -53,7 +54,19 @@ namespace Sirius.LogbookViewer.AddIn
 
                     ZipFile.ExtractToDirectory(packagePath, folder);
                     File.Delete(packagePath);
-                    Siemens.Engineering.AddIn.Utilities.Process.Start(Path.Combine(folder, "Sirius.LogbookViewer.App.exe"));
+
+                    CultureInfo currentCulture = null;
+
+                    try
+                    {
+                        currentCulture = (CultureInfo)_tiaPortal.SettingsFolders[0].Settings.First(s => s.Name.Equals("UserInterfaceLanguage")).Value;
+                    }
+                    catch (Exception)
+                    {
+                        currentCulture = new CultureInfo("en-US");
+                    }
+
+                    Siemens.Engineering.AddIn.Utilities.Process.Start(Path.Combine(folder, "Sirius.LogbookViewer.App.exe"), $"--culture {currentCulture.Name}");
                 }
             }
             catch (Exception ex)

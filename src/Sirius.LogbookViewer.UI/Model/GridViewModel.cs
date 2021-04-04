@@ -108,7 +108,7 @@ namespace Sirius.LogbookViewer.UI.Model
                 }
 
                 var columnHeader = new GridViewColumnHeader();
-                columnHeader.Content = column.Name;
+                columnHeader.Content = _resourceManager.GetStringInCurrentCulture(ResourceType.UI, column.Name);
 
                 if (column.Sortable)
                 {
@@ -127,6 +127,15 @@ namespace Sirius.LogbookViewer.UI.Model
                 }
 
                 gridViewColumn.Header = columnHeader;
+
+                // autosize column
+                if (double.IsNaN(gridViewColumn.Width))
+                {
+                    gridViewColumn.Width = gridViewColumn.ActualWidth;
+                }
+                gridViewColumn.Width = double.NaN;
+
+                // add column
                 gridView.Columns.Add(gridViewColumn);
             }
 

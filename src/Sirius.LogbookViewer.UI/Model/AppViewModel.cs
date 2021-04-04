@@ -17,7 +17,8 @@ namespace Sirius.LogbookViewer.UI.Model
         private IFilePicker _filePicker => (IFilePicker)ServiceProvider?.Resolve<IFilePicker>();
         private IWaitIndicator _waitIndicator => (IWaitIndicator)ServiceProvider?.Resolve<IWaitIndicator>();
         private IParser _parser => (IParser)ServiceProvider?.Resolve<IParser>();
-        
+        private IResourceManager _resourceManager => (IResourceManager)ServiceProvider?.Resolve<IResourceManager>();
+
         private GridViewModel _grid;
         private FilterViewModel _filter;
         private bool _topmost;
@@ -47,7 +48,17 @@ namespace Sirius.LogbookViewer.UI.Model
         /// <summary>
         /// Title of the window to show at the top.
         /// </summary>
-        public string WindowTitle { get; set; } = "Import";
+        public string WindowTitle => _resourceManager.GetStringInCurrentCulture(ResourceType.UI, "Offline Logbook Viewer");
+
+        /// <summary>
+        /// Import button text.
+        /// </summary>
+        public string ImportButtonContent => _resourceManager.GetStringInCurrentCulture(ResourceType.UI, "Import");
+
+        /// <summary>
+        /// Close button text.
+        /// </summary>
+        public string CloseButtonContent => _resourceManager.GetStringInCurrentCulture(ResourceType.UI, "Close");
 
         /// <summary>
         /// Whether this window will be displayed at the top of all other windows.

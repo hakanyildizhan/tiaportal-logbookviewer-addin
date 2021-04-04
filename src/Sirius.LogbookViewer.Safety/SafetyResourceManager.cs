@@ -1,8 +1,9 @@
 ﻿using Sirius.LogbookViewer.Product;
-using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.Globalization;
+using System.Linq;
 using System.Resources;
 
 namespace Sirius.LogbookViewer.Safety
@@ -11,93 +12,76 @@ namespace Sirius.LogbookViewer.Safety
     class SafetyResourceManager : IResourceManager
     {
         private readonly ResourceManager _resourceManager;
-        private ResourceSet _resourcesEn;
-        private ResourceSet _resourcesDe;
-        private ResourceSet _resourcesFr;
-
-        public ResourceSet ResourcesEn => _resourcesEn != null ? _resourcesEn : (_resourcesEn = _resourceManager?.GetResourceSet(CultureInfo.GetCultureInfo("en"), true, false));
-
-        public ResourceSet ResourcesDe => _resourcesDe != null ? _resourcesDe : (_resourcesDe = _resourceManager?.GetResourceSet(CultureInfo.GetCultureInfo("de"), true, false));
-
-        public ResourceSet ResourcesFr => _resourcesFr != null ? _resourcesFr : (_resourcesFr = _resourceManager?.GetResourceSet(CultureInfo.GetCultureInfo("fr"), true, false));
+        private static List<string> AVAILABLE_CULTURES = new List<string>() { "en-US", "fr-FR", "de-DE" };
 
         public SafetyResourceManager()
         {
             _resourceManager = new ResourceManager("Sirius.LogbookViewer.Safety.Resources.Text.Resource", System.Reflection.Assembly.GetAssembly(typeof(SafetyResourceManager)));
         }
 
-        public string GetString(string key, CultureInfo culture)
+        public string GetString(string resourceKey)
         {
-            return _resourceManager.GetString(key, culture);
+            return _resourceManager.GetString(resourceKey, CultureInfo.CurrentCulture);
         }
 
-        public string GetStringInCulture(string text, CultureInfo culture)
+        public string GetString(string resourceKey, CultureInfo culture)
         {
-            string result = FindResource(ResourcesEn, text, culture);
-
-            if (!string.IsNullOrEmpty(result))
-            {
-                return result;
-            }
-
-            result = FindResource(ResourcesDe, text, culture);
-
-            if (!string.IsNullOrEmpty(result))
-            {
-                return result;
-            }
-
-            result = FindResource(ResourcesFr, text, culture);
-
-            return !string.IsNullOrEmpty(result) ? result : text;
+            return _resourceManager.GetString(resourceKey, culture);
         }
 
         public string GetStringInCulture(ResourceType resourceType, string text, CultureInfo culture)
         {
-            string result = FindResource(ResourcesEn, text, culture, resourceType);
+            // find Key
+            string resourceKey = string.Empty;
 
-            if (!string.IsNullOrEmpty(result))
+            foreach (var availableCulture in AVAILABLE_CULTURES)
             {
-                return result;
+                resourceKey = FindResource(availableCulture, text, resourceType);
+                if (!string.IsNullOrEmpty(resourceKey)) break;
             }
 
-            result = FindResource(ResourcesDe, text, culture, resourceType);
-
-            if (!string.IsNullOrEmpty(result))
+            if (string.IsNullOrEmpty(resourceKey))
             {
-                return result;
+                return text; // not found
             }
 
-            result = FindResource(ResourcesFr, text, culture, resourceType);
-
-            return !string.IsNullOrEmpty(result) ? result : text;
+            return GetString(resourceKey, culture);
         }
 
-        private string FindResource(ResourceSet resources, string textToFind, CultureInfo culture, ResourceType resourceType = ResourceType.Any)
+        public string GetStringInCulture(string text, CultureInfo culture)
         {
-            if (resources == null)
+            return GetStringInCulture(ResourceType.Any, text, culture);
+        }
+
+        public string GetStringInCurrentCulture(ResourceType resourceType, string text)
+        {
+            return GetStringInCulture(resourceType, text, CultureInfo.CurrentCulture);
+        }
+
+        public string GetStringInCurrentCulture(string text)
+        {
+            return GetStringInCurrentCulture(ResourceType.Any, text);
+        }
+
+        private string FindResource(string culture, string text, ResourceType resourceType = ResourceType.Any)
+        {
+            DictionaryEntry entry = new DictionaryEntry();
+
+            if (resourceType != ResourceType.Any)
             {
-                return textToFind;
+                entry = _resourceManager.GetResourceSet(new CultureInfo(culture), true, true)
+              .OfType<DictionaryEntry>()
+              .Where(e => e.Key.ToString().StartsWith(resourceType.ToString()))
+              .FirstOrDefault(e => e.Value.ToString() == text);
+            }
+            else
+            {
+                entry = _resourceManager.GetResourceSet(new CultureInfo(culture), true, true)
+              .OfType<DictionaryEntry>()
+              .FirstOrDefault(e => e.Value.ToString() == text);
             }
 
-            foreach (DictionaryEntry entry in resources)
-            {
-                if (resourceType == ResourceType.Message && !entry.Value.ToString().StartsWith("Message"))
-                {
-                    continue;
-                }
-                else if (resourceType == ResourceType.UI && !entry.Value.ToString().StartsWith("UI"))
-                {
-                    continue;
-                }
-
-                if (entry.Value.ToString().Equals(textToFind, StringComparison.InvariantCultureIgnoreCase))
-                {
-                    return GetString(entry.Key.ToString(), culture);
-                }
-            }
-
-            return string.Empty;
+            return entry.Key != null ? entry.Key.ToString() : string.Empty;
         }
     }
 }
