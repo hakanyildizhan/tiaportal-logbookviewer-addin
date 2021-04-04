@@ -1,16 +1,20 @@
 ﻿using System;
-using System.Diagnostics;
 using Siemens.Engineering.AddIn.Menu;
 using Siemens.Engineering;
-using Sirius.LogbookViewer.Service;
+using System.Reflection;
+using System.Linq;
+using System.IO;
+using System.IO.Compression;
 
 namespace Sirius.LogbookViewer
 {
     public class LogbookViewerAddIn : ContextMenuAddIn
     {
-        public LogbookViewerAddIn(TiaPortal tiaPortal) : base("Safety AddIns")
+        private readonly TiaPortal _tiaPortal;
+
+        public LogbookViewerAddIn(TiaPortal tiaPortal) : base("Logbook Viewer")
         {
-            ServiceContainer.Instance.Register<TiaPortal>(tiaPortal);
+            _tiaPortal = tiaPortal;
         }
 
         protected override void BuildContextMenuItems(ContextMenuAddInRoot addInRootSubmenu)
@@ -22,14 +26,40 @@ namespace Sirius.LogbookViewer
         {
             try
             {
-                var app = new App();
-                app.Run();
+                using (_tiaPortal.ExclusiveAccess("Logbook Viewer is being loaded, please wait..."))
+                {
+                    string folder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Siemens AG", "Logbook Viewer AddIn");
+
+                    if (Directory.Exists(folder))
+                    {
+                        Directory.Delete(folder, true);
+                    }
+                     
+                    Directory.CreateDirectory(folder);
+                    string packagePath = Path.Combine(folder, "Package.zip");
+
+                    var assembly = Assembly.GetExecutingAssembly();
+                    string resourceName = assembly.GetManifestResourceNames().Single(r => r.EndsWith("Package.zip"));
+                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                    using (FileStream fileStream = new FileStream(packagePath, FileMode.CreateNew))
+                    {
+                        for (int i = 0; i < stream.Length; i++)
+                        { 
+                            fileStream.WriteByte((byte)stream.ReadByte());
+                        }
+                            
+                        fileStream.Close();
+                    }
+
+                    ZipFile.ExtractToDirectory(packagePath, folder);
+                    File.Delete(packagePath);
+                    Siemens.Engineering.AddIn.Utilities.Process.Start(Path.Combine(folder, "Sirius.LogbookViewer.UI.Standalone.exe"));
+                }
             }
             catch (Exception ex)
             {
-                Debug.Fail(ex.Message + "\r\n" + ex.InnerException);
+                System.Diagnostics.Debug.Fail(ex.Message + "\r\n" + ex.InnerException);
             }
-            
         }
     }
 }

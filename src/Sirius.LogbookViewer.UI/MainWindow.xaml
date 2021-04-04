@@ -16,7 +16,7 @@
         ResizeMode="NoResize"
         WindowState="{Binding WindowState, Mode=TwoWay}"
         ShowActivated="True"
-        Style="{StaticResource MainWindowStyle}">
+        Topmost="{Binding Topmost}">
 
     <Grid>
         <Grid.RowDefinitions>

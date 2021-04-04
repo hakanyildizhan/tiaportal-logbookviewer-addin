@@ -36,7 +36,8 @@ namespace Sirius.LogbookViewer.UI.Standalone.Service
         {
             _registeredTypes = new ConcurrentDictionary<Type, Type>();
             _registeredInstances = new ConcurrentDictionary<Type, object>();
-            Register<IFilePicker, StandaloneFileDialog>();
+            //Register<IFilePicker, StandaloneFileDialog>();
+            Register<IFilePicker, FilePicker>();
             Register<IWaitIndicator, LoadingDialog>();
 
             var catalog = new DirectoryCatalog(".");

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sirius.LogbookViewer.Safety
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sirius.LogbookViewer.Product", "Sirius.LogbookViewer.Product\Sirius.LogbookViewer.Product.csproj", "{F181FA0B-4DCD-4EB0-B298-62F292A42E5C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sirius.LogbookViewer.Publisher", "Sirius.LogbookViewer.Publisher\Sirius.LogbookViewer.Publisher.csproj", "{D1138FCA-C810-450A-AB61-A790A5DF05AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{F181FA0B-4DCD-4EB0-B298-62F292A42E5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F181FA0B-4DCD-4EB0-B298-62F292A42E5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F181FA0B-4DCD-4EB0-B298-62F292A42E5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1138FCA-C810-450A-AB61-A790A5DF05AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1138FCA-C810-450A-AB61-A790A5DF05AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1138FCA-C810-450A-AB61-A790A5DF05AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1138FCA-C810-450A-AB61-A790A5DF05AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

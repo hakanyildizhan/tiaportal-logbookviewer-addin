@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using Siemens.Engineering.AddIn.Menu;
 using Siemens.Engineering;
-using System;
 
 namespace Sirius.LogbookViewer
 {

@@ -1,5 +1,4 @@
-﻿using System;
-using Siemens.Engineering.AddIn;
+﻿using Siemens.Engineering.AddIn;
 using System.Collections.Generic;
 using Siemens.Engineering.AddIn.Menu;
 using Siemens.Engineering;

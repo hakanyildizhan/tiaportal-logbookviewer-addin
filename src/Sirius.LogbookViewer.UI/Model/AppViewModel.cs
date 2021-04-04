@@ -67,11 +67,13 @@ namespace Sirius.LogbookViewer.UI.Model
             get => !_topmost;
             set
             {
+#if RELEASE
                 if (_topmost == value)
                 {
                     Topmost = value;
                     Topmost = !value;
                 }
+#endif
             }
         }
 
@@ -102,7 +104,9 @@ namespace Sirius.LogbookViewer.UI.Model
 
         public AppViewModel()
         {
-            Topmost = !System.Diagnostics.Debugger.IsAttached;
+#if RELEASE
+            Topmost = true;
+#endif
             ImportCommand = new RelayCommand(async () => await ImportAsync());
             CloseCommand = new RelayCommand(() => Close());
             MinimizeCommand = new RelayCommand(() => Minimize());
@@ -165,7 +169,7 @@ namespace Sirius.LogbookViewer.UI.Model
 
                     string appDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
                     string errorFile = $"Sirius_LogbookViewer_errorlog_{DateTime.UtcNow.ToString("yyyyMMdd_HH_mm_ss")}.txt";
-                    string filePath = Path.Combine(appDataFolder, "Siemens", "SafetyLogbookViewerAddin", errorFile);
+                    string filePath = Path.Combine(appDataFolder, "Siemens AG", "Logbook Viewer AddIn", errorFile);
                     File.WriteAllText(filePath, ex.Message + "\r\n" + ex.StackTrace + "\r\n" + ex.InnerException?.Message + "\r\n" + ex.InnerException?.StackTrace);
                     _waitIndicator?.Prompt("An error occured during import!", "See the error log for details: " + filePath, Prompt.Error);
                 }

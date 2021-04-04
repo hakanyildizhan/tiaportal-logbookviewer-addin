@@ -6,7 +6,6 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="pack://application:,,,/Sirius.LogbookViewer.UI.Standalone;component/Style/StandaloneStyle.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/Sirius.LogbookViewer.UI;component/Style/Text.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/Sirius.LogbookViewer.UI;component/Style/Color.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/Sirius.LogbookViewer.UI;component/Style/Icon.xaml" />

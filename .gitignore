@@ -1,3 +1,6 @@
+# Files to ignore
+Package.zip
+
 # User-specific files
 *.suo
 *.user

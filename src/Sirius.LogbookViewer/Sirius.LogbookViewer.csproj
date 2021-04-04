@@ -36,67 +36,36 @@
     <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
-    <Reference Include="Siemens.Engineering.AddIn, Version=16.0.0.0, Culture=neutral, PublicKeyToken=65b871d8372d6a8f, processorArchitecture=MSIL">
+    <Reference Include="Siemens.Engineering.AddIn, Version=17.0.0.0, Culture=neutral, PublicKeyToken=65b871d8372d6a8f, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\WS\T17_SIRIUS\components\AddIn\Siemens.Engineering.AddIn.dll</HintPath>
+      <HintPath>..\..\..\..\WS\T17_SIRIUS\components\AddIn\Siemens.Engineering.AddIn.dll</HintPath>
     </Reference>
-    <Reference Include="Siemens.Engineering.AddIn.Utilities, Version=16.0.0.0, Culture=neutral, PublicKeyToken=65b871d8372d6a8f, processorArchitecture=MSIL">
+    <Reference Include="Siemens.Engineering.AddIn.Utilities, Version=17.0.0.0, Culture=neutral, PublicKeyToken=65b871d8372d6a8f, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\WS\T17_SIRIUS\components\AddIn\Siemens.Engineering.AddIn.Utilities.dll</HintPath>
+      <HintPath>..\..\..\..\WS\T17_SIRIUS\components\AddIn\Siemens.Engineering.AddIn.Utilities.dll</HintPath>
     </Reference>
     <Reference Include="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="System.Xaml" />
-    <Reference Include="WindowsBase" />
+    <Reference Include="System.IO.Compression.FileSystem" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Service\FilePicker.cs" />
-    <Compile Include="Service\ServiceContainer.cs" />
-    <Compile Include="Service\TIALoadingDialog.cs" />
-    <Compile Include="UI\App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-    </Compile>
     <Compile Include="LogbookViewerAddIn.cs" />
     <Compile Include="Provider\DevicesAndNetworksProvider.cs" />
     <Compile Include="Provider\ProjectTreeProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="Configuration.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="PostBuild.cmd" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Sirius.LogbookViewer.Product\Sirius.LogbookViewer.Product.csproj">
-      <Project>{f181fa0b-4dcd-4eb0-b298-62f292a42e5c}</Project>
-      <Name>Sirius.LogbookViewer.Product</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Sirius.LogbookViewer.UI\Sirius.LogbookViewer.UI.csproj">
-      <Project>{13ce41a5-ebee-461c-86a2-a6dc00925702}</Project>
-      <Name>Sirius.LogbookViewer.UI</Name>
-    </ProjectReference>
-  </ItemGroup>
   <ItemGroup />
-  <ItemGroup>
-    <Page Include="Style\AddinStyle.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="UI\App.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
+  <PropertyGroup>
+    <ApplicationPackage>Package\Package.zip</ApplicationPackage>
+  </PropertyGroup>
+  <ItemGroup Condition="Exists($(ApplicationPackage))">
+    <EmbeddedResource Include="$(ApplicationPackage)" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>call "$(MSBuildThisFileDirectory)PostBuild.cmd" $(OutputPath) $(AssemblyName) "$(MSBuildThisFileDirectory)"</PostBuildEvent>
   </PropertyGroup>
 </Project>

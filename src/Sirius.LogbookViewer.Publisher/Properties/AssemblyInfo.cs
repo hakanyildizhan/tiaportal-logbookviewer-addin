@@ -1,14 +1,15 @@
 ﻿using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Sirius.LogbookViewer.Safety")]
+[assembly: AssemblyTitle("Sirius.LogbookViewer.Publisher")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Sirius.LogbookViewer.Safety")]
+[assembly: AssemblyProduct("Sirius.LogbookViewer.Publisher")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("396bd031-b419-4930-83b4-5f837d7ae31d")]
+[assembly: Guid("d1138fca-c810-450a-ab61-a790a5df05aa")]
 
 // Version information for an assembly consists of the following four values:
 //

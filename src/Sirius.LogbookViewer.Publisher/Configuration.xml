@@ -1,0 +1,34 @@
+﻿<PackageConfiguration xmlns="http://www.siemens.com/automation/Openness/AddIn/Publisher/V17">
+	
+	<Author>Hakan Yıldızhan</Author>
+	<Description>This Add-In offers offline viewing of logbook messages.</Description>
+	<AddInVersion>V17</AddInVersion>
+
+	<Product>
+		<Name>Offline Logbook Viewer</Name>
+		<Id>OfflineLogbookViewer</Id>
+		<Version>1.0.0</Version>
+	</Product>
+	
+	<FeatureAssembly>
+		<AssemblyInfo>
+			<Assembly>bin\debug\Publish\Sirius.LogbookViewer.dll</Assembly>
+			<Pdb>bin\debug\Publish\Sirius.LogbookViewer.pdb</Pdb>
+		</AssemblyInfo>
+	</FeatureAssembly>
+	
+	<DisplayInMultiuser />
+
+	<RequiredPermissions>
+		
+		<TIAPermissions>
+			<TIA.ReadWrite />
+		</TIAPermissions>
+		
+		<SecurityPermissions>
+			<System.Security.Permissions.FileIOPermission/>
+			<Siemens.Engineering.AddIn.Permissions.ProcessStartPermission/>
+		</SecurityPermissions>
+	</RequiredPermissions>
+
+</PackageConfiguration>
