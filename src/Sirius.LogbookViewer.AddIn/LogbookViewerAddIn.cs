@@ -6,7 +6,7 @@ using System.Linq;
 using System.IO;
 using System.IO.Compression;
 
-namespace Sirius.LogbookViewer
+namespace Sirius.LogbookViewer.AddIn
 {
     public class LogbookViewerAddIn : ContextMenuAddIn
     {
@@ -53,7 +53,7 @@ namespace Sirius.LogbookViewer
 
                     ZipFile.ExtractToDirectory(packagePath, folder);
                     File.Delete(packagePath);
-                    Siemens.Engineering.AddIn.Utilities.Process.Start(Path.Combine(folder, "Sirius.LogbookViewer.UI.Standalone.exe"));
+                    Siemens.Engineering.AddIn.Utilities.Process.Start(Path.Combine(folder, "Sirius.LogbookViewer.App.exe"));
                 }
             }
             catch (Exception ex)

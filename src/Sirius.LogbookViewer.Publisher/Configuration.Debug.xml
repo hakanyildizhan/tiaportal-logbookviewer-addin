@@ -12,8 +12,8 @@
 	
 	<FeatureAssembly>
 		<AssemblyInfo>
-			<Assembly>bin\debug\Publish\Sirius.LogbookViewer.dll</Assembly>
-			<Pdb>bin\debug\Publish\Sirius.LogbookViewer.pdb</Pdb>
+			<Assembly>bin\debug\Publish\Sirius.LogbookViewer.AddIn.dll</Assembly>
+			<Pdb>bin\debug\Publish\Sirius.LogbookViewer.AddIn.pdb</Pdb>
 		</AssemblyInfo>
 	</FeatureAssembly>
 	

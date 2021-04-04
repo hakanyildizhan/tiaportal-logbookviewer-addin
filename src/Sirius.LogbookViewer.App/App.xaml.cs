@@ -1,8 +1,8 @@
 ﻿using Sirius.LogbookViewer.UI.Model;
-using Sirius.LogbookViewer.UI.Standalone.Service;
+using Sirius.LogbookViewer.App.Service;
 using System.Windows;
 
-namespace Sirius.LogbookViewer.UI.Standalone
+namespace Sirius.LogbookViewer.App
 {
     /// <summary>
     /// Interaction logic for App.xaml

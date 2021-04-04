@@ -1,7 +1,7 @@
-﻿<Application x:Class="Sirius.LogbookViewer.UI.Standalone.App"
+﻿<Application x:Class="Sirius.LogbookViewer.App.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Sirius.LogbookViewer.UI.Standalone"
+             xmlns:local="clr-namespace:Sirius.LogbookViewer.App"
              StartupUri="pack://application:,,,/Sirius.LogbookViewer.UI;component/MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>

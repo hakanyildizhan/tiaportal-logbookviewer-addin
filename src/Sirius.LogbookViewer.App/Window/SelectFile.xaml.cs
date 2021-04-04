@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace Sirius.LogbookViewer.UI.Standalone
+namespace Sirius.LogbookViewer.App
 {
     /// <summary>
     /// Interaction logic for SelectFile.xaml

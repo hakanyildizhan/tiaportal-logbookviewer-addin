@@ -1,8 +1,9 @@
-﻿using Sirius.LogbookViewer.UI.Model;
+﻿using Sirius.LogbookViewer.UI;
+using Sirius.LogbookViewer.UI.Model;
 using System.Windows;
 using System.Windows.Input;
 
-namespace Sirius.LogbookViewer.UI.Standalone.Model
+namespace Sirius.LogbookViewer.App.Model
 {
     public class SelectFileViewModel : BaseViewModel
     {

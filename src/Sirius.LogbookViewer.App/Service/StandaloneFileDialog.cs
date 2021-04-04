@@ -1,7 +1,7 @@
 ﻿using Sirius.LogbookViewer.UI.Service;
-using Sirius.LogbookViewer.UI.Standalone.Model;
+using Sirius.LogbookViewer.App.Model;
 
-namespace Sirius.LogbookViewer.UI.Standalone.Service
+namespace Sirius.LogbookViewer.App.Service
 {
     public class StandaloneFileDialog : IFilePicker
     {

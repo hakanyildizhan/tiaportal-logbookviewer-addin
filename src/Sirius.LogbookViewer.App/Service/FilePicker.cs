@@ -3,7 +3,7 @@ using Sirius.LogbookViewer.UI.Service;
 using System;
 using System.Runtime.InteropServices;
 
-namespace Sirius.LogbookViewer.UI.Standalone
+namespace Sirius.LogbookViewer.App
 {
     public class FilePicker : IFilePicker
     {

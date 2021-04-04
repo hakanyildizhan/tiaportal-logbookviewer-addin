@@ -7,8 +7,8 @@
     <ProjectGuid>{B13F5655-0C5A-4F67-9164-F9A90E35DE3E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sirius.LogbookViewer</RootNamespace>
-    <AssemblyName>Sirius.LogbookViewer</AssemblyName>
+    <RootNamespace>Sirius.LogbookViewer.AddIn</RootNamespace>
+    <AssemblyName>Sirius.LogbookViewer.AddIn</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

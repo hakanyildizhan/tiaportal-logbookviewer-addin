@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sirius.LogbookViewer", "Sirius.LogbookViewer\Sirius.LogbookViewer.csproj", "{B13F5655-0C5A-4F67-9164-F9A90E35DE3E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sirius.LogbookViewer.AddIn", "Sirius.LogbookViewer.AddIn\Sirius.LogbookViewer.AddIn.csproj", "{B13F5655-0C5A-4F67-9164-F9A90E35DE3E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sirius.LogbookViewer.UI", "Sirius.LogbookViewer.UI\Sirius.LogbookViewer.UI.csproj", "{13CE41A5-EBEE-461C-86A2-A6DC00925702}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sirius.LogbookViewer.UI.Standalone", "Sirius.LogbookViewer.UI.Standalone\Sirius.LogbookViewer.UI.Standalone.csproj", "{70EBB3A2-C80D-4F86-8809-3167859A3F49}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sirius.LogbookViewer.App", "Sirius.LogbookViewer.App\Sirius.LogbookViewer.App.csproj", "{70EBB3A2-C80D-4F86-8809-3167859A3F49}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sirius.LogbookViewer.Safety", "Sirius.LogbookViewer.Safety\Sirius.LogbookViewer.Safety.csproj", "{396BD031-B419-4930-83B4-5F837D7AE31D}"
 EndProject

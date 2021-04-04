@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
+using System.Text;
 using Microsoft.Build.Evaluation;
 using Microsoft.Build.Execution;
 using Microsoft.Build.Framework;
@@ -24,9 +25,12 @@ namespace Sirius.LogbookViewer.Publisher
         /// <param name="args"></param>
         static void Main(string[] args)
         {
+            Stopwatch stopwatch = new Stopwatch();
+            stopwatch.Start();
+
             if (args.Length != 4 || !args.Any(a => a.Equals(ARG_TIA_ROOT)) || !args.Any(a => a.Equals(ARG_PRODUCT_ASSEMBLY)))
             {
-                Console.WriteLine("Invalid arguments.");
+                Trace.TraceError("Invalid arguments.");
                 Environment.Exit(1);
             }
 
@@ -48,7 +52,7 @@ namespace Sirius.LogbookViewer.Publisher
             if (string.IsNullOrEmpty(productAssemblyPath) || string.IsNullOrEmpty(tiaRootPath) ||
                 !File.Exists(productAssemblyPath) || !Directory.Exists(tiaRootPath))
             {
-                Console.WriteLine("Invalid path.");
+                Trace.TraceError("Invalid path.");
                 Environment.Exit(1);
             }
 
@@ -56,9 +60,16 @@ namespace Sirius.LogbookViewer.Publisher
 
             if (!File.Exists(publisherPath))
             {
-                Console.WriteLine("AddIn Publisher is not found within given TIA installation.");
+                Trace.TraceError("AddIn Publisher is not found within given TIA installation.");
                 Environment.Exit(1);
             }
+
+            string activeConfig = string.Empty;
+#if DEBUG
+            activeConfig = "Debug";
+#else
+            activeConfig = "Release";
+#endif
 
             string buildOutputPath = Path.Combine(Directory.GetCurrentDirectory(), "Publish");
             if (Directory.Exists(buildOutputPath))
@@ -68,11 +79,7 @@ namespace Sirius.LogbookViewer.Publisher
             Directory.CreateDirectory(buildOutputPath);
 
             var globalProperty = new Dictionary<string, string>();
-#if DEBUG
-            globalProperty.Add("Configuration", "Debug");
-#else
-            globalProperty.Add("Configuration", "Release");
-#endif
+            globalProperty.Add("Configuration", activeConfig);
             globalProperty.Add("Platform", "Any CPU");
             globalProperty.Add("OutputPath", buildOutputPath);
             globalProperty.Add("Prefer32Bit", "false");
@@ -80,12 +87,13 @@ namespace Sirius.LogbookViewer.Publisher
             var buildParameters = new BuildParameters(new ProjectCollection()) { Loggers = new List<ILogger> { new ConsoleLogger() } };
 
             // build the app
-            var buildRequest = new BuildRequestData(@"..\..\..\Sirius.LogbookViewer.UI.Standalone\Sirius.LogbookViewer.UI.Standalone.csproj", globalProperty, "15.0", new[] { "Build" }, null);
+            Trace.TraceInformation("*****Building Application*****");
+            var buildRequest = new BuildRequestData(@"..\..\..\Sirius.LogbookViewer.App\Sirius.LogbookViewer.App.csproj", globalProperty, "15.0", new[] { "Build" }, null);
             BuildResult buildResult = BuildManager.DefaultBuildManager.Build(buildParameters, buildRequest);
 
             if (buildResult.OverallResult == BuildResultCode.Failure)
             {
-                Console.WriteLine("Build of AddIn project failed.");
+                Trace.TraceError("Build of AddIn project failed.");
                 Environment.Exit(1);
             }
 
@@ -112,40 +120,59 @@ namespace Sirius.LogbookViewer.Publisher
             }
 
             ZipFile.CreateFromDirectory(buildOutputPath, packagePath);
-            string packateTargetPath = @"..\..\..\Sirius.LogbookViewer\Package\Package.zip";
+            string packateTargetPath = @"..\..\..\Sirius.LogbookViewer.AddIn\Package\Package.zip";
             
             if (File.Exists(packateTargetPath))
             {
                 File.Delete(packateTargetPath);
             }
 
-            File.Move(packagePath, @"..\..\..\Sirius.LogbookViewer\Package\Package.zip");
+            File.Move(packagePath, @"..\..\..\Sirius.LogbookViewer.AddIn\Package\Package.zip");
 
             // build AddIn project with the embedded resource
+            Trace.TraceInformation("*****Building AddIn Project*****");
             globalProperty.Remove("Prefer32Bit");
-            buildRequest = new BuildRequestData(@"..\..\..\Sirius.LogbookViewer\Sirius.LogbookViewer.csproj", globalProperty, "15.0", new[] { "Build" }, null);
+            buildRequest = new BuildRequestData(@"..\..\..\Sirius.LogbookViewer.AddIn\Sirius.LogbookViewer.AddIn.csproj", globalProperty, "15.0", new[] { "Build" }, null);
             buildResult = BuildManager.DefaultBuildManager.Build(buildParameters, buildRequest);
 
             if (buildResult.OverallResult == BuildResultCode.Failure)
             {
-                Console.WriteLine("Build of AddIn project failed.");
+                Trace.TraceError("Build of AddIn project failed.");
                 Environment.Exit(1);
             }
 
             // Create the AddIn file
+            Trace.TraceInformation("*****Creating AddIn*****");
+            string addinFileName = Path.GetFileNameWithoutExtension(productAssemblyPath) + ".addin";
+            string addinFilePath = Path.Combine(buildOutputPath, addinFileName);
             var p = new Process();
             p.StartInfo = new ProcessStartInfo(publisherPath);
-            p.StartInfo.Arguments = $@"--configuration {new FileInfo(Path.Combine(Directory.GetCurrentDirectory(), @"..\..\", "Configuration.xml")).FullName} --logfile Log.txt --verbose";
+            p.StartInfo.Arguments = $@"--configuration {new FileInfo(Path.Combine(Directory.GetCurrentDirectory(), @"..\..\", $"Configuration.{activeConfig}.xml")).FullName} --outfile {addinFilePath} --console --verbose";
+            p.StartInfo.UseShellExecute = false;
+            p.StartInfo.RedirectStandardOutput = true;
+            p.StartInfo.CreateNoWindow = true;
             p.Start();
+            
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine();
+            while (!p.StandardOutput.EndOfStream)
+            {
+                sb.AppendLine(p.StandardOutput.ReadLine());
+            }
+
             p.WaitForExit();
+            Trace.TraceInformation(sb.ToString());
 
             // send AddIn to TIA installation directory
+            Trace.TraceInformation("*****Copying AddIn to Target*****");
             string tiaAddInFolderPath = Path.Combine(tiaRootPath, "AddIns");
             Directory.CreateDirectory(tiaAddInFolderPath);
-            File.Copy(Path.Combine(buildOutputPath, "Sirius.LogbookViewer.addin"), Path.Combine(tiaAddInFolderPath, "Sirius.LogbookViewer.addin"), true);
+            File.Copy(addinFilePath, Path.Combine(tiaAddInFolderPath, addinFileName), true);
+            Trace.TraceInformation($"Addin file is copied to {tiaAddInFolderPath}");
 
-            Console.WriteLine("Completed.");
-            Console.ReadLine();
+            stopwatch.Stop();
+            Trace.TraceInformation("Completed. Duration: " + TimeSpan.FromMilliseconds(stopwatch.ElapsedMilliseconds).TotalSeconds + " seconds");
+            Environment.Exit(0);
         }
     }
 }

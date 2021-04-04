@@ -8,7 +8,7 @@ using System.ComponentModel.Composition.Hosting;
 using System.Linq;
 using System.Reflection;
 
-namespace Sirius.LogbookViewer.UI.Standalone.Service
+namespace Sirius.LogbookViewer.App.Service
 {
     /// <summary>
     /// A lightweight IoC container implementation.
