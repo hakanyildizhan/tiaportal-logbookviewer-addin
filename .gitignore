@@ -1,5 +1,6 @@
 # Files to ignore
 Package.zip
+Package.manifest
 
 # User-specific files
 *.suo

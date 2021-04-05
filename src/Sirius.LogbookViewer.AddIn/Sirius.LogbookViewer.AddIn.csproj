@@ -36,6 +36,7 @@
     <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationFramework" />
     <Reference Include="Siemens.Engineering.AddIn, Version=17.0.0.0, Culture=neutral, PublicKeyToken=65b871d8372d6a8f, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\WS\T17_SIRIUS\components\AddIn\Siemens.Engineering.AddIn.dll</HintPath>
@@ -63,9 +64,13 @@
   <ItemGroup />
   <PropertyGroup>
     <ApplicationPackage>Package\Package.zip</ApplicationPackage>
+    <ApplicationPackageManifest>Package\Package.manifest</ApplicationPackageManifest>
   </PropertyGroup>
   <ItemGroup Condition="Exists($(ApplicationPackage))">
     <EmbeddedResource Include="$(ApplicationPackage)" />
+  </ItemGroup>
+  <ItemGroup Condition="Exists($(ApplicationPackageManifest))">
+    <EmbeddedResource Include="$(ApplicationPackageManifest)" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

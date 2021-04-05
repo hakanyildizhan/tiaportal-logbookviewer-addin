@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using Microsoft.Build.Evaluation;
 using Microsoft.Build.Execution;
@@ -112,6 +113,30 @@ namespace Sirius.LogbookViewer.Publisher
             }
 
             // create app package & send to AddIn project directory
+            Trace.TraceInformation("*****Creating Application Package*****");
+
+            // build manifest
+            StringBuilder sb = new StringBuilder();
+
+            foreach (var filePath in Directory.GetFiles(buildOutputPath, "*.*", SearchOption.AllDirectories))
+            {
+                var fileInfo = new FileInfo(filePath);
+                //sb.AppendLine($"{fileInfo.FullName.Replace(buildOutputPath, "").TrimStart('\\')}|{fileInfo.Length}|{File.GetLastWriteTime(filePath).ToString("yyyy.MM.dd HH:mm:ss")}");
+
+                using (var md5 = MD5.Create())
+                {
+                    using (var stream = File.OpenRead(filePath))
+                    {
+                        var hash = md5.ComputeHash(stream);
+                        string md5String = BitConverter.ToString(hash).Replace("-", "").ToLowerInvariant();
+                        sb.AppendLine($"{fileInfo.FullName.Replace(buildOutputPath, "").TrimStart('\\')}|{md5String}");
+                    }
+                }
+            }
+
+            File.WriteAllText(@"..\..\..\Sirius.LogbookViewer.AddIn\Package\Package.manifest", sb.ToString());
+
+            // build zip package
             string packagePath = "Package.zip";
 
             if (File.Exists(packagePath))
@@ -152,8 +177,8 @@ namespace Sirius.LogbookViewer.Publisher
             p.StartInfo.RedirectStandardOutput = true;
             p.StartInfo.CreateNoWindow = true;
             p.Start();
-            
-            StringBuilder sb = new StringBuilder();
+
+            sb.Clear();
             sb.AppendLine();
             while (!p.StandardOutput.EndOfStream)
             {
