@@ -188,6 +188,12 @@ namespace Sirius.LogbookViewer.Publisher
             p.WaitForExit();
             Trace.TraceInformation(sb.ToString());
 
+            if (p.ExitCode != 0)
+            {
+                Trace.TraceError("An error occurred while creating the AddIn.");
+                Environment.Exit(1);
+            }
+
             // send AddIn to TIA installation directory
             Trace.TraceInformation("*****Copying AddIn to Target*****");
             string tiaAddInFolderPath = Path.Combine(tiaRootPath, "AddIns");

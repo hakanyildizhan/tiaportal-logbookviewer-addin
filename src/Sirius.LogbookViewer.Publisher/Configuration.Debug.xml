@@ -22,7 +22,7 @@
 	<RequiredPermissions>
 		
 		<TIAPermissions>
-			<TIA.ReadWrite />
+			<TIA.ReadOnly />
 		</TIAPermissions>
 		
 		<SecurityPermissions>
