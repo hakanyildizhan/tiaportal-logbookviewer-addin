@@ -486,4 +486,244 @@
   <data name="UI.OfflineLogbookViewer" xml:space="preserve">
     <value>Visionneuse hors-ligne des journaux</value>
   </data>
+	<data name="Message.Element1" xml:space="preserve">
+    <value>Test au démarrage requis</value>
+</data>
+	<data name="Message.Element2" xml:space="preserve">
+    <value>Séquence définie non respectée</value>
+</data>
+	<data name="Message.Element3" xml:space="preserve">
+    <value>Condition de discordance non respectée</value>
+</data>
+	<data name="Message.Element4" xml:space="preserve">
+    <value>Capteur de sécurité déclenché</value>
+</data>
+	<data name="Message.Element5" xml:space="preserve">
+    <value>Court-circuit trans. sur entrée 1</value>
+</data>
+	<data name="Message.Element6" xml:space="preserve">
+    <value>Court-circuit P sur entrée 1</value>
+</data>
+	<data name="Message.Element7" xml:space="preserve">
+    <value>Court-circuit M sur entrée 1</value>
+</data>
+	<data name="Message.Element8" xml:space="preserve">
+    <value>Court-circuit trans. sur entrée 2</value>
+</data>
+	<data name="Message.Element9" xml:space="preserve">
+    <value>Court-circuit P sur entrée 2</value>
+</data>
+	<data name="Message.Element10" xml:space="preserve">
+    <value>Court-circuit M sur entrée 2</value>
+</data>
+	<data name="Message.Element11" xml:space="preserve">
+    <value>Court-circuit sur entrée de réarmement</value>
+</data>
+	<data name="Message.Element12" xml:space="preserve">
+    <value>Court-circuit P sur entrée de réarmement</value>
+</data>
+	<data name="Message.Element13" xml:space="preserve">
+    <value>Court-circuit M sur entrée de réarmement</value>
+</data>
+	<data name="Message.Element14" xml:space="preserve">
+    <value>Court-circuit trans. sur entrée 3</value>
+</data>
+	<data name="Message.Element15" xml:space="preserve">
+    <value>Court-circuit P sur entrée 3</value>
+</data>
+	<data name="Message.Element16" xml:space="preserve">
+    <value>Court-circuit M sur entrée 3</value>
+</data>
+	<data name="Message.Element17" xml:space="preserve">
+    <value>Court-circuit trans. sur entrée 4</value>
+</data>
+	<data name="Message.Element18" xml:space="preserve">
+    <value>Court-circuit P sur entrée 4</value>
+</data>
+	<data name="Message.Element19" xml:space="preserve">
+    <value>Court-circuit M sur entrée 4</value>
+</data>
+	<data name="Message.Element20" xml:space="preserve">
+    <value>Interverrouillage déverrouillé</value>
+</data>
+	<data name="Message.Element21" xml:space="preserve">
+    <value>Cour-circuit transversal sur entrée de commande IN_LOCK</value>
+</data>
+	<data name="Message.Element22" xml:space="preserve">
+    <value>Court-circuit P sur entrée de commande IN_LOCK</value>
+</data>
+	<data name="Message.Element23" xml:space="preserve">
+    <value>Court-circuit M sur entrée de commande IN_LOCK</value>
+</data>
+	<data name="Message.Element24" xml:space="preserve">
+    <value>Signal du circuit de retour 1 ne correspond pas à l'état logique</value>
+</data>
+	<data name="Message.Element25" xml:space="preserve">
+    <value>Le protecteur a été ouvert alors que le verrouillage est actif</value>
+</data>
+	<data name="Message.Element26" xml:space="preserve">
+    <value>Verrouillage impossible car le protecteur est ouvert</value>
+</data>
+	<data name="Message.Element27" xml:space="preserve">
+    <value>Rupture de fil à l'entrée 1</value>
+</data>
+	<data name="Message.Element28" xml:space="preserve">
+    <value>Rupture de fil à l'entrée 2</value>
+</data>
+	<data name="Message.Element29" xml:space="preserve">
+    <value>Touche bloquée</value>
+</data>
+	<data name="Message.Element30" xml:space="preserve">
+    <value>Ne pas lâcher les deux boutons</value>
+</data>
+	<data name="Message.Element31" xml:space="preserve">
+    <value>Mode de fonctionnement sélectionné invalide</value>
+</data>
+	<data name="Message.Element32" xml:space="preserve">
+    <value>Court-circuit trans. sur entrée de verrouillage</value>
+</data>
+	<data name="Message.Element33" xml:space="preserve">
+    <value>Court-circuit P sur l'entrée de verrouillage</value>
+</data>
+	<data name="Message.Element34" xml:space="preserve">
+    <value>Court-circuit M sur l'entrée de verrouillage</value>
+</data>
+	<data name="Message.Element35" xml:space="preserve">
+    <value>Redémarrage muting possible</value>
+</data>
+	<data name="Message.Element36" xml:space="preserve">
+    <value>temps de muting max. écoulé</value>
+</data>
+	<data name="Message.Element37" xml:space="preserve">
+    <value>La condition de discordance de la paire de capteurs 1 n'est pas respectée</value>
+</data>
+	<data name="Message.Element38" xml:space="preserve">
+    <value>La condition de discordance de la paire de capteurs 2 n'est pas respectée</value>
+</data>
+	<data name="Message.Element39" xml:space="preserve">
+    <value>Voyant lumineux de muting défectueux</value>
+</data>
+	<data name="Message.Element40" xml:space="preserve">
+    <value>Le signal de circuit de réaction 1 ne correspond pas à l'état de commutation</value>
+</data>
+	<data name="Message.Element41" xml:space="preserve">
+    <value>Le signal de circuit de réaction 2 ne correspond pas à l'état de commutation</value>
+</data>
+	<data name="Message.Element42" xml:space="preserve">
+    <value>Le signal de circuit de réaction 3 ne correspond pas à l'état de commutation</value>
+</data>
+	<data name="Message.Element43" xml:space="preserve">
+    <value>Le signal de circuit de réaction 4 ne correspond pas à l'état de commutation</value>
+</data>
+	<data name="Message.Element44" xml:space="preserve">
+    <value>Choix de sortie non valide</value>
+</data>
+	<data name="Message.Element45" xml:space="preserve">
+    <value>Sortie 1 surchargée</value>
+</data>
+	<data name="Message.Element46" xml:space="preserve">
+    <value>Sortie 2 surchargée</value>
+</data>
+	<data name="Message.Element47" xml:space="preserve">
+    <value>Court-circuit trans. sur sortie 1</value>
+</data>
+	<data name="Message.Element48" xml:space="preserve">
+    <value>Court-circuit P sur sortie 1</value>
+</data>
+	<data name="Message.Element49" xml:space="preserve">
+    <value>Court-circuit M sur sortie 1</value>
+</data>
+	<data name="Message.Element50" xml:space="preserve">
+    <value>Court-circuit trans. sur sortie 2</value>
+</data>
+	<data name="Message.Element51" xml:space="preserve">
+    <value>Court-circuit P sur sortie 2</value>
+</data>
+	<data name="Message.Element52" xml:space="preserve">
+    <value>Court-circuit M sur sortie 2</value>
+</data>
+	<data name="Message.Element53" xml:space="preserve">
+    <value>Court-circuit M sur sortie 1</value>
+</data>
+	<data name="Message.Element54" xml:space="preserve">
+    <value>Rupture de fil sur sortie 1</value>
+</data>
+	<data name="Message.Element55" xml:space="preserve">
+    <value>Rupture de fil sur sortie 2</value>
+</data>
+	<data name="Message.Communication1" xml:space="preserve">
+    <value>Erreur de protocole de sécurité</value>
+</data>
+	<data name="Message.Communication2" xml:space="preserve">
+    <value>CPU/maître en STOP</value>
+</data>
+	<data name="Message.Communication3" xml:space="preserve">
+    <value>Défaut du bus</value>
+</data>
+	<data name="Message.Communication4" xml:space="preserve">
+    <value>Erreur de paramétrage</value>
+</data>
+	<data name="Message.Communication5" xml:space="preserve">
+    <value>Erreur de configuration</value>
+</data>
+	<data name="Message.Communication6" xml:space="preserve">
+    <value>Echange de données process stoppé</value>
+</data>
+	<data name="Message.Communication7" xml:space="preserve">
+    <value>Erreur de bus AS-i</value>
+</data>
+	<data name="Message.Communication8" xml:space="preserve">
+    <value>Erreur de paramétrage AS-i</value>
+</data>
+	<data name="Message.Communication9" xml:space="preserve">
+    <value>Erreur de configuration AS-i</value>
+</data>
+	<data name="Message.Communication10" xml:space="preserve">
+    <value>Tension AS-i trop faible</value>
+</data>
+	<data name="Message.Communication11" xml:space="preserve">
+    <value>Tension AS-i manquante (APF)</value>
+</data>
+	<data name="Message.Communication12" xml:space="preserve">
+    <value>Adressage AS-i multiple</value>
+</data>
+	<data name="Message.Communication13" xml:space="preserve">
+    <value>Mode hors ligne activé</value>
+</data>
+	<data name="Message.Communication14" xml:space="preserve">
+    <value>La tension AS-i est manquante (APF)</value>
+</data>
+	<data name="Message.Communication15" xml:space="preserve">
+    <value>Erreur de périphérie AS-i</value>
+</data>
+	<data name="Message.Communication16" xml:space="preserve">
+    <value>ASIsafe-Tableaux de codes manquants</value>
+</data>
+	<data name="Message.Communication17" xml:space="preserve">
+    <value>ASIsafe-Tableaux de codes multiples</value>
+</data>
+	<data name="Message.Communication18" xml:space="preserve">
+    <value>ASIsafe-Erreur de suites de codes 8x4 bits</value>
+</data>
+	<data name="Message.Communication19" xml:space="preserve">
+    <value>ASIsafe-Erreur de suites de codes 7x4 bits</value>
+</data>
+	<data name="Message.Communication20" xml:space="preserve">
+    <value>Esclave AS-i manquant</value>
+</data>
+	<data name="Message.Communication21" xml:space="preserve">
+    <value>Esclave AS-i erroné</value>
+</data>
+	<data name="Message.Communication22" xml:space="preserve">
+    <value>Défaut du bus SC</value>
+</data>
+	<data name="Message.Communication23" xml:space="preserve">
+    <value>Erreur de paramétrage SC</value>
+</data>
+	<data name="Message.Communication24" xml:space="preserve">
+    <value>Erreur de configuration SC</value>
+</data>
+	<data name="Message.Communication25" xml:space="preserve">
+    <value>Echange de données process SC stoppé</value>
+</data>
 </root>
