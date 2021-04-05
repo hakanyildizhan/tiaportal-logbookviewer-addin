@@ -76,7 +76,7 @@ namespace Sirius.LogbookViewer.UI.Model
             {
                 Column column = ColumnData[i];
                 var gridViewColumn = new GridViewColumn();
-                gridViewColumn.Width = i != ColumnData.Count - 1 ? column.Name.Length * 8 : column.Name.Length * 35;
+                //gridViewColumn.Width = i != ColumnData.Count - 1 ? column.Name.Length * 8 : column.Name.Length * 35;
                 string columnNameShort = column.Name.Replace(" ", "");
 
                 // create datatemplate contents
