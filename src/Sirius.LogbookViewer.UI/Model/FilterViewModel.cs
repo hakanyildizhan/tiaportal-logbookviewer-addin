@@ -1,4 +1,5 @@
 ﻿using Sirius.LogbookViewer.Product;
+using Sirius.LogbookViewer.UI.Service;
 using System;
 using System.Linq;
 using System.Windows;
@@ -13,6 +14,7 @@ namespace Sirius.LogbookViewer.UI.Model
         private GroupBox _groupBox;
         private bool _isVisible;
         private IResourceManager _resourceManager => (IResourceManager)ServiceProvider?.Resolve<IResourceManager>();
+        private UIResourceManager _uiResourceMgr => (UIResourceManager)ServiceProvider?.Resolve<UIResourceManager>();
 
         public bool IsVisible
         {
@@ -43,19 +45,13 @@ namespace Sirius.LogbookViewer.UI.Model
             }
 
             var groupBox = new GroupBox();
-            groupBox.Header = _resourceManager.GetStringInCurrentCulture("Displayed logbooks");
+            groupBox.Header = _uiResourceMgr.GetString("DisplayedLogbooks");
 
             var stackPanel = new StackPanel();
             stackPanel.Orientation = Orientation.Horizontal;
 
-            var stackPanelStyle = new Style();
-            stackPanelStyle.TargetType = typeof(StackPanel);
-            stackPanelStyle.Setters.Add(new Setter(FrameworkElement.MarginProperty, new Thickness(5, 0, 64, 0)));
-            stackPanelStyle.Setters.Add(new Setter(StackPanel.OrientationProperty, Orientation.Horizontal));
-
-            stackPanel.Resources[typeof(StackPanel)] = stackPanelStyle;
-
             var filterData = data.ColumnData.First(c => c.Filter).FilterData;
+            int totalFilterContentLength = 0;
 
             foreach (var keyValuePair in filterData)
             {
@@ -79,7 +75,8 @@ namespace Sirius.LogbookViewer.UI.Model
                 }
 
                 var checkbox = new CheckBox();
-                checkbox.Content = _resourceManager.GetStringInCurrentCulture(columnFilterData.DisplayValue);
+                checkbox.Content = _resourceManager.GetString(columnFilterData.DisplayValue);
+                totalFilterContentLength += checkbox.Content.ToString().Length;
                 checkbox.VerticalAlignment = VerticalAlignment.Center;
                 checkbox.IsChecked = true;
                 BindingOperations.SetBinding(checkbox, Button.CommandProperty, new Binding("Grid.FilterCommand"));
@@ -97,6 +94,29 @@ namespace Sirius.LogbookViewer.UI.Model
                 filterStackPanel.Children.Add(checkbox);
                 stackPanel.Children.Add(filterStackPanel);
             }
+
+            var stackPanelStyle = new Style();
+            stackPanelStyle.TargetType = typeof(StackPanel);
+
+            // set spacing between filter checkboxes
+            int checkboxRightMargin = 0;
+
+            if (totalFilterContentLength < 50)
+            {
+                checkboxRightMargin = 64;
+            }
+            else if (totalFilterContentLength >= 50 && totalFilterContentLength < 60)
+            {
+                checkboxRightMargin = totalFilterContentLength;
+            }
+            else
+            {
+                checkboxRightMargin = 120 - totalFilterContentLength;
+            }
+
+            stackPanelStyle.Setters.Add(new Setter(FrameworkElement.MarginProperty, new Thickness(5, 0, checkboxRightMargin, 0)));
+            stackPanelStyle.Setters.Add(new Setter(StackPanel.OrientationProperty, Orientation.Horizontal));
+            stackPanel.Resources[typeof(StackPanel)] = stackPanelStyle;
 
             groupBox.Content = stackPanel;
             FilterSection = groupBox;

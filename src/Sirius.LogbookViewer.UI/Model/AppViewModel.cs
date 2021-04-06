@@ -3,6 +3,7 @@ using Sirius.LogbookViewer.UI.Service;
 using System;
 using System.IO;
 using System.Linq;
+using System.Resources;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
@@ -17,7 +18,7 @@ namespace Sirius.LogbookViewer.UI.Model
         private IFilePicker _filePicker => (IFilePicker)ServiceProvider?.Resolve<IFilePicker>();
         private IWaitIndicator _waitIndicator => (IWaitIndicator)ServiceProvider?.Resolve<IWaitIndicator>();
         private IParser _parser => (IParser)ServiceProvider?.Resolve<IParser>();
-        private IResourceManager _resourceManager => (IResourceManager)ServiceProvider?.Resolve<IResourceManager>();
+        private UIResourceManager _uiResourceMgr => (UIResourceManager)ServiceProvider?.Resolve<UIResourceManager>();
 
         private GridViewModel _grid;
         private FilterViewModel _filter;
@@ -48,17 +49,17 @@ namespace Sirius.LogbookViewer.UI.Model
         /// <summary>
         /// Title of the window to show at the top.
         /// </summary>
-        public string WindowTitle => _resourceManager.GetStringInCurrentCulture(ResourceType.UI, "Offline Logbook Viewer");
+        public string WindowTitle => _uiResourceMgr.GetString("AppTitle");
 
         /// <summary>
         /// Import button text.
         /// </summary>
-        public string ImportButtonContent => _resourceManager.GetStringInCurrentCulture(ResourceType.UI, "Import");
+        public string ImportButtonContent => _uiResourceMgr.GetString("Import");
 
         /// <summary>
         /// Close button text.
         /// </summary>
-        public string CloseButtonContent => _resourceManager.GetStringInCurrentCulture(ResourceType.UI, "Close");
+        public string CloseButtonContent => _uiResourceMgr.GetString("Close");
 
         /// <summary>
         /// Whether this window will be displayed at the top of all other windows.
@@ -121,7 +122,6 @@ namespace Sirius.LogbookViewer.UI.Model
             ImportCommand = new RelayCommand(async () => await ImportAsync());
             CloseCommand = new RelayCommand(() => Close());
             MinimizeCommand = new RelayCommand(() => Minimize());
-            
         }
 
         private void Minimize()
@@ -149,12 +149,12 @@ namespace Sirius.LogbookViewer.UI.Model
 
                 try
                 {
-                    loadingTask = _waitIndicator?.ShowAsync("Logbook Import", "Importing logbook entries", $"Importing file '{fileName}'. Please wait.");
+                    loadingTask = _waitIndicator?.ShowAsync(_uiResourceMgr.GetString("ImportPopupTitle"), _uiResourceMgr.GetString("ImportPopupHeader"), $"{_uiResourceMgr.GetString("ImportPopupMessage")} '{fileName}'. {_uiResourceMgr.GetString("ImportPopupWaitMessage")}");
                     var waitTask = Task.Delay(TimeSpan.FromSeconds(1));
                     var data = await _parser.Parse(fileName);
                     await waitTask;
                     await loadingTask;
-                    _waitIndicator?.ShowMessage("Operation complete");
+                    _waitIndicator?.ShowMessage(_uiResourceMgr.GetString("ImportPopupSuccessMessage"));
                     await Task.Delay(TimeSpan.FromSeconds(1));
 
                     if (data.RowData.Any())
@@ -174,7 +174,7 @@ namespace Sirius.LogbookViewer.UI.Model
 
                     if (ex is IOException)
                     {
-                        _waitIndicator?.Prompt("An error occured during import!", ex.Message, Prompt.Error);
+                        _waitIndicator?.Prompt(_uiResourceMgr.GetString("ImportPopupErrorMessage"), ex.Message, Prompt.Error);
                         return;
                     }
 
@@ -182,7 +182,7 @@ namespace Sirius.LogbookViewer.UI.Model
                     string errorFile = $"Sirius_LogbookViewer_errorlog_{DateTime.UtcNow.ToString("yyyyMMdd_HH_mm_ss")}.txt";
                     string filePath = Path.Combine(appDataFolder, "Siemens AG", "Logbook Viewer AddIn", errorFile);
                     File.WriteAllText(filePath, ex.Message + "\r\n" + ex.StackTrace + "\r\n" + ex.InnerException?.Message + "\r\n" + ex.InnerException?.StackTrace);
-                    _waitIndicator?.Prompt("An error occured during import!", "See the error log for details: " + filePath, Prompt.Error);
+                    _waitIndicator?.Prompt(_uiResourceMgr.GetString("ImportPopupErrorMessage"), $"{_uiResourceMgr.GetString("ImportPopupDetails")} {filePath}", Prompt.Error);
                 }
             });
         }

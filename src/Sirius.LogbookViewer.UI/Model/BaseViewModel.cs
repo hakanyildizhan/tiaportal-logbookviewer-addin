@@ -2,6 +2,7 @@
 using System;
 using System.ComponentModel;
 using System.Linq.Expressions;
+using System.Resources;
 using System.Threading.Tasks;
 
 namespace Sirius.LogbookViewer.UI.Model

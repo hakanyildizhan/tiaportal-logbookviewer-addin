@@ -28,21 +28,21 @@ namespace Sirius.LogbookViewer.Safety
             columnData.Add(new Column() 
             { 
                 Type = typeof(int), 
-                Name = _resManager.GetStringInCurrentCulture("Index"), 
+                Name = _resManager.GetString("Index"), 
                 IsIndex = true 
             });
             columnData.Add(new Column() 
             { 
                 Type = typeof(int), 
-                Name = _resManager.GetStringInCurrentCulture("Type"), 
+                Name = _resManager.GetString("Type"), 
                 Filter = true,
                 FilterData = new Dictionary<string, FilterOption>()
                 {
-                    { "1", new FilterOption() { DisplayValue = _resManager.GetStringInCurrentCulture("Error"), IconPath = "Resources/Icon/error.png" } },
-                    { "2", new FilterOption() { DisplayValue = _resManager.GetStringInCurrentCulture("Operating Error"), IconPath = "Resources/Icon/fault.png" } },
-                    { "3", new FilterOption() { DisplayValue = _resManager.GetStringInCurrentCulture("Warning"), IconPath = "Resources/Icon/trip.png" } },
-                    { "4", new FilterOption() { DisplayValue = _resManager.GetStringInCurrentCulture("Prewarning"), IconPath = "Resources/Icon/prewarn.png" } },
-                    { "5", new FilterOption() { DisplayValue = _resManager.GetStringInCurrentCulture("Event"), IconPath = "Resources/Icon/event.png" } }
+                    { "1", new FilterOption() { DisplayValue = _resManager.GetString("Error"), IconPath = "Resources/Icon/error.png" } },
+                    { "2", new FilterOption() { DisplayValue = _resManager.GetString("Operating Error"), IconPath = "Resources/Icon/fault.png" } },
+                    { "3", new FilterOption() { DisplayValue = _resManager.GetString("Warning"), IconPath = "Resources/Icon/trip.png" } },
+                    { "4", new FilterOption() { DisplayValue = _resManager.GetString("Prewarning"), IconPath = "Resources/Icon/prewarn.png" } },
+                    { "5", new FilterOption() { DisplayValue = _resManager.GetString("Event"), IconPath = "Resources/Icon/event.png" } }
                 },
                 Sortable = true,
                 UseIcon = true, 
@@ -58,33 +58,33 @@ namespace Sirius.LogbookViewer.Safety
             columnData.Add(new Column() 
             { 
                 Type = typeof(string),    
-                Name = _resManager.GetStringInCurrentCulture("Source"), Sortable = true 
+                Name = _resManager.GetString("Source"), Sortable = true 
             });
             columnData.Add(new Column() 
             { 
                 Type = typeof(string),    
-                Name = _resManager.GetStringInCurrentCulture("Operating Hours"), 
+                Name = _resManager.GetString("Operating Hours"), 
                 Sortable = true 
             });
             columnData.Add(new Column() 
             { 
                 Type = typeof(int),       
-                Name = _resManager.GetStringInCurrentCulture("Element Number") 
+                Name = _resManager.GetString("Element Number") 
             });
             columnData.Add(new Column() 
             { 
                 Type = typeof(string),    
-                Name = _resManager.GetStringInCurrentCulture("Element Function") 
+                Name = _resManager.GetString("Element Function") 
             });
             columnData.Add(new Column() 
             { 
                 Type = typeof(int),      
-                Name = _resManager.GetStringInCurrentCulture("Object Number") 
+                Name = _resManager.GetString("Object Number") 
             });
             columnData.Add(new Column() 
             { 
                 Type = typeof(string),    
-                Name = _resManager.GetStringInCurrentCulture("Message") 
+                Name = _resManager.GetString("Message") 
             });
 
             foreach (var parts in fileMeta.Rows)
@@ -118,7 +118,7 @@ namespace Sirius.LogbookViewer.Safety
 
                 if (!isNumber)
                 {
-                    string sourceInCulture = _resManager.GetStringInCurrentCulture(ResourceType.Message, parts[2].Trim());
+                    string sourceInCulture = _resManager.GetString(ResourceType.Message, parts[2].Trim());
                     row.Add(sourceInCulture);
                 }
                 else
@@ -167,7 +167,7 @@ namespace Sirius.LogbookViewer.Safety
                 if (!string.IsNullOrEmpty(parts[6]) && !string.IsNullOrEmpty(parts[7]))
                 {
                     string messageToSearch = parts[7].Trim().TrimStart(new char[] { '+', '-' }).Trim();
-                    string messageInCulture = _resManager.GetStringInCurrentCulture(ResourceType.Message, messageToSearch);
+                    string messageInCulture = _resManager.GetString(ResourceType.Message, messageToSearch);
                     message = !string.IsNullOrEmpty(messageInCulture) ? parts[7].Trim().Replace(messageToSearch, messageInCulture) : parts[7].Trim();
                 }
                 else if (!string.IsNullOrEmpty(parts[7]))
@@ -258,17 +258,17 @@ namespace Sirius.LogbookViewer.Safety
         {
             switch (sourceNumber)
             {
-                case 1: return _resManager.GetStringInCurrentCulture("Device");
-                case 2: return _resManager.GetStringInCurrentCulture("Elements");
-                case 3: return _resManager.GetStringInCurrentCulture("Communication");
-                case 4: return _resManager.GetStringInCurrentCulture("Product-specific");
+                case 1: return _resManager.GetString("Device");
+                case 2: return _resManager.GetString("Elements");
+                case 3: return _resManager.GetString("Communication");
+                case 4: return _resManager.GetString("Product-specific");
                 default: return "Unknown";
             }
         }
 
         private int GetMessageTypeCode(string messageType)
         {
-            messageType = _resManager.GetStringInCulture(ResourceType.UI, messageType, new System.Globalization.CultureInfo("en-US"));
+            messageType = _resManager.GetString(ResourceType.UI, messageType, new System.Globalization.CultureInfo("en-US"));
 
             switch (messageType)
             {

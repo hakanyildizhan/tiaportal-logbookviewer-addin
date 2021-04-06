@@ -47,6 +47,7 @@ namespace Sirius.LogbookViewer.App.Service
             }
 
             Register<IResourceManager>(_productSpecificResourceManager);
+            Register<UIResourceManager>(new UIResourceManager());
             Register<IParser>(_fileParser);
         }
 

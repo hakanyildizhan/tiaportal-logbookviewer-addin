@@ -74,6 +74,7 @@
     <Compile Include="Service\Abstract\IWaitIndicator.cs" />
     <Compile Include="Service\LoadingDialog.cs" />
     <Compile Include="Service\Prompt.cs" />
+    <Compile Include="Service\UIResourceManager.cs" />
     <Compile Include="Utility\HelperMethods.cs" />
     <Compile Include="Utility\RelayCommand.cs" />
     <Compile Include="Utility\RelayParameterizedCommand.cs" />
@@ -180,6 +181,15 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Text\Resource.de.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Text\Resource.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Text\Resource.fr.resx">
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <Resource Include="Font\SISAN03.ttf" />
     <Resource Include="Font\Siemens_TIA_Portal_basic_regular.ttf" />

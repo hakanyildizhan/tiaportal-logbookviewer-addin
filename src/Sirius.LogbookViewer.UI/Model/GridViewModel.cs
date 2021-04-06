@@ -108,7 +108,7 @@ namespace Sirius.LogbookViewer.UI.Model
                 }
 
                 var columnHeader = new GridViewColumnHeader();
-                columnHeader.Content = _resourceManager.GetStringInCurrentCulture(ResourceType.UI, column.Name);
+                columnHeader.Content = _resourceManager.GetString(ResourceType.UI, column.Name);
 
                 if (column.Sortable)
                 {

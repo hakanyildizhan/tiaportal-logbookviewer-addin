@@ -9,7 +9,7 @@ namespace Sirius.LogbookViewer.Product
         /// </summary>
         /// <param name="resourceKey"></param>
         /// <returns></returns>
-        string GetString(string resourceKey);
+        string GetStringViaKey(string resourceKey);
 
         /// <summary>
         /// Gets a resource string via its resource key in given culture.
@@ -17,7 +17,7 @@ namespace Sirius.LogbookViewer.Product
         /// <param name="resourceKey"></param>
         /// <param name="culture"></param>
         /// <returns></returns>
-        string GetString(string resourceKey, CultureInfo culture);
+        string GetStringViaKey(string resourceKey, CultureInfo culture);
 
         /// <summary>
         /// Gets a resource string that is equivalent to the given string in given culture.
@@ -25,7 +25,7 @@ namespace Sirius.LogbookViewer.Product
         /// <param name="text"></param>
         /// <param name="culture"></param>
         /// <returns></returns>
-        string GetStringInCulture(string text, CultureInfo culture);
+        string GetString(string text, CultureInfo culture);
 
         /// <summary>
         /// Gets a resource string of requested type that is equivalent to the given string in given culture.
@@ -34,7 +34,7 @@ namespace Sirius.LogbookViewer.Product
         /// <param name="text"></param>
         /// <param name="culture"></param>
         /// <returns></returns>
-        string GetStringInCulture(ResourceType resourceType, string text, CultureInfo culture);
+        string GetString(ResourceType resourceType, string text, CultureInfo culture);
 
         /// <summary>
         /// Gets a resource string of requested type that is equivalent to the given string in current culture.
@@ -42,13 +42,13 @@ namespace Sirius.LogbookViewer.Product
         /// <param name="resourceType"></param>
         /// <param name="text"></param>
         /// <returns></returns>
-        string GetStringInCurrentCulture(ResourceType resourceType, string text);
+        string GetString(ResourceType resourceType, string text);
 
         /// <summary>
         /// Gets a resource string that is equivalent to the given string in current culture.
         /// </summary>
         /// <param name="text"></param>
         /// <returns></returns>
-        string GetStringInCurrentCulture(string text);
+        string GetString(string text);
     }
 }

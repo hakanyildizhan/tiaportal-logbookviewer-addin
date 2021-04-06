@@ -8,16 +8,21 @@ using System.IO.Compression;
 using System.Globalization;
 using System.Security.Cryptography;
 using System.Windows;
+using System.Resources;
+using System.Collections.Generic;
 
 namespace Sirius.LogbookViewer.AddIn
 {
     public class LogbookViewerAddIn : ContextMenuAddIn
     {
         private readonly TiaPortal _tiaPortal;
+        private readonly ResourceManager _resourceManager;
+        private static readonly List<string> AVAILABLE_CULTURES = new List<string>() { "en", "de-DE", "fr-FR" };
 
         public LogbookViewerAddIn(TiaPortal tiaPortal) : base("Logbook Viewer")
         {
             _tiaPortal = tiaPortal;
+            _resourceManager = new ResourceManager("Sirius.LogbookViewer.AddIn.Resources.Resource", System.Reflection.Assembly.GetAssembly(typeof(LogbookViewerAddIn)));
         }
 
         protected override void BuildContextMenuItems(ContextMenuAddInRoot addInRootSubmenu)
@@ -29,9 +34,26 @@ namespace Sirius.LogbookViewer.AddIn
         {
             string folder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Siemens AG", "Logbook Viewer AddIn");
 
+            CultureInfo currentCulture = null;
+
             try
             {
-                using (_tiaPortal.ExclusiveAccess("Logbook Viewer is being loaded, please wait..."))
+                currentCulture = (CultureInfo)_tiaPortal.SettingsFolders[0].Settings.First(s => s.Name.Equals("UserInterfaceLanguage")).Value;
+
+                if (!AVAILABLE_CULTURES.Any(c => currentCulture.Name.StartsWith(c)))
+                {
+                    currentCulture = new CultureInfo("en-US");
+                }
+
+            }
+            catch (Exception)
+            {
+                currentCulture = new CultureInfo("en-US");
+            }
+
+            try
+            {
+                using (_tiaPortal.ExclusiveAccess(_resourceManager.GetString("WaitMessage")))
                 {
                     if (IsDeployNecessary(folder))
                     {
@@ -54,23 +76,12 @@ namespace Sirius.LogbookViewer.AddIn
                         File.Delete(packagePath);
                     }
 
-                    CultureInfo currentCulture = null;
-
-                    try
-                    {
-                        currentCulture = (CultureInfo)_tiaPortal.SettingsFolders[0].Settings.First(s => s.Name.Equals("UserInterfaceLanguage")).Value;
-                    }
-                    catch (Exception)
-                    {
-                        currentCulture = new CultureInfo("en-US");
-                    }
-
                     Siemens.Engineering.AddIn.Utilities.Process.Start(Path.Combine(folder, "Sirius.LogbookViewer.App.exe"), $"--culture {currentCulture.Name}");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An error occurred while initializing the add-in.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show(_resourceManager.GetString("StartErrorMessage"), _resourceManager.GetString("Error"), MessageBoxButton.OK, MessageBoxImage.Error);
                 Directory.CreateDirectory(folder);
                 File.AppendAllText(Path.Combine(folder, "error.log"), $"{ex.Message}\r\n{ex.StackTrace}\r\n\r\n");
             }

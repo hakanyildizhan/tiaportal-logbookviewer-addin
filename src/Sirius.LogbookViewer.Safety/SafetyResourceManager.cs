@@ -12,24 +12,24 @@ namespace Sirius.LogbookViewer.Safety
     class SafetyResourceManager : IResourceManager
     {
         private readonly ResourceManager _resourceManager;
-        private static List<string> AVAILABLE_CULTURES = new List<string>() { "en-US", "fr-FR", "de-DE" };
+        private readonly static List<string> AVAILABLE_CULTURES = new List<string>() { "en", "fr-FR", "de-DE" };
 
         public SafetyResourceManager()
         {
             _resourceManager = new ResourceManager("Sirius.LogbookViewer.Safety.Resources.Text.Resource", System.Reflection.Assembly.GetAssembly(typeof(SafetyResourceManager)));
         }
 
-        public string GetString(string resourceKey)
+        public string GetStringViaKey(string resourceKey)
         {
             return _resourceManager.GetString(resourceKey, CultureInfo.CurrentCulture);
         }
 
-        public string GetString(string resourceKey, CultureInfo culture)
+        public string GetStringViaKey(string resourceKey, CultureInfo culture)
         {
             return _resourceManager.GetString(resourceKey, culture);
         }
 
-        public string GetStringInCulture(ResourceType resourceType, string text, CultureInfo culture)
+        public string GetString(ResourceType resourceType, string text, CultureInfo culture)
         {
             // find Key
             string resourceKey = string.Empty;
@@ -45,22 +45,27 @@ namespace Sirius.LogbookViewer.Safety
                 return text; // not found
             }
 
-            return GetString(resourceKey, culture);
+            return GetStringViaKey(resourceKey, culture);
         }
 
-        public string GetStringInCulture(string text, CultureInfo culture)
+        public string GetString(string text, CultureInfo culture)
         {
-            return GetStringInCulture(ResourceType.Any, text, culture);
+            return GetString(ResourceType.Any, text, culture);
         }
 
-        public string GetStringInCurrentCulture(ResourceType resourceType, string text)
+        public string GetString(ResourceType resourceType, string text)
         {
-            return GetStringInCulture(resourceType, text, CultureInfo.CurrentCulture);
+            if (AVAILABLE_CULTURES.Any(c => CultureInfo.CurrentCulture.Name.StartsWith(c)))
+            {
+                return GetString(resourceType, text, CultureInfo.CurrentCulture);
+            }
+
+            return GetString(resourceType, text, new CultureInfo("en"));
         }
 
-        public string GetStringInCurrentCulture(string text)
+        public string GetString(string text)
         {
-            return GetStringInCurrentCulture(ResourceType.Any, text);
+            return GetString(ResourceType.Any, text);
         }
 
         private string FindResource(string culture, string text, ResourceType resourceType = ResourceType.Any)

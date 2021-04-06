@@ -117,12 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="UI.Close" xml:space="preserve">
-    <value>Abbrechen</value>
-  </data>
-  <data name="UI.DisplayedLogbooks" xml:space="preserve">
-    <value>Angezeigte Logbücher</value>
-  </data>
   <data name="UI.ElementFunction" xml:space="preserve">
     <value>Element-Funktion</value>
   </data>
@@ -134,9 +128,6 @@
   </data>
   <data name="UI.Event" xml:space="preserve">
     <value>Ereignis</value>
-  </data>
-  <data name="UI.Import" xml:space="preserve">
-    <value>Import</value>
   </data>
   <data name="UI.Index" xml:space="preserve">
     <value>Indice</value>
@@ -482,9 +473,6 @@
   </data>
 	<data name="Message.Source4" xml:space="preserve">
     <value>Produktspezifisch</value>
-  </data>
-  <data name="UI.OfflineLogbookViewer" xml:space="preserve">
-    <value>Offline Logbuch Viewer</value>
   </data>
 <data name="Message.Element1" xml:space="preserve">
     <value>Anlauftest erforderlich</value>
