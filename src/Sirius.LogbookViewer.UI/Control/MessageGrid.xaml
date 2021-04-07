@@ -38,6 +38,16 @@
                     <GridViewColumn Width="50">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
+                                <TextBlock Text="{Binding Index}"
+                                            Padding="4 0 0 0"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                        <GridViewColumnHeader Content="Index"
+                                            local:SortProperty.Value="{x:Null}"/>
+                    </GridViewColumn>
+                    <GridViewColumn Width="50">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
                                 <ContentControl Height="25" Margin="0 -4 -8 -4">
                                     <Image Source="{Binding Type, Converter={local:MessageTypeToIconConverter}}"
                                             HorizontalAlignment="Left"
@@ -49,16 +59,6 @@
                                             Command="{Binding SortCommand}"
                                             CommandParameter="{Binding Content, RelativeSource={RelativeSource Self}}"
                                             local:SortProperty.Value="{Binding SortStatusType}"/>
-                    </GridViewColumn>
-                    <GridViewColumn Width="50">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <TextBlock Text="{Binding Index}"
-                                            Padding="4 0 0 0"/>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                        <GridViewColumnHeader Content="Index"
-                                            local:SortProperty.Value="{x:Null}"/>
                     </GridViewColumn>
                     <GridViewColumn Width="80">
                         <GridViewColumn.CellTemplate>

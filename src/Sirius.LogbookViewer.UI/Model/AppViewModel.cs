@@ -145,32 +145,54 @@ namespace Sirius.LogbookViewer.UI.Model
 
             await RunCommandAsync(() => IsInBackground, false, async () =>
             {
-                Task loadingTask = null;
+                Task loadingPopup = null;
 
                 try
                 {
-                    loadingTask = _waitIndicator?.ShowAsync(_uiResourceMgr.GetString("ImportPopupTitle"), _uiResourceMgr.GetString("ImportPopupHeader"), $"{_uiResourceMgr.GetString("ImportPopupMessage")} '{fileName}'. {_uiResourceMgr.GetString("ImportPopupWaitMessage")}");
-                    var waitTask = Task.Delay(TimeSpan.FromSeconds(1));
-                    var data = await _parser.Parse(fileName);
-                    await waitTask;
-                    await loadingTask;
-                    _waitIndicator?.ShowMessage(_uiResourceMgr.GetString("ImportPopupSuccessMessage"));
-                    await Task.Delay(TimeSpan.FromSeconds(1));
+                    LogbookData data = null;
+                    var loadData = _parser.Parse(fileName);
 
-                    if (data.RowData.Any())
+                    // display loading message
+                    loadingPopup = _waitIndicator?.ShowAsync(_uiResourceMgr.GetString("ImportPopupTitle"), _uiResourceMgr.GetString("ImportPopupHeader"), $"{_uiResourceMgr.GetString("ImportPopupMessage")} '{fileName}'. {_uiResourceMgr.GetString("ImportPopupWaitMessage")}");
+
+                    // parse data & initialize grid data
+                    await Task.Run(async () =>
                     {
-                        GridIsInitialized = true;
-                        Filter = new FilterViewModel();
-                        Filter.Initialize(data);
                         Grid = new GridViewModel();
-                        Grid.Initialize(data);
+                        data = await loadData;
+                        Grid.InitializeData(data);
+                    });
+
+                    // initialize UI
+                    Exception uiException = null;
+                    await Application.Current.Dispatcher.BeginInvoke(new Action(() =>
+                    {
+                        try
+                        {
+                            Filter = new FilterViewModel();
+                            Filter.Initialize(data);
+                            GridIsInitialized = true;
+                            Grid.InitializeUI(data);
+                        }
+                        catch (Exception ex)
+                        {
+                            uiException = ex;
+                        }
+                    }), System.Windows.Threading.DispatcherPriority.SystemIdle);
+
+                    if (uiException != null)
+                    {
+                        throw uiException;
                     }
 
+                    await loadingPopup;
+                    _waitIndicator?.ShowMessage(_uiResourceMgr.GetString("ImportPopupSuccessMessage"));
+                    await Task.Delay(TimeSpan.FromSeconds(1));
                     _waitIndicator?.Close();
                 }
                 catch (System.Exception ex)
                 {
-                    await loadingTask;
+                    await loadingPopup;
 
                     if (ex is IOException)
                     {
@@ -178,9 +200,10 @@ namespace Sirius.LogbookViewer.UI.Model
                         return;
                     }
 
-                    string appDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-                    string errorFile = $"Sirius_LogbookViewer_errorlog_{DateTime.UtcNow.ToString("yyyyMMdd_HH_mm_ss")}.txt";
-                    string filePath = Path.Combine(appDataFolder, "Siemens AG", "Logbook Viewer AddIn", errorFile);
+                    string errorFile = $"apperror_{DateTime.UtcNow.ToString("yyyyMMdd_HH_mm_ss")}.log";
+                    string appFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Siemens AG", "Logbook Viewer AddIn");
+                    Directory.CreateDirectory(appFolder);
+                    string filePath = Path.Combine(appFolder, errorFile);
                     File.WriteAllText(filePath, ex.Message + "\r\n" + ex.StackTrace + "\r\n" + ex.InnerException?.Message + "\r\n" + ex.InnerException?.StackTrace);
                     _waitIndicator?.Prompt(_uiResourceMgr.GetString("ImportPopupErrorMessage"), $"{_uiResourceMgr.GetString("ImportPopupDetails")} {filePath}", Prompt.Error);
                 }

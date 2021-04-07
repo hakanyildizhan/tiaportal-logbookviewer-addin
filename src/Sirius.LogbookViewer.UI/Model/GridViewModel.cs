@@ -8,6 +8,7 @@ using System.Windows.Data;
 using System.Windows.Input;
 using System.Dynamic;
 using System;
+using System.ComponentModel;
 
 namespace Sirius.LogbookViewer.UI.Model
 {
@@ -52,7 +53,7 @@ namespace Sirius.LogbookViewer.UI.Model
             SortStatus = new Dictionary<string, bool?>();
         }
 
-        public void Initialize(LogbookData data)
+        public void InitializeData(LogbookData data)
         {
             ColumnData = data.ColumnData;
 
@@ -62,21 +63,46 @@ namespace Sirius.LogbookViewer.UI.Model
                 var logbookMessage = new ExpandoObject();
                 for (int j = 0; j < ColumnData.Count; j++)
                 {
-                    (logbookMessage as IDictionary<string, Object>).Add(ColumnData[j].Name.Replace(" ", ""), data.RowData[i][j]);
+                    object columnData = null;
+
+                    try
+                    {
+                        var converter = TypeDescriptor.GetConverter(ColumnData[j].Type);
+                        columnData = converter.ConvertTo(data.RowData[i][j], ColumnData[j].Type);
+                    }
+                    catch
+                    {
+                        if (!string.IsNullOrEmpty(data.RowData[i][j].ToString()))
+                        {
+                            columnData = data.RowData[i][j];
+                        }
+                        else if (!string.IsNullOrEmpty(ColumnData[j].Placeholder))
+                        {
+                            columnData = ColumnData[j].Placeholder;
+                        }
+                        else
+                        {
+                            columnData = Activator.CreateInstance(ColumnData[j].Type);
+                        }
+                    }
+
+                    (logbookMessage as IDictionary<string, Object>).Add(ColumnData[j].Name.Replace(" ", ""), columnData);
                 }
                 messages.Add(logbookMessage);
             }
 
             Messages = new ObservableCollection<ExpandoObject>(messages);
             AllMessages = messages;
+        }
 
+        public void InitializeUI(LogbookData data)
+        {
             var gridView = new GridView();
 
             for (int i = 0; i < ColumnData.Count; i++)
             {
                 Column column = ColumnData[i];
                 var gridViewColumn = new GridViewColumn();
-                //gridViewColumn.Width = i != ColumnData.Count - 1 ? column.Name.Length * 8 : column.Name.Length * 35;
                 string columnNameShort = column.Name.Replace(" ", "");
 
                 // create datatemplate contents
@@ -108,7 +134,7 @@ namespace Sirius.LogbookViewer.UI.Model
                 }
 
                 var columnHeader = new GridViewColumnHeader();
-                columnHeader.Content = _resourceManager.GetString(ResourceType.UI, column.Name);
+                columnHeader.Content = !DesignerProperties.GetIsInDesignMode(columnHeader) ? _resourceManager.GetString(ResourceType.UI, column.Name) : column.Name;
 
                 if (column.Sortable)
                 {

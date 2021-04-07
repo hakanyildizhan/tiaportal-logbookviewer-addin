@@ -69,12 +69,14 @@ namespace Sirius.LogbookViewer.Safety
             columnData.Add(new Column() 
             { 
                 Type = typeof(int),       
-                Name = _resManager.GetString("Element Number") 
+                Name = _resManager.GetString("Element Number"),
+                Placeholder = "-"
             });
             columnData.Add(new Column() 
             { 
                 Type = typeof(string),    
-                Name = _resManager.GetString("Element Function") 
+                Name = _resManager.GetString("Element Function"),
+                Placeholder = "-"
             });
             columnData.Add(new Column() 
             { 
@@ -132,7 +134,7 @@ namespace Sirius.LogbookViewer.Safety
                 // column 4 - element number
                 if (string.IsNullOrEmpty(parts[4]))
                 {
-                    row.Add(0);
+                    row.Add("-");
                 }
                 else
                 {
@@ -144,7 +146,7 @@ namespace Sirius.LogbookViewer.Safety
                     }
                     else
                     {
-                        row.Add(0);
+                        row.Add("-");
                     }
                 }
 

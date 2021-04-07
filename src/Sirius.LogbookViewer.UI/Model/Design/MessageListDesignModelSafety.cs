@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace Sirius.LogbookViewer.UI.Model
 {
     /// <summary>
-    /// A sample list of Safety specific logbook messages for Safety Logbook grid.
+    /// A sample list of Safety specific logbook messages to show on grid designer.
     /// </summary>
     public class MessageListDesignModelSafety : GridViewModel
     {
@@ -21,22 +21,13 @@ namespace Sirius.LogbookViewer.UI.Model
                 Filter = true,
                 FilterData = new Dictionary<string, FilterOption>()
                 {
-                    { "1", new FilterOption() { DisplayValue = "Error", IconPath = "Resources/Icon/error.png" } },
-                    { "2", new FilterOption() { DisplayValue = "Operating Error", IconPath = "Resources/Icon/fault.png" } },
-                    { "3", new FilterOption() { DisplayValue = "Warning", IconPath = "Resources/Icon/trip.png" } },
-                    { "4", new FilterOption() { DisplayValue = "Prewarning", IconPath = "Resources/Icon/prewarn.png" } },
-                    { "5", new FilterOption() { DisplayValue = "Event", IconPath = "Resources/Icon/event.png" } }
+                    { "1", new FilterOption() { DisplayValue = "Error" } },
+                    { "2", new FilterOption() { DisplayValue = "Operating Error" } },
+                    { "3", new FilterOption() { DisplayValue = "Warning" } },
+                    { "4", new FilterOption() { DisplayValue = "Prewarning" } },
+                    { "5", new FilterOption() { DisplayValue = "Event" } }
                 },
-                Sortable = true,
-                UseIcon = true,
-                IconData = new Dictionary<string, string>()
-                {
-                    { "1", "Resources/Icon/error.png" },
-                    { "2", "Resources/Icon/fault.png" },
-                    { "3", "Resources/Icon/trip.png" },
-                    { "4", "Resources/Icon/prewarn.png" },
-                    { "5", "Resources/Icon/event.png" }
-                }
+                Sortable = true
             });
             columnData.Add(new Column() { Type = typeof(string), Name = "Source", Sortable = true });
             columnData.Add(new Column() { Type = typeof(string), Name = "Operating Hours", Sortable = true });
@@ -53,7 +44,9 @@ namespace Sirius.LogbookViewer.UI.Model
                 new List<object>() { 4, 4, "Product", "838:26:02", "-", "-", 7004, "+Password protection for device access is inactive" }
             };
 
-            Initialize(new LogbookData() { ColumnData = columnData, RowData = messages });
+            var data = new LogbookData() { ColumnData = columnData, RowData = messages };
+            InitializeData(data);
+            InitializeUI(data);
         }
     }
 }
