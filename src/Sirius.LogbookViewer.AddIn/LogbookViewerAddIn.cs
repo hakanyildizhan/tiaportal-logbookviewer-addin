@@ -56,7 +56,11 @@ namespace Sirius.LogbookViewer.AddIn
                 {
                     if (IsDeployNecessary(folder))
                     {
-                        Directory.Delete(folder, true);
+                        if (Directory.Exists(folder))
+                        {
+                            Directory.Delete(folder, true);
+                        }
+                        
                         Directory.CreateDirectory(folder);
                         string packagePath = Path.Combine(folder, "Package.zip");
 

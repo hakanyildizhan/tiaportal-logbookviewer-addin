@@ -81,7 +81,7 @@ namespace Sirius.LogbookViewer.Publisher
 
             var globalProperty = new Dictionary<string, string>();
             globalProperty.Add("Configuration", activeConfig);
-            globalProperty.Add("Platform", "Any CPU");
+            globalProperty.Add("Platform", "AnyCPU");
             globalProperty.Add("OutputPath", buildOutputPath);
             globalProperty.Add("Prefer32Bit", "false");
 
