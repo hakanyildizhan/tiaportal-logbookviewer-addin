@@ -15,6 +15,18 @@
 			<Assembly>bin\release\Publish\Sirius.LogbookViewer.AddIn.dll</Assembly>
 		</AssemblyInfo>
 	</FeatureAssembly>
+
+	<AdditionalAssemblies>
+		<AssemblyInfo>
+			<Assembly>bin\release\Publish\en\Sirius.LogbookViewer.AddIn.resources.dll</Assembly>
+		</AssemblyInfo>
+		<AssemblyInfo>
+			<Assembly>bin\release\Publish\de\Sirius.LogbookViewer.AddIn.resources.dll</Assembly>
+		</AssemblyInfo>
+		<AssemblyInfo>
+			<Assembly>bin\release\Publish\fr\Sirius.LogbookViewer.AddIn.resources.dll</Assembly>
+		</AssemblyInfo>
+	</AdditionalAssemblies>
 	
 	<DisplayInMultiuser />
 

@@ -62,13 +62,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\Resource.de.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\Resource.fr.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Resource.en.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Resource.de.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
@@ -82,6 +82,7 @@
   <ItemGroup Condition="Exists($(ApplicationPackageManifest))">
     <EmbeddedResource Include="$(ApplicationPackageManifest)" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
   </PropertyGroup>

@@ -16,6 +16,18 @@
 			<Pdb>bin\debug\Publish\Sirius.LogbookViewer.AddIn.pdb</Pdb>
 		</AssemblyInfo>
 	</FeatureAssembly>
+
+	<AdditionalAssemblies>
+		<AssemblyInfo>
+			<Assembly>bin\debug\Publish\en\Sirius.LogbookViewer.AddIn.resources.dll</Assembly>
+		</AssemblyInfo>
+		<AssemblyInfo>
+			<Assembly>bin\debug\Publish\de\Sirius.LogbookViewer.AddIn.resources.dll</Assembly>
+		</AssemblyInfo>
+		<AssemblyInfo>
+			<Assembly>bin\debug\Publish\fr\Sirius.LogbookViewer.AddIn.resources.dll</Assembly>
+		</AssemblyInfo>
+	</AdditionalAssemblies>
 	
 	<DisplayInMultiuser />
 

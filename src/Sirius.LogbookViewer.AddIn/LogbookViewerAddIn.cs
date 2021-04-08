@@ -22,7 +22,7 @@ namespace Sirius.LogbookViewer.AddIn
         public LogbookViewerAddIn(TiaPortal tiaPortal) : base("Logbook Viewer")
         {
             _tiaPortal = tiaPortal;
-            _resourceManager = new ResourceManager("Sirius.LogbookViewer.AddIn.Resources.Resource", System.Reflection.Assembly.GetAssembly(typeof(LogbookViewerAddIn)));
+            _resourceManager = new ResourceManager("Sirius.LogbookViewer.AddIn.Resources.Resource", Assembly.GetAssembly(typeof(LogbookViewerAddIn)));
         }
 
         protected override void BuildContextMenuItems(ContextMenuAddInRoot addInRootSubmenu)
@@ -33,7 +33,6 @@ namespace Sirius.LogbookViewer.AddIn
         private void OnClick(MenuSelectionProvider menuSelectionProvider)
         {
             string folder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Siemens AG", "Logbook Viewer AddIn");
-
             CultureInfo currentCulture = null;
 
             try
@@ -53,7 +52,7 @@ namespace Sirius.LogbookViewer.AddIn
 
             try
             {
-                using (_tiaPortal.ExclusiveAccess(_resourceManager.GetString("WaitMessage")))
+                using (_tiaPortal.ExclusiveAccess(_resourceManager.GetString("WaitMessage", currentCulture)))
                 {
                     if (IsDeployNecessary(folder))
                     {
@@ -81,7 +80,7 @@ namespace Sirius.LogbookViewer.AddIn
             }
             catch (Exception ex)
             {
-                MessageBox.Show(_resourceManager.GetString("StartErrorMessage"), _resourceManager.GetString("Error"), MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show(_resourceManager.GetString("StartErrorMessage", currentCulture), _resourceManager.GetString("Error", currentCulture), MessageBoxButton.OK, MessageBoxImage.Error);
                 Directory.CreateDirectory(folder);
                 File.AppendAllText(Path.Combine(folder, "error.log"), $"{ex.Message}\r\n{ex.StackTrace}\r\n\r\n");
             }
