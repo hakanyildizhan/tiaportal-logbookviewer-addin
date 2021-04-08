@@ -16,7 +16,7 @@ namespace Sirius.LogbookViewer.App
             base.OnStartup(e);
             CultureInfo appCulture = new CultureInfo("en-US");
 
-            if (e.Args.Length == 2 || e.Args[0] == "--culture")
+            if (e.Args.Length == 2 && e.Args[0] == "--culture")
             {
                 try
                 {
