@@ -28,8 +28,8 @@ namespace Sirius.LogbookViewer.Safety
             columnData.Add(new Column() 
             { 
                 Type = typeof(int), 
-                Name = _resManager.GetString("Index"), 
-                IsIndex = true 
+                Name = _resManager.GetString("Index"),
+                Sortable = true
             });
             columnData.Add(new Column() 
             { 
