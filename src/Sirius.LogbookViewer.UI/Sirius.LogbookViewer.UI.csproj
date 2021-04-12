@@ -201,7 +201,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resource\Animation\Hourglass.gif" />
+    <EmbeddedResource Include="Resource\Animation\Hourglass.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resource\Icon\PromptError.ico" />

@@ -49,37 +49,39 @@ namespace Sirius.LogbookViewer.UI.Service
             var getAnimationTask = GetAnimationFilePath();
             Close();
             _window = new LoadingWindow();
-            _window.DataContext = model;
-            _window.Show();
-            _window.Activate();
             string animationFile = await getAnimationTask;
 
             if (!string.IsNullOrEmpty(animationFile))
             {
-                (_window.DataContext as LoadingWindowViewModel).LoadingAnimationSource = new Uri(animationFile);
-                (_window.DataContext as LoadingWindowViewModel).CanAnimate = true;
+                model.CanAnimate = true;
+                model.LoadingAnimationSource = new Uri(animationFile);
             }
+
+            _window.DataContext = model;
+            _window.Show();
+            _window.Activate();
         }
 
         public async Task ShowAsync(string windowTitle, string header, string message)
         {
             var model = new LoadingWindowViewModel();
             var getAnimationTask = GetAnimationFilePath();
+            Close();
             model.Message = message;
             model.MessageTitle = header;
             model.WindowTitle = windowTitle;
             _window = new LoadingWindow();
-            _window.DataContext = model;
-            _window.Show();
-            _window.Activate();
-
             string animationFile = await getAnimationTask;
 
             if (!string.IsNullOrEmpty(animationFile))
             {
-                (_window.DataContext as LoadingWindowViewModel).LoadingAnimationSource = new Uri(animationFile);
-                (_window.DataContext as LoadingWindowViewModel).CanAnimate = true;
+                model.CanAnimate = true;
+                model.LoadingAnimationSource = new Uri(animationFile);
             }
+
+            _window.DataContext = model;
+            _window.Show();
+            _window.Activate();
         }
 
         public void ShowMessage(string message)
@@ -148,25 +150,11 @@ namespace Sirius.LogbookViewer.UI.Service
             return await Task.Run(() => {
                 try
                 {
-                    string appDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-                    string filePath = Path.Combine(appDataFolder, "Siemens", "SafetyLogbookViewerAddin", "Hourglass.gif");
+                    string appDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+                    string filePath = Path.Combine(appDataFolder, "Siemens AG", "Logbook Viewer AddIn", "Resource", "Animation", "Hourglass.gif");
 
                     if (!File.Exists(filePath))
                     {
-                        var siemensFolder = Path.Combine(appDataFolder, "Siemens");
-
-                        if (!Directory.Exists(siemensFolder))
-                        {
-                            Directory.CreateDirectory(siemensFolder);
-                        }
-
-                        string addinFolder = Path.Combine(siemensFolder, "SafetyLogbookViewerAddin");
-
-                        if (!Directory.Exists(addinFolder))
-                        {
-                            Directory.CreateDirectory(addinFolder);
-                        }
-
                         var assembly = Assembly.GetAssembly(typeof(MainWindow));
                         var resourceName = "Sirius.LogbookViewer.UI.Resource.Animation.Hourglass.gif";
 

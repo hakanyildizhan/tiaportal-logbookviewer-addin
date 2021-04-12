@@ -2,8 +2,6 @@
 using Sirius.LogbookViewer.UI.Service;
 using System;
 using System.IO;
-using System.Linq;
-using System.Resources;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
@@ -145,15 +143,16 @@ namespace Sirius.LogbookViewer.UI.Model
 
             await RunCommandAsync(() => IsInBackground, false, async () =>
             {
-                Task loadingPopup = null;
+                // display loading message
+                await Application.Current.Dispatcher.BeginInvoke(new Action(async () =>
+                {
+                    await _waitIndicator?.ShowAsync(_uiResourceMgr.GetString("ImportPopupTitle"), _uiResourceMgr.GetString("ImportPopupHeader"), $"{_uiResourceMgr.GetString("ImportPopupMessage")} '{fileName}'. {_uiResourceMgr.GetString("ImportPopupWaitMessage")}");
+                }), System.Windows.Threading.DispatcherPriority.Send);
 
                 try
                 {
                     LogbookData data = null;
                     var loadData = _parser.Parse(fileName);
-
-                    // display loading message
-                    loadingPopup = _waitIndicator?.ShowAsync(_uiResourceMgr.GetString("ImportPopupTitle"), _uiResourceMgr.GetString("ImportPopupHeader"), $"{_uiResourceMgr.GetString("ImportPopupMessage")} '{fileName}'. {_uiResourceMgr.GetString("ImportPopupWaitMessage")}");
 
                     // parse data & initialize grid data
                     await Task.Run(async () =>
@@ -185,15 +184,12 @@ namespace Sirius.LogbookViewer.UI.Model
                         throw uiException;
                     }
 
-                    await loadingPopup;
                     _waitIndicator?.ShowMessage(_uiResourceMgr.GetString("ImportPopupSuccessMessage"));
                     await Task.Delay(TimeSpan.FromSeconds(1));
                     _waitIndicator?.Close();
                 }
                 catch (System.Exception ex)
                 {
-                    await loadingPopup;
-
                     if (ex is IOException)
                     {
                         _waitIndicator?.Prompt(_uiResourceMgr.GetString("ImportPopupErrorMessage"), ex.Message, Prompt.Error);
