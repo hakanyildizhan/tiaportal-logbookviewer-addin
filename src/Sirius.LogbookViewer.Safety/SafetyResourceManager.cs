@@ -63,6 +63,12 @@ namespace Sirius.LogbookViewer.Safety
             return GetString(resourceType, text, new CultureInfo("en"));
         }
 
+        public string GetMessage(int objectNumber, int elementNumber)
+        {
+            string key = $"Message.ON{objectNumber}{(elementNumber != 0 ? $".EN{elementNumber}" : string.Empty)}";
+            return _resourceManager.GetString(key, CultureInfo.CurrentCulture);
+        }
+
         public string GetString(string text)
         {
             return GetString(ResourceType.Any, text);

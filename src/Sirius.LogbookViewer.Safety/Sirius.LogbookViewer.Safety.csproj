@@ -39,6 +39,11 @@
   <ItemGroup>
     <Compile Include="FileMeta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Text\Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
     <Compile Include="SafetyParser.cs" />
     <Compile Include="SafetyResourceManager.cs" />
   </ItemGroup>
@@ -51,6 +56,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Text\Resource.fr.resx">
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Text\Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

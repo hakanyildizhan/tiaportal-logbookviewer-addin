@@ -132,13 +132,14 @@ namespace Sirius.LogbookViewer.Safety
                 row.Add(parts[3].Trim());
 
                 // column 4 - element number
+                int elementNumber = 0;
                 if (string.IsNullOrEmpty(parts[4]))
                 {
                     row.Add("-");
                 }
                 else
                 {
-                    isNumber = int.TryParse(parts[4].Trim(), out int elementNumber);
+                    isNumber = int.TryParse(parts[4].Trim(), out elementNumber);
 
                     if (isNumber)
                     {
@@ -169,7 +170,7 @@ namespace Sirius.LogbookViewer.Safety
                 if (!string.IsNullOrEmpty(parts[6]) && !string.IsNullOrEmpty(parts[7]))
                 {
                     string messageToSearch = parts[7].Trim().TrimStart(new char[] { '+', '-' }).Trim();
-                    string messageInCulture = _resManager.GetString(ResourceType.Message, messageToSearch);
+                    string messageInCulture = _resManager.GetMessage(Math.Abs(objectNumber), Math.Abs(elementNumber));
                     message = !string.IsNullOrEmpty(messageInCulture) ? parts[7].Trim().Replace(messageToSearch, messageInCulture) : parts[7].Trim();
                 }
                 else if (!string.IsNullOrEmpty(parts[7]))

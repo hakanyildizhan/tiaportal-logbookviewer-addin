@@ -1,0 +1,1572 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+	<data name="Message.ON11001" xml:space="preserve">
+    <value>STACK ist übergelaufen: Welcher übergelaufen ist, steht im zusätzlichen Parameter</value>
+</data>
+	<data name="Message.ON11011" xml:space="preserve">
+    <value>Zeigt an, dass Netz eingeschaltet ist</value>
+</data>
+	<data name="Message.ON11012" xml:space="preserve">
+    <value>Schwerwiegender Programmfehler</value>
+</data>
+	<data name="Message.ON11021" xml:space="preserve">
+    <value>Timeout bei der Synchronisation am AUX Port nach Watchdogtest</value>
+</data>
+	<data name="Message.ON11022" xml:space="preserve">
+    <value>CRC Fehler im zyklischen ROM Test</value>
+</data>
+	<data name="Message.ON11023" xml:space="preserve">
+    <value>Ungültige Zustandsvariable im zyklischen Selbsttest</value>
+</data>
+	<data name="Message.ON11024" xml:space="preserve">
+    <value>Ungültige Synchronisationspunktnummer im zykl. Selbsttest</value>
+</data>
+	<data name="Message.ON11025" xml:space="preserve">
+    <value>Querschluss auf dem HMI Port</value>
+</data>
+	<data name="Message.ON11026" xml:space="preserve">
+    <value>24 V Betriebsspannung ausserhalb der zulässigen Grenzen</value>
+</data>
+	<data name="Message.ON11027" xml:space="preserve">
+    <value>5 V Referenzsspannung ausserhalb der zulässigen Grenzen</value>
+</data>
+	<data name="Message.ON11028" xml:space="preserve">
+    <value>AUX Port ist defekt (Falsche Parameter Timeout)</value>
+</data>
+	<data name="Message.ON11029" xml:space="preserve">
+    <value>Synchronisationsschnittstelle (SPI defekt)</value>
+</data>
+	<data name="Message.ON11030" xml:space="preserve">
+    <value>Ungültige Synchronisationspunktnummer nach Watchdogtest</value>
+</data>
+	<data name="Message.ON11031" xml:space="preserve">
+    <value>Speicherfehler wurde erkannt</value>
+</data>
+	<data name="Message.ON11032" xml:space="preserve">
+    <value>Ursprünglicher Speicherinhalt wurde nicht wieder hergestellt</value>
+</data>
+	<data name="Message.ON11033" xml:space="preserve">
+    <value>Zeiger liegt ausserhalb des Prüfbereichs</value>
+</data>
+	<data name="Message.ON11034" xml:space="preserve">
+    <value>Ermittelte CRC entspricht nicht der Linker CRC</value>
+</data>
+	<data name="Message.ON11035" xml:space="preserve">
+    <value>Zeiger liegt ausserhalb des Prüfbereichs</value>
+</data>
+	<data name="Message.ON11036" xml:space="preserve">
+    <value>AUX Port ist defekt (Sync-Nummern passen nicht zusammen)</value>
+</data>
+	<data name="Message.ON11037" xml:space="preserve">
+    <value>Fehler im zyklischen RAM Test</value>
+</data>
+	<data name="Message.ON11041" xml:space="preserve">
+    <value>ungültige Hardwareversion erkannt</value>
+</data>
+	<data name="Message.ON11042" xml:space="preserve">
+    <value>ungültige Gerätevariante erkannt</value>
+</data>
+	<data name="Message.ON11043" xml:space="preserve">
+    <value>Analogmodul meldet Fehler</value>
+</data>
+	<data name="Message.ON11044" xml:space="preserve">
+    <value>Master: Werksgrundeinst. konnte nicht hergestellt werden</value>
+</data>
+	<data name="Message.ON11045" xml:space="preserve">
+    <value>Master: Unbekannte Betriebsart</value>
+</data>
+	<data name="Message.ON11046" xml:space="preserve">
+    <value>Fehler beim Laden der Partitions-ID</value>
+</data>
+	<data name="Message.ON11047" xml:space="preserve">
+    <value>Fehler beim Löschen des internen EEPROMS</value>
+</data>
+	<data name="Message.ON11048" xml:space="preserve">
+    <value>Fehler bei der Organisation des Speichers (EEPROM)</value>
+</data>
+	<data name="Message.ON11049" xml:space="preserve">
+    <value>Fehler bei der Initialisierung der int. Speicherverwaltung</value>
+</data>
+	<data name="Message.ON11050" xml:space="preserve">
+    <value>Fehler bei der Initialisierung der ext. Speicherverwaltung</value>
+</data>
+	<data name="Message.ON11051" xml:space="preserve">
+    <value>DeviceConnect oder PcConnect konnte nicht init. werden</value>
+</data>
+	<data name="Message.ON11052" xml:space="preserve">
+    <value>Fehler beim Austausch der Firmwareversionen</value>
+</data>
+	<data name="Message.ON11053" xml:space="preserve">
+    <value>Ungleiche Firmwareversionen auf Master Slave</value>
+</data>
+	<data name="Message.ON11054" xml:space="preserve">
+    <value>Fehler bei der Organisation des externen Speichers (EEPROM)</value>
+</data>
+	<data name="Message.ON11055" xml:space="preserve">
+    <value>Fehler beim Erstellen der Projektierungspartition</value>
+</data>
+	<data name="Message.ON11056" xml:space="preserve">
+    <value>externes EEPROM nicht gesteckt (Hochlauf)</value>
+</data>
+	<data name="Message.ON11057" xml:space="preserve">
+    <value>Konfiguration des ext. EEPROMs für dieses gerät nicht zulässig</value>
+</data>
+	<data name="Message.ON11058" xml:space="preserve">
+    <value>Ungueltiger Freigabestatus</value>
+</data>
+	<data name="Message.ON11059" xml:space="preserve">
+    <value>externes EEPROM nicht gesteckt (zyklisch)</value>
+</data>
+	<data name="Message.ON11060" xml:space="preserve">
+    <value>Verbindungsabbruch am DeviceConnect (in der Restzeit)</value>
+</data>
+	<data name="Message.ON11061" xml:space="preserve">
+    <value>Verbindungsabbruch am DeviceConnect (nach Aufruf in der ISR)</value>
+</data>
+	<data name="Message.ON11062" xml:space="preserve">
+    <value>Verbindungsabbruch am DeviceConnect (vor Aufruf in der ISR)</value>
+</data>
+	<data name="Message.ON11063" xml:space="preserve">
+    <value>Fehler bei der Konsistenzprüfung des ext. EEPROMs</value>
+</data>
+	<data name="Message.ON11064" xml:space="preserve">
+    <value>Hardwareversion auf der Platine passt nicht zur Firmware</value>
+</data>
+	<data name="Message.ON11065" xml:space="preserve">
+    <value>Fehler beim AVR-DMA-Test (DMA2, DMA3)</value>
+</data>
+	<data name="Message.ON11066" xml:space="preserve">
+    <value>Fehler bei der Projektierungsüberprüfung (PRJ)</value>
+</data>
+	<data name="Message.ON11067" xml:space="preserve">
+    <value>Fehler in der Zustandsmaschine der DS-Verarbeitung</value>
+</data>
+	<data name="Message.ON11068" xml:space="preserve">
+    <value>Fehler beim Ausfuehren eines Kommandos (DS 93)</value>
+</data>
+	<data name="Message.ON11069" xml:space="preserve">
+    <value>Fehler beim Ausfuehren eines Kommandos (DS 3)</value>
+</data>
+	<data name="Message.ON11070" xml:space="preserve">
+    <value>Fehler in PC-Connect</value>
+</data>
+	<data name="Message.ON11071" xml:space="preserve">
+    <value>Fehler bei der Synchronisation der Freigabe</value>
+</data>
+	<data name="Message.ON11072" xml:space="preserve">
+    <value>Fehler bei der Synchronisation beim Aufhebens der Freigabe</value>
+</data>
+	<data name="Message.ON11073" xml:space="preserve">
+    <value>Fehler beim Ausfuehren eines Kommandos (DS 4)</value>
+</data>
+	<data name="Message.ON11074" xml:space="preserve">
+    <value>Laenge beim Lesen des DS 4 z lang (Groeßer als 200 Byte)</value>
+</data>
+	<data name="Message.ON11075" xml:space="preserve">
+    <value>Status der main-State-Machine wurde nicht festgelegt</value>
+</data>
+	<data name="Message.ON11076" xml:space="preserve">
+    <value>Unbekannter Status in der main-State-Machine</value>
+</data>
+	<data name="Message.ON11077" xml:space="preserve">
+    <value>Synchronisation beim Statusübergang der State-Machine</value>
+</data>
+	<data name="Message.ON11078" xml:space="preserve">
+    <value>Die Controller befinden sich in unterschiedlichen Zuständen.</value>
+</data>
+	<data name="Message.ON11079" xml:space="preserve">
+    <value>Fehler Auswertung des Proposed State bei Start zykl. Betrieb</value>
+</data>
+	<data name="Message.ON11080" xml:space="preserve">
+    <value>Fehler Auswertung des Proposed State im zyklischen Betrieb</value>
+</data>
+	<data name="Message.ON11081" xml:space="preserve">
+    <value>Unerlaubter Folgezustand beim Austritt aus der ISR</value>
+</data>
+	<data name="Message.ON11082" xml:space="preserve">
+    <value>Unerlaubte Betriebsart beim Beenden des Schutz- Testbetriebs</value>
+</data>
+	<data name="Message.ON11083" xml:space="preserve">
+    <value>Synch. der sicherheitsrelevanten Daten im Schutz- Testbetr.</value>
+</data>
+	<data name="Message.ON11084" xml:space="preserve">
+    <value>Synchronisation der Daten des SafetyConnect</value>
+</data>
+	<data name="Message.ON11085" xml:space="preserve">
+    <value>Synchronisation der Daten der Logik</value>
+</data>
+	<data name="Message.ON11086" xml:space="preserve">
+    <value>Synchronisation der Daten des CAL</value>
+</data>
+	<data name="Message.ON11087" xml:space="preserve">
+    <value>Synchronisation innerhalb der Projektierungsüberprüfung</value>
+</data>
+	<data name="Message.ON11088" xml:space="preserve">
+    <value>Synchronisation im zyklischen Betrieb</value>
+</data>
+	<data name="Message.ON11089" xml:space="preserve">
+    <value>Synchronisation des Freigabestatus bei der Proj.überprüfung</value>
+</data>
+	<data name="Message.ON11090" xml:space="preserve">
+    <value>Synchronisation des Freigabestatus beim Warten auf Projekt.</value>
+</data>
+	<data name="Message.ON11091" xml:space="preserve">
+    <value>Synchronisation bei der Vorbereitung der AS-i Bearbeitung</value>
+</data>
+	<data name="Message.ON11092" xml:space="preserve">
+    <value>Synchronisation der Daten des AS-i</value>
+</data>
+	<data name="Message.ON11093" xml:space="preserve">
+    <value>Synchronisation der Daten des LIO</value>
+</data>
+	<data name="Message.ON11101" xml:space="preserve">
+    <value>Taster klemmt oder wurde nicht losgelassen (Werksgrundeinst.)</value>
+</data>
+	<data name="Message.ON11102" xml:space="preserve">
+    <value>Fehler beim Loeschen der Projektierungs-DS (Werksgrundeinst.)</value>
+</data>
+	<data name="Message.ON11103" xml:space="preserve">
+    <value>Timeout des Software-Watchdogs</value>
+</data>
+	<data name="Message.ON11104" xml:space="preserve">
+    <value>Bearbeitungszeitüberschreitung im zyklischen Betrieb</value>
+</data>
+	<data name="Message.ON11105" xml:space="preserve">
+    <value>STATE_MAIN_PROTECTING --> STATE_MAIN_PROTECTING_STOP ms</value>
+</data>
+	<data name="Message.ON11111" xml:space="preserve">
+    <value>CRC-Fehler bei Übergabe der Parameter für Analogmodul</value>
+</data>
+	<data name="Message.ON11112" xml:space="preserve">
+    <value>Analogwandlung fehlgeschlagen</value>
+</data>
+	<data name="Message.ON11113" xml:space="preserve">
+    <value>Analogwandlung fehlgeschlagen</value>
+</data>
+	<data name="Message.ON11114" xml:space="preserve">
+    <value>Fehler bei Analogwert-Bereichsüberprüfung</value>
+</data>
+	<data name="Message.ON11121" xml:space="preserve">
+    <value>Unbekannte Quelle beim Schreiben der Diagnose (DIASetDiagnosis)</value>
+</data>
+	<data name="Message.ON11122" xml:space="preserve">
+    <value>Unbekannte Quelle beim Lesen der Diagnose (DIAGetDiagnosis)</value>
+</data>
+	<data name="Message.ON11123" xml:space="preserve">
+    <value>Unbekannter SIMATIC-DS</value>
+</data>
+	<data name="Message.ON11124" xml:space="preserve">
+    <value>Fehler beim Lesen eines Logbuchs</value>
+</data>
+	<data name="Message.ON11125" xml:space="preserve">
+    <value>unbekannte Logbuchnummer beim Schreiben eines Logbucheintrags</value>
+</data>
+	<data name="Message.ON11126" xml:space="preserve">
+    <value>falscher Index beim Zugriff auf DS_92_MATRIX</value>
+</data>
+	<data name="Message.ON11127" xml:space="preserve">
+    <value>Fehler beim Schreiben in ein Logbuch</value>
+</data>
+	<data name="Message.ON11128" xml:space="preserve">
+    <value>Fehler beim Löschen eines Logbuchs</value>
+</data>
+	<data name="Message.ON11129" xml:space="preserve">
+    <value>falsche Elementfunktionsnummer beim Schreiben der Elementmeldungen in Logbuch</value>
+</data>
+	<data name="Message.ON11130" xml:space="preserve">
+    <value>Fehler bei der Initialisierung der Logbücher</value>
+</data>
+	<data name="Message.ON11131" xml:space="preserve">
+    <value>Berechneter Datensatz-CRC (interner DS)</value>
+</data>
+	<data name="Message.ON11132" xml:space="preserve">
+    <value>Berechneter Datensatz-CRC</value>
+</data>
+	<data name="Message.ON11133" xml:space="preserve">
+    <value>Berechneter Projektierungs-CRC</value>
+</data>
+	<data name="Message.ON11134" xml:space="preserve">
+    <value>Berechneter Freigabe-CRC</value>
+</data>
+	<data name="Message.ON11135" xml:space="preserve">
+    <value>Fehlender CRC im 1. Segment</value>
+</data>
+	<data name="Message.ON11181" xml:space="preserve">
+    <value>Falscher Handshakecode empfangen</value>
+</data>
+	<data name="Message.ON11182" xml:space="preserve">
+    <value>CRC-Fehler beim Schreiben des DS 111</value>
+</data>
+	<data name="Message.ON11183" xml:space="preserve">
+    <value>Falsche Gerätefunktion für AS-i Strang 1 im Taufe-DS 110</value>
+</data>
+	<data name="Message.ON11184" xml:space="preserve">
+    <value>Falsche Baugruppenkennung im Taufedatensatz 110</value>
+</data>
+	<data name="Message.ON11185" xml:space="preserve">
+    <value>Falsche Gerätefunktion für Speichermodul im Taufe-DS 110</value>
+</data>
+	<data name="Message.ON11186" xml:space="preserve">
+    <value>Falsche StartPos beim Schreiben eines seg. DS</value>
+</data>
+	<data name="Message.ON11187" xml:space="preserve">
+    <value>Längenfehler beim Schreiben eines seg. DS</value>
+</data>
+	<data name="Message.ON11188" xml:space="preserve">
+    <value>DS-Längenangabe bei Fehlererkennung</value>
+</data>
+	<data name="Message.ON11189" xml:space="preserve">
+    <value>DS-Längenangabe passt nicht zur übertragenen Datenmenge</value>
+</data>
+	<data name="Message.ON11190" xml:space="preserve">
+    <value>Blockstrukturfehler in DS160, DS161 oder DS162</value>
+</data>
+	<data name="Message.ON11191" xml:space="preserve">
+    <value>DS93: Kommando noch nicht implementiert</value>
+</data>
+	<data name="Message.ON11192" xml:space="preserve">
+    <value>CRC-Fehler beim Lesen eines DS</value>
+</data>
+	<data name="Message.ON11193" xml:space="preserve">
+    <value>CRC-Fehler beim Lesen eines seg. DS</value>
+</data>
+	<data name="Message.ON11194" xml:space="preserve">
+    <value>Fehler beim Holen der Datenpartition</value>
+</data>
+	<data name="Message.ON11195" xml:space="preserve">
+    <value>Fehler beim Holen der Projektierungspartition</value>
+</data>
+	<data name="Message.ON11196" xml:space="preserve">
+    <value>Fehler beim Lesen der Elementbezeichner aus DS 198</value>
+</data>
+	<data name="Message.ON11197" xml:space="preserve">
+    <value>CRC-Fehler beim Schreiben des DS 110</value>
+</data>
+	<data name="Message.ON11198" xml:space="preserve">
+    <value>CRC-Fehler beim Schreiben eines DS</value>
+</data>
+	<data name="Message.ON11199" xml:space="preserve">
+    <value>CRC-Fehler beim Schreiben eines seg. DS</value>
+</data>
+	<data name="Message.ON11200" xml:space="preserve">
+    <value>Fehler beim Ueberpruefen des Passwortes</value>
+</data>
+	<data name="Message.ON11201" xml:space="preserve">
+    <value>Fehler beim Lesen des Passwortes aus DS 139</value>
+</data>
+	<data name="Message.ON11202" xml:space="preserve">
+    <value>Fehler beim Lesen aus DS 110 (Verbindungsueberwachungszeit)</value>
+</data>
+	<data name="Message.ON11203" xml:space="preserve">
+    <value>Fehler beim Lesen aus DS 110 (Default Passwort)</value>
+</data>
+	<data name="Message.ON11204" xml:space="preserve">
+    <value>Fehler beim Lesen aus DS 110 (System-ID)</value>
+</data>
+	<data name="Message.ON11205" xml:space="preserve">
+    <value>Fehler beim Lesen aus DS 110 (Default-Garätefunktion)</value>
+</data>
+	<data name="Message.ON11213" xml:space="preserve">
+    <value>Fehler beim Aendern eines DS (Loeschen)</value>
+</data>
+	<data name="Message.ON11214" xml:space="preserve">
+    <value>Fehler beim Aendern eines DS (Loeschen)</value>
+</data>
+	<data name="Message.ON11215" xml:space="preserve">
+    <value>Fehler beim Loeschen des DS 182</value>
+</data>
+	<data name="Message.ON11216" xml:space="preserve">
+    <value>Fehler beim Schreiben des DS 292 (Setzen)</value>
+</data>
+	<data name="Message.ON11217" xml:space="preserve">
+    <value>Fehler beim Schreiben des DS 292 (Ruecksetzen)</value>
+</data>
+	<data name="Message.ON11218" xml:space="preserve">
+    <value>Fehler beim Lesen des DS 292</value>
+</data>
+	<data name="Message.ON11219" xml:space="preserve">
+    <value>Fehler beim Lesen eines Default-Datensatzes</value>
+</data>
+	<data name="Message.ON11220" xml:space="preserve">
+    <value>Werksgrundeinstellung wurde überschrieben</value>
+</data>
+	<data name="Message.ON11221" xml:space="preserve">
+    <value>Fehler beim Lesen der freien Pages des externen EEPROMs</value>
+</data>
+	<data name="Message.ON11222" xml:space="preserve">
+    <value>Fehler beim Lesen der Partition fuer DS 124</value>
+</data>
+	<data name="Message.ON11223" xml:space="preserve">
+    <value>Fehler beim Lesen von DS 3: Kommandobearbeitung nicht aktiv</value>
+</data>
+	<data name="Message.ON11224" xml:space="preserve">
+    <value>Fehler beim Lesen des Default-Passwortes</value>
+</data>
+	<data name="Message.ON11225" xml:space="preserve">
+    <value>Fehler beim Schreiben eines Default-DS</value>
+</data>
+	<data name="Message.ON11226" xml:space="preserve">
+    <value>Fehler beim Lesen eines Default-DS</value>
+</data>
+	<data name="Message.ON11227" xml:space="preserve">
+    <value>Fehler beim Schreiben eines seg. Default-DS: Länge ungültig</value>
+</data>
+	<data name="Message.ON11228" xml:space="preserve">
+    <value>Fehler beim Lesen eines seg. Default-DS: DS nicht vorhanden</value>
+</data>
+	<data name="Message.ON11229" xml:space="preserve">
+    <value>Puffer zum Ermitteln eines Default-Datensatz zu klein</value>
+</data>
+	<data name="Message.ON11230" xml:space="preserve">
+    <value>Zu einem Datensatz gibt es keinen Default-Datensatz</value>
+</data>
+	<data name="Message.ON11231" xml:space="preserve">
+    <value>Ungültige FW-Version im Taufe DS231</value>
+</data>
+	<data name="Message.ON11232" xml:space="preserve">
+    <value>Ungültiges Default-Passwort im Taufedatensatz 110</value>
+</data>
+	<data name="Message.ON11233" xml:space="preserve">
+    <value>Falsche FW Version im Taufedatensatz 110</value>
+</data>
+	<data name="Message.ON11234" xml:space="preserve">
+    <value>Falsche Familie Subfamilie im Taufedatensatz 110</value>
+</data>
+	<data name="Message.ON11235" xml:space="preserve">
+    <value>Datensatz ist z groß für verwendeten internen Puffer</value>
+</data>
+	<data name="Message.ON11236" xml:space="preserve">
+    <value>Datensatz ist zu groß für verwendeten internen Puffer</value>
+</data>
+	<data name="Message.ON11237" xml:space="preserve">
+    <value>Unbekannter Zustand in uIPRHandleDs</value>
+</data>
+	<data name="Message.ON11238" xml:space="preserve">
+    <value>Fehler beim Loeschen der Taufedatensaetze</value>
+</data>
+	<data name="Message.ON11239" xml:space="preserve">
+    <value>Fehler beim Lesen eines DS aus dem EEPROM</value>
+</data>
+	<data name="Message.ON11240" xml:space="preserve">
+    <value>Fehler beim Lesen eines DS</value>
+</data>
+	<data name="Message.ON11241" xml:space="preserve">
+    <value>Fehler beim Schreiben eines DS</value>
+</data>
+	<data name="Message.ON11242" xml:space="preserve">
+    <value>Ungültige Verbindungsüberwachungszeit im Taufedatensatz 110</value>
+</data>
+	<data name="Message.ON11243" xml:space="preserve">
+    <value>Fehler beim Lesen der Codefolgen</value>
+</data>
+	<data name="Message.ON11244" xml:space="preserve">
+    <value>Fehler beim Schreiben der Codefolgen</value>
+</data>
+	<data name="Message.ON11245" xml:space="preserve">
+    <value>Fehler beim Löschen eines segmentierten Datensatzes</value>
+</data>
+	<data name="Message.ON11246" xml:space="preserve">
+    <value>Fehler beim Erstellen eines Default-DS (segmentierter DS)</value>
+</data>
+	<data name="Message.ON11247" xml:space="preserve">
+    <value>Fehler beim Schreiben des DS213</value>
+</data>
+	<data name="Message.ON11248" xml:space="preserve">
+    <value>Ungültige SubslotNr bei Abfrage des DS213</value>
+</data>
+	<data name="Message.ON11249" xml:space="preserve">
+    <value>Ungültige SlotNr bei Abfrage des DS213</value>
+</data>
+	<data name="Message.ON11250" xml:space="preserve">
+    <value>Ungültige Blocklänge im DS213</value>
+</data>
+	<data name="Message.ON11251" xml:space="preserve">
+    <value>Fehler beim Loeschen in Fkt. uStartNewProjecting</value>
+</data>
+	<data name="Message.ON11252" xml:space="preserve">
+    <value>Fehler beim Loeschen in Fkt. uCheckDs128Projecting</value>
+</data>
+	<data name="Message.ON11253" xml:space="preserve">
+    <value>Fehler beim Lesen des DS 181</value>
+</data>
+	<data name="Message.ON11254" xml:space="preserve">
+    <value>Fehler beim Schreiben des DS 181</value>
+</data>
+	<data name="Message.ON11255" xml:space="preserve">
+    <value>Fehler beim Loeschen des DS 181</value>
+</data>
+	<data name="Message.ON11256" xml:space="preserve">
+    <value>Fehler beim Ermitteln der Projektierungspartition</value>
+</data>
+	<data name="Message.ON11257" xml:space="preserve">
+    <value>Unbekannter Projektierungsstatus</value>
+</data>
+	<data name="Message.ON11258" xml:space="preserve">
+    <value>Fehler beim Lesen des DS 182</value>
+</data>
+	<data name="Message.ON11259" xml:space="preserve">
+    <value>Fehler beim Schreiben des DS 182</value>
+</data>
+	<data name="Message.ON11260" xml:space="preserve">
+    <value>Keine Partitions-ID bei der Ueberpruefung der Projektierung</value>
+</data>
+	<data name="Message.ON11261" xml:space="preserve">
+    <value>Fehler beim Ueberpruefen des Projektierungs-CRCs</value>
+</data>
+	<data name="Message.ON11262" xml:space="preserve">
+    <value>Fehler beim Holen des Freigabestatus</value>
+</data>
+	<data name="Message.ON11263" xml:space="preserve">
+    <value>Unbekannter Projektierungszustand</value>
+</data>
+	<data name="Message.ON11264" xml:space="preserve">
+    <value>Fehler beim Lesen des DS 182 bei der Freigabe</value>
+</data>
+	<data name="Message.ON11265" xml:space="preserve">
+    <value>Fehler beim Schreiben des DS 182 bei der Freigabe</value>
+</data>
+	<data name="Message.ON11266" xml:space="preserve">
+    <value>ext. EEPROM beim Schreiben des DS 182 nicht vorhanden</value>
+</data>
+	<data name="Message.ON11267" xml:space="preserve">
+    <value>Fehler beim Loeschen in Fkt. uPRJDeleteProjectDs</value>
+</data>
+	<data name="Message.ON11268" xml:space="preserve">
+    <value>Fehler beim Lesen des DS 181 bei der Freigabe</value>
+</data>
+	<data name="Message.ON11269" xml:space="preserve">
+    <value>Fehler beim Lesen des DS 130 beim SOLL- IST-Vergleich</value>
+</data>
+	<data name="Message.ON11270" xml:space="preserve">
+    <value>Fehler beim Vergl. Soll- Ist des Projektierungs-CRCs in DS181</value>
+</data>
+	<data name="Message.ON11271" xml:space="preserve">
+    <value>Fehler beim SOLL- IST-Vergleich eines Slots</value>
+</data>
+	<data name="Message.ON11272" xml:space="preserve">
+    <value>Fehler beim Ermitteln der aktuellen Konfiguration (Slot)</value>
+</data>
+	<data name="Message.ON11273" xml:space="preserve">
+    <value>Fehler bei der Synchronisation der Konfigurationen</value>
+</data>
+	<data name="Message.ON11274" xml:space="preserve">
+    <value>Anzahl der IST-Slots ungleich Anzahl der SOLL-Slots</value>
+</data>
+	<data name="Message.ON11275" xml:space="preserve">
+    <value>Fehler beim Auslesen der Zykluszeit</value>
+</data>
+	<data name="Message.ON11276" xml:space="preserve">
+    <value>Zykluszeit liegt ausserhalb der erlaubten Grenzen</value>
+</data>
+	<data name="Message.ON11277" xml:space="preserve">
+    <value>Fehler beim Auslesen der CRC der Projektierungs-DS</value>
+</data>
+	<data name="Message.ON11278" xml:space="preserve">
+    <value>Unerwarteter Datensatz Timeout bei der Projektierung</value>
+</data>
+	<data name="Message.ON11279" xml:space="preserve">
+    <value>Fehler beim Lesen des DS130</value>
+</data>
+	<data name="Message.ON11280" xml:space="preserve">
+    <value>Fehler bei der Synchronisation des Freigabestatus</value>
+</data>
+	<data name="Message.ON11281" xml:space="preserve">
+    <value>Freigabestatus ist auf Master und Slave unterschiedlich</value>
+</data>
+	<data name="Message.ON11282" xml:space="preserve">
+    <value>Kein Projektname eingetragen</value>
+</data>
+	<data name="Message.ON11283" xml:space="preserve">
+    <value>Kein Projektierungszeitstempel eingetragen</value>
+</data>
+	<data name="Message.ON11284" xml:space="preserve">
+    <value>Kein Name des Projekteurs eingetragen</value>
+</data>
+	<data name="Message.ON11285" xml:space="preserve">
+    <value>Kein Firmenname des Projekteurs eingetragen</value>
+</data>
+	<data name="Message.ON11286" xml:space="preserve">
+    <value>Kein Projektierungsfreigabezeitstempel eingetragen</value>
+</data>
+	<data name="Message.ON11287" xml:space="preserve">
+    <value>Kein Name des Freigebenden eingetragen</value>
+</data>
+	<data name="Message.ON11288" xml:space="preserve">
+    <value>Kein Firmenname des Freigebenden eingetragen</value>
+</data>
+	<data name="Message.ON11289" xml:space="preserve">
+    <value>Fehler beim Lesen des DS 180</value>
+</data>
+	<data name="Message.ON11290" xml:space="preserve">
+    <value>DS131-Länge passt nicht zur DS180-Subslotbaugruppenanzahl</value>
+</data>
+	<data name="Message.ON11291" xml:space="preserve">
+    <value>DS130-Länge passt nicht zur DS180-Slotbaugruppenanzahl</value>
+</data>
+	<data name="Message.ON11292" xml:space="preserve">
+    <value>Synch. zum Ausgleich der Laufzeiten bei der Proj.Freigabe</value>
+</data>
+	<data name="Message.ON11293" xml:space="preserve">
+    <value>Fehler beim Lesen des DS 131</value>
+</data>
+	<data name="Message.ON11294" xml:space="preserve">
+    <value>Fehler beim Lesen des DS 180 (Subslotermittlung)</value>
+</data>
+	<data name="Message.ON11295" xml:space="preserve">
+    <value>Projektierung-DS der Subslots ist nicht DS 131</value>
+</data>
+	<data name="Message.ON11296" xml:space="preserve">
+    <value>Fehler beim Lesen des DS131 oder CRC-Fehler</value>
+</data>
+	<data name="Message.ON11297" xml:space="preserve">
+    <value>Fehler beim Lesen des DS161 oder CRC-Fehler</value>
+</data>
+	<data name="Message.ON11298" xml:space="preserve">
+    <value>Unerwartete DS-Quelle bei der Projektierung</value>
+</data>
+	<data name="Message.ON11299" xml:space="preserve">
+    <value>Unerwartete DS-Koordination bei der Projektierung</value>
+</data>
+	<data name="Message.ON11411" xml:space="preserve">
+    <value>Fehler bei der Synchronisation der Ausg.Abbilder (lokal)</value>
+</data>
+	<data name="Message.ON11412" xml:space="preserve">
+    <value>Fehler bei der Synchronisation der Eing.Abbilder (lokal)</value>
+</data>
+	<data name="Message.ON11413" xml:space="preserve">
+    <value>Fehler im Zustandstest (gemeinsamer Treiber der lokalen Ausgänge)</value>
+</data>
+	<data name="Message.ON11414" xml:space="preserve">
+    <value>Fehlerhafter Zustandstest nach Zustandsänderung am FDO1</value>
+</data>
+	<data name="Message.ON11415" xml:space="preserve">
+    <value>Fehlerhafter Zustandstest nach Zustandsänderung am FDO2</value>
+</data>
+	<data name="Message.ON11416" xml:space="preserve">
+    <value>Fehlerhafter Zustandstest nach Zustandsänderung am FDO3</value>
+</data>
+	<data name="Message.ON11417" xml:space="preserve">
+    <value>Fehlerhafter Zustandstest nach Zustandsänderung am FDO4</value>
+</data>
+	<data name="Message.ON11418" xml:space="preserve">
+    <value>Fehler im Zustandstest (gemeinsamer Treiber der SafetynG Ausgänge)</value>
+</data>
+	<data name="Message.ON11419" xml:space="preserve">
+    <value>Fehlerhafter Zustandstest nach Zustandsänderung am Safety nG FDO5</value>
+</data>
+	<data name="Message.ON11420" xml:space="preserve">
+    <value>Fehlerhafter Zustandstest nach Zustandsänderung am Safety nG FDO6</value>
+</data>
+	<data name="Message.ON11421" xml:space="preserve">
+    <value>Fehlerhafter Zustandstest am FDO1 (statisches Ausgangssignal)</value>
+</data>
+	<data name="Message.ON11422" xml:space="preserve">
+    <value>Fehlerhafter Zustandstest am FDO2 (statisches Ausgangssignal)</value>
+</data>
+	<data name="Message.ON11423" xml:space="preserve">
+    <value>Fehlerhafter Zustandstest am FDO3 (statisches Ausgangssignal)</value>
+</data>
+	<data name="Message.ON11424" xml:space="preserve">
+    <value>Fehlerhafter Zustandstest am FDO4 (statisches Ausgangssignal)</value>
+</data>
+	<data name="Message.ON11425" xml:space="preserve">
+    <value>Fehlerhafter Zustandstest am Safety nG FDO5 (statisches Ausgangssignal)</value>
+</data>
+	<data name="Message.ON11426" xml:space="preserve">
+    <value>Fehlerhafter Zustandstest am Safety nG FDO6 (statisches Ausgangssignal)</value>
+</data>
+	<data name="Message.ON11427" xml:space="preserve">
+    <value>Fehlerhafter Dunkeltest (gemeinsamer Treiber der lokalen Ausgänge)</value>
+</data>
+	<data name="Message.ON11428" xml:space="preserve">
+    <value>Fehlerhafter Dunkeltest des Kanaltreibers (FDO1)</value>
+</data>
+	<data name="Message.ON11429" xml:space="preserve">
+    <value>Fehlerhafter Dunkeltest des Kanaltreibers (FDO2)</value>
+</data>
+	<data name="Message.ON11430" xml:space="preserve">
+    <value>Fehlerhafter Dunkeltest des Kanaltreibers (FDO3)</value>
+</data>
+	<data name="Message.ON11431" xml:space="preserve">
+    <value>Fehlerhafter Dunkeltest des Kanaltreibers (FDO4)</value>
+</data>
+	<data name="Message.ON11432" xml:space="preserve">
+    <value>Fehlerhafter Dunkeltest (gemeinsamer Treiber der SafetynG Ausgänge)</value>
+</data>
+	<data name="Message.ON11433" xml:space="preserve">
+    <value>Fehlerhafter Dunkeltest des Kanaltreibers Safety nG (FDO5)</value>
+</data>
+	<data name="Message.ON11434" xml:space="preserve">
+    <value>Fehlerhafter Dunkeltest des Kanaltreibers Safety nG (FDO6)</value>
+</data>
+	<data name="Message.ON11435" xml:space="preserve">
+    <value>Fehlerhafter Helltest des Kanaltreibers (FDO1)</value>
+</data>
+	<data name="Message.ON11436" xml:space="preserve">
+    <value>Fehlerhafter Helltest des Kanaltreibers (FDO2)</value>
+</data>
+	<data name="Message.ON11437" xml:space="preserve">
+    <value>Fehlerhafter Helltest des Kanaltreibers (FDO3)</value>
+</data>
+	<data name="Message.ON11438" xml:space="preserve">
+    <value>Fehlerhafter Helltest des Kanaltreibers (FDO4)</value>
+</data>
+	<data name="Message.ON11439" xml:space="preserve">
+    <value>Fehlerhafter Helltest des Kanaltreibers Safety nG (FDO5)</value>
+</data>
+	<data name="Message.ON11440" xml:space="preserve">
+    <value>Fehlerhafter Helltest des Kanaltreibers Safety nG (FDO6)</value>
+</data>
+	<data name="Message.ON11441" xml:space="preserve">
+    <value>VREF FDO1 FB ausserhalb der zulässigen Grenzen</value>
+</data>
+	<data name="Message.ON11442" xml:space="preserve">
+    <value>VREF FDO2 FB ausserhalb der zulässigen Grenzen</value>
+</data>
+	<data name="Message.ON11443" xml:space="preserve">
+    <value>VREF FDO3 FB ausserhalb der zulässigen Grenzen</value>
+</data>
+	<data name="Message.ON11444" xml:space="preserve">
+    <value>VREF FDO4 FB ausserhalb der zulässigen Grenzen</value>
+</data>
+	<data name="Message.ON11445" xml:space="preserve">
+    <value>VREF COMMON FB ausserhalb der zulässigen Grenzen</value>
+</data>
+	<data name="Message.ON11446" xml:space="preserve">
+    <value>Fehler beim Lesen des DS118</value>
+</data>
+	<data name="Message.ON11451" xml:space="preserve">
+    <value>Protokollfehler: falscher BCC</value>
+</data>
+	<data name="Message.ON11452" xml:space="preserve">
+    <value>Protokollfehler: Fehler bei Auftragskennung 0x03</value>
+</data>
+	<data name="Message.ON11453" xml:space="preserve">
+    <value>Protokollfehler: Fehler bei Auftragskennung 0x07</value>
+</data>
+	<data name="Message.ON11454" xml:space="preserve">
+    <value>Protokollfehler: falsche Laenge bei Auftragskennung 0x01</value>
+</data>
+	<data name="Message.ON11455" xml:space="preserve">
+    <value>Protokollfehler: falsche Laenge bei Auftragsk. 0x03, 0x07</value>
+</data>
+	<data name="Message.ON11456" xml:space="preserve">
+    <value>Protokollfehler: falsche Laenge bei Auftragskennung 0x05</value>
+</data>
+	<data name="Message.ON11457" xml:space="preserve">
+    <value>Protokollfehler: falsche Laenge bei Auftragskennung 0x09</value>
+</data>
+	<data name="Message.ON11458" xml:space="preserve">
+    <value>Protokollfehler: falsche Laenge bei Auftragskennung 0x0B</value>
+</data>
+	<data name="Message.ON11459" xml:space="preserve">
+    <value>Protokollfehler: falsche Laenge bei Auftragskennung 0x81</value>
+</data>
+	<data name="Message.ON11460" xml:space="preserve">
+    <value>Protokollfehler: falsche Folgenummer bei Auftragsk. 0x03,0x07</value>
+</data>
+	<data name="Message.ON11461" xml:space="preserve">
+    <value>Protokollfehler: falsche Folgenummer bei Auftragskennung 0x0B</value>
+</data>
+	<data name="Message.ON11462" xml:space="preserve">
+    <value>Protokollfehler: unbekannte Auftragskennung Empfangen</value>
+</data>
+	<data name="Message.ON11463" xml:space="preserve">
+    <value>Protokollfehler: unbekannte Auftragskennung Senden</value>
+</data>
+	<data name="Message.ON11464" xml:space="preserve">
+    <value>Protokollfehler: Ueberlauf von U5RB</value>
+</data>
+	<data name="Message.ON11465" xml:space="preserve">
+    <value>Protokollfehler: ungueltiges ADR-Byte</value>
+</data>
+	<data name="Message.ON11466" xml:space="preserve">
+    <value>Protokollfehler: ungueltiges LGE-Byte</value>
+</data>
+	<data name="Message.ON11467" xml:space="preserve">
+    <value>Protokollfehler: ungueltiges B-LGE-Byte</value>
+</data>
+	<data name="Message.ON11468" xml:space="preserve">
+    <value>Fehler beim Holen des Empfangsdatenpuffers</value>
+</data>
+	<data name="Message.ON11469" xml:space="preserve">
+    <value>Fehler beim Freigeben des Empfangsdatenpuffers</value>
+</data>
+	<data name="Message.ON11470" xml:space="preserve">
+    <value>Fehler beim Holen des Sendedatenpuffers</value>
+</data>
+	<data name="Message.ON11471" xml:space="preserve">
+    <value>Fehler beim Freigeben des Sendedatenpuffers</value>
+</data>
+	<data name="Message.ON11472" xml:space="preserve">
+    <value>Schnittstelle nicht initialisiert</value>
+</data>
+	<data name="Message.ON11481" xml:space="preserve">
+    <value>Fehler beim Lesen des DS132 mit Elementparametern</value>
+</data>
+	<data name="Message.ON11482" xml:space="preserve">
+    <value>Länge eines Elementdatenblocks z groß für temp. Speicher</value>
+</data>
+	<data name="Message.ON11483" xml:space="preserve">
+    <value>Anzahl der erkannten Elementparameter != Elementanzahl</value>
+</data>
+	<data name="Message.ON11484" xml:space="preserve">
+    <value>Unbekannte Element-Funktion in DS132</value>
+</data>
+	<data name="Message.ON11485" xml:space="preserve">
+    <value>Logikspeicher kann nicht alle Logikelemente aufnehmen</value>
+</data>
+	<data name="Message.ON11486" xml:space="preserve">
+    <value>Senden von TLogDataSS (Logikspeicher auslesen)</value>
+</data>
+	<data name="Message.ON11487" xml:space="preserve">
+    <value>Ungültiger Funktionszeiger</value>
+</data>
+	<data name="Message.ON11488" xml:space="preserve">
+    <value>Ungültige E A-Adresse: Ein- und Ausgangsnummer sind 0</value>
+</data>
+	<data name="Message.ON11489" xml:space="preserve">
+    <value>Ungültige E > 0</value>
+</data>
+	<data name="Message.ON11490" xml:space="preserve">
+    <value>Ungültige E A-Adresse: Nicht unterstützte Slotnummer</value>
+</data>
+	<data name="Message.ON11491" xml:space="preserve">
+    <value>BMK-IN-Adresse mehrfach verwendet</value>
+</data>
+	<data name="Message.ON11492" xml:space="preserve">
+    <value>Ausgangsadresse mehrfach verwendet</value>
+</data>
+	<data name="Message.ON11493" xml:space="preserve">
+    <value>BMK-OUT-Adresse mehrfach als Eingang verwendet</value>
+</data>
+	<data name="Message.ON11494" xml:space="preserve">
+    <value>Der AS-i Ausgang verweist auf einen nicht verfügbaren Slave</value>
+</data>
+	<data name="Message.ON11495" xml:space="preserve">
+    <value>VKE-Eingang unbekannt nicht vorher als Ausgang definiert</value>
+</data>
+	<data name="Message.ON11496" xml:space="preserve">
+    <value>Logikspeicher kann nicht alle temporären Daten aufnehmen</value>
+</data>
+	<data name="Message.ON11497" xml:space="preserve">
+    <value>Fehlerhafte Reihenfolge der Elementlevel</value>
+</data>
+	<data name="Message.ON11498" xml:space="preserve">
+    <value>Logikspeicher kann nicht alle Logikelemente aufnehmen</value>
+</data>
+	<data name="Message.ON11500" xml:space="preserve">
+    <value>0x850: übrige Verletzung von Verschaltungsregeln</value>
+</data>
+	<data name="Message.ON11501" xml:space="preserve">
+    <value>falscher Verbindungstyp (VKE BMK.IN BMK.OUT)</value>
+</data>
+	<data name="Message.ON11502" xml:space="preserve">
+    <value>unbenutzte Verbindung projektiert</value>
+</data>
+	<data name="Message.ON11503" xml:space="preserve">
+    <value>unbenutzte Verbindung und falsche Typen</value>
+</data>
+	<data name="Message.ON11504" xml:space="preserve">
+    <value>benutzte Verbindung nicht projektiert</value>
+</data>
+	<data name="Message.ON11505" xml:space="preserve">
+    <value>nicht projektierte Verbindung und falsche Typen</value>
+</data>
+	<data name="Message.ON11506" xml:space="preserve">
+    <value>Projektierungsfehler an den Verbindungen</value>
+</data>
+	<data name="Message.ON11507" xml:space="preserve">
+    <value>Projektierungs- und Typenfehler an den Verbindungen</value>
+</data>
+	<data name="Message.ON11508" xml:space="preserve">
+    <value>Ungültige Elementparameterlänge</value>
+</data>
+	<data name="Message.ON11509" xml:space="preserve">
+    <value>Fehlerhafte Element-CRC</value>
+</data>
+	<data name="Message.ON11510" xml:space="preserve">
+    <value>Untertyp ist falsch oder (noch nicht vorgesehen)</value>
+</data>
+	<data name="Message.ON11511" xml:space="preserve">
+    <value>ungültige Ersatzwerte (Eingang, Ausgang)</value>
+</data>
+	<data name="Message.ON11512" xml:space="preserve">
+    <value>Zählgrenzwert ist nicht im richtigen Bereich</value>
+</data>
+	<data name="Message.ON11513" xml:space="preserve">
+    <value>Ein- Ausgangskonfiguration für das Element nicht erlaubt</value>
+</data>
+	<data name="Message.ON11514" xml:space="preserve">
+    <value>reserviertes DS132-Bit, das 0 sein soll, auf 1</value>
+</data>
+	<data name="Message.ON11515" xml:space="preserve">
+    <value>Querschlusserkennung in diesem Fall nicht projektierbar</value>
+</data>
+	<data name="Message.ON11516" xml:space="preserve">
+    <value>Ungültige VKE-Adresse: Eingang != 0 oder Ausgang 0</value>
+</data>
+	<data name="Message.ON11517" xml:space="preserve">
+    <value>Status, Kommando: falscher Slot</value>
+</data>
+	<data name="Message.ON11518" xml:space="preserve">
+    <value>CRC über statische Inhalte des Logikspeichers verändert</value>
+</data>
+	<data name="Message.ON11519" xml:space="preserve">
+    <value>CRC über statische Inhalte (1 CPU des Logikspeichers falsch)</value>
+</data>
+	<data name="Message.ON11520" xml:space="preserve">
+    <value>Elementnummer mehrfach vergeben</value>
+</data>
+	<data name="Message.ON11521" xml:space="preserve">
+    <value>Ende des DS132 schließt nicht bündig mit Elementparameter ab</value>
+</data>
+	<data name="Message.ON11522" xml:space="preserve">
+    <value>Elementdatenblock nicht vollständig im DS132 enthalten</value>
+</data>
+	<data name="Message.ON11523" xml:space="preserve">
+    <value>Elementdatenblocklänge ist kleiner als ein Datenblockheader</value>
+</data>
+	<data name="Message.ON11524" xml:space="preserve">
+    <value>Elementnummer 0 ist unzulässig</value>
+</data>
+	<data name="Message.ON11525" xml:space="preserve">
+    <value>Ein Speichermuster wurde zerstört</value>
+</data>
+	<data name="Message.ON11526" xml:space="preserve">
+    <value>Unbekannter Rückgabewert bei der Logikbearbeitung</value>
+</data>
+	<data name="Message.ON11527" xml:space="preserve">
+    <value>Elementnummer konnte nicht gefunden werden.</value>
+</data>
+	<data name="Message.ON11528" xml:space="preserve">
+    <value>Elementdatenblock passt nicht in Pufferspeicher</value>
+</data>
+	<data name="Message.ON11529" xml:space="preserve">
+    <value>Ungültiger Elementdatentyp beim Auslesen von Elementdaten</value>
+</data>
+	<data name="Message.ON11530" xml:space="preserve">
+    <value>Elementnummer konnte nicht gefunden werden.</value>
+</data>
+	<data name="Message.ON11531" xml:space="preserve">
+    <value>Fehlerhafte Verschaltung bzgl. Verschaltungsebene von VKEs</value>
+</data>
+	<data name="Message.ON11532" xml:space="preserve">
+    <value>Elementdatentyp beim Ermittlen von Elementdatenblockgrößen</value>
+</data>
+	<data name="Message.ON11533" xml:space="preserve">
+    <value>Maximale Elementanzahl wurde überschritten</value>
+</data>
+	<data name="Message.ON11534" xml:space="preserve">
+    <value>Elementfunktion passt nicht zur Elementnummer</value>
+</data>
+	<data name="Message.ON11535" xml:space="preserve">
+    <value>Fehlerhaftes im DS132 Elementstatus</value>
+</data>
+	<data name="Message.ON11536" xml:space="preserve">
+    <value>Fehlerhafte im DS132 Elementstatus</value>
+</data>
+	<data name="Message.ON11537" xml:space="preserve">
+    <value>Ungültiger SafetyConnect BMK-Typ</value>
+</data>
+	<data name="Message.ON11538" xml:space="preserve">
+    <value>Ungültiger DeviceConnect BMK-Typ</value>
+</data>
+	<data name="Message.ON11539" xml:space="preserve">
+    <value>Ungültiger AS-i BMK-Typ</value>
+</data>
+	<data name="Message.ON11540" xml:space="preserve">
+    <value>Falscher Parameter AS-i 1...4F-DO</value>
+</data>
+	<data name="Message.ON11541" xml:space="preserve">
+    <value>Falscher Parameter Ver- Entriegelungsart, Schutztür mit Zuh.</value>
+</data>
+	<data name="Message.ON11542" xml:space="preserve">
+    <value>Falscher Wertebereich für LOCK-RF-Schaltzeit</value>
+</data>
+	<data name="Message.ON11543" xml:space="preserve">
+    <value>Falsche Muting-Betriebsart</value>
+</data>
+	<data name="Message.ON11544" xml:space="preserve">
+    <value>Falsche Startart bei Schutztür mit Zuhaltung (Anlaufzeit > 0)</value>
+</data>
+	<data name="Message.ON11545" xml:space="preserve">
+    <value>Falscher Zustand während MS-Auswertung</value>
+</data>
+	<data name="Message.ON11546" xml:space="preserve">
+    <value>Falsche Startart parametriert für ASi 1..4FDO</value>
+</data>
+	<data name="Message.ON11547" xml:space="preserve">
+    <value>Falscher Parameterwert für den Störmeldeausgang</value>
+</data>
+	<data name="Message.ON11548" xml:space="preserve">
+    <value>Falscher Parameterwert Eingangsslaveart für Element ASI 2FDI</value>
+</data>
+	<data name="Message.ON11549" xml:space="preserve">
+    <value>Falscher Parameterwert Zuhaltung bei offener Schutztür</value>
+</data>
+	<data name="Message.ON11550" xml:space="preserve">
+    <value>Ungültiger LIO BMK-Typ</value>
+</data>
+	<data name="Message.ON11551" xml:space="preserve">
+    <value>Fehler beim Lesen des DS133, Prozessdatenkonfiguration</value>
+</data>
+	<data name="Message.ON11552" xml:space="preserve">
+    <value>In DS133 sind z viele ungültige Prozessdatenblöcke konfig.</value>
+</data>
+	<data name="Message.ON11553" xml:space="preserve">
+    <value>Falscher CAL-Zustand bei Start der BMK-Registrierung</value>
+</data>
+	<data name="Message.ON11554" xml:space="preserve">
+    <value>Falscher CAL-Zustand bei der BMK-Registrierung</value>
+</data>
+	<data name="Message.ON11555" xml:space="preserve">
+    <value>ungültiger Übergabeparameter (Zeiger bei der BMK-Reg.)</value>
+</data>
+	<data name="Message.ON11556" xml:space="preserve">
+    <value>BMK: ungültige Komponente (log. statt physikalisches Element)</value>
+</data>
+	<data name="Message.ON11557" xml:space="preserve">
+    <value>BMK für Interfacemodul projektiert, aber nicht vorhanden</value>
+</data>
+	<data name="Message.ON11558" xml:space="preserve">
+    <value>BMK: Subslot im BMK bei DeviceConnect ist nicht 0</value>
+</data>
+	<data name="Message.ON11559" xml:space="preserve">
+    <value>BMK: Eingangsnummer bei DeviceConnect ist zu groß</value>
+</data>
+	<data name="Message.ON11560" xml:space="preserve">
+    <value>BMK: Ausgangsnummer bei DeviceConnect ist zu groß</value>
+</data>
+	<data name="Message.ON11561" xml:space="preserve">
+    <value>BMK: Verwendung sicherer E A am DeviceConnect nicht möglich</value>
+</data>
+	<data name="Message.ON11562" xml:space="preserve">
+    <value>BMK: Querschlusserkennung für DeviceConnect nicht erlaubt</value>
+</data>
+	<data name="Message.ON11563" xml:space="preserve">
+    <value>BMK: Eing.verzögerungszeit für DeviceConnect nicht erlaubt</value>
+</data>
+	<data name="Message.ON11564" xml:space="preserve">
+    <value>BMK: Subslot im BMK bei SafetyConnect ist nicht 0</value>
+</data>
+	<data name="Message.ON11565" xml:space="preserve">
+    <value>BMK: Eingangsnummer bei SafetyConnect ist zu groß</value>
+</data>
+	<data name="Message.ON11566" xml:space="preserve">
+    <value>BMK: Ausgangsnummer bei SafetyConnect ist zu groß</value>
+</data>
+	<data name="Message.ON11567" xml:space="preserve">
+    <value>BMK: keine E A von Peripheriegerät verwendbar</value>
+</data>
+	<data name="Message.ON11568" xml:space="preserve">
+    <value>BMK: keine sicherern E A an diesem Peripheriegerät vorhanden</value>
+</data>
+	<data name="Message.ON11569" xml:space="preserve">
+    <value>BMK: Querschlusserkennung nur auf Per.G. mit sicheren Eing.</value>
+</data>
+	<data name="Message.ON11570" xml:space="preserve">
+    <value>BMK: Querschlusserkennung ist bei Ausgang projektiert</value>
+</data>
+	<data name="Message.ON11571" xml:space="preserve">
+    <value>BMK: Eingangsverzögerungszeit für SafetyConnect zu groß</value>
+</data>
+	<data name="Message.ON11572" xml:space="preserve">
+    <value>BMK: Eingangsverzögerungszeit ist bei Ausgang projektiert</value>
+</data>
+	<data name="Message.ON11573" xml:space="preserve">
+    <value>BMK: Eing.verzögerungszeit bei Peripheriegerät nicht erlaubt</value>
+</data>
+	<data name="Message.ON11574" xml:space="preserve">
+    <value>BMK: ungültiger Slot projektiert</value>
+</data>
+	<data name="Message.ON11575" xml:space="preserve">
+    <value>Falscher CAL-Zustand bei Verlassen der BMK-Registrierung</value>
+</data>
+	<data name="Message.ON11576" xml:space="preserve">
+    <value>Falscher CAL-Zustand bei der Vorbereitung der SS zur Logik</value>
+</data>
+	<data name="Message.ON11577" xml:space="preserve">
+    <value>Max. Anzahl an Peripheriegeräten überschritten</value>
+</data>
+	<data name="Message.ON11578" xml:space="preserve">
+    <value>Fehler beim Ermitteln der Ein- und Ausgänge eines Per.gerätes</value>
+</data>
+	<data name="Message.ON11579" xml:space="preserve">
+    <value>Max. Anzahl von Ein- oder Ausgängen pro Per.gerät überschr.</value>
+</data>
+	<data name="Message.ON11580" xml:space="preserve">
+    <value>Falscher CAL-Zustand bei Abfrage der Eigangsver.zeit (PER)</value>
+</data>
+	<data name="Message.ON11581" xml:space="preserve">
+    <value>Ungültige Slotnummer bei Abfrage der Eigangsver.zeit (PER)</value>
+</data>
+	<data name="Message.ON11582" xml:space="preserve">
+    <value>Ungültiger Zeiger bei Abfrage der Eigangsver.zeit (PER)</value>
+</data>
+	<data name="Message.ON11583" xml:space="preserve">
+    <value>Falscher CAL-Zustand bei Übergabe der Peripheriedaten an CAL</value>
+</data>
+	<data name="Message.ON11584" xml:space="preserve">
+    <value>Ungültige Slotnummer bei Übergabe der Peripheriedaten an CAL</value>
+</data>
+	<data name="Message.ON11585" xml:space="preserve">
+    <value>Falscher CAL-Zustand bei Rückgabe der Peripheriedaten an PER</value>
+</data>
+	<data name="Message.ON11586" xml:space="preserve">
+    <value>Ungültige Slotnummer bei Rückgabe der Peripheriedaten an PER</value>
+</data>
+	<data name="Message.ON11587" xml:space="preserve">
+    <value>Falscher CAL-Zustand bei Übergabe der Eing.-Diagnose an CAL</value>
+</data>
+	<data name="Message.ON11588" xml:space="preserve">
+    <value>Ungültige Slotnummer bei Übergabe der Eing.-Diagnose an CAL</value>
+</data>
+	<data name="Message.ON11589" xml:space="preserve">
+    <value>Ungültige Eingangsnr. bei Übergabe der Eing.-Diagnose an CAL</value>
+</data>
+	<data name="Message.ON11590" xml:space="preserve">
+    <value>Falscher CAL-Zustand bei Übergabe der Ausg.-Diagnose an CAL</value>
+</data>
+	<data name="Message.ON11591" xml:space="preserve">
+    <value>Ungültige Slotnummer bei Übergabe der Ausg.-Diagnose an CAL</value>
+</data>
+	<data name="Message.ON11592" xml:space="preserve">
+    <value>Ungültige Ausgangsnr. bei Übergabe der Ausg.-Diagnose an CAL</value>
+</data>
+	<data name="Message.ON11593" xml:space="preserve">
+    <value>Ungültiger Fehlercode bei Übergabe der Ausg.-Diagnose an CAL</value>
+</data>
+	<data name="Message.ON11594" xml:space="preserve">
+    <value>Falscher CAL-Zustand bei Durchführung des zyklischen Betriebs</value>
+</data>
+	<data name="Message.ON11595" xml:space="preserve">
+    <value>CRC über Konfigurationsdaten falsch oder falscher CAL-Zustand</value>
+</data>
+	<data name="Message.ON11596" xml:space="preserve">
+    <value>Kommunikation mit dem DeviceConnect nicht möglich</value>
+</data>
+	<data name="Message.ON11597" xml:space="preserve">
+    <value>Fehler bei Synch. des Zustandes der PROFIBUS Kommunikation</value>
+</data>
+	<data name="Message.ON11598" xml:space="preserve">
+    <value>Fehler bei Synch. der Eingangsdaten vom DeviceConnect</value>
+</data>
+	<data name="Message.ON11599" xml:space="preserve">
+    <value>Fehler bei Synch. der Ausgangsdaten zum DeviceConnect</value>
+</data>
+	<data name="Message.ON11600" xml:space="preserve">
+    <value>Üngültiger Zeiger beim Schreiben der Daten an DC</value>
+</data>
+	<data name="Message.ON11601" xml:space="preserve">
+    <value>Fehler bei Synch. der Elementkommandos</value>
+</data>
+	<data name="Message.ON11602" xml:space="preserve">
+    <value>DS130 DS133: Prozessdatenblock proj. aber kein Interfacemodul</value>
+</data>
+	<data name="Message.ON11603" xml:space="preserve">
+    <value>Fehler bei der Synchronisation des Gerätezustandes</value>
+</data>
+	<data name="Message.ON11604" xml:space="preserve">
+    <value>BMK: Eingangs-BMK (DC nicht für Eingang verwendet)</value>
+</data>
+	<data name="Message.ON11605" xml:space="preserve">
+    <value>BMK: Ausgangs-BMK (DC nicht für Ausgang verwendet (E.zelle))</value>
+</data>
+	<data name="Message.ON11606" xml:space="preserve">
+    <value>BMK: Eingangs-BMK (SC nicht für Eingang verwendet)</value>
+</data>
+	<data name="Message.ON11607" xml:space="preserve">
+    <value>BMK: Ausgangs-BMK (SC nicht für Ausgang verwendet (E.zelle))</value>
+</data>
+	<data name="Message.ON11608" xml:space="preserve">
+    <value>BMK: Kein sicherer Ausgang an diesem Gerät vorhanden</value>
+</data>
+	<data name="Message.ON11609" xml:space="preserve">
+    <value>BMK: Kein sicherer Eingang an diesem Gerät vorhanden</value>
+</data>
+	<data name="Message.ON11610" xml:space="preserve">
+    <value>BMK: Weder Eingang noch Ausgang projektiert (AS-i)</value>
+</data>
+	<data name="Message.ON11611" xml:space="preserve">
+    <value>BMK: Sowohl Eingang als auch Ausgang ist projektiert (AS-i)</value>
+</data>
+	<data name="Message.ON11612" xml:space="preserve">
+    <value>BMK: kein gültiges Eingangs-BMK (AS-i verwendet)</value>
+</data>
+	<data name="Message.ON11613" xml:space="preserve">
+    <value>BMK: kein gültiges Eingangs- Ausgangs-BMK (AS-i verwendet)</value>
+</data>
+	<data name="Message.ON11614" xml:space="preserve">
+    <value>BMK: kein gültiges Ausgangs-BMK (AS-i verwendet (E.zelle))</value>
+</data>
+	<data name="Message.ON11615" xml:space="preserve">
+    <value>BMK: keine Ein- oder Ausgänge vom AS-i verwendbar</value>
+</data>
+	<data name="Message.ON11616" xml:space="preserve">
+    <value>BMK: Kein sicherer AS-i-Eingang verwendbar</value>
+</data>
+	<data name="Message.ON11617" xml:space="preserve">
+    <value>BMK: AS-i Subslotnummer ungültig oder nicht projektiert</value>
+</data>
+	<data name="Message.ON11618" xml:space="preserve">
+    <value>BMK: Ein- Ausgang bei diesem AS-i Slave nicht verfügbar</value>
+</data>
+	<data name="Message.ON11619" xml:space="preserve">
+    <value>BMK: AS-i Ein- Ausgang ist nicht sicher</value>
+</data>
+	<data name="Message.ON11620" xml:space="preserve">
+    <value>BMK: F-IN1 F-IN2 und F-IN1&amp;2 bei 8x4-AS-i-Slave benutzt</value>
+</data>
+	<data name="Message.ON11621" xml:space="preserve">
+    <value>BMK: AS-i Eingangsnummer ausserhalb des gültigen Wertebereich</value>
+</data>
+	<data name="Message.ON11622" xml:space="preserve">
+    <value>BMK: Querschlusserkennung für AS-i nicht erlaubt</value>
+</data>
+	<data name="Message.ON11623" xml:space="preserve">
+    <value>BMK: Eingangsverz. für AS-i zu groß</value>
+</data>
+	<data name="Message.ON11624" xml:space="preserve">
+    <value>BMK: Eingangsverz. für sicheren AS-i Slave zu klein</value>
+</data>
+	<data name="Message.ON11625" xml:space="preserve">
+    <value>BMK: Eingangsverz. bei Ausgang od. Masteraufruf projektiert</value>
+</data>
+	<data name="Message.ON11626" xml:space="preserve">
+    <value>BMK: Eingangsverz. ist kein Vielfaches der Schrittweite</value>
+</data>
+	<data name="Message.ON11627" xml:space="preserve">
+    <value>BMK: untersch. Eingangsverz.zeiten für sicheren AS-i Slave</value>
+</data>
+	<data name="Message.ON11628" xml:space="preserve">
+    <value>Falscher CAL-Zustand bei Abfrage der Eigangsverz.zeit (AS-i)</value>
+</data>
+	<data name="Message.ON11629" xml:space="preserve">
+    <value>Ungültige Subslotnr. bei Abfrage der Eigangsverz.zeit (AS-i)</value>
+</data>
+	<data name="Message.ON11630" xml:space="preserve">
+    <value>Ungültiger Zeiger bei Abfrage der Eigangsverz.zeit (AS-i)</value>
+</data>
+	<data name="Message.ON11631" xml:space="preserve">
+    <value>ein AS-i Slave hat sichere und nicht sichere Ausgänge</value>
+</data>
+	<data name="Message.ON11632" xml:space="preserve">
+    <value>Falscher CAL-Zustand bei Lesen nichtsich. sim. Ausgangsdaten</value>
+</data>
+	<data name="Message.ON11633" xml:space="preserve">
+    <value>Falscher CAL-Zustand bei Lesen von CTT2-Ausgangsdaten</value>
+</data>
+	<data name="Message.ON11634" xml:space="preserve">
+    <value>Falscher CAL-Zustand bei Fortsetzung des zyklischen Betriebs</value>
+</data>
+	<data name="Message.ON11635" xml:space="preserve">
+    <value>BMK: Eingangsverz. bei AUX-Eing. eines 7x4-Slaves projektiert</value>
+</data>
+	<data name="Message.ON11636" xml:space="preserve">
+    <value>Ausgangszelle darf nur F-OUT1 eines 7x4-Slaves ansteuern</value>
+</data>
+	<data name="Message.ON11637" xml:space="preserve">
+    <value>BMK: Falscher 8x4-Eingangstyp (F-IN1, F-IN2 F-IN1&amp;2)</value>
+</data>
+	<data name="Message.ON11638" xml:space="preserve">
+    <value>7x4 Gen.(OUT1 nicht mit Ausgangszelle, ASI1-4FDO verbunden)</value>
+</data>
+	<data name="Message.ON11639" xml:space="preserve">
+    <value>7x4 Gen.(OUT2-4 nicht mit ASI1-4FDO verbunden)</value>
+</data>
+	<data name="Message.ON11640" xml:space="preserve">
+    <value>8x4 Gen.(OUT nicht mit Ausgangszelle verbunden)</value>
+</data>
+	<data name="Message.ON11641" xml:space="preserve">
+    <value>7x4 Mon. nicht mit Eingangszelle verbunden</value>
+</data>
+	<data name="Message.ON11644" xml:space="preserve">
+    <value>BMK: Eingangsnummer bei LIO ist zu groß</value>
+</data>
+	<data name="Message.ON11645" xml:space="preserve">
+    <value>BMK: Ausgangsnummer bei LIO ist zu groß</value>
+</data>
+	<data name="Message.ON11646" xml:space="preserve">
+    <value>BMK: Eingangs-BMK (LIO nicht für Eingang verwendet)</value>
+</data>
+	<data name="Message.ON11647" xml:space="preserve">
+    <value>BMK: Ausgangs-BMK (LIO nicht für Ausgang verwendet (E.zelle))</value>
+</data>
+	<data name="Message.ON11648" xml:space="preserve">
+    <value>BMK: keine E A von LIO verwendbar</value>
+</data>
+	<data name="Message.ON11649" xml:space="preserve">
+    <value>BMK: Querschlusserkennung nur auf LIO mit sicherem Eing.</value>
+</data>
+	<data name="Message.ON11650" xml:space="preserve">
+    <value>BMK: Querschlusserkennung ist bei Ausgang projektiert</value>
+</data>
+	<data name="Message.ON11651" xml:space="preserve">
+    <value>BMK: Eingangsverzögerungszeit für LIO zu groß</value>
+</data>
+	<data name="Message.ON11652" xml:space="preserve">
+    <value>BMK: Eingangsverzögerungszeit ist bei Ausgang projektiert</value>
+</data>
+	<data name="Message.ON11653" xml:space="preserve">
+    <value>BMK: Eing.verzögerungszeit bei LIO nicht erlaubt</value>
+</data>
+	<data name="Message.ON11654" xml:space="preserve">
+    <value>BMK: Kein sicherer Ausgang an diesem Gerät vorhanden</value>
+</data>
+	<data name="Message.ON11655" xml:space="preserve">
+    <value>BMK: Kein sicherer Eingang an diesem Gerät vorhanden</value>
+</data>
+	<data name="Message.ON11656" xml:space="preserve">
+    <value>BMK: Ausgangsnummer im Merker ist zu groß</value>
+</data>
+	<data name="Message.ON11657" xml:space="preserve">
+    <value>BMK: Ausgangs-BMK (Merker nicht für Ausg. verwendet bzw. Merker in der E.zelle)</value>
+</data>
+	<data name="Message.ON11658" xml:space="preserve">
+    <value>BMK: keine E A vom LIO verwendbar</value>
+</data>
+	<data name="Message.ON11659" xml:space="preserve">
+    <value>BMK: Kein sicherer Ausgang an diesem Gerät vorhanden</value>
+</data>
+	<data name="Message.ON11660" xml:space="preserve">
+    <value>BMK: Querschlusserkennung nur auf Per.G. mit sicheren Eing.</value>
+</data>
+	<data name="Message.ON11661" xml:space="preserve">
+    <value>BMK: Querschlusserkennung ist bei Ausgang projektiert</value>
+</data>
+	<data name="Message.ON11662" xml:space="preserve">
+    <value>BMK: Eingangsverzögerungszeit ist bei Ausgang projektiert</value>
+</data>
+	<data name="Message.ON11663" xml:space="preserve">
+    <value>BMK: Ausg.Parameter sind nicht auf null gesetzt</value>
+</data>
+	<data name="Message.ON11664" xml:space="preserve">
+    <value>BMK: Es wurden Ausgangs-Parameter für ein BMK.IN übergeben</value>
+</data>
+	<data name="Message.ON11665" xml:space="preserve">
+    <value>BMK: Max. Rücklesezeit liegt nicht im gültigen Bereich</value>
+</data>
+	<data name="Message.ON11666" xml:space="preserve">
+    <value>BMK: Max. Rücklesezeit liegt nicht im gültigen Bereich</value>
+</data>
+	<data name="Message.ON11667" xml:space="preserve">
+    <value>BMK: Übergebene Zeiger ungültig</value>
+</data>
+	<data name="Message.ON11668" xml:space="preserve">
+    <value>BMK: Übergebene Slotnummer ungültig</value>
+</data>
+	<data name="Message.ON11669" xml:space="preserve">
+    <value>BMK: Falscher Zustand des CAL für Übergabe der Ausg.Klemmen-Parameter</value>
+</data>
+	<data name="Message.ON11671" xml:space="preserve">
+    <value>Fehler beim Initialisieren der Speicherverwaltung</value>
+</data>
+	<data name="Message.ON11672" xml:space="preserve">
+    <value>Fehler beim Löschen der Partitionstabelle</value>
+</data>
+	<data name="Message.ON11673" xml:space="preserve">
+    <value>Fehler beim Löschen einer Partition</value>
+</data>
+	<data name="Message.ON11674" xml:space="preserve">
+    <value>Fehler beim Erzeugen einer Partition</value>
+</data>
+	<data name="Message.ON11675" xml:space="preserve">
+    <value>Fehler beim Abfragen der Partitions ID</value>
+</data>
+	<data name="Message.ON11676" xml:space="preserve">
+    <value>Fehler beim Schreiben eines Datensatzes</value>
+</data>
+	<data name="Message.ON11677" xml:space="preserve">
+    <value>Fehler beim Hinzufügen eines neuen Datensatzsegments</value>
+</data>
+	<data name="Message.ON11678" xml:space="preserve">
+    <value>Fehler beim Lesen eines Datensatzes</value>
+</data>
+	<data name="Message.ON11679" xml:space="preserve">
+    <value>Fehler beim Löschen eines Datensatzes</value>
+</data>
+	<data name="Message.ON11681" xml:space="preserve">
+    <value>SPI SS Signal nicht erkannt</value>
+</data>
+	<data name="Message.ON11683" xml:space="preserve">
+    <value>Warnung: Fehlerzähler zyklische Daten kritisch</value>
+</data>
+	<data name="Message.ON11684" xml:space="preserve">
+    <value>Fehlerüberlauf: Konsistenz zyklische Daten</value>
+</data>
+	<data name="Message.ON11685" xml:space="preserve">
+    <value>Warnung: Fehlerzähler azyklische Daten kritisch</value>
+</data>
+	<data name="Message.ON11686" xml:space="preserve">
+    <value>Fehlerüberlauf: Konsistenz azyklische Daten</value>
+</data>
+	<data name="Message.ON11688" xml:space="preserve">
+    <value>Kommunikationsstörung: Timeout wurde überschritten</value>
+</data>
+	<data name="Message.ON11689" xml:space="preserve">
+    <value>Ungültige Telegrammendekennung</value>
+</data>
+	<data name="Message.ON11690" xml:space="preserve">
+    <value>Ungültige Telegrammfolgenummer</value>
+</data>
+	<data name="Message.ON11691" xml:space="preserve">
+    <value>Ungültige Telegrammkennung</value>
+</data>
+	<data name="Message.ON11692" xml:space="preserve">
+    <value>Prüfsummenfehler zyklische Daten</value>
+</data>
+	<data name="Message.ON11693" xml:space="preserve">
+    <value>Ungültiger Pufferselektor</value>
+</data>
+	<data name="Message.ON11694" xml:space="preserve">
+    <value>Ungültige Pufferquittung</value>
+</data>
+	<data name="Message.ON11695" xml:space="preserve">
+    <value>Prüfsummenfehler azyklische Daten</value>
+</data>
+	<data name="Message.ON11696" xml:space="preserve">
+    <value>Ungültiger azyklischer Dienst</value>
+</data>
+	<data name="Message.ON11701" xml:space="preserve">
+    <value>Nichtverwendeter DMA Interrupt wurde ausgelöst</value>
+</data>
+	<data name="Message.ON11702" xml:space="preserve">
+    <value>Nichtverwendeter Timer Interrupt wurde ausgelöst</value>
+</data>
+	<data name="Message.ON11703" xml:space="preserve">
+    <value>Nichtverwendeter UART Interrupt wurde ausgelöst</value>
+</data>
+	<data name="Message.ON11704" xml:space="preserve">
+    <value>Nichtverwendeter INT Interrupt wurde ausgelöst</value>
+</data>
+	<data name="Message.ON11705" xml:space="preserve">
+    <value>Nichtverwendeter BUSCOL Interrupt wurde ausgelöst</value>
+</data>
+	<data name="Message.ON11706" xml:space="preserve">
+    <value>Nichtverwendeter IO Interrupt wurde ausgelöst</value>
+</data>
+	<data name="Message.ON11707" xml:space="preserve">
+    <value>Nichtverwendeter Reserved Interrupt wurde ausgelöst</value>
+</data>
+	<data name="Message.ON11708" xml:space="preserve">
+    <value>Nichtverwendeter BRK Interrupt wurde ausgelöst</value>
+</data>
+</root>

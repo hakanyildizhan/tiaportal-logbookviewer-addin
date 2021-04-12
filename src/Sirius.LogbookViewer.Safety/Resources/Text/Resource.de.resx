@@ -156,566 +156,909 @@
   <data name="UI.Warning" xml:space="preserve">
     <value>Warnung</value>
   </data>
-  <data name="Message.Device1" xml:space="preserve">
+	<data name="Message.ON5001" xml:space="preserve">
     <value>Werksgrundeinstellung</value>
-  </data>
-  <data name="Message.Device2" xml:space="preserve">
+</data>
+	<data name="Message.ON5002" xml:space="preserve">
     <value>Neustart</value>
-  </data>
-  <data name="Message.Device3" xml:space="preserve">
+</data>
+	<data name="Message.ON5003" xml:space="preserve">
     <value>Reset</value>
-  </data>
-  <data name="Message.Device4" xml:space="preserve">
+</data>
+	<data name="Message.ON5004" xml:space="preserve">
     <value>Schleppzeiger löschen</value>
-  </data>
-  <data name="Message.Device5" xml:space="preserve">
+</data>
+	<data name="Message.ON5005" xml:space="preserve">
     <value>Wartungstimer löschen</value>
-  </data>
-  <data name="Message.Device6" xml:space="preserve">
+</data>
+	<data name="Message.ON5009" xml:space="preserve">
     <value>Speichermodul löschen</value>
-  </data>
-  <data name="Message.Device7" xml:space="preserve">
+</data>
+	<data name="Message.ON5010" xml:space="preserve">
     <value>Speichermodul programmieren</value>
-  </data>
-  <data name="Message.Device8" xml:space="preserve">
+</data>
+	<data name="Message.ON5011" xml:space="preserve">
     <value>Projektierung freigeben</value>
-  </data>
-  <data name="Message.Device9" xml:space="preserve">
+</data>
+	<data name="Message.ON5012" xml:space="preserve">
     <value>Projektierungsfreigabe aufheben</value>
-  </data>
-  <data name="Message.Device10" xml:space="preserve">
+</data>
+	<data name="Message.ON5013" xml:space="preserve">
     <value>Zugangsberechtigungen aufheben</value>
-  </data>
-  <data name="Message.Device11" xml:space="preserve">
+</data>
+	<data name="Message.ON5014" xml:space="preserve">
     <value>ST- als SOLL-Konfiguration übernehmen</value>
-  </data>
-  <data name="Message.Device12" xml:space="preserve">
+</data>
+	<data name="Message.ON5015" xml:space="preserve">
     <value>Einlernen der ASIsafe-Codetabellen starten</value>
-  </data>
-  <data name="Message.Device13" xml:space="preserve">
+</data>
+	<data name="Message.ON5016" xml:space="preserve">
     <value>Einlernen der ASIsafe-Codetabellen beenden</value>
-  </data>
-  <data name="Message.Device14" xml:space="preserve">
+</data>
+	<data name="Message.ON5017" xml:space="preserve">
     <value>Eingelernte ASIsafe-Codetabellen über-nehmen</value>
-  </data>
-  <data name="Message.Device15" xml:space="preserve">
+</data>
+	<data name="Message.ON5021" xml:space="preserve">
     <value>Kommando „Logbuch Gerät-Störung löschen“</value>
-  </data>
-  <data name="Message.Device16" xml:space="preserve">
+</data>
+	<data name="Message.ON5022" xml:space="preserve">
     <value>Kommando „Logbuch Gerät-Bedienfehler löschen“</value>
-  </data>
-  <data name="Message.Device17" xml:space="preserve">
+</data>
+	<data name="Message.ON5023" xml:space="preserve">
     <value>Kommando „Logbuch Gerät-Warnung löschen“</value>
-  </data>
-  <data name="Message.Device18" xml:space="preserve">
+</data>
+	<data name="Message.ON5024" xml:space="preserve">
     <value>Kommando „Logbuch Gerät-Vorwarnung löschen“</value>
-  </data>
-  <data name="Message.Device19" xml:space="preserve">
+</data>
+	<data name="Message.ON5025" xml:space="preserve">
     <value>Kommando „Logbuch Gerät-Ereignis löschen“</value>
-  </data>
-  <data name="Message.Device20" xml:space="preserve">
+</data>
+	<data name="Message.ON5026" xml:space="preserve">
     <value>Kommando „Logbuch Elemente-Störung löschen“</value>
-  </data>
-  <data name="Message.Device21" xml:space="preserve">
+</data>
+	<data name="Message.ON5027" xml:space="preserve">
     <value>Kommando „Logbuch Elemente-Bedienfehler löschen“</value>
-  </data>
-  <data name="Message.Device22" xml:space="preserve">
+</data>
+	<data name="Message.ON5028" xml:space="preserve">
     <value>Kommando „Logbuch Elemente-Warnung löschen“</value>
-  </data>
-  <data name="Message.Device23" xml:space="preserve">
+</data>
+	<data name="Message.ON5029" xml:space="preserve">
     <value>Kommando „Logbuch Elemente-Vorwarnung löschen“</value>
-  </data>
-  <data name="Message.Device24" xml:space="preserve">
+</data>
+	<data name="Message.ON5030" xml:space="preserve">
     <value>Kommando „Logbuch Elemente-Ereignis löschen“</value>
-  </data>
-  <data name="Message.Device25" xml:space="preserve">
+</data>
+	<data name="Message.ON5031" xml:space="preserve">
     <value>Kommando „Logbuch Kommunikation-Störung löschen“</value>
-  </data>
-  <data name="Message.Device26" xml:space="preserve">
+</data>
+	<data name="Message.ON5032" xml:space="preserve">
     <value>Kommando „Logbuch Kommunikation-Bedienfehler löschen“</value>
-  </data>
-  <data name="Message.Device27" xml:space="preserve">
+</data>
+	<data name="Message.ON5033" xml:space="preserve">
     <value>Kommando „Logbuch Kommunikation-Warnung löschen“</value>
-  </data>
-  <data name="Message.Device28" xml:space="preserve">
+</data>
+	<data name="Message.ON5034" xml:space="preserve">
     <value>Kommando „Logbuch Kommunikation-Vorwarnung löschen“</value>
-  </data>
-  <data name="Message.Device29" xml:space="preserve">
+</data>
+	<data name="Message.ON5035" xml:space="preserve">
     <value>Kommando „Logbuch Kommunikation-Ereignis löschen“</value>
-  </data>
-  <data name="Message.Device30" xml:space="preserve">
+</data>
+	<data name="Message.ON5036" xml:space="preserve">
     <value>Kommando „Logbuch Produktspezifisch-Störung löschen“</value>
-  </data>
-  <data name="Message.Device31" xml:space="preserve">
+</data>
+	<data name="Message.ON5037" xml:space="preserve">
     <value>Kommando „Logbuch Produktspezifisch-Bedienfehler löschen“</value>
-  </data>
-  <data name="Message.Device32" xml:space="preserve">
+</data>
+	<data name="Message.ON5038" xml:space="preserve">
     <value>Kommando „Logbuch Produktspezifisch-Warnung löschen“</value>
-  </data>
-  <data name="Message.Device33" xml:space="preserve">
+</data>
+	<data name="Message.ON5039" xml:space="preserve">
     <value>Kommando „Logbuch Produktspezifisch-Vorwarnung löschen“</value>
-  </data>
-  <data name="Message.Device34" xml:space="preserve">
+</data>
+	<data name="Message.ON5040" xml:space="preserve">
     <value>Kommando „Logbuch Produktspezifisch-Ereignis löschen“</value>
-  </data>
-  <data name="Message.Device35" xml:space="preserve">
+</data>
+	<data name="Message.ON5043" xml:space="preserve">
     <value>Zugriffsweg öffnen</value>
-  </data>
-  <data name="Message.Device36" xml:space="preserve">
+</data>
+	<data name="Message.ON5044" xml:space="preserve">
     <value>Zugriffsweg schließen</value>
-  </data>
-  <data name="Message.Device37" xml:space="preserve">
+</data>
+	<data name="Message.ON5045" xml:space="preserve">
     <value>Testbetrieb-EIN</value>
-  </data>
-  <data name="Message.Device38" xml:space="preserve">
+</data>
+	<data name="Message.ON5046" xml:space="preserve">
     <value>Testbetrieb-AUS</value>
-  </data>
-  <data name="Message.Device39" xml:space="preserve">
+</data>
+	<data name="Message.ON5047" xml:space="preserve">
     <value>Anwenderprogramm-START</value>
-  </data>
-  <data name="Message.Device40" xml:space="preserve">
+</data>
+	<data name="Message.ON5048" xml:space="preserve">
     <value>Anwenderprogramm-STOP</value>
-  </data>
-  <data name="Message.Device41" xml:space="preserve">
+</data>
+	<data name="Message.ON7009" xml:space="preserve">
     <value>Initialisierungsfehler</value>
-  </data>
-  <data name="Message.Device42" xml:space="preserve">
+</data>
+	<data name="Message.ON7010" xml:space="preserve">
     <value>Konfigurationsfehler</value>
-  </data>
-  <data name="Message.Device43" xml:space="preserve">
+</data>
+	<data name="Message.ON7011" xml:space="preserve">
     <value>Projektierungsfehler</value>
-  </data>
-  <data name="Message.Device44" xml:space="preserve">
+</data>
+	<data name="Message.ON7017" xml:space="preserve">
     <value>Projektierungsbetrieb aktiv</value>
-  </data>
-  <data name="Message.Device45" xml:space="preserve">
+</data>
+	<data name="Message.ON7018" xml:space="preserve">
     <value>Testbetrieb aktiv</value>
-  </data>
-  <data name="Message.Device46" xml:space="preserve">
+</data>
+	<data name="Message.ON7019" xml:space="preserve">
     <value>Schutzbetrieb aktiv</value>
-  </data>
-  <data name="Message.Device47" xml:space="preserve">
+</data>
+	<data name="Message.ON7021" xml:space="preserve">
     <value>Anwenderprogramm gestoppt</value>
-  </data>
-  <data name="Message.Device48" xml:space="preserve">
+</data>
+	<data name="Message.ON7024" xml:space="preserve">
     <value>Betriebszustandswechsel abgelehnt</value>
-  </data>
-  <data name="Message.Device49" xml:space="preserve">
+</data>
+	<data name="Message.ON7033" xml:space="preserve">
     <value>Verbindungsabbruch</value>
-  </data>
-  <data name="Message.Device50" xml:space="preserve">
+</data>
+	<data name="Message.ON7034" xml:space="preserve">
     <value>Handshake-Fehler</value>
-  </data>
-  <data name="Message.Device51" xml:space="preserve">
+</data>
+	<data name="Message.ON7045" xml:space="preserve">
     <value>Passwortschutz für Gerätezugriff inaktiv</value>
-  </data>
-  <data name="Message.Device52" xml:space="preserve">
+</data>
+	<data name="Message.ON7046" xml:space="preserve">
     <value>Passwortschutz für erweiterten Gerätezugriff inaktiv</value>
-  </data>
-  <data name="Message.Device53" xml:space="preserve">
+</data>
+	<data name="Message.ON7047" xml:space="preserve">
     <value>Passwortschutz für Betriebszustandswechsel inaktiv</value>
-  </data>
-  <data name="Message.Device54" xml:space="preserve">
+</data>
+	<data name="Message.ON7048" xml:space="preserve">
     <value>Passworteingabe falsch</value>
-  </data>
-  <data name="Message.Device55" xml:space="preserve">
+</data>
+	<data name="Message.ON7073" xml:space="preserve">
     <value>Projektierung fehlt</value>
-  </data>
-  <data name="Message.Device56" xml:space="preserve">
+</data>
+	<data name="Message.ON7074" xml:space="preserve">
     <value>Projektierung nicht freigegeben</value>
-  </data>
-  <data name="Message.Device57" xml:space="preserve">
+</data>
+	<data name="Message.ON7076" xml:space="preserve">
     <value>Freigabe verweigert wegen falschem Betriebszustand</value>
-  </data>
-  <data name="Message.Device58" xml:space="preserve">
+</data>
+	<data name="Message.ON7077" xml:space="preserve">
     <value>Freigabe verweigert wegen falschem Projektierungs-CRC</value>
-  </data>
-  <data name="Message.Device59" xml:space="preserve">
+</data>
+	<data name="Message.ON7078" xml:space="preserve">
     <value>Freigabe verweigert da bereits freigegeben</value>
-  </data>
-  <data name="Message.Device60" xml:space="preserve">
+</data>
+	<data name="Message.ON7079" xml:space="preserve">
     <value>Freigabe zurückgezogen</value>
-  </data>
-  <data name="Message.Device61" xml:space="preserve">
+</data>
+	<data name="Message.ON7080" xml:space="preserve">
     <value>Freigabe zurückgezogen wegen falschem Projektierungsfreigabe-CRC</value>
-  </data>
-  <data name="Message.Device62" xml:space="preserve">
+</data>
+	<data name="Message.ON7081" xml:space="preserve">
     <value>max. Elementanzahl überschritten</value>
-  </data>
-  <data name="Message.Device63" xml:space="preserve">
+</data>
+	<data name="Message.ON7082" xml:space="preserve">
     <value>max. Speichergröße überschritten</value>
-  </data>
-  <data name="Message.Device64" xml:space="preserve">
+</data>
+	<data name="Message.ON7083" xml:space="preserve">
     <value>Programmzykluszeit überschritten</value>
-  </data>
-  <data name="Message.Device65" xml:space="preserve">
+</data>
+	<data name="Message.ON7087" xml:space="preserve">
     <value>SOLL- ungleich IST-Slotausbau</value>
-  </data>
-  <data name="Message.Device66" xml:space="preserve">
+</data>
+	<data name="Message.ON7088" xml:space="preserve">
     <value>SOLL- ungleich IST-Subslotausbau</value>
-  </data>
-  <data name="Message.Device67" xml:space="preserve">
+</data>
+	<data name="Message.ON7090" xml:space="preserve">
     <value>Falscher Parameterwert</value>
-  </data>
-  <data name="Message.Device68" xml:space="preserve">
+</data>
+	<data name="Message.ON7091" xml:space="preserve">
     <value>Parameteränderung unzulässig</value>
-  </data>
-  <data name="Message.Device69" xml:space="preserve">
+</data>
+	<data name="Message.ON7092" xml:space="preserve">
     <value>Verschaltungsregel verletzt</value>
-  </data>
-  <data name="Message.Device70" xml:space="preserve">
+</data>
+	<data name="Message.ON7093" xml:space="preserve">
     <value>Datenstruktur fehlerhaft</value>
-  </data>
-  <data name="Message.Device71" xml:space="preserve">
+</data>
+	<data name="Message.ON7095" xml:space="preserve">
     <value>Keine externen Anlaufparameter erhalten</value>
-  </data>
-  <data name="Message.Device72" xml:space="preserve">
+</data>
+	<data name="Message.ON7100" xml:space="preserve">
     <value>Speichermodul nicht gesteckt</value>
-  </data>
-  <data name="Message.Device73" xml:space="preserve">
+</data>
+	<data name="Message.ON7101" xml:space="preserve">
     <value>Speichermodul defek</value>
-  </data>
-  <data name="Message.Device74" xml:space="preserve">
+</data>
+	<data name="Message.ON7104" xml:space="preserve">
     <value>Speichermodul Programmierung fehlerhaft</value>
-  </data>
-  <data name="Message.Device75" xml:space="preserve">
+</data>
+	<data name="Message.ON7105" xml:space="preserve">
     <value>Projektierungsspeicher zu klein</value>
-  </data>
-  <data name="Message.Device76" xml:space="preserve">
+</data>
+	<data name="Message.ON7106" xml:space="preserve">
     <value>Speichermodul falsch organisiert</value>
-  </data>
-  <data name="Message.Device77" xml:space="preserve">
+</data>
+	<data name="Message.ON7109" xml:space="preserve">
     <value>Reset war nicht möglich</value>
-  </data>
-  <data name="Message.Device78" xml:space="preserve">
+</data>
+	<data name="Message.ON7130" xml:space="preserve">
     <value>Selbsttestfehler</value>
-  </data>
-  <data name="Message.Device79" xml:space="preserve">
+</data>
+	<data name="Message.ON7133" xml:space="preserve">
     <value>Wartungsanforderung</value>
-  </data>
-  <data name="Message.Device80" xml:space="preserve">
+</data>
+	<data name="Message.ON11002" xml:space="preserve">
     <value>Stack underflow</value>
-  </data>
-  <data name="Message.Device81" xml:space="preserve">
+</data>
+	<data name="Message.ON11003" xml:space="preserve">
     <value>Adreß-/Datenbus gestört</value>
-  </data>
-  <data name="Message.Device82" xml:space="preserve">
+</data>
+	<data name="Message.ON11004" xml:space="preserve">
     <value>CRC-Fehler</value>
-  </data>
-  <data name="Message.Device83" xml:space="preserve">
+</data>
+	<data name="Message.ON11005" xml:space="preserve">
     <value>Watchdog-Überlauf</value>
-  </data>
-  <data name="Message.Device84" xml:space="preserve">
+</data>
+	<data name="Message.ON11006" xml:space="preserve">
     <value>Feldbusschnittstelle gestört</value>
-  </data>
-  <data name="Message.Device85" xml:space="preserve">
+</data>
+	<data name="Message.ON11007" xml:space="preserve">
     <value>Systembus gestört (SAFETYconnect)</value>
-  </data>
-  <data name="Message.Device86" xml:space="preserve">
+</data>
+	<data name="Message.ON11008" xml:space="preserve">
     <value>Geräteschnittstelle gestört</value>
-  </data>
-  <data name="Message.Device87" xml:space="preserve">
+</data>
+	<data name="Message.ON11009" xml:space="preserve">
     <value>FW-Fehler</value>
-  </data>
-  <data name="Message.Device88" xml:space="preserve">
+</data>
+	<data name="Message.ON11010" xml:space="preserve">
     <value>Speicher defekt</value>
-  </data>
-  <data name="Message.Device89" xml:space="preserve">
+</data>
+	<data name="Message.ON12001" xml:space="preserve">
     <value>Prm-Telegramm zu kurz</value>
-  </data>
-  <data name="Message.Device90" xml:space="preserve">
+</data>
+	<data name="Message.ON12002" xml:space="preserve">
     <value>Prm-Telegramm zu lang</value>
-  </data>
-  <data name="Message.Device91" xml:space="preserve">
+</data>
+	<data name="Message.ON12003" xml:space="preserve">
     <value>Anlaufparameter-DS fehlt</value>
-  </data>
-  <data name="Message.Device92" xml:space="preserve">
+</data>
+	<data name="Message.ON12004" xml:space="preserve">
     <value>reserviert</value>
-  </data>
-  <data name="Message.Device93" xml:space="preserve">
+</data>
+	<data name="Message.ON12005" xml:space="preserve">
     <value>Datenstruktur-Header unstimmig</value>
-  </data>
-  <data name="Message.Device94" xml:space="preserve">
+</data>
+	<data name="Message.ON12006" xml:space="preserve">
     <value>Datenstruktur-CRC unstimmig</value>
-  </data>
-  <data name="Message.Device95" xml:space="preserve">
+</data>
+	<data name="Message.ON12007" xml:space="preserve">
     <value>Elementdatenblock-Header unstimmig</value>
-  </data>
-  <data name="Message.Device96" xml:space="preserve">
+</data>
+	<data name="Message.ON12008" xml:space="preserve">
     <value>Element-CRC unstimmig</value>
-  </data>
-  <data name="Message.Device97" xml:space="preserve">
+</data>
+	<data name="Message.ON12009" xml:space="preserve">
     <value>Projektierte ungleich SOLL-Elementanzahl</value>
-  </data>
-  <data name="Message.Device98" xml:space="preserve">
+</data>
+	<data name="Message.ON12010" xml:space="preserve">
     <value>Projektierte ungleich SOLL-Slotbaugruppenanzahl</value>
-  </data>
-  <data name="Message.Device99" xml:space="preserve">
+</data>
+	<data name="Message.ON12011" xml:space="preserve">
     <value>Projektierte ungleich SOLL-Subslotbaugruppenanzahl</value>
-  </data>
-  <data name="Message.Device100" xml:space="preserve">
+</data>
+	<data name="Message.ON15001" xml:space="preserve">
     <value>Geräteanlauf</value>
-  </data>
-  <data name="Message.Device101" xml:space="preserve">
+</data>
+	<data name="Message.ON15002" xml:space="preserve">
     <value>Power OFF</value>
-  </data>
-  <data name="Message.Device102" xml:space="preserve">
+</data>
+	<data name="Message.ON15003" xml:space="preserve">
     <value>Projektierung geändert</value>
-  </data>
-  <data name="Message.Source1" xml:space="preserve">
-    <value>Gerät</value>
-  </data>
-	<data name="Message.Source2" xml:space="preserve">
-    <value>Elemente</value>
-  </data>
-	<data name="Message.Source3" xml:space="preserve">
-    <value>Kommunikation</value>
-  </data>
-	<data name="Message.Source4" xml:space="preserve">
-    <value>Produktspezifisch</value>
-  </data>
-<data name="Message.Element1" xml:space="preserve">
+</data>
+	<data name="Message.ON4001.EN1" xml:space="preserve">
     <value>Anlauftest erforderlich</value>
 </data>
-<data name="Message.Element2" xml:space="preserve">
+	<data name="Message.ON4001.EN2" xml:space="preserve">
     <value>Reihenfolgebedingung verletzt</value>
 </data>
-<data name="Message.Element3" xml:space="preserve">
+	<data name="Message.ON4001.EN3" xml:space="preserve">
     <value>Diskrepanzbedingung verletzt</value>
 </data>
-<data name="Message.Element4" xml:space="preserve">
+	<data name="Message.ON4001.EN4" xml:space="preserve">
     <value>Sicherheitssensor ausgelöst</value>
 </data>
-<data name="Message.Element5" xml:space="preserve">
+	<data name="Message.ON4001.EN9" xml:space="preserve">
     <value>Querschluss am Eingang 1</value>
 </data>
-<data name="Message.Element6" xml:space="preserve">
+	<data name="Message.ON4001.EN10" xml:space="preserve">
     <value>P-Schluss am Eingang 1</value>
 </data>
-<data name="Message.Element7" xml:space="preserve">
+	<data name="Message.ON4001.EN11" xml:space="preserve">
     <value>M-Schluss am Eingang 1</value>
 </data>
-<data name="Message.Element8" xml:space="preserve">
+	<data name="Message.ON4001.EN13" xml:space="preserve">
     <value>Querschluss am Eingang 2</value>
 </data>
-<data name="Message.Element9" xml:space="preserve">
+	<data name="Message.ON4001.EN14" xml:space="preserve">
     <value>P-Schluss am Eingang 2</value>
 </data>
-<data name="Message.Element10" xml:space="preserve">
+	<data name="Message.ON4001.EN15" xml:space="preserve">
     <value>M-Schluss am Eingang 2</value>
 </data>
-<data name="Message.Element11" xml:space="preserve">
+	<data name="Message.ON4001.EN21" xml:space="preserve">
     <value>Querschluss am Starteingang</value>
 </data>
-<data name="Message.Element12" xml:space="preserve">
+	<data name="Message.ON4001.EN22" xml:space="preserve">
     <value>P-Schluss am Starteingang</value>
 </data>
-<data name="Message.Element13" xml:space="preserve">
+	<data name="Message.ON4001.EN23" xml:space="preserve">
     <value>M-Schluss am Starteingang</value>
 </data>
-<data name="Message.Element14" xml:space="preserve">
+	<data name="Message.ON4001.EN25" xml:space="preserve">
     <value>Querschluss am Eingang 3</value>
 </data>
-<data name="Message.Element15" xml:space="preserve">
+	<data name="Message.ON4001.EN26" xml:space="preserve">
     <value>P-Schluss am Eingang 3</value>
 </data>
-<data name="Message.Element16" xml:space="preserve">
+	<data name="Message.ON4001.EN27" xml:space="preserve">
     <value>M-Schluss am Eingang 3</value>
 </data>
-<data name="Message.Element17" xml:space="preserve">
+	<data name="Message.ON4001.EN29" xml:space="preserve">
     <value>Querschluss am Eingang 4</value>
 </data>
-<data name="Message.Element18" xml:space="preserve">
+	<data name="Message.ON4001.EN30" xml:space="preserve">
     <value>P-Schluss am Eingang 4</value>
 </data>
-<data name="Message.Element19" xml:space="preserve">
+	<data name="Message.ON4001.EN31" xml:space="preserve">
     <value>M-Schluss am Eingang 4</value>
 </data>
-<data name="Message.Element20" xml:space="preserve">
+	<data name="Message.ON4010.EN1" xml:space="preserve">
+    <value>Anlauftest erforderlich</value>
+</data>
+	<data name="Message.ON4010.EN2" xml:space="preserve">
+    <value>Reihenfolgebedingung verletzt</value>
+</data>
+	<data name="Message.ON4010.EN3" xml:space="preserve">
+    <value>Diskrepanzbedingung verletzt</value>
+</data>
+	<data name="Message.ON4010.EN4" xml:space="preserve">
+    <value>Sicherheitssensor ausgelöst</value>
+</data>
+	<data name="Message.ON4010.EN9" xml:space="preserve">
+    <value>Querschluss am Eingang 1</value>
+</data>
+	<data name="Message.ON4010.EN10" xml:space="preserve">
+    <value>P-Schluss am Eingang 1</value>
+</data>
+	<data name="Message.ON4010.EN11" xml:space="preserve">
+    <value>M-Schluss am Eingang 1</value>
+</data>
+	<data name="Message.ON4010.EN13" xml:space="preserve">
+    <value>Querschluss am Eingang 2</value>
+</data>
+	<data name="Message.ON4010.EN14" xml:space="preserve">
+    <value>P-Schluss am Eingang 2</value>
+</data>
+	<data name="Message.ON4010.EN15" xml:space="preserve">
+    <value>M-Schluss am Eingang 2</value>
+</data>
+	<data name="Message.ON4010.EN21" xml:space="preserve">
+    <value>Querschluss am Starteingang</value>
+</data>
+	<data name="Message.ON4010.EN22" xml:space="preserve">
+    <value>P-Schluss am Starteingang</value>
+</data>
+	<data name="Message.ON4010.EN23" xml:space="preserve">
+    <value>M-Schluss am Starteingang</value>
+</data>
+	<data name="Message.ON4020.EN1" xml:space="preserve">
+    <value>Anlauftest erforderlich</value>
+</data>
+	<data name="Message.ON4020.EN2" xml:space="preserve">
+    <value>Reihenfolgebedingung verletzt</value>
+</data>
+	<data name="Message.ON4020.EN3" xml:space="preserve">
+    <value>Diskrepanzbedingung verletzt</value>
+</data>
+	<data name="Message.ON4020.EN4" xml:space="preserve">
+    <value>Sicherheitssensor ausgelöst</value>
+</data>
+	<data name="Message.ON4020.EN9" xml:space="preserve">
+    <value>Querschluss am Eingang 1</value>
+</data>
+	<data name="Message.ON4020.EN10" xml:space="preserve">
+    <value>P-Schluss am Eingang 1</value>
+</data>
+	<data name="Message.ON4020.EN11" xml:space="preserve">
+    <value>M-Schluss am Eingang 1</value>
+</data>
+	<data name="Message.ON4020.EN13" xml:space="preserve">
+    <value>Querschluss am Eingang 2</value>
+</data>
+	<data name="Message.ON4020.EN14" xml:space="preserve">
+    <value>P-Schluss am Eingang 2</value>
+</data>
+	<data name="Message.ON4020.EN15" xml:space="preserve">
+    <value>M-Schluss am Eingang 2</value>
+</data>
+	<data name="Message.ON4020.EN21" xml:space="preserve">
+    <value>Querschluss am Starteingang</value>
+</data>
+	<data name="Message.ON4020.EN22" xml:space="preserve">
+    <value>P-Schluss am Starteingang</value>
+</data>
+	<data name="Message.ON4020.EN23" xml:space="preserve">
+    <value>M-Schluss am Starteingang</value>
+</data>
+	<data name="Message.ON4030.EN1" xml:space="preserve">
+    <value>Anlauftest erforderlich</value>
+</data>
+	<data name="Message.ON4030.EN2" xml:space="preserve">
+    <value>Reihenfolgebedingung verletzt</value>
+</data>
+	<data name="Message.ON4030.EN3" xml:space="preserve">
+    <value>Diskrepanzbedingung verletzt</value>
+</data>
+	<data name="Message.ON4030.EN4" xml:space="preserve">
+    <value>Sicherheitssensor ausgelöst</value>
+</data>
+	<data name="Message.ON4030.EN9" xml:space="preserve">
+    <value>Querschluss am Eingang 1</value>
+</data>
+	<data name="Message.ON4030.EN10" xml:space="preserve">
+    <value>P-Schluss am Eingang 1</value>
+</data>
+	<data name="Message.ON4030.EN11" xml:space="preserve">
+    <value>M-Schluss am Eingang 1</value>
+</data>
+	<data name="Message.ON4030.EN13" xml:space="preserve">
+    <value>Querschluss am Eingang 2</value>
+</data>
+	<data name="Message.ON4030.EN14" xml:space="preserve">
+    <value>P-Schluss am Eingang 2</value>
+</data>
+	<data name="Message.ON4030.EN15" xml:space="preserve">
+    <value>M-Schluss am Eingang 2</value>
+</data>
+	<data name="Message.ON4030.EN21" xml:space="preserve">
+    <value>Querschluss am Starteingang</value>
+</data>
+	<data name="Message.ON4030.EN22" xml:space="preserve">
+    <value>P-Schluss am Starteingang</value>
+</data>
+	<data name="Message.ON4030.EN23" xml:space="preserve">
+    <value>M-Schluss am Starteingang</value>
+</data>
+	<data name="Message.ON4031.EN1" xml:space="preserve">
+    <value>Anlauftest erforderlich</value>
+</data>
+	<data name="Message.ON4031.EN2" xml:space="preserve">
+    <value>Reihenfolgebedingung verletzt</value>
+</data>
+	<data name="Message.ON4031.EN3" xml:space="preserve">
+    <value>Diskrepanzbedingung verletzt</value>
+</data>
+	<data name="Message.ON4031.EN4" xml:space="preserve">
+    <value>Sicherheitssensor ausgelöst</value>
+</data>
+	<data name="Message.ON4031.EN8" xml:space="preserve">
     <value>Zuhaltung entriegelt</value>
 </data>
-<data name="Message.Element21" xml:space="preserve">
+	<data name="Message.ON4031.EN9" xml:space="preserve">
+    <value>Querschluss am Eingang 1</value>
+</data>
+	<data name="Message.ON4031.EN10" xml:space="preserve">
+    <value>P-Schluss am Eingang 1</value>
+</data>
+	<data name="Message.ON4031.EN11" xml:space="preserve">
+    <value>M-Schluss am Eingang 1</value>
+</data>
+	<data name="Message.ON4031.EN13" xml:space="preserve">
+    <value>Querschluss am Eingang 2</value>
+</data>
+	<data name="Message.ON4031.EN14" xml:space="preserve">
+    <value>P-Schluss am Eingang 2</value>
+</data>
+	<data name="Message.ON4031.EN15" xml:space="preserve">
+    <value>M-Schluss am Eingang 2</value>
+</data>
+	<data name="Message.ON4031.EN21" xml:space="preserve">
+    <value>Querschluss am Starteingang</value>
+</data>
+	<data name="Message.ON4031.EN22" xml:space="preserve">
+    <value>P-Schluss am Starteingang</value>
+</data>
+	<data name="Message.ON4031.EN23" xml:space="preserve">
+    <value>M-Schluss am Starteingang</value>
+</data>
+	<data name="Message.ON4031.EN25" xml:space="preserve">
     <value>Querschluss am IN_LOCK Steuereingang</value>
 </data>
-<data name="Message.Element22" xml:space="preserve">
+	<data name="Message.ON4031.EN26" xml:space="preserve">
     <value>P-Schluss am IN_LOCK Steuereingang</value>
 </data>
-<data name="Message.Element23" xml:space="preserve">
+	<data name="Message.ON4031.EN27" xml:space="preserve">
     <value>M-Schluß am IN_LOCK Steuereingang</value>
 </data>
-<data name="Message.Element24" xml:space="preserve">
+	<data name="Message.ON4031.EN29" xml:space="preserve">
     <value>Rückführkreissignal passt nicht zum Schaltstatus</value>
 </data>
-<data name="Message.Element25" xml:space="preserve">
+	<data name="Message.ON4031.EN30" xml:space="preserve">
     <value>Schutztür wurde bei aktiver Verriegelung geöffnet</value>
 </data>
-<data name="Message.Element26" xml:space="preserve">
+	<data name="Message.ON4031.EN31" xml:space="preserve">
     <value>Verriegelung wegen offener Schutztür nicht möglich</value>
 </data>
-<data name="Message.Element27" xml:space="preserve">
+	<data name="Message.ON4040.EN1" xml:space="preserve">
+    <value>Anlauftest erforderlich</value>
+</data>
+	<data name="Message.ON4040.EN2" xml:space="preserve">
+    <value>Reihenfolgebedingung verletzt</value>
+</data>
+	<data name="Message.ON4040.EN3" xml:space="preserve">
+    <value>Diskrepanzbedingung verletzt</value>
+</data>
+	<data name="Message.ON4040.EN4" xml:space="preserve">
+    <value>Sicherheitssensor ausgelöst</value>
+</data>
+	<data name="Message.ON4040.EN9" xml:space="preserve">
+    <value>Querschluss am Eingang 1</value>
+</data>
+	<data name="Message.ON4040.EN10" xml:space="preserve">
+    <value>P-Schluss am Eingang 1</value>
+</data>
+	<data name="Message.ON4040.EN11" xml:space="preserve">
+    <value>M-Schluss am Eingang 1</value>
+</data>
+	<data name="Message.ON4040.EN13" xml:space="preserve">
+    <value>Querschluss am Eingang 2</value>
+</data>
+	<data name="Message.ON4040.EN14" xml:space="preserve">
+    <value>P-Schluss am Eingang 2</value>
+</data>
+	<data name="Message.ON4040.EN15" xml:space="preserve">
+    <value>M-Schluss am Eingang 2</value>
+</data>
+	<data name="Message.ON4040.EN21" xml:space="preserve">
+    <value>Querschluss am Starteingang</value>
+</data>
+	<data name="Message.ON4040.EN22" xml:space="preserve">
+    <value>P-Schluss am Starteingang</value>
+</data>
+	<data name="Message.ON4040.EN23" xml:space="preserve">
+    <value>M-Schluss am Starteingang</value>
+</data>
+	<data name="Message.ON4041.EN1" xml:space="preserve">
+    <value>Anlauftest erforderlich</value>
+</data>
+	<data name="Message.ON4041.EN4" xml:space="preserve">
+    <value>Sicherheitssensor ausgelöst</value>
+</data>
+	<data name="Message.ON4041.EN9" xml:space="preserve">
     <value>Drahtbruch am Eingang 1</value>
 </data>
-<data name="Message.Element28" xml:space="preserve">
+	<data name="Message.ON4041.EN10" xml:space="preserve">
+    <value>P-Schluss am Eingang 1</value>
+</data>
+	<data name="Message.ON4041.EN11" xml:space="preserve">
+    <value>M-Schluss am Eingang 1</value>
+</data>
+	<data name="Message.ON4041.EN13" xml:space="preserve">
     <value>Drahtbruch am Eingang 2</value>
 </data>
-<data name="Message.Element29" xml:space="preserve">
+	<data name="Message.ON4041.EN14" xml:space="preserve">
+    <value>P-Schluss am Eingang 2</value>
+</data>
+	<data name="Message.ON4041.EN15" xml:space="preserve">
+    <value>M-Schluss am Eingang 2</value>
+</data>
+	<data name="Message.ON4041.EN21" xml:space="preserve">
+    <value>Querschluss am Starteingang</value>
+</data>
+	<data name="Message.ON4041.EN22" xml:space="preserve">
+    <value>P-Schluss am Starteingang</value>
+</data>
+	<data name="Message.ON4041.EN23" xml:space="preserve">
+    <value>M-Schluss am Starteingang</value>
+</data>
+	<data name="Message.ON4060.EN3" xml:space="preserve">
+    <value>Diskrepanzbedingung verletzt</value>
+</data>
+	<data name="Message.ON4060.EN4" xml:space="preserve">
     <value>Taster verklemmt</value>
 </data>
-<data name="Message.Element30" xml:space="preserve">
+	<data name="Message.ON4060.EN9" xml:space="preserve">
+    <value>Querschluss am Eingang 1</value>
+</data>
+	<data name="Message.ON4060.EN10" xml:space="preserve">
+    <value>P-Schluss am Eingang 1</value>
+</data>
+	<data name="Message.ON4060.EN11" xml:space="preserve">
+    <value>M-Schluss am Eingang 1</value>
+</data>
+	<data name="Message.ON4060.EN13" xml:space="preserve">
+    <value>Querschluss am Eingang 2</value>
+</data>
+	<data name="Message.ON4060.EN14" xml:space="preserve">
+    <value>P-Schluss am Eingang 2</value>
+</data>
+	<data name="Message.ON4060.EN15" xml:space="preserve">
+    <value>M-Schluss am Eingang 2</value>
+</data>
+	<data name="Message.ON4050.EN3" xml:space="preserve">
+    <value>Diskrepanzbedingung verletzt</value>
+</data>
+	<data name="Message.ON4050.EN4" xml:space="preserve">
+    <value>Taster verklemmt</value>
+</data>
+	<data name="Message.ON4050.EN5" xml:space="preserve">
     <value> Nicht beide Taster losgelassen</value>
 </data>
-<data name="Message.Element31" xml:space="preserve">
+	<data name="Message.ON4050.EN9" xml:space="preserve">
+    <value>Querschluss am Eingang 1</value>
+</data>
+	<data name="Message.ON4050.EN10" xml:space="preserve">
+    <value>P-Schluss am Eingang 1</value>
+</data>
+	<data name="Message.ON4050.EN11" xml:space="preserve">
+    <value>M-Schluss am Eingang 1</value>
+</data>
+	<data name="Message.ON4050.EN13" xml:space="preserve">
+    <value>Querschluss am Eingang 2</value>
+</data>
+	<data name="Message.ON4050.EN14" xml:space="preserve">
+    <value>P-Schluss am Eingang 2</value>
+</data>
+	<data name="Message.ON4050.EN15" xml:space="preserve">
+    <value>M-Schluss am Eingang 2</value>
+</data>
+	<data name="Message.ON4050.EN21" xml:space="preserve">
+    <value>Querschluss am Starteingang</value>
+</data>
+	<data name="Message.ON4050.EN22" xml:space="preserve">
+    <value>P-Schluss am Starteingang</value>
+</data>
+	<data name="Message.ON4050.EN23" xml:space="preserve">
+    <value>M-Schluss am Starteingang</value>
+</data>
+	<data name="Message.ON4050.EN25" xml:space="preserve">
+    <value>Querschluss am Eingang 3</value>
+</data>
+	<data name="Message.ON4050.EN26" xml:space="preserve">
+    <value>P-Schluss am Eingang 3</value>
+</data>
+	<data name="Message.ON4050.EN27" xml:space="preserve">
+    <value>M-Schluss am Eingang 3</value>
+</data>
+	<data name="Message.ON4050.EN29" xml:space="preserve">
+    <value>Querschluss am Eingang 4</value>
+</data>
+	<data name="Message.ON4050.EN30" xml:space="preserve">
+    <value>P-Schluss am Eingang 4</value>
+</data>
+	<data name="Message.ON4050.EN31" xml:space="preserve">
+    <value>M-Schluss am Eingang 4</value>
+</data>
+	<data name="Message.ON4070.EN3" xml:space="preserve">
     <value>Ungültige Betriebsartenanwahl</value>
 </data>
-<data name="Message.Element32" xml:space="preserve">
+	<data name="Message.ON4070.EN8" xml:space="preserve">
+    <value>Diskrepanzbedingung verletzt</value>
+</data>
+	<data name="Message.ON4070.EN9" xml:space="preserve">
+    <value>Querschluss am Eingang 1</value>
+</data>
+	<data name="Message.ON4070.EN10" xml:space="preserve">
+    <value>P-Schluss am Eingang 1</value>
+</data>
+	<data name="Message.ON4070.EN11" xml:space="preserve">
+    <value>M-Schluss am Eingang 1</value>
+</data>
+	<data name="Message.ON4070.EN13" xml:space="preserve">
+    <value>Querschluss am Eingang 2</value>
+</data>
+	<data name="Message.ON4070.EN14" xml:space="preserve">
+    <value>P-Schluss am Eingang 2</value>
+</data>
+	<data name="Message.ON4070.EN15" xml:space="preserve">
+    <value>M-Schluss am Eingang 2</value>
+</data>
+	<data name="Message.ON4070.EN17" xml:space="preserve">
     <value>Querschluss am Verriegelungseingang</value>
 </data>
-<data name="Message.Element33" xml:space="preserve">
+	<data name="Message.ON4070.EN18" xml:space="preserve">
     <value>P-Schluss am Verriegelungseingang</value>
 </data>
-<data name="Message.Element34" xml:space="preserve">
+	<data name="Message.ON4070.EN19" xml:space="preserve">
     <value>M-Schluss am Verriegelungseingang</value>
 </data>
-<data name="Message.Element35" xml:space="preserve">
+	<data name="Message.ON13002.EN3" xml:space="preserve">
     <value>Muting-Restart möglich</value>
 </data>
-<data name="Message.Element36" xml:space="preserve">
+	<data name="Message.ON13002.EN8" xml:space="preserve">
     <value>max. Mutingzeit abgelaufen</value>
 </data>
-<data name="Message.Element37" xml:space="preserve">
+	<data name="Message.ON13002.EN9" xml:space="preserve">
     <value>Diskrepanzbedingung Sensorpaar 1 verletzt</value>
 </data>
-<data name="Message.Element38" xml:space="preserve">
+	<data name="Message.ON13002.EN10" xml:space="preserve">
     <value>Diskrepanzbedingung Sensorpaar 2 verletzt</value>
 </data>
-<data name="Message.Element39" xml:space="preserve">
+	<data name="Message.ON13002.EN11" xml:space="preserve">
+    <value>Reihenfolgebedingung verletzt</value>
+</data>
+	<data name="Message.ON13002.EN13" xml:space="preserve">
     <value>Muting-Leuchtmelder defekt</value>
 </data>
-<data name="Message.Element40" xml:space="preserve">
+	<data name="Message.ON17002.EN5" xml:space="preserve">
     <value>Rückführkreissignal 1 passt 
 nicht zum Schaltstatus</value>
 </data>
-<data name="Message.Element41" xml:space="preserve">
+	<data name="Message.ON17002.EN6" xml:space="preserve">
     <value>Rückführkreissignal 2 passt 
 nicht zum Schaltstatus</value>
 </data>
-<data name="Message.Element42" xml:space="preserve">
+	<data name="Message.ON17002.EN7" xml:space="preserve">
     <value>Rückführkreissignal 3 passt 
 nicht zum Schaltstatus</value>
 </data>
-<data name="Message.Element43" xml:space="preserve">
+	<data name="Message.ON17002.EN8" xml:space="preserve">
     <value>Rückführkreissignal 4 passt 
 nicht zum Schaltstatus</value>
 </data>
-<data name="Message.Element44" xml:space="preserve">
+	<data name="Message.ON17002.EN9" xml:space="preserve">
     <value>Ungültige Ausgangsanwahl</value>
 </data>
-<data name="Message.Element45" xml:space="preserve">
+	<data name="Message.ON16501.EN2" xml:space="preserve">
     <value>Ausgang 1 überlastet</value>
 </data>
-<data name="Message.Element46" xml:space="preserve">
+	<data name="Message.ON16501.EN5" xml:space="preserve">
     <value>Ausgang 2 überlastet</value>
 </data>
-<data name="Message.Element47" xml:space="preserve">
+	<data name="Message.ON16501.EN7" xml:space="preserve">
+    <value>Rückführkreissignal 1 passt 
+nicht zum Schaltstatus</value>
+</data>
+	<data name="Message.ON16501.EN8" xml:space="preserve">
+    <value>Rückführkreissignal 2 passt 
+nicht zum Schaltstatus</value>
+</data>
+	<data name="Message.ON16501.EN9" xml:space="preserve">
     <value>Querschluss am Ausgang 1</value>
 </data>
-<data name="Message.Element48" xml:space="preserve">
+	<data name="Message.ON16501.EN10" xml:space="preserve">
     <value>P-Schluss am Ausgang 1</value>
 </data>
-<data name="Message.Element49" xml:space="preserve">
+	<data name="Message.ON16501.EN11" xml:space="preserve">
     <value> M-Schluss am Ausgang 1</value>
 </data>
-<data name="Message.Element50" xml:space="preserve">
+	<data name="Message.ON16501.EN13" xml:space="preserve">
     <value>Querschluss am Ausgang 2</value>
 </data>
-<data name="Message.Element51" xml:space="preserve">
+	<data name="Message.ON16501.EN14" xml:space="preserve">
     <value>P-Schluss am Ausgang 2</value>
 </data>
-<data name="Message.Element52" xml:space="preserve">
+	<data name="Message.ON16501.EN15" xml:space="preserve">
     <value>M-Schluss am Ausgang 2</value>
 </data>
-<data name="Message.Element53" xml:space="preserve">
+	<data name="Message.ON16502.EN2" xml:space="preserve">
+    <value>Ausgang 1 überlastet</value>
+</data>
+	<data name="Message.ON16502.EN5" xml:space="preserve">
+    <value>Ausgang 2 überlastet</value>
+</data>
+	<data name="Message.ON16502.EN7" xml:space="preserve">
+    <value>Rückführkreissignal 1 passt 
+nicht zum Schaltstatus</value>
+</data>
+	<data name="Message.ON16502.EN8" xml:space="preserve">
+    <value>Rückführkreissignal 2 passt 
+nicht zum Schaltstatus</value>
+</data>
+	<data name="Message.ON16502.EN9" xml:space="preserve">
+    <value>Querschluss am Ausgang 1</value>
+</data>
+	<data name="Message.ON16502.EN10" xml:space="preserve">
+    <value>P-Schluss am Ausgang 1</value>
+</data>
+	<data name="Message.ON16502.EN11" xml:space="preserve">
     <value>M-Schluss am Ausgang 1</value>
 </data>
-<data name="Message.Element54" xml:space="preserve">
+	<data name="Message.ON16502.EN13" xml:space="preserve">
+    <value>Querschluss am Ausgang 2</value>
+</data>
+	<data name="Message.ON16502.EN14" xml:space="preserve">
+    <value>P-Schluss am Ausgang 2</value>
+</data>
+	<data name="Message.ON16502.EN15" xml:space="preserve">
+    <value>M-Schluss am Ausgang 2</value>
+</data>
+	<data name="Message.ON16502.EN21" xml:space="preserve">
     <value>Drahtbruch am Ausgang 1</value>
 </data>
-<data name="Message.Element55" xml:space="preserve">
+	<data name="Message.ON16502.EN22" xml:space="preserve">
     <value>Drahtbruch am Ausgang 2</value>
 </data>
-	<data name="Message.Communication1" xml:space="preserve">
+	<data name="Message.ON7012" xml:space="preserve">
     <value>Safety-Protokollfehler</value>
 </data>
-	<data name="Message.Communication2" xml:space="preserve">
+	<data name="Message.ON7180" xml:space="preserve">
     <value>CPU/Master-STOP</value>
 </data>
-	<data name="Message.Communication3" xml:space="preserve">
+	<data name="Message.ON7181" xml:space="preserve">
     <value>Busfehler</value>
 </data>
-	<data name="Message.Communication4" xml:space="preserve">
+	<data name="Message.ON7182" xml:space="preserve">
     <value>Parametrierfehler</value>
 </data>
-	<data name="Message.Communication5" xml:space="preserve">
+	<data name="Message.ON7183" xml:space="preserve">
     <value>Konfigurationsfehler</value>
 </data>
-	<data name="Message.Communication6" xml:space="preserve">
+	<data name="Message.ON7184" xml:space="preserve">
     <value>Prozessdatenaustausch gestoppt</value>
 </data>
-	<data name="Message.Communication7" xml:space="preserve">
+	<data name="Message.ON7200" xml:space="preserve">
     <value>AS-i-Busfehler</value>
 </data>
-	<data name="Message.Communication8" xml:space="preserve">
+	<data name="Message.ON7201" xml:space="preserve">
     <value>AS-i-Parametrierfehler</value>
 </data>
-	<data name="Message.Communication9" xml:space="preserve">
+	<data name="Message.ON7202" xml:space="preserve">
     <value>AS-i-Konfigurationsfehler</value>
 </data>
-	<data name="Message.Communication10" xml:space="preserve">
+	<data name="Message.ON7203" xml:space="preserve">
     <value>AS-i-Spannung zu niedrig</value>
 </data>
-	<data name="Message.Communication11" xml:space="preserve">
+	<data name="Message.ON7204" xml:space="preserve">
     <value>AS-i-Spannung fehlt (APF)</value>
 </data>
-	<data name="Message.Communication12" xml:space="preserve">
+	<data name="Message.ON7207" xml:space="preserve">
     <value>AS-i-Mehrfachadressierung</value>
 </data>
-	<data name="Message.Communication13" xml:space="preserve">
+	<data name="Message.ON7232" xml:space="preserve">
     <value>OFFLINE-Betrieb aktiv</value>
 </data>
-	<data name="Message.Communication14" xml:space="preserve">
+	<data name="Message.ON7233" xml:space="preserve">
     <value>AS-i-Spannung fehlt (APF)</value>
 </data>
-	<data name="Message.Communication15" xml:space="preserve">
+	<data name="Message.ON7244" xml:space="preserve">
     <value>AS-i-Peripheriefehler</value>
 </data>
-	<data name="Message.Communication16" xml:space="preserve">
+	<data name="Message.ON7288" xml:space="preserve">
     <value>ASIsafe-Codetabellen fehlen</value>
 </data>
-	<data name="Message.Communication17" xml:space="preserve">
+	<data name="Message.ON7289" xml:space="preserve">
     <value>ASIsafe-Codetabellen mehrfach</value>
 </data>
-	<data name="Message.Communication18" xml:space="preserve">
+	<data name="Message.ON7292" xml:space="preserve">
     <value>ASIsafe-8x4Bit-Codefolgenfehler</value>
 </data>
-	<data name="Message.Communication19" xml:space="preserve">
+	<data name="Message.ON7304" xml:space="preserve">
     <value>ASIsafe-7x4Bit-Codefolgenfehler</value>
 </data>
-	<data name="Message.Communication20" xml:space="preserve">
+	<data name="Message.ON7328" xml:space="preserve">
     <value>AS-i-Slave fehlt</value>
 </data>
-	<data name="Message.Communication21" xml:space="preserve">
+	<data name="Message.ON7329" xml:space="preserve">
     <value>AS-i-Slave falsch</value>
 </data>
-	<data name="Message.Communication22" xml:space="preserve">
+	<data name="Message.ON7360" xml:space="preserve">
     <value>SC-Busfehler</value>
 </data>
-	<data name="Message.Communication23" xml:space="preserve">
+	<data name="Message.ON7361" xml:space="preserve">
     <value>SC-Parametrierfehler</value>
 </data>
-	<data name="Message.Communication24" xml:space="preserve">
+	<data name="Message.ON7362" xml:space="preserve">
     <value>SC-Konfigurationsfehler</value>
 </data>
-	<data name="Message.Communication25" xml:space="preserve">
+	<data name="Message.ON7363" xml:space="preserve">
     <value>SC-Prozessdatenaustausch gestoppt</value>
 </data>
 </root>
