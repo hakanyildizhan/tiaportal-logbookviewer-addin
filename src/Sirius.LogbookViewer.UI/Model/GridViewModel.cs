@@ -234,7 +234,7 @@ namespace Sirius.LogbookViewer.UI.Model
                 }
             }
 
-            var updatedMessages = messages.ToList();
+            var updatedMessages = activeSortColumns.Any() ? messages.ToList() : AllMessages.ToList();
 
             if (ColumnData.Any(c => c.IsIndex))
             {
