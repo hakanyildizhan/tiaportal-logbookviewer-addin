@@ -63,4356 +63,4356 @@ namespace Sirius.LogbookViewer.Safety.Resources.Text {
         /// <summary>
         ///   Looks up a localized string similar to STACK ist übergelaufen: Welcher übergelaufen ist, steht im zusätzlichen Parameter.
         /// </summary>
-        internal static string Message_ON11001 {
+        internal static string Message_ON20001 {
             get {
-                return ResourceManager.GetString("Message.ON11001", resourceCulture);
+                return ResourceManager.GetString("Message.ON20001", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Zeigt an, dass Netz eingeschaltet ist.
         /// </summary>
-        internal static string Message_ON11011 {
+        internal static string Message_ON20011 {
             get {
-                return ResourceManager.GetString("Message.ON11011", resourceCulture);
+                return ResourceManager.GetString("Message.ON20011", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Schwerwiegender Programmfehler.
         /// </summary>
-        internal static string Message_ON11012 {
+        internal static string Message_ON20012 {
             get {
-                return ResourceManager.GetString("Message.ON11012", resourceCulture);
+                return ResourceManager.GetString("Message.ON20012", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Timeout bei der Synchronisation am AUX Port nach Watchdogtest.
         /// </summary>
-        internal static string Message_ON11021 {
+        internal static string Message_ON20021 {
             get {
-                return ResourceManager.GetString("Message.ON11021", resourceCulture);
+                return ResourceManager.GetString("Message.ON20021", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to CRC Fehler im zyklischen ROM Test.
         /// </summary>
-        internal static string Message_ON11022 {
+        internal static string Message_ON20022 {
             get {
-                return ResourceManager.GetString("Message.ON11022", resourceCulture);
+                return ResourceManager.GetString("Message.ON20022", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültige Zustandsvariable im zyklischen Selbsttest.
         /// </summary>
-        internal static string Message_ON11023 {
+        internal static string Message_ON20023 {
             get {
-                return ResourceManager.GetString("Message.ON11023", resourceCulture);
+                return ResourceManager.GetString("Message.ON20023", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültige Synchronisationspunktnummer im zykl. Selbsttest.
         /// </summary>
-        internal static string Message_ON11024 {
+        internal static string Message_ON20024 {
             get {
-                return ResourceManager.GetString("Message.ON11024", resourceCulture);
+                return ResourceManager.GetString("Message.ON20024", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Querschluss auf dem HMI Port.
         /// </summary>
-        internal static string Message_ON11025 {
+        internal static string Message_ON20025 {
             get {
-                return ResourceManager.GetString("Message.ON11025", resourceCulture);
+                return ResourceManager.GetString("Message.ON20025", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to 24 V Betriebsspannung ausserhalb der zulässigen Grenzen.
         /// </summary>
-        internal static string Message_ON11026 {
+        internal static string Message_ON20026 {
             get {
-                return ResourceManager.GetString("Message.ON11026", resourceCulture);
+                return ResourceManager.GetString("Message.ON20026", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to 5 V Referenzsspannung ausserhalb der zulässigen Grenzen.
         /// </summary>
-        internal static string Message_ON11027 {
+        internal static string Message_ON20027 {
             get {
-                return ResourceManager.GetString("Message.ON11027", resourceCulture);
+                return ResourceManager.GetString("Message.ON20027", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to AUX Port ist defekt (Falsche Parameter Timeout).
         /// </summary>
-        internal static string Message_ON11028 {
+        internal static string Message_ON20028 {
             get {
-                return ResourceManager.GetString("Message.ON11028", resourceCulture);
+                return ResourceManager.GetString("Message.ON20028", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Synchronisationsschnittstelle (SPI defekt).
         /// </summary>
-        internal static string Message_ON11029 {
+        internal static string Message_ON20029 {
             get {
-                return ResourceManager.GetString("Message.ON11029", resourceCulture);
+                return ResourceManager.GetString("Message.ON20029", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültige Synchronisationspunktnummer nach Watchdogtest.
         /// </summary>
-        internal static string Message_ON11030 {
+        internal static string Message_ON20030 {
             get {
-                return ResourceManager.GetString("Message.ON11030", resourceCulture);
+                return ResourceManager.GetString("Message.ON20030", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Speicherfehler wurde erkannt.
         /// </summary>
-        internal static string Message_ON11031 {
+        internal static string Message_ON20031 {
             get {
-                return ResourceManager.GetString("Message.ON11031", resourceCulture);
+                return ResourceManager.GetString("Message.ON20031", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ursprünglicher Speicherinhalt wurde nicht wieder hergestellt.
         /// </summary>
-        internal static string Message_ON11032 {
+        internal static string Message_ON20032 {
             get {
-                return ResourceManager.GetString("Message.ON11032", resourceCulture);
+                return ResourceManager.GetString("Message.ON20032", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Zeiger liegt ausserhalb des Prüfbereichs.
         /// </summary>
-        internal static string Message_ON11033 {
+        internal static string Message_ON20033 {
             get {
-                return ResourceManager.GetString("Message.ON11033", resourceCulture);
+                return ResourceManager.GetString("Message.ON20033", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ermittelte CRC entspricht nicht der Linker CRC.
         /// </summary>
-        internal static string Message_ON11034 {
+        internal static string Message_ON20034 {
             get {
-                return ResourceManager.GetString("Message.ON11034", resourceCulture);
+                return ResourceManager.GetString("Message.ON20034", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Zeiger liegt ausserhalb des Prüfbereichs.
         /// </summary>
-        internal static string Message_ON11035 {
+        internal static string Message_ON20035 {
             get {
-                return ResourceManager.GetString("Message.ON11035", resourceCulture);
+                return ResourceManager.GetString("Message.ON20035", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to AUX Port ist defekt (Sync-Nummern passen nicht zusammen).
         /// </summary>
-        internal static string Message_ON11036 {
+        internal static string Message_ON20036 {
             get {
-                return ResourceManager.GetString("Message.ON11036", resourceCulture);
+                return ResourceManager.GetString("Message.ON20036", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler im zyklischen RAM Test.
         /// </summary>
-        internal static string Message_ON11037 {
+        internal static string Message_ON20037 {
             get {
-                return ResourceManager.GetString("Message.ON11037", resourceCulture);
+                return ResourceManager.GetString("Message.ON20037", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to ungültige Hardwareversion erkannt.
         /// </summary>
-        internal static string Message_ON11041 {
+        internal static string Message_ON20041 {
             get {
-                return ResourceManager.GetString("Message.ON11041", resourceCulture);
+                return ResourceManager.GetString("Message.ON20041", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to ungültige Gerätevariante erkannt.
         /// </summary>
-        internal static string Message_ON11042 {
+        internal static string Message_ON20042 {
             get {
-                return ResourceManager.GetString("Message.ON11042", resourceCulture);
+                return ResourceManager.GetString("Message.ON20042", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Analogmodul meldet Fehler.
         /// </summary>
-        internal static string Message_ON11043 {
+        internal static string Message_ON20043 {
             get {
-                return ResourceManager.GetString("Message.ON11043", resourceCulture);
+                return ResourceManager.GetString("Message.ON20043", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Master: Werksgrundeinst. konnte nicht hergestellt werden.
         /// </summary>
-        internal static string Message_ON11044 {
+        internal static string Message_ON20044 {
             get {
-                return ResourceManager.GetString("Message.ON11044", resourceCulture);
+                return ResourceManager.GetString("Message.ON20044", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Master: Unbekannte Betriebsart.
         /// </summary>
-        internal static string Message_ON11045 {
+        internal static string Message_ON20045 {
             get {
-                return ResourceManager.GetString("Message.ON11045", resourceCulture);
+                return ResourceManager.GetString("Message.ON20045", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Laden der Partitions-ID.
         /// </summary>
-        internal static string Message_ON11046 {
+        internal static string Message_ON20046 {
             get {
-                return ResourceManager.GetString("Message.ON11046", resourceCulture);
+                return ResourceManager.GetString("Message.ON20046", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Löschen des internen EEPROMS.
         /// </summary>
-        internal static string Message_ON11047 {
+        internal static string Message_ON20047 {
             get {
-                return ResourceManager.GetString("Message.ON11047", resourceCulture);
+                return ResourceManager.GetString("Message.ON20047", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler bei der Organisation des Speichers (EEPROM).
         /// </summary>
-        internal static string Message_ON11048 {
+        internal static string Message_ON20048 {
             get {
-                return ResourceManager.GetString("Message.ON11048", resourceCulture);
+                return ResourceManager.GetString("Message.ON20048", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler bei der Initialisierung der int. Speicherverwaltung.
         /// </summary>
-        internal static string Message_ON11049 {
+        internal static string Message_ON20049 {
             get {
-                return ResourceManager.GetString("Message.ON11049", resourceCulture);
+                return ResourceManager.GetString("Message.ON20049", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler bei der Initialisierung der ext. Speicherverwaltung.
         /// </summary>
-        internal static string Message_ON11050 {
+        internal static string Message_ON20050 {
             get {
-                return ResourceManager.GetString("Message.ON11050", resourceCulture);
+                return ResourceManager.GetString("Message.ON20050", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to DeviceConnect oder PcConnect konnte nicht init. werden.
         /// </summary>
-        internal static string Message_ON11051 {
+        internal static string Message_ON20051 {
             get {
-                return ResourceManager.GetString("Message.ON11051", resourceCulture);
+                return ResourceManager.GetString("Message.ON20051", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Austausch der Firmwareversionen.
         /// </summary>
-        internal static string Message_ON11052 {
+        internal static string Message_ON20052 {
             get {
-                return ResourceManager.GetString("Message.ON11052", resourceCulture);
+                return ResourceManager.GetString("Message.ON20052", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungleiche Firmwareversionen auf Master Slave.
         /// </summary>
-        internal static string Message_ON11053 {
+        internal static string Message_ON20053 {
             get {
-                return ResourceManager.GetString("Message.ON11053", resourceCulture);
+                return ResourceManager.GetString("Message.ON20053", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler bei der Organisation des externen Speichers (EEPROM).
         /// </summary>
-        internal static string Message_ON11054 {
+        internal static string Message_ON20054 {
             get {
-                return ResourceManager.GetString("Message.ON11054", resourceCulture);
+                return ResourceManager.GetString("Message.ON20054", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Erstellen der Projektierungspartition.
         /// </summary>
-        internal static string Message_ON11055 {
+        internal static string Message_ON20055 {
             get {
-                return ResourceManager.GetString("Message.ON11055", resourceCulture);
+                return ResourceManager.GetString("Message.ON20055", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to externes EEPROM nicht gesteckt (Hochlauf).
         /// </summary>
-        internal static string Message_ON11056 {
+        internal static string Message_ON20056 {
             get {
-                return ResourceManager.GetString("Message.ON11056", resourceCulture);
+                return ResourceManager.GetString("Message.ON20056", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Konfiguration des ext. EEPROMs für dieses gerät nicht zulässig.
         /// </summary>
-        internal static string Message_ON11057 {
+        internal static string Message_ON20057 {
             get {
-                return ResourceManager.GetString("Message.ON11057", resourceCulture);
+                return ResourceManager.GetString("Message.ON20057", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungueltiger Freigabestatus.
         /// </summary>
-        internal static string Message_ON11058 {
+        internal static string Message_ON20058 {
             get {
-                return ResourceManager.GetString("Message.ON11058", resourceCulture);
+                return ResourceManager.GetString("Message.ON20058", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to externes EEPROM nicht gesteckt (zyklisch).
         /// </summary>
-        internal static string Message_ON11059 {
+        internal static string Message_ON20059 {
             get {
-                return ResourceManager.GetString("Message.ON11059", resourceCulture);
+                return ResourceManager.GetString("Message.ON20059", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Verbindungsabbruch am DeviceConnect (in der Restzeit).
         /// </summary>
-        internal static string Message_ON11060 {
+        internal static string Message_ON20060 {
             get {
-                return ResourceManager.GetString("Message.ON11060", resourceCulture);
+                return ResourceManager.GetString("Message.ON20060", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Verbindungsabbruch am DeviceConnect (nach Aufruf in der ISR).
         /// </summary>
-        internal static string Message_ON11061 {
+        internal static string Message_ON20061 {
             get {
-                return ResourceManager.GetString("Message.ON11061", resourceCulture);
+                return ResourceManager.GetString("Message.ON20061", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Verbindungsabbruch am DeviceConnect (vor Aufruf in der ISR).
         /// </summary>
-        internal static string Message_ON11062 {
+        internal static string Message_ON20062 {
             get {
-                return ResourceManager.GetString("Message.ON11062", resourceCulture);
+                return ResourceManager.GetString("Message.ON20062", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler bei der Konsistenzprüfung des ext. EEPROMs.
         /// </summary>
-        internal static string Message_ON11063 {
+        internal static string Message_ON20063 {
             get {
-                return ResourceManager.GetString("Message.ON11063", resourceCulture);
+                return ResourceManager.GetString("Message.ON20063", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Hardwareversion auf der Platine passt nicht zur Firmware.
         /// </summary>
-        internal static string Message_ON11064 {
+        internal static string Message_ON20064 {
             get {
-                return ResourceManager.GetString("Message.ON11064", resourceCulture);
+                return ResourceManager.GetString("Message.ON20064", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim AVR-DMA-Test (DMA2, DMA3).
         /// </summary>
-        internal static string Message_ON11065 {
+        internal static string Message_ON20065 {
             get {
-                return ResourceManager.GetString("Message.ON11065", resourceCulture);
+                return ResourceManager.GetString("Message.ON20065", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler bei der Projektierungsüberprüfung (PRJ).
         /// </summary>
-        internal static string Message_ON11066 {
+        internal static string Message_ON20066 {
             get {
-                return ResourceManager.GetString("Message.ON11066", resourceCulture);
+                return ResourceManager.GetString("Message.ON20066", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler in der Zustandsmaschine der DS-Verarbeitung.
         /// </summary>
-        internal static string Message_ON11067 {
+        internal static string Message_ON20067 {
             get {
-                return ResourceManager.GetString("Message.ON11067", resourceCulture);
+                return ResourceManager.GetString("Message.ON20067", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Ausfuehren eines Kommandos (DS 93).
         /// </summary>
-        internal static string Message_ON11068 {
+        internal static string Message_ON20068 {
             get {
-                return ResourceManager.GetString("Message.ON11068", resourceCulture);
+                return ResourceManager.GetString("Message.ON20068", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Ausfuehren eines Kommandos (DS 3).
         /// </summary>
-        internal static string Message_ON11069 {
+        internal static string Message_ON20069 {
             get {
-                return ResourceManager.GetString("Message.ON11069", resourceCulture);
+                return ResourceManager.GetString("Message.ON20069", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler in PC-Connect.
         /// </summary>
-        internal static string Message_ON11070 {
+        internal static string Message_ON20070 {
             get {
-                return ResourceManager.GetString("Message.ON11070", resourceCulture);
+                return ResourceManager.GetString("Message.ON20070", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler bei der Synchronisation der Freigabe.
         /// </summary>
-        internal static string Message_ON11071 {
+        internal static string Message_ON20071 {
             get {
-                return ResourceManager.GetString("Message.ON11071", resourceCulture);
+                return ResourceManager.GetString("Message.ON20071", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler bei der Synchronisation beim Aufhebens der Freigabe.
         /// </summary>
-        internal static string Message_ON11072 {
+        internal static string Message_ON20072 {
             get {
-                return ResourceManager.GetString("Message.ON11072", resourceCulture);
+                return ResourceManager.GetString("Message.ON20072", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Ausfuehren eines Kommandos (DS 4).
         /// </summary>
-        internal static string Message_ON11073 {
+        internal static string Message_ON20073 {
             get {
-                return ResourceManager.GetString("Message.ON11073", resourceCulture);
+                return ResourceManager.GetString("Message.ON20073", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Laenge beim Lesen des DS 4 z lang (Groeßer als 200 Byte).
         /// </summary>
-        internal static string Message_ON11074 {
+        internal static string Message_ON20074 {
             get {
-                return ResourceManager.GetString("Message.ON11074", resourceCulture);
+                return ResourceManager.GetString("Message.ON20074", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Status der main-State-Machine wurde nicht festgelegt.
         /// </summary>
-        internal static string Message_ON11075 {
+        internal static string Message_ON20075 {
             get {
-                return ResourceManager.GetString("Message.ON11075", resourceCulture);
+                return ResourceManager.GetString("Message.ON20075", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Unbekannter Status in der main-State-Machine.
         /// </summary>
-        internal static string Message_ON11076 {
+        internal static string Message_ON20076 {
             get {
-                return ResourceManager.GetString("Message.ON11076", resourceCulture);
+                return ResourceManager.GetString("Message.ON20076", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Synchronisation beim Statusübergang der State-Machine.
         /// </summary>
-        internal static string Message_ON11077 {
+        internal static string Message_ON20077 {
             get {
-                return ResourceManager.GetString("Message.ON11077", resourceCulture);
+                return ResourceManager.GetString("Message.ON20077", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Die Controller befinden sich in unterschiedlichen Zuständen..
         /// </summary>
-        internal static string Message_ON11078 {
+        internal static string Message_ON20078 {
             get {
-                return ResourceManager.GetString("Message.ON11078", resourceCulture);
+                return ResourceManager.GetString("Message.ON20078", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler Auswertung des Proposed State bei Start zykl. Betrieb.
         /// </summary>
-        internal static string Message_ON11079 {
+        internal static string Message_ON20079 {
             get {
-                return ResourceManager.GetString("Message.ON11079", resourceCulture);
+                return ResourceManager.GetString("Message.ON20079", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler Auswertung des Proposed State im zyklischen Betrieb.
         /// </summary>
-        internal static string Message_ON11080 {
+        internal static string Message_ON20080 {
             get {
-                return ResourceManager.GetString("Message.ON11080", resourceCulture);
+                return ResourceManager.GetString("Message.ON20080", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Unerlaubter Folgezustand beim Austritt aus der ISR.
         /// </summary>
-        internal static string Message_ON11081 {
+        internal static string Message_ON20081 {
             get {
-                return ResourceManager.GetString("Message.ON11081", resourceCulture);
+                return ResourceManager.GetString("Message.ON20081", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Unerlaubte Betriebsart beim Beenden des Schutz- Testbetriebs.
         /// </summary>
-        internal static string Message_ON11082 {
+        internal static string Message_ON20082 {
             get {
-                return ResourceManager.GetString("Message.ON11082", resourceCulture);
+                return ResourceManager.GetString("Message.ON20082", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Synch. der sicherheitsrelevanten Daten im Schutz- Testbetr..
         /// </summary>
-        internal static string Message_ON11083 {
+        internal static string Message_ON20083 {
             get {
-                return ResourceManager.GetString("Message.ON11083", resourceCulture);
+                return ResourceManager.GetString("Message.ON20083", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Synchronisation der Daten des SafetyConnect.
         /// </summary>
-        internal static string Message_ON11084 {
+        internal static string Message_ON20084 {
             get {
-                return ResourceManager.GetString("Message.ON11084", resourceCulture);
+                return ResourceManager.GetString("Message.ON20084", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Synchronisation der Daten der Logik.
         /// </summary>
-        internal static string Message_ON11085 {
+        internal static string Message_ON20085 {
             get {
-                return ResourceManager.GetString("Message.ON11085", resourceCulture);
+                return ResourceManager.GetString("Message.ON20085", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Synchronisation der Daten des CAL.
         /// </summary>
-        internal static string Message_ON11086 {
+        internal static string Message_ON20086 {
             get {
-                return ResourceManager.GetString("Message.ON11086", resourceCulture);
+                return ResourceManager.GetString("Message.ON20086", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Synchronisation innerhalb der Projektierungsüberprüfung.
         /// </summary>
-        internal static string Message_ON11087 {
+        internal static string Message_ON20087 {
             get {
-                return ResourceManager.GetString("Message.ON11087", resourceCulture);
+                return ResourceManager.GetString("Message.ON20087", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Synchronisation im zyklischen Betrieb.
         /// </summary>
-        internal static string Message_ON11088 {
+        internal static string Message_ON20088 {
             get {
-                return ResourceManager.GetString("Message.ON11088", resourceCulture);
+                return ResourceManager.GetString("Message.ON20088", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Synchronisation des Freigabestatus bei der Proj.überprüfung.
         /// </summary>
-        internal static string Message_ON11089 {
+        internal static string Message_ON20089 {
             get {
-                return ResourceManager.GetString("Message.ON11089", resourceCulture);
+                return ResourceManager.GetString("Message.ON20089", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Synchronisation des Freigabestatus beim Warten auf Projekt..
         /// </summary>
-        internal static string Message_ON11090 {
+        internal static string Message_ON20090 {
             get {
-                return ResourceManager.GetString("Message.ON11090", resourceCulture);
+                return ResourceManager.GetString("Message.ON20090", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Synchronisation bei der Vorbereitung der AS-i Bearbeitung.
         /// </summary>
-        internal static string Message_ON11091 {
+        internal static string Message_ON20091 {
             get {
-                return ResourceManager.GetString("Message.ON11091", resourceCulture);
+                return ResourceManager.GetString("Message.ON20091", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Synchronisation der Daten des AS-i.
         /// </summary>
-        internal static string Message_ON11092 {
+        internal static string Message_ON20092 {
             get {
-                return ResourceManager.GetString("Message.ON11092", resourceCulture);
+                return ResourceManager.GetString("Message.ON20092", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Synchronisation der Daten des LIO.
         /// </summary>
-        internal static string Message_ON11093 {
+        internal static string Message_ON20093 {
             get {
-                return ResourceManager.GetString("Message.ON11093", resourceCulture);
+                return ResourceManager.GetString("Message.ON20093", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Taster klemmt oder wurde nicht losgelassen (Werksgrundeinst.).
         /// </summary>
-        internal static string Message_ON11101 {
+        internal static string Message_ON20101 {
             get {
-                return ResourceManager.GetString("Message.ON11101", resourceCulture);
+                return ResourceManager.GetString("Message.ON20101", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Loeschen der Projektierungs-DS (Werksgrundeinst.).
         /// </summary>
-        internal static string Message_ON11102 {
+        internal static string Message_ON20102 {
             get {
-                return ResourceManager.GetString("Message.ON11102", resourceCulture);
+                return ResourceManager.GetString("Message.ON20102", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Timeout des Software-Watchdogs.
         /// </summary>
-        internal static string Message_ON11103 {
+        internal static string Message_ON20103 {
             get {
-                return ResourceManager.GetString("Message.ON11103", resourceCulture);
+                return ResourceManager.GetString("Message.ON20103", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Bearbeitungszeitüberschreitung im zyklischen Betrieb.
         /// </summary>
-        internal static string Message_ON11104 {
+        internal static string Message_ON20104 {
             get {
-                return ResourceManager.GetString("Message.ON11104", resourceCulture);
+                return ResourceManager.GetString("Message.ON20104", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to STATE_MAIN_PROTECTING --&gt; STATE_MAIN_PROTECTING_STOP ms.
         /// </summary>
-        internal static string Message_ON11105 {
+        internal static string Message_ON20105 {
             get {
-                return ResourceManager.GetString("Message.ON11105", resourceCulture);
+                return ResourceManager.GetString("Message.ON20105", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to CRC-Fehler bei Übergabe der Parameter für Analogmodul.
         /// </summary>
-        internal static string Message_ON11111 {
+        internal static string Message_ON20111 {
             get {
-                return ResourceManager.GetString("Message.ON11111", resourceCulture);
+                return ResourceManager.GetString("Message.ON20111", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Analogwandlung fehlgeschlagen.
         /// </summary>
-        internal static string Message_ON11112 {
+        internal static string Message_ON20112 {
             get {
-                return ResourceManager.GetString("Message.ON11112", resourceCulture);
+                return ResourceManager.GetString("Message.ON20112", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Analogwandlung fehlgeschlagen.
         /// </summary>
-        internal static string Message_ON11113 {
+        internal static string Message_ON20113 {
             get {
-                return ResourceManager.GetString("Message.ON11113", resourceCulture);
+                return ResourceManager.GetString("Message.ON20113", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler bei Analogwert-Bereichsüberprüfung.
         /// </summary>
-        internal static string Message_ON11114 {
+        internal static string Message_ON20114 {
             get {
-                return ResourceManager.GetString("Message.ON11114", resourceCulture);
+                return ResourceManager.GetString("Message.ON20114", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Unbekannte Quelle beim Schreiben der Diagnose (DIASetDiagnosis).
         /// </summary>
-        internal static string Message_ON11121 {
+        internal static string Message_ON20121 {
             get {
-                return ResourceManager.GetString("Message.ON11121", resourceCulture);
+                return ResourceManager.GetString("Message.ON20121", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Unbekannte Quelle beim Lesen der Diagnose (DIAGetDiagnosis).
         /// </summary>
-        internal static string Message_ON11122 {
+        internal static string Message_ON20122 {
             get {
-                return ResourceManager.GetString("Message.ON11122", resourceCulture);
+                return ResourceManager.GetString("Message.ON20122", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Unbekannter SIMATIC-DS.
         /// </summary>
-        internal static string Message_ON11123 {
+        internal static string Message_ON20123 {
             get {
-                return ResourceManager.GetString("Message.ON11123", resourceCulture);
+                return ResourceManager.GetString("Message.ON20123", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen eines Logbuchs.
         /// </summary>
-        internal static string Message_ON11124 {
+        internal static string Message_ON20124 {
             get {
-                return ResourceManager.GetString("Message.ON11124", resourceCulture);
+                return ResourceManager.GetString("Message.ON20124", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to unbekannte Logbuchnummer beim Schreiben eines Logbucheintrags.
         /// </summary>
-        internal static string Message_ON11125 {
+        internal static string Message_ON20125 {
             get {
-                return ResourceManager.GetString("Message.ON11125", resourceCulture);
+                return ResourceManager.GetString("Message.ON20125", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to falscher Index beim Zugriff auf DS_92_MATRIX.
         /// </summary>
-        internal static string Message_ON11126 {
+        internal static string Message_ON20126 {
             get {
-                return ResourceManager.GetString("Message.ON11126", resourceCulture);
+                return ResourceManager.GetString("Message.ON20126", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Schreiben in ein Logbuch.
         /// </summary>
-        internal static string Message_ON11127 {
+        internal static string Message_ON20127 {
             get {
-                return ResourceManager.GetString("Message.ON11127", resourceCulture);
+                return ResourceManager.GetString("Message.ON20127", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Löschen eines Logbuchs.
         /// </summary>
-        internal static string Message_ON11128 {
+        internal static string Message_ON20128 {
             get {
-                return ResourceManager.GetString("Message.ON11128", resourceCulture);
+                return ResourceManager.GetString("Message.ON20128", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to falsche Elementfunktionsnummer beim Schreiben der Elementmeldungen in Logbuch.
         /// </summary>
-        internal static string Message_ON11129 {
+        internal static string Message_ON20129 {
             get {
-                return ResourceManager.GetString("Message.ON11129", resourceCulture);
+                return ResourceManager.GetString("Message.ON20129", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler bei der Initialisierung der Logbücher.
         /// </summary>
-        internal static string Message_ON11130 {
+        internal static string Message_ON20130 {
             get {
-                return ResourceManager.GetString("Message.ON11130", resourceCulture);
+                return ResourceManager.GetString("Message.ON20130", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Berechneter Datensatz-CRC (interner DS).
         /// </summary>
-        internal static string Message_ON11131 {
+        internal static string Message_ON20131 {
             get {
-                return ResourceManager.GetString("Message.ON11131", resourceCulture);
+                return ResourceManager.GetString("Message.ON20131", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Berechneter Datensatz-CRC.
         /// </summary>
-        internal static string Message_ON11132 {
+        internal static string Message_ON20132 {
             get {
-                return ResourceManager.GetString("Message.ON11132", resourceCulture);
+                return ResourceManager.GetString("Message.ON20132", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Berechneter Projektierungs-CRC.
         /// </summary>
-        internal static string Message_ON11133 {
+        internal static string Message_ON20133 {
             get {
-                return ResourceManager.GetString("Message.ON11133", resourceCulture);
+                return ResourceManager.GetString("Message.ON20133", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Berechneter Freigabe-CRC.
         /// </summary>
-        internal static string Message_ON11134 {
+        internal static string Message_ON20134 {
             get {
-                return ResourceManager.GetString("Message.ON11134", resourceCulture);
+                return ResourceManager.GetString("Message.ON20134", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlender CRC im 1. Segment.
         /// </summary>
-        internal static string Message_ON11135 {
+        internal static string Message_ON20135 {
             get {
-                return ResourceManager.GetString("Message.ON11135", resourceCulture);
+                return ResourceManager.GetString("Message.ON20135", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falscher Handshakecode empfangen.
         /// </summary>
-        internal static string Message_ON11181 {
+        internal static string Message_ON20181 {
             get {
-                return ResourceManager.GetString("Message.ON11181", resourceCulture);
+                return ResourceManager.GetString("Message.ON20181", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to CRC-Fehler beim Schreiben des DS 111.
         /// </summary>
-        internal static string Message_ON11182 {
+        internal static string Message_ON20182 {
             get {
-                return ResourceManager.GetString("Message.ON11182", resourceCulture);
+                return ResourceManager.GetString("Message.ON20182", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falsche Gerätefunktion für AS-i Strang 1 im Taufe-DS 110.
         /// </summary>
-        internal static string Message_ON11183 {
+        internal static string Message_ON20183 {
             get {
-                return ResourceManager.GetString("Message.ON11183", resourceCulture);
+                return ResourceManager.GetString("Message.ON20183", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falsche Baugruppenkennung im Taufedatensatz 110.
         /// </summary>
-        internal static string Message_ON11184 {
+        internal static string Message_ON20184 {
             get {
-                return ResourceManager.GetString("Message.ON11184", resourceCulture);
+                return ResourceManager.GetString("Message.ON20184", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falsche Gerätefunktion für Speichermodul im Taufe-DS 110.
         /// </summary>
-        internal static string Message_ON11185 {
+        internal static string Message_ON20185 {
             get {
-                return ResourceManager.GetString("Message.ON11185", resourceCulture);
+                return ResourceManager.GetString("Message.ON20185", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falsche StartPos beim Schreiben eines seg. DS.
         /// </summary>
-        internal static string Message_ON11186 {
+        internal static string Message_ON20186 {
             get {
-                return ResourceManager.GetString("Message.ON11186", resourceCulture);
+                return ResourceManager.GetString("Message.ON20186", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Längenfehler beim Schreiben eines seg. DS.
         /// </summary>
-        internal static string Message_ON11187 {
+        internal static string Message_ON20187 {
             get {
-                return ResourceManager.GetString("Message.ON11187", resourceCulture);
+                return ResourceManager.GetString("Message.ON20187", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to DS-Längenangabe bei Fehlererkennung.
         /// </summary>
-        internal static string Message_ON11188 {
+        internal static string Message_ON20188 {
             get {
-                return ResourceManager.GetString("Message.ON11188", resourceCulture);
+                return ResourceManager.GetString("Message.ON20188", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to DS-Längenangabe passt nicht zur übertragenen Datenmenge.
         /// </summary>
-        internal static string Message_ON11189 {
+        internal static string Message_ON20189 {
             get {
-                return ResourceManager.GetString("Message.ON11189", resourceCulture);
+                return ResourceManager.GetString("Message.ON20189", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Blockstrukturfehler in DS160, DS161 oder DS162.
         /// </summary>
-        internal static string Message_ON11190 {
+        internal static string Message_ON20190 {
             get {
-                return ResourceManager.GetString("Message.ON11190", resourceCulture);
+                return ResourceManager.GetString("Message.ON20190", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to DS93: Kommando noch nicht implementiert.
         /// </summary>
-        internal static string Message_ON11191 {
+        internal static string Message_ON20191 {
             get {
-                return ResourceManager.GetString("Message.ON11191", resourceCulture);
+                return ResourceManager.GetString("Message.ON20191", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to CRC-Fehler beim Lesen eines DS.
         /// </summary>
-        internal static string Message_ON11192 {
+        internal static string Message_ON20192 {
             get {
-                return ResourceManager.GetString("Message.ON11192", resourceCulture);
+                return ResourceManager.GetString("Message.ON20192", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to CRC-Fehler beim Lesen eines seg. DS.
         /// </summary>
-        internal static string Message_ON11193 {
+        internal static string Message_ON20193 {
             get {
-                return ResourceManager.GetString("Message.ON11193", resourceCulture);
+                return ResourceManager.GetString("Message.ON20193", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Holen der Datenpartition.
         /// </summary>
-        internal static string Message_ON11194 {
+        internal static string Message_ON20194 {
             get {
-                return ResourceManager.GetString("Message.ON11194", resourceCulture);
+                return ResourceManager.GetString("Message.ON20194", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Holen der Projektierungspartition.
         /// </summary>
-        internal static string Message_ON11195 {
+        internal static string Message_ON20195 {
             get {
-                return ResourceManager.GetString("Message.ON11195", resourceCulture);
+                return ResourceManager.GetString("Message.ON20195", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen der Elementbezeichner aus DS 198.
         /// </summary>
-        internal static string Message_ON11196 {
+        internal static string Message_ON20196 {
             get {
-                return ResourceManager.GetString("Message.ON11196", resourceCulture);
+                return ResourceManager.GetString("Message.ON20196", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to CRC-Fehler beim Schreiben des DS 110.
         /// </summary>
-        internal static string Message_ON11197 {
+        internal static string Message_ON20197 {
             get {
-                return ResourceManager.GetString("Message.ON11197", resourceCulture);
+                return ResourceManager.GetString("Message.ON20197", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to CRC-Fehler beim Schreiben eines DS.
         /// </summary>
-        internal static string Message_ON11198 {
+        internal static string Message_ON20198 {
             get {
-                return ResourceManager.GetString("Message.ON11198", resourceCulture);
+                return ResourceManager.GetString("Message.ON20198", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to CRC-Fehler beim Schreiben eines seg. DS.
         /// </summary>
-        internal static string Message_ON11199 {
+        internal static string Message_ON20199 {
             get {
-                return ResourceManager.GetString("Message.ON11199", resourceCulture);
+                return ResourceManager.GetString("Message.ON20199", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Ueberpruefen des Passwortes.
         /// </summary>
-        internal static string Message_ON11200 {
+        internal static string Message_ON20200 {
             get {
-                return ResourceManager.GetString("Message.ON11200", resourceCulture);
+                return ResourceManager.GetString("Message.ON20200", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen des Passwortes aus DS 139.
         /// </summary>
-        internal static string Message_ON11201 {
+        internal static string Message_ON20201 {
             get {
-                return ResourceManager.GetString("Message.ON11201", resourceCulture);
+                return ResourceManager.GetString("Message.ON20201", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen aus DS 110 (Verbindungsueberwachungszeit).
         /// </summary>
-        internal static string Message_ON11202 {
+        internal static string Message_ON20202 {
             get {
-                return ResourceManager.GetString("Message.ON11202", resourceCulture);
+                return ResourceManager.GetString("Message.ON20202", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen aus DS 110 (Default Passwort).
         /// </summary>
-        internal static string Message_ON11203 {
+        internal static string Message_ON20203 {
             get {
-                return ResourceManager.GetString("Message.ON11203", resourceCulture);
+                return ResourceManager.GetString("Message.ON20203", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen aus DS 110 (System-ID).
         /// </summary>
-        internal static string Message_ON11204 {
+        internal static string Message_ON20204 {
             get {
-                return ResourceManager.GetString("Message.ON11204", resourceCulture);
+                return ResourceManager.GetString("Message.ON20204", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen aus DS 110 (Default-Garätefunktion).
         /// </summary>
-        internal static string Message_ON11205 {
+        internal static string Message_ON20205 {
             get {
-                return ResourceManager.GetString("Message.ON11205", resourceCulture);
+                return ResourceManager.GetString("Message.ON20205", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Aendern eines DS (Loeschen).
         /// </summary>
-        internal static string Message_ON11213 {
+        internal static string Message_ON20213 {
             get {
-                return ResourceManager.GetString("Message.ON11213", resourceCulture);
+                return ResourceManager.GetString("Message.ON20213", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Aendern eines DS (Loeschen).
         /// </summary>
-        internal static string Message_ON11214 {
+        internal static string Message_ON20214 {
             get {
-                return ResourceManager.GetString("Message.ON11214", resourceCulture);
+                return ResourceManager.GetString("Message.ON20214", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Loeschen des DS 182.
         /// </summary>
-        internal static string Message_ON11215 {
+        internal static string Message_ON20215 {
             get {
-                return ResourceManager.GetString("Message.ON11215", resourceCulture);
+                return ResourceManager.GetString("Message.ON20215", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Schreiben des DS 292 (Setzen).
         /// </summary>
-        internal static string Message_ON11216 {
+        internal static string Message_ON20216 {
             get {
-                return ResourceManager.GetString("Message.ON11216", resourceCulture);
+                return ResourceManager.GetString("Message.ON20216", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Schreiben des DS 292 (Ruecksetzen).
         /// </summary>
-        internal static string Message_ON11217 {
+        internal static string Message_ON20217 {
             get {
-                return ResourceManager.GetString("Message.ON11217", resourceCulture);
+                return ResourceManager.GetString("Message.ON20217", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen des DS 292.
         /// </summary>
-        internal static string Message_ON11218 {
+        internal static string Message_ON20218 {
             get {
-                return ResourceManager.GetString("Message.ON11218", resourceCulture);
+                return ResourceManager.GetString("Message.ON20218", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen eines Default-Datensatzes.
         /// </summary>
-        internal static string Message_ON11219 {
+        internal static string Message_ON20219 {
             get {
-                return ResourceManager.GetString("Message.ON11219", resourceCulture);
+                return ResourceManager.GetString("Message.ON20219", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Werksgrundeinstellung wurde überschrieben.
         /// </summary>
-        internal static string Message_ON11220 {
+        internal static string Message_ON20220 {
             get {
-                return ResourceManager.GetString("Message.ON11220", resourceCulture);
+                return ResourceManager.GetString("Message.ON20220", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen der freien Pages des externen EEPROMs.
         /// </summary>
-        internal static string Message_ON11221 {
+        internal static string Message_ON20221 {
             get {
-                return ResourceManager.GetString("Message.ON11221", resourceCulture);
+                return ResourceManager.GetString("Message.ON20221", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen der Partition fuer DS 124.
         /// </summary>
-        internal static string Message_ON11222 {
+        internal static string Message_ON20222 {
             get {
-                return ResourceManager.GetString("Message.ON11222", resourceCulture);
+                return ResourceManager.GetString("Message.ON20222", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen von DS 3: Kommandobearbeitung nicht aktiv.
         /// </summary>
-        internal static string Message_ON11223 {
+        internal static string Message_ON20223 {
             get {
-                return ResourceManager.GetString("Message.ON11223", resourceCulture);
+                return ResourceManager.GetString("Message.ON20223", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen des Default-Passwortes.
         /// </summary>
-        internal static string Message_ON11224 {
+        internal static string Message_ON20224 {
             get {
-                return ResourceManager.GetString("Message.ON11224", resourceCulture);
+                return ResourceManager.GetString("Message.ON20224", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Schreiben eines Default-DS.
         /// </summary>
-        internal static string Message_ON11225 {
+        internal static string Message_ON20225 {
             get {
-                return ResourceManager.GetString("Message.ON11225", resourceCulture);
+                return ResourceManager.GetString("Message.ON20225", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen eines Default-DS.
         /// </summary>
-        internal static string Message_ON11226 {
+        internal static string Message_ON20226 {
             get {
-                return ResourceManager.GetString("Message.ON11226", resourceCulture);
+                return ResourceManager.GetString("Message.ON20226", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Schreiben eines seg. Default-DS: Länge ungültig.
         /// </summary>
-        internal static string Message_ON11227 {
+        internal static string Message_ON20227 {
             get {
-                return ResourceManager.GetString("Message.ON11227", resourceCulture);
+                return ResourceManager.GetString("Message.ON20227", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen eines seg. Default-DS: DS nicht vorhanden.
         /// </summary>
-        internal static string Message_ON11228 {
+        internal static string Message_ON20228 {
             get {
-                return ResourceManager.GetString("Message.ON11228", resourceCulture);
+                return ResourceManager.GetString("Message.ON20228", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Puffer zum Ermitteln eines Default-Datensatz zu klein.
         /// </summary>
-        internal static string Message_ON11229 {
+        internal static string Message_ON20229 {
             get {
-                return ResourceManager.GetString("Message.ON11229", resourceCulture);
+                return ResourceManager.GetString("Message.ON20229", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Zu einem Datensatz gibt es keinen Default-Datensatz.
         /// </summary>
-        internal static string Message_ON11230 {
+        internal static string Message_ON20230 {
             get {
-                return ResourceManager.GetString("Message.ON11230", resourceCulture);
+                return ResourceManager.GetString("Message.ON20230", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültige FW-Version im Taufe DS231.
         /// </summary>
-        internal static string Message_ON11231 {
+        internal static string Message_ON20231 {
             get {
-                return ResourceManager.GetString("Message.ON11231", resourceCulture);
+                return ResourceManager.GetString("Message.ON20231", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültiges Default-Passwort im Taufedatensatz 110.
         /// </summary>
-        internal static string Message_ON11232 {
+        internal static string Message_ON20232 {
             get {
-                return ResourceManager.GetString("Message.ON11232", resourceCulture);
+                return ResourceManager.GetString("Message.ON20232", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falsche FW Version im Taufedatensatz 110.
         /// </summary>
-        internal static string Message_ON11233 {
+        internal static string Message_ON20233 {
             get {
-                return ResourceManager.GetString("Message.ON11233", resourceCulture);
+                return ResourceManager.GetString("Message.ON20233", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falsche Familie Subfamilie im Taufedatensatz 110.
         /// </summary>
-        internal static string Message_ON11234 {
+        internal static string Message_ON20234 {
             get {
-                return ResourceManager.GetString("Message.ON11234", resourceCulture);
+                return ResourceManager.GetString("Message.ON20234", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Datensatz ist z groß für verwendeten internen Puffer.
         /// </summary>
-        internal static string Message_ON11235 {
+        internal static string Message_ON20235 {
             get {
-                return ResourceManager.GetString("Message.ON11235", resourceCulture);
+                return ResourceManager.GetString("Message.ON20235", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Datensatz ist zu groß für verwendeten internen Puffer.
         /// </summary>
-        internal static string Message_ON11236 {
+        internal static string Message_ON20236 {
             get {
-                return ResourceManager.GetString("Message.ON11236", resourceCulture);
+                return ResourceManager.GetString("Message.ON20236", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Unbekannter Zustand in uIPRHandleDs.
         /// </summary>
-        internal static string Message_ON11237 {
+        internal static string Message_ON20237 {
             get {
-                return ResourceManager.GetString("Message.ON11237", resourceCulture);
+                return ResourceManager.GetString("Message.ON20237", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Loeschen der Taufedatensaetze.
         /// </summary>
-        internal static string Message_ON11238 {
+        internal static string Message_ON20238 {
             get {
-                return ResourceManager.GetString("Message.ON11238", resourceCulture);
+                return ResourceManager.GetString("Message.ON20238", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen eines DS aus dem EEPROM.
         /// </summary>
-        internal static string Message_ON11239 {
+        internal static string Message_ON20239 {
             get {
-                return ResourceManager.GetString("Message.ON11239", resourceCulture);
+                return ResourceManager.GetString("Message.ON20239", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen eines DS.
         /// </summary>
-        internal static string Message_ON11240 {
+        internal static string Message_ON20240 {
             get {
-                return ResourceManager.GetString("Message.ON11240", resourceCulture);
+                return ResourceManager.GetString("Message.ON20240", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Schreiben eines DS.
         /// </summary>
-        internal static string Message_ON11241 {
+        internal static string Message_ON20241 {
             get {
-                return ResourceManager.GetString("Message.ON11241", resourceCulture);
+                return ResourceManager.GetString("Message.ON20241", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültige Verbindungsüberwachungszeit im Taufedatensatz 110.
         /// </summary>
-        internal static string Message_ON11242 {
+        internal static string Message_ON20242 {
             get {
-                return ResourceManager.GetString("Message.ON11242", resourceCulture);
+                return ResourceManager.GetString("Message.ON20242", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen der Codefolgen.
         /// </summary>
-        internal static string Message_ON11243 {
+        internal static string Message_ON20243 {
             get {
-                return ResourceManager.GetString("Message.ON11243", resourceCulture);
+                return ResourceManager.GetString("Message.ON20243", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Schreiben der Codefolgen.
         /// </summary>
-        internal static string Message_ON11244 {
+        internal static string Message_ON20244 {
             get {
-                return ResourceManager.GetString("Message.ON11244", resourceCulture);
+                return ResourceManager.GetString("Message.ON20244", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Löschen eines segmentierten Datensatzes.
         /// </summary>
-        internal static string Message_ON11245 {
+        internal static string Message_ON20245 {
             get {
-                return ResourceManager.GetString("Message.ON11245", resourceCulture);
+                return ResourceManager.GetString("Message.ON20245", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Erstellen eines Default-DS (segmentierter DS).
         /// </summary>
-        internal static string Message_ON11246 {
+        internal static string Message_ON20246 {
             get {
-                return ResourceManager.GetString("Message.ON11246", resourceCulture);
+                return ResourceManager.GetString("Message.ON20246", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Schreiben des DS213.
         /// </summary>
-        internal static string Message_ON11247 {
+        internal static string Message_ON20247 {
             get {
-                return ResourceManager.GetString("Message.ON11247", resourceCulture);
+                return ResourceManager.GetString("Message.ON20247", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültige SubslotNr bei Abfrage des DS213.
         /// </summary>
-        internal static string Message_ON11248 {
+        internal static string Message_ON20248 {
             get {
-                return ResourceManager.GetString("Message.ON11248", resourceCulture);
+                return ResourceManager.GetString("Message.ON20248", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültige SlotNr bei Abfrage des DS213.
         /// </summary>
-        internal static string Message_ON11249 {
+        internal static string Message_ON20249 {
             get {
-                return ResourceManager.GetString("Message.ON11249", resourceCulture);
+                return ResourceManager.GetString("Message.ON20249", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültige Blocklänge im DS213.
         /// </summary>
-        internal static string Message_ON11250 {
+        internal static string Message_ON20250 {
             get {
-                return ResourceManager.GetString("Message.ON11250", resourceCulture);
+                return ResourceManager.GetString("Message.ON20250", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Loeschen in Fkt. uStartNewProjecting.
         /// </summary>
-        internal static string Message_ON11251 {
+        internal static string Message_ON20251 {
             get {
-                return ResourceManager.GetString("Message.ON11251", resourceCulture);
+                return ResourceManager.GetString("Message.ON20251", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Loeschen in Fkt. uCheckDs128Projecting.
         /// </summary>
-        internal static string Message_ON11252 {
+        internal static string Message_ON20252 {
             get {
-                return ResourceManager.GetString("Message.ON11252", resourceCulture);
+                return ResourceManager.GetString("Message.ON20252", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen des DS 181.
         /// </summary>
-        internal static string Message_ON11253 {
+        internal static string Message_ON20253 {
             get {
-                return ResourceManager.GetString("Message.ON11253", resourceCulture);
+                return ResourceManager.GetString("Message.ON20253", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Schreiben des DS 181.
         /// </summary>
-        internal static string Message_ON11254 {
+        internal static string Message_ON20254 {
             get {
-                return ResourceManager.GetString("Message.ON11254", resourceCulture);
+                return ResourceManager.GetString("Message.ON20254", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Loeschen des DS 181.
         /// </summary>
-        internal static string Message_ON11255 {
+        internal static string Message_ON20255 {
             get {
-                return ResourceManager.GetString("Message.ON11255", resourceCulture);
+                return ResourceManager.GetString("Message.ON20255", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Ermitteln der Projektierungspartition.
         /// </summary>
-        internal static string Message_ON11256 {
+        internal static string Message_ON20256 {
             get {
-                return ResourceManager.GetString("Message.ON11256", resourceCulture);
+                return ResourceManager.GetString("Message.ON20256", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Unbekannter Projektierungsstatus.
         /// </summary>
-        internal static string Message_ON11257 {
+        internal static string Message_ON20257 {
             get {
-                return ResourceManager.GetString("Message.ON11257", resourceCulture);
+                return ResourceManager.GetString("Message.ON20257", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen des DS 182.
         /// </summary>
-        internal static string Message_ON11258 {
+        internal static string Message_ON20258 {
             get {
-                return ResourceManager.GetString("Message.ON11258", resourceCulture);
+                return ResourceManager.GetString("Message.ON20258", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Schreiben des DS 182.
         /// </summary>
-        internal static string Message_ON11259 {
+        internal static string Message_ON20259 {
             get {
-                return ResourceManager.GetString("Message.ON11259", resourceCulture);
+                return ResourceManager.GetString("Message.ON20259", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Keine Partitions-ID bei der Ueberpruefung der Projektierung.
         /// </summary>
-        internal static string Message_ON11260 {
+        internal static string Message_ON20260 {
             get {
-                return ResourceManager.GetString("Message.ON11260", resourceCulture);
+                return ResourceManager.GetString("Message.ON20260", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Ueberpruefen des Projektierungs-CRCs.
         /// </summary>
-        internal static string Message_ON11261 {
+        internal static string Message_ON20261 {
             get {
-                return ResourceManager.GetString("Message.ON11261", resourceCulture);
+                return ResourceManager.GetString("Message.ON20261", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Holen des Freigabestatus.
         /// </summary>
-        internal static string Message_ON11262 {
+        internal static string Message_ON20262 {
             get {
-                return ResourceManager.GetString("Message.ON11262", resourceCulture);
+                return ResourceManager.GetString("Message.ON20262", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Unbekannter Projektierungszustand.
         /// </summary>
-        internal static string Message_ON11263 {
+        internal static string Message_ON20263 {
             get {
-                return ResourceManager.GetString("Message.ON11263", resourceCulture);
+                return ResourceManager.GetString("Message.ON20263", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen des DS 182 bei der Freigabe.
         /// </summary>
-        internal static string Message_ON11264 {
+        internal static string Message_ON20264 {
             get {
-                return ResourceManager.GetString("Message.ON11264", resourceCulture);
+                return ResourceManager.GetString("Message.ON20264", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Schreiben des DS 182 bei der Freigabe.
         /// </summary>
-        internal static string Message_ON11265 {
+        internal static string Message_ON20265 {
             get {
-                return ResourceManager.GetString("Message.ON11265", resourceCulture);
+                return ResourceManager.GetString("Message.ON20265", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to ext. EEPROM beim Schreiben des DS 182 nicht vorhanden.
         /// </summary>
-        internal static string Message_ON11266 {
+        internal static string Message_ON20266 {
             get {
-                return ResourceManager.GetString("Message.ON11266", resourceCulture);
+                return ResourceManager.GetString("Message.ON20266", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Loeschen in Fkt. uPRJDeleteProjectDs.
         /// </summary>
-        internal static string Message_ON11267 {
+        internal static string Message_ON20267 {
             get {
-                return ResourceManager.GetString("Message.ON11267", resourceCulture);
+                return ResourceManager.GetString("Message.ON20267", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen des DS 181 bei der Freigabe.
         /// </summary>
-        internal static string Message_ON11268 {
+        internal static string Message_ON20268 {
             get {
-                return ResourceManager.GetString("Message.ON11268", resourceCulture);
+                return ResourceManager.GetString("Message.ON20268", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen des DS 130 beim SOLL- IST-Vergleich.
         /// </summary>
-        internal static string Message_ON11269 {
+        internal static string Message_ON20269 {
             get {
-                return ResourceManager.GetString("Message.ON11269", resourceCulture);
+                return ResourceManager.GetString("Message.ON20269", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Vergl. Soll- Ist des Projektierungs-CRCs in DS181.
         /// </summary>
-        internal static string Message_ON11270 {
+        internal static string Message_ON20270 {
             get {
-                return ResourceManager.GetString("Message.ON11270", resourceCulture);
+                return ResourceManager.GetString("Message.ON20270", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim SOLL- IST-Vergleich eines Slots.
         /// </summary>
-        internal static string Message_ON11271 {
+        internal static string Message_ON20271 {
             get {
-                return ResourceManager.GetString("Message.ON11271", resourceCulture);
+                return ResourceManager.GetString("Message.ON20271", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Ermitteln der aktuellen Konfiguration (Slot).
         /// </summary>
-        internal static string Message_ON11272 {
+        internal static string Message_ON20272 {
             get {
-                return ResourceManager.GetString("Message.ON11272", resourceCulture);
+                return ResourceManager.GetString("Message.ON20272", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler bei der Synchronisation der Konfigurationen.
         /// </summary>
-        internal static string Message_ON11273 {
+        internal static string Message_ON20273 {
             get {
-                return ResourceManager.GetString("Message.ON11273", resourceCulture);
+                return ResourceManager.GetString("Message.ON20273", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Anzahl der IST-Slots ungleich Anzahl der SOLL-Slots.
         /// </summary>
-        internal static string Message_ON11274 {
+        internal static string Message_ON20274 {
             get {
-                return ResourceManager.GetString("Message.ON11274", resourceCulture);
+                return ResourceManager.GetString("Message.ON20274", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Auslesen der Zykluszeit.
         /// </summary>
-        internal static string Message_ON11275 {
+        internal static string Message_ON20275 {
             get {
-                return ResourceManager.GetString("Message.ON11275", resourceCulture);
+                return ResourceManager.GetString("Message.ON20275", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Zykluszeit liegt ausserhalb der erlaubten Grenzen.
         /// </summary>
-        internal static string Message_ON11276 {
+        internal static string Message_ON20276 {
             get {
-                return ResourceManager.GetString("Message.ON11276", resourceCulture);
+                return ResourceManager.GetString("Message.ON20276", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Auslesen der CRC der Projektierungs-DS.
         /// </summary>
-        internal static string Message_ON11277 {
+        internal static string Message_ON20277 {
             get {
-                return ResourceManager.GetString("Message.ON11277", resourceCulture);
+                return ResourceManager.GetString("Message.ON20277", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Unerwarteter Datensatz Timeout bei der Projektierung.
         /// </summary>
-        internal static string Message_ON11278 {
+        internal static string Message_ON20278 {
             get {
-                return ResourceManager.GetString("Message.ON11278", resourceCulture);
+                return ResourceManager.GetString("Message.ON20278", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen des DS130.
         /// </summary>
-        internal static string Message_ON11279 {
+        internal static string Message_ON20279 {
             get {
-                return ResourceManager.GetString("Message.ON11279", resourceCulture);
+                return ResourceManager.GetString("Message.ON20279", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler bei der Synchronisation des Freigabestatus.
         /// </summary>
-        internal static string Message_ON11280 {
+        internal static string Message_ON20280 {
             get {
-                return ResourceManager.GetString("Message.ON11280", resourceCulture);
+                return ResourceManager.GetString("Message.ON20280", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Freigabestatus ist auf Master und Slave unterschiedlich.
         /// </summary>
-        internal static string Message_ON11281 {
+        internal static string Message_ON20281 {
             get {
-                return ResourceManager.GetString("Message.ON11281", resourceCulture);
+                return ResourceManager.GetString("Message.ON20281", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Kein Projektname eingetragen.
         /// </summary>
-        internal static string Message_ON11282 {
+        internal static string Message_ON20282 {
             get {
-                return ResourceManager.GetString("Message.ON11282", resourceCulture);
+                return ResourceManager.GetString("Message.ON20282", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Kein Projektierungszeitstempel eingetragen.
         /// </summary>
-        internal static string Message_ON11283 {
+        internal static string Message_ON20283 {
             get {
-                return ResourceManager.GetString("Message.ON11283", resourceCulture);
+                return ResourceManager.GetString("Message.ON20283", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Kein Name des Projekteurs eingetragen.
         /// </summary>
-        internal static string Message_ON11284 {
+        internal static string Message_ON20284 {
             get {
-                return ResourceManager.GetString("Message.ON11284", resourceCulture);
+                return ResourceManager.GetString("Message.ON20284", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Kein Firmenname des Projekteurs eingetragen.
         /// </summary>
-        internal static string Message_ON11285 {
+        internal static string Message_ON20285 {
             get {
-                return ResourceManager.GetString("Message.ON11285", resourceCulture);
+                return ResourceManager.GetString("Message.ON20285", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Kein Projektierungsfreigabezeitstempel eingetragen.
         /// </summary>
-        internal static string Message_ON11286 {
+        internal static string Message_ON20286 {
             get {
-                return ResourceManager.GetString("Message.ON11286", resourceCulture);
+                return ResourceManager.GetString("Message.ON20286", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Kein Name des Freigebenden eingetragen.
         /// </summary>
-        internal static string Message_ON11287 {
+        internal static string Message_ON20287 {
             get {
-                return ResourceManager.GetString("Message.ON11287", resourceCulture);
+                return ResourceManager.GetString("Message.ON20287", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Kein Firmenname des Freigebenden eingetragen.
         /// </summary>
-        internal static string Message_ON11288 {
+        internal static string Message_ON20288 {
             get {
-                return ResourceManager.GetString("Message.ON11288", resourceCulture);
+                return ResourceManager.GetString("Message.ON20288", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen des DS 180.
         /// </summary>
-        internal static string Message_ON11289 {
+        internal static string Message_ON20289 {
             get {
-                return ResourceManager.GetString("Message.ON11289", resourceCulture);
+                return ResourceManager.GetString("Message.ON20289", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to DS131-Länge passt nicht zur DS180-Subslotbaugruppenanzahl.
         /// </summary>
-        internal static string Message_ON11290 {
+        internal static string Message_ON20290 {
             get {
-                return ResourceManager.GetString("Message.ON11290", resourceCulture);
+                return ResourceManager.GetString("Message.ON20290", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to DS130-Länge passt nicht zur DS180-Slotbaugruppenanzahl.
         /// </summary>
-        internal static string Message_ON11291 {
+        internal static string Message_ON20291 {
             get {
-                return ResourceManager.GetString("Message.ON11291", resourceCulture);
+                return ResourceManager.GetString("Message.ON20291", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Synch. zum Ausgleich der Laufzeiten bei der Proj.Freigabe.
         /// </summary>
-        internal static string Message_ON11292 {
+        internal static string Message_ON20292 {
             get {
-                return ResourceManager.GetString("Message.ON11292", resourceCulture);
+                return ResourceManager.GetString("Message.ON20292", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen des DS 131.
         /// </summary>
-        internal static string Message_ON11293 {
+        internal static string Message_ON20293 {
             get {
-                return ResourceManager.GetString("Message.ON11293", resourceCulture);
+                return ResourceManager.GetString("Message.ON20293", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen des DS 180 (Subslotermittlung).
         /// </summary>
-        internal static string Message_ON11294 {
+        internal static string Message_ON20294 {
             get {
-                return ResourceManager.GetString("Message.ON11294", resourceCulture);
+                return ResourceManager.GetString("Message.ON20294", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Projektierung-DS der Subslots ist nicht DS 131.
         /// </summary>
-        internal static string Message_ON11295 {
+        internal static string Message_ON20295 {
             get {
-                return ResourceManager.GetString("Message.ON11295", resourceCulture);
+                return ResourceManager.GetString("Message.ON20295", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen des DS131 oder CRC-Fehler.
         /// </summary>
-        internal static string Message_ON11296 {
+        internal static string Message_ON20296 {
             get {
-                return ResourceManager.GetString("Message.ON11296", resourceCulture);
+                return ResourceManager.GetString("Message.ON20296", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen des DS161 oder CRC-Fehler.
         /// </summary>
-        internal static string Message_ON11297 {
+        internal static string Message_ON20297 {
             get {
-                return ResourceManager.GetString("Message.ON11297", resourceCulture);
+                return ResourceManager.GetString("Message.ON20297", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Unerwartete DS-Quelle bei der Projektierung.
         /// </summary>
-        internal static string Message_ON11298 {
+        internal static string Message_ON20298 {
             get {
-                return ResourceManager.GetString("Message.ON11298", resourceCulture);
+                return ResourceManager.GetString("Message.ON20298", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Unerwartete DS-Koordination bei der Projektierung.
         /// </summary>
-        internal static string Message_ON11299 {
+        internal static string Message_ON20299 {
             get {
-                return ResourceManager.GetString("Message.ON11299", resourceCulture);
+                return ResourceManager.GetString("Message.ON20299", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler bei der Synchronisation der Ausg.Abbilder (lokal).
         /// </summary>
-        internal static string Message_ON11411 {
+        internal static string Message_ON20411 {
             get {
-                return ResourceManager.GetString("Message.ON11411", resourceCulture);
+                return ResourceManager.GetString("Message.ON20411", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler bei der Synchronisation der Eing.Abbilder (lokal).
         /// </summary>
-        internal static string Message_ON11412 {
+        internal static string Message_ON20412 {
             get {
-                return ResourceManager.GetString("Message.ON11412", resourceCulture);
+                return ResourceManager.GetString("Message.ON20412", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler im Zustandstest (gemeinsamer Treiber der lokalen Ausgänge).
         /// </summary>
-        internal static string Message_ON11413 {
+        internal static string Message_ON20413 {
             get {
-                return ResourceManager.GetString("Message.ON11413", resourceCulture);
+                return ResourceManager.GetString("Message.ON20413", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhafter Zustandstest nach Zustandsänderung am FDO1.
         /// </summary>
-        internal static string Message_ON11414 {
+        internal static string Message_ON20414 {
             get {
-                return ResourceManager.GetString("Message.ON11414", resourceCulture);
+                return ResourceManager.GetString("Message.ON20414", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhafter Zustandstest nach Zustandsänderung am FDO2.
         /// </summary>
-        internal static string Message_ON11415 {
+        internal static string Message_ON20415 {
             get {
-                return ResourceManager.GetString("Message.ON11415", resourceCulture);
+                return ResourceManager.GetString("Message.ON20415", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhafter Zustandstest nach Zustandsänderung am FDO3.
         /// </summary>
-        internal static string Message_ON11416 {
+        internal static string Message_ON20416 {
             get {
-                return ResourceManager.GetString("Message.ON11416", resourceCulture);
+                return ResourceManager.GetString("Message.ON20416", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhafter Zustandstest nach Zustandsänderung am FDO4.
         /// </summary>
-        internal static string Message_ON11417 {
+        internal static string Message_ON20417 {
             get {
-                return ResourceManager.GetString("Message.ON11417", resourceCulture);
+                return ResourceManager.GetString("Message.ON20417", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler im Zustandstest (gemeinsamer Treiber der SafetynG Ausgänge).
         /// </summary>
-        internal static string Message_ON11418 {
+        internal static string Message_ON20418 {
             get {
-                return ResourceManager.GetString("Message.ON11418", resourceCulture);
+                return ResourceManager.GetString("Message.ON20418", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhafter Zustandstest nach Zustandsänderung am Safety nG FDO5.
         /// </summary>
-        internal static string Message_ON11419 {
+        internal static string Message_ON20419 {
             get {
-                return ResourceManager.GetString("Message.ON11419", resourceCulture);
+                return ResourceManager.GetString("Message.ON20419", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhafter Zustandstest nach Zustandsänderung am Safety nG FDO6.
         /// </summary>
-        internal static string Message_ON11420 {
+        internal static string Message_ON20420 {
             get {
-                return ResourceManager.GetString("Message.ON11420", resourceCulture);
+                return ResourceManager.GetString("Message.ON20420", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhafter Zustandstest am FDO1 (statisches Ausgangssignal).
         /// </summary>
-        internal static string Message_ON11421 {
+        internal static string Message_ON20421 {
             get {
-                return ResourceManager.GetString("Message.ON11421", resourceCulture);
+                return ResourceManager.GetString("Message.ON20421", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhafter Zustandstest am FDO2 (statisches Ausgangssignal).
         /// </summary>
-        internal static string Message_ON11422 {
+        internal static string Message_ON20422 {
             get {
-                return ResourceManager.GetString("Message.ON11422", resourceCulture);
+                return ResourceManager.GetString("Message.ON20422", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhafter Zustandstest am FDO3 (statisches Ausgangssignal).
         /// </summary>
-        internal static string Message_ON11423 {
+        internal static string Message_ON20423 {
             get {
-                return ResourceManager.GetString("Message.ON11423", resourceCulture);
+                return ResourceManager.GetString("Message.ON20423", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhafter Zustandstest am FDO4 (statisches Ausgangssignal).
         /// </summary>
-        internal static string Message_ON11424 {
+        internal static string Message_ON20424 {
             get {
-                return ResourceManager.GetString("Message.ON11424", resourceCulture);
+                return ResourceManager.GetString("Message.ON20424", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhafter Zustandstest am Safety nG FDO5 (statisches Ausgangssignal).
         /// </summary>
-        internal static string Message_ON11425 {
+        internal static string Message_ON20425 {
             get {
-                return ResourceManager.GetString("Message.ON11425", resourceCulture);
+                return ResourceManager.GetString("Message.ON20425", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhafter Zustandstest am Safety nG FDO6 (statisches Ausgangssignal).
         /// </summary>
-        internal static string Message_ON11426 {
+        internal static string Message_ON20426 {
             get {
-                return ResourceManager.GetString("Message.ON11426", resourceCulture);
+                return ResourceManager.GetString("Message.ON20426", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhafter Dunkeltest (gemeinsamer Treiber der lokalen Ausgänge).
         /// </summary>
-        internal static string Message_ON11427 {
+        internal static string Message_ON20427 {
             get {
-                return ResourceManager.GetString("Message.ON11427", resourceCulture);
+                return ResourceManager.GetString("Message.ON20427", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhafter Dunkeltest des Kanaltreibers (FDO1).
         /// </summary>
-        internal static string Message_ON11428 {
+        internal static string Message_ON20428 {
             get {
-                return ResourceManager.GetString("Message.ON11428", resourceCulture);
+                return ResourceManager.GetString("Message.ON20428", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhafter Dunkeltest des Kanaltreibers (FDO2).
         /// </summary>
-        internal static string Message_ON11429 {
+        internal static string Message_ON20429 {
             get {
-                return ResourceManager.GetString("Message.ON11429", resourceCulture);
+                return ResourceManager.GetString("Message.ON20429", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhafter Dunkeltest des Kanaltreibers (FDO3).
         /// </summary>
-        internal static string Message_ON11430 {
+        internal static string Message_ON20430 {
             get {
-                return ResourceManager.GetString("Message.ON11430", resourceCulture);
+                return ResourceManager.GetString("Message.ON20430", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhafter Dunkeltest des Kanaltreibers (FDO4).
         /// </summary>
-        internal static string Message_ON11431 {
+        internal static string Message_ON20431 {
             get {
-                return ResourceManager.GetString("Message.ON11431", resourceCulture);
+                return ResourceManager.GetString("Message.ON20431", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhafter Dunkeltest (gemeinsamer Treiber der SafetynG Ausgänge).
         /// </summary>
-        internal static string Message_ON11432 {
+        internal static string Message_ON20432 {
             get {
-                return ResourceManager.GetString("Message.ON11432", resourceCulture);
+                return ResourceManager.GetString("Message.ON20432", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhafter Dunkeltest des Kanaltreibers Safety nG (FDO5).
         /// </summary>
-        internal static string Message_ON11433 {
+        internal static string Message_ON20433 {
             get {
-                return ResourceManager.GetString("Message.ON11433", resourceCulture);
+                return ResourceManager.GetString("Message.ON20433", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhafter Dunkeltest des Kanaltreibers Safety nG (FDO6).
         /// </summary>
-        internal static string Message_ON11434 {
+        internal static string Message_ON20434 {
             get {
-                return ResourceManager.GetString("Message.ON11434", resourceCulture);
+                return ResourceManager.GetString("Message.ON20434", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhafter Helltest des Kanaltreibers (FDO1).
         /// </summary>
-        internal static string Message_ON11435 {
+        internal static string Message_ON20435 {
             get {
-                return ResourceManager.GetString("Message.ON11435", resourceCulture);
+                return ResourceManager.GetString("Message.ON20435", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhafter Helltest des Kanaltreibers (FDO2).
         /// </summary>
-        internal static string Message_ON11436 {
+        internal static string Message_ON20436 {
             get {
-                return ResourceManager.GetString("Message.ON11436", resourceCulture);
+                return ResourceManager.GetString("Message.ON20436", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhafter Helltest des Kanaltreibers (FDO3).
         /// </summary>
-        internal static string Message_ON11437 {
+        internal static string Message_ON20437 {
             get {
-                return ResourceManager.GetString("Message.ON11437", resourceCulture);
+                return ResourceManager.GetString("Message.ON20437", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhafter Helltest des Kanaltreibers (FDO4).
         /// </summary>
-        internal static string Message_ON11438 {
+        internal static string Message_ON20438 {
             get {
-                return ResourceManager.GetString("Message.ON11438", resourceCulture);
+                return ResourceManager.GetString("Message.ON20438", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhafter Helltest des Kanaltreibers Safety nG (FDO5).
         /// </summary>
-        internal static string Message_ON11439 {
+        internal static string Message_ON20439 {
             get {
-                return ResourceManager.GetString("Message.ON11439", resourceCulture);
+                return ResourceManager.GetString("Message.ON20439", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhafter Helltest des Kanaltreibers Safety nG (FDO6).
         /// </summary>
-        internal static string Message_ON11440 {
+        internal static string Message_ON20440 {
             get {
-                return ResourceManager.GetString("Message.ON11440", resourceCulture);
+                return ResourceManager.GetString("Message.ON20440", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to VREF FDO1 FB ausserhalb der zulässigen Grenzen.
         /// </summary>
-        internal static string Message_ON11441 {
+        internal static string Message_ON20441 {
             get {
-                return ResourceManager.GetString("Message.ON11441", resourceCulture);
+                return ResourceManager.GetString("Message.ON20441", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to VREF FDO2 FB ausserhalb der zulässigen Grenzen.
         /// </summary>
-        internal static string Message_ON11442 {
+        internal static string Message_ON20442 {
             get {
-                return ResourceManager.GetString("Message.ON11442", resourceCulture);
+                return ResourceManager.GetString("Message.ON20442", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to VREF FDO3 FB ausserhalb der zulässigen Grenzen.
         /// </summary>
-        internal static string Message_ON11443 {
+        internal static string Message_ON20443 {
             get {
-                return ResourceManager.GetString("Message.ON11443", resourceCulture);
+                return ResourceManager.GetString("Message.ON20443", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to VREF FDO4 FB ausserhalb der zulässigen Grenzen.
         /// </summary>
-        internal static string Message_ON11444 {
+        internal static string Message_ON20444 {
             get {
-                return ResourceManager.GetString("Message.ON11444", resourceCulture);
+                return ResourceManager.GetString("Message.ON20444", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to VREF COMMON FB ausserhalb der zulässigen Grenzen.
         /// </summary>
-        internal static string Message_ON11445 {
+        internal static string Message_ON20445 {
             get {
-                return ResourceManager.GetString("Message.ON11445", resourceCulture);
+                return ResourceManager.GetString("Message.ON20445", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen des DS118.
         /// </summary>
-        internal static string Message_ON11446 {
+        internal static string Message_ON20446 {
             get {
-                return ResourceManager.GetString("Message.ON11446", resourceCulture);
+                return ResourceManager.GetString("Message.ON20446", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Protokollfehler: falscher BCC.
         /// </summary>
-        internal static string Message_ON11451 {
+        internal static string Message_ON20451 {
             get {
-                return ResourceManager.GetString("Message.ON11451", resourceCulture);
+                return ResourceManager.GetString("Message.ON20451", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Protokollfehler: Fehler bei Auftragskennung 0x03.
         /// </summary>
-        internal static string Message_ON11452 {
+        internal static string Message_ON20452 {
             get {
-                return ResourceManager.GetString("Message.ON11452", resourceCulture);
+                return ResourceManager.GetString("Message.ON20452", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Protokollfehler: Fehler bei Auftragskennung 0x07.
         /// </summary>
-        internal static string Message_ON11453 {
+        internal static string Message_ON20453 {
             get {
-                return ResourceManager.GetString("Message.ON11453", resourceCulture);
+                return ResourceManager.GetString("Message.ON20453", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Protokollfehler: falsche Laenge bei Auftragskennung 0x01.
         /// </summary>
-        internal static string Message_ON11454 {
+        internal static string Message_ON20454 {
             get {
-                return ResourceManager.GetString("Message.ON11454", resourceCulture);
+                return ResourceManager.GetString("Message.ON20454", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Protokollfehler: falsche Laenge bei Auftragsk. 0x03, 0x07.
         /// </summary>
-        internal static string Message_ON11455 {
+        internal static string Message_ON20455 {
             get {
-                return ResourceManager.GetString("Message.ON11455", resourceCulture);
+                return ResourceManager.GetString("Message.ON20455", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Protokollfehler: falsche Laenge bei Auftragskennung 0x05.
         /// </summary>
-        internal static string Message_ON11456 {
+        internal static string Message_ON20456 {
             get {
-                return ResourceManager.GetString("Message.ON11456", resourceCulture);
+                return ResourceManager.GetString("Message.ON20456", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Protokollfehler: falsche Laenge bei Auftragskennung 0x09.
         /// </summary>
-        internal static string Message_ON11457 {
+        internal static string Message_ON20457 {
             get {
-                return ResourceManager.GetString("Message.ON11457", resourceCulture);
+                return ResourceManager.GetString("Message.ON20457", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Protokollfehler: falsche Laenge bei Auftragskennung 0x0B.
         /// </summary>
-        internal static string Message_ON11458 {
+        internal static string Message_ON20458 {
             get {
-                return ResourceManager.GetString("Message.ON11458", resourceCulture);
+                return ResourceManager.GetString("Message.ON20458", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Protokollfehler: falsche Laenge bei Auftragskennung 0x81.
         /// </summary>
-        internal static string Message_ON11459 {
+        internal static string Message_ON20459 {
             get {
-                return ResourceManager.GetString("Message.ON11459", resourceCulture);
+                return ResourceManager.GetString("Message.ON20459", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Protokollfehler: falsche Folgenummer bei Auftragsk. 0x03,0x07.
         /// </summary>
-        internal static string Message_ON11460 {
+        internal static string Message_ON20460 {
             get {
-                return ResourceManager.GetString("Message.ON11460", resourceCulture);
+                return ResourceManager.GetString("Message.ON20460", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Protokollfehler: falsche Folgenummer bei Auftragskennung 0x0B.
         /// </summary>
-        internal static string Message_ON11461 {
+        internal static string Message_ON20461 {
             get {
-                return ResourceManager.GetString("Message.ON11461", resourceCulture);
+                return ResourceManager.GetString("Message.ON20461", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Protokollfehler: unbekannte Auftragskennung Empfangen.
         /// </summary>
-        internal static string Message_ON11462 {
+        internal static string Message_ON20462 {
             get {
-                return ResourceManager.GetString("Message.ON11462", resourceCulture);
+                return ResourceManager.GetString("Message.ON20462", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Protokollfehler: unbekannte Auftragskennung Senden.
         /// </summary>
-        internal static string Message_ON11463 {
+        internal static string Message_ON20463 {
             get {
-                return ResourceManager.GetString("Message.ON11463", resourceCulture);
+                return ResourceManager.GetString("Message.ON20463", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Protokollfehler: Ueberlauf von U5RB.
         /// </summary>
-        internal static string Message_ON11464 {
+        internal static string Message_ON20464 {
             get {
-                return ResourceManager.GetString("Message.ON11464", resourceCulture);
+                return ResourceManager.GetString("Message.ON20464", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Protokollfehler: ungueltiges ADR-Byte.
         /// </summary>
-        internal static string Message_ON11465 {
+        internal static string Message_ON20465 {
             get {
-                return ResourceManager.GetString("Message.ON11465", resourceCulture);
+                return ResourceManager.GetString("Message.ON20465", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Protokollfehler: ungueltiges LGE-Byte.
         /// </summary>
-        internal static string Message_ON11466 {
+        internal static string Message_ON20466 {
             get {
-                return ResourceManager.GetString("Message.ON11466", resourceCulture);
+                return ResourceManager.GetString("Message.ON20466", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Protokollfehler: ungueltiges B-LGE-Byte.
         /// </summary>
-        internal static string Message_ON11467 {
+        internal static string Message_ON20467 {
             get {
-                return ResourceManager.GetString("Message.ON11467", resourceCulture);
+                return ResourceManager.GetString("Message.ON20467", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Holen des Empfangsdatenpuffers.
         /// </summary>
-        internal static string Message_ON11468 {
+        internal static string Message_ON20468 {
             get {
-                return ResourceManager.GetString("Message.ON11468", resourceCulture);
+                return ResourceManager.GetString("Message.ON20468", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Freigeben des Empfangsdatenpuffers.
         /// </summary>
-        internal static string Message_ON11469 {
+        internal static string Message_ON20469 {
             get {
-                return ResourceManager.GetString("Message.ON11469", resourceCulture);
+                return ResourceManager.GetString("Message.ON20469", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Holen des Sendedatenpuffers.
         /// </summary>
-        internal static string Message_ON11470 {
+        internal static string Message_ON20470 {
             get {
-                return ResourceManager.GetString("Message.ON11470", resourceCulture);
+                return ResourceManager.GetString("Message.ON20470", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Freigeben des Sendedatenpuffers.
         /// </summary>
-        internal static string Message_ON11471 {
+        internal static string Message_ON20471 {
             get {
-                return ResourceManager.GetString("Message.ON11471", resourceCulture);
+                return ResourceManager.GetString("Message.ON20471", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Schnittstelle nicht initialisiert.
         /// </summary>
-        internal static string Message_ON11472 {
+        internal static string Message_ON20472 {
             get {
-                return ResourceManager.GetString("Message.ON11472", resourceCulture);
+                return ResourceManager.GetString("Message.ON20472", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen des DS132 mit Elementparametern.
         /// </summary>
-        internal static string Message_ON11481 {
+        internal static string Message_ON20481 {
             get {
-                return ResourceManager.GetString("Message.ON11481", resourceCulture);
+                return ResourceManager.GetString("Message.ON20481", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Länge eines Elementdatenblocks z groß für temp. Speicher.
         /// </summary>
-        internal static string Message_ON11482 {
+        internal static string Message_ON20482 {
             get {
-                return ResourceManager.GetString("Message.ON11482", resourceCulture);
+                return ResourceManager.GetString("Message.ON20482", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Anzahl der erkannten Elementparameter != Elementanzahl.
         /// </summary>
-        internal static string Message_ON11483 {
+        internal static string Message_ON20483 {
             get {
-                return ResourceManager.GetString("Message.ON11483", resourceCulture);
+                return ResourceManager.GetString("Message.ON20483", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Unbekannte Element-Funktion in DS132.
         /// </summary>
-        internal static string Message_ON11484 {
+        internal static string Message_ON20484 {
             get {
-                return ResourceManager.GetString("Message.ON11484", resourceCulture);
+                return ResourceManager.GetString("Message.ON20484", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Logikspeicher kann nicht alle Logikelemente aufnehmen.
         /// </summary>
-        internal static string Message_ON11485 {
+        internal static string Message_ON20485 {
             get {
-                return ResourceManager.GetString("Message.ON11485", resourceCulture);
+                return ResourceManager.GetString("Message.ON20485", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Senden von TLogDataSS (Logikspeicher auslesen).
         /// </summary>
-        internal static string Message_ON11486 {
+        internal static string Message_ON20486 {
             get {
-                return ResourceManager.GetString("Message.ON11486", resourceCulture);
+                return ResourceManager.GetString("Message.ON20486", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültiger Funktionszeiger.
         /// </summary>
-        internal static string Message_ON11487 {
+        internal static string Message_ON20487 {
             get {
-                return ResourceManager.GetString("Message.ON11487", resourceCulture);
+                return ResourceManager.GetString("Message.ON20487", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültige E A-Adresse: Ein- und Ausgangsnummer sind 0.
         /// </summary>
-        internal static string Message_ON11488 {
+        internal static string Message_ON20488 {
             get {
-                return ResourceManager.GetString("Message.ON11488", resourceCulture);
+                return ResourceManager.GetString("Message.ON20488", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültige E &gt; 0.
         /// </summary>
-        internal static string Message_ON11489 {
+        internal static string Message_ON20489 {
             get {
-                return ResourceManager.GetString("Message.ON11489", resourceCulture);
+                return ResourceManager.GetString("Message.ON20489", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültige E A-Adresse: Nicht unterstützte Slotnummer.
         /// </summary>
-        internal static string Message_ON11490 {
+        internal static string Message_ON20490 {
             get {
-                return ResourceManager.GetString("Message.ON11490", resourceCulture);
+                return ResourceManager.GetString("Message.ON20490", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK-IN-Adresse mehrfach verwendet.
         /// </summary>
-        internal static string Message_ON11491 {
+        internal static string Message_ON20491 {
             get {
-                return ResourceManager.GetString("Message.ON11491", resourceCulture);
+                return ResourceManager.GetString("Message.ON20491", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ausgangsadresse mehrfach verwendet.
         /// </summary>
-        internal static string Message_ON11492 {
+        internal static string Message_ON20492 {
             get {
-                return ResourceManager.GetString("Message.ON11492", resourceCulture);
+                return ResourceManager.GetString("Message.ON20492", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK-OUT-Adresse mehrfach als Eingang verwendet.
         /// </summary>
-        internal static string Message_ON11493 {
+        internal static string Message_ON20493 {
             get {
-                return ResourceManager.GetString("Message.ON11493", resourceCulture);
+                return ResourceManager.GetString("Message.ON20493", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Der AS-i Ausgang verweist auf einen nicht verfügbaren Slave.
         /// </summary>
-        internal static string Message_ON11494 {
+        internal static string Message_ON20494 {
             get {
-                return ResourceManager.GetString("Message.ON11494", resourceCulture);
+                return ResourceManager.GetString("Message.ON20494", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to VKE-Eingang unbekannt nicht vorher als Ausgang definiert.
         /// </summary>
-        internal static string Message_ON11495 {
+        internal static string Message_ON20495 {
             get {
-                return ResourceManager.GetString("Message.ON11495", resourceCulture);
+                return ResourceManager.GetString("Message.ON20495", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Logikspeicher kann nicht alle temporären Daten aufnehmen.
         /// </summary>
-        internal static string Message_ON11496 {
+        internal static string Message_ON20496 {
             get {
-                return ResourceManager.GetString("Message.ON11496", resourceCulture);
+                return ResourceManager.GetString("Message.ON20496", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhafte Reihenfolge der Elementlevel.
         /// </summary>
-        internal static string Message_ON11497 {
+        internal static string Message_ON20497 {
             get {
-                return ResourceManager.GetString("Message.ON11497", resourceCulture);
+                return ResourceManager.GetString("Message.ON20497", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Logikspeicher kann nicht alle Logikelemente aufnehmen.
         /// </summary>
-        internal static string Message_ON11498 {
+        internal static string Message_ON20498 {
             get {
-                return ResourceManager.GetString("Message.ON11498", resourceCulture);
+                return ResourceManager.GetString("Message.ON20498", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to 0x850: übrige Verletzung von Verschaltungsregeln.
         /// </summary>
-        internal static string Message_ON11500 {
+        internal static string Message_ON20500 {
             get {
-                return ResourceManager.GetString("Message.ON11500", resourceCulture);
+                return ResourceManager.GetString("Message.ON20500", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to falscher Verbindungstyp (VKE BMK.IN BMK.OUT).
         /// </summary>
-        internal static string Message_ON11501 {
+        internal static string Message_ON20501 {
             get {
-                return ResourceManager.GetString("Message.ON11501", resourceCulture);
+                return ResourceManager.GetString("Message.ON20501", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to unbenutzte Verbindung projektiert.
         /// </summary>
-        internal static string Message_ON11502 {
+        internal static string Message_ON20502 {
             get {
-                return ResourceManager.GetString("Message.ON11502", resourceCulture);
+                return ResourceManager.GetString("Message.ON20502", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to unbenutzte Verbindung und falsche Typen.
         /// </summary>
-        internal static string Message_ON11503 {
+        internal static string Message_ON20503 {
             get {
-                return ResourceManager.GetString("Message.ON11503", resourceCulture);
+                return ResourceManager.GetString("Message.ON20503", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to benutzte Verbindung nicht projektiert.
         /// </summary>
-        internal static string Message_ON11504 {
+        internal static string Message_ON20504 {
             get {
-                return ResourceManager.GetString("Message.ON11504", resourceCulture);
+                return ResourceManager.GetString("Message.ON20504", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to nicht projektierte Verbindung und falsche Typen.
         /// </summary>
-        internal static string Message_ON11505 {
+        internal static string Message_ON20505 {
             get {
-                return ResourceManager.GetString("Message.ON11505", resourceCulture);
+                return ResourceManager.GetString("Message.ON20505", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Projektierungsfehler an den Verbindungen.
         /// </summary>
-        internal static string Message_ON11506 {
+        internal static string Message_ON20506 {
             get {
-                return ResourceManager.GetString("Message.ON11506", resourceCulture);
+                return ResourceManager.GetString("Message.ON20506", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Projektierungs- und Typenfehler an den Verbindungen.
         /// </summary>
-        internal static string Message_ON11507 {
+        internal static string Message_ON20507 {
             get {
-                return ResourceManager.GetString("Message.ON11507", resourceCulture);
+                return ResourceManager.GetString("Message.ON20507", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültige Elementparameterlänge.
         /// </summary>
-        internal static string Message_ON11508 {
+        internal static string Message_ON20508 {
             get {
-                return ResourceManager.GetString("Message.ON11508", resourceCulture);
+                return ResourceManager.GetString("Message.ON20508", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhafte Element-CRC.
         /// </summary>
-        internal static string Message_ON11509 {
+        internal static string Message_ON20509 {
             get {
-                return ResourceManager.GetString("Message.ON11509", resourceCulture);
+                return ResourceManager.GetString("Message.ON20509", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Untertyp ist falsch oder (noch nicht vorgesehen).
         /// </summary>
-        internal static string Message_ON11510 {
+        internal static string Message_ON20510 {
             get {
-                return ResourceManager.GetString("Message.ON11510", resourceCulture);
+                return ResourceManager.GetString("Message.ON20510", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to ungültige Ersatzwerte (Eingang, Ausgang).
         /// </summary>
-        internal static string Message_ON11511 {
+        internal static string Message_ON20511 {
             get {
-                return ResourceManager.GetString("Message.ON11511", resourceCulture);
+                return ResourceManager.GetString("Message.ON20511", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Zählgrenzwert ist nicht im richtigen Bereich.
         /// </summary>
-        internal static string Message_ON11512 {
+        internal static string Message_ON20512 {
             get {
-                return ResourceManager.GetString("Message.ON11512", resourceCulture);
+                return ResourceManager.GetString("Message.ON20512", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ein- Ausgangskonfiguration für das Element nicht erlaubt.
         /// </summary>
-        internal static string Message_ON11513 {
+        internal static string Message_ON20513 {
             get {
-                return ResourceManager.GetString("Message.ON11513", resourceCulture);
+                return ResourceManager.GetString("Message.ON20513", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to reserviertes DS132-Bit, das 0 sein soll, auf 1.
         /// </summary>
-        internal static string Message_ON11514 {
+        internal static string Message_ON20514 {
             get {
-                return ResourceManager.GetString("Message.ON11514", resourceCulture);
+                return ResourceManager.GetString("Message.ON20514", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Querschlusserkennung in diesem Fall nicht projektierbar.
         /// </summary>
-        internal static string Message_ON11515 {
+        internal static string Message_ON20515 {
             get {
-                return ResourceManager.GetString("Message.ON11515", resourceCulture);
+                return ResourceManager.GetString("Message.ON20515", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültige VKE-Adresse: Eingang != 0 oder Ausgang 0.
         /// </summary>
-        internal static string Message_ON11516 {
+        internal static string Message_ON20516 {
             get {
-                return ResourceManager.GetString("Message.ON11516", resourceCulture);
+                return ResourceManager.GetString("Message.ON20516", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Status, Kommando: falscher Slot.
         /// </summary>
-        internal static string Message_ON11517 {
+        internal static string Message_ON20517 {
             get {
-                return ResourceManager.GetString("Message.ON11517", resourceCulture);
+                return ResourceManager.GetString("Message.ON20517", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to CRC über statische Inhalte des Logikspeichers verändert.
         /// </summary>
-        internal static string Message_ON11518 {
+        internal static string Message_ON20518 {
             get {
-                return ResourceManager.GetString("Message.ON11518", resourceCulture);
+                return ResourceManager.GetString("Message.ON20518", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to CRC über statische Inhalte (1 CPU des Logikspeichers falsch).
         /// </summary>
-        internal static string Message_ON11519 {
+        internal static string Message_ON20519 {
             get {
-                return ResourceManager.GetString("Message.ON11519", resourceCulture);
+                return ResourceManager.GetString("Message.ON20519", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Elementnummer mehrfach vergeben.
         /// </summary>
-        internal static string Message_ON11520 {
+        internal static string Message_ON20520 {
             get {
-                return ResourceManager.GetString("Message.ON11520", resourceCulture);
+                return ResourceManager.GetString("Message.ON20520", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ende des DS132 schließt nicht bündig mit Elementparameter ab.
         /// </summary>
-        internal static string Message_ON11521 {
+        internal static string Message_ON20521 {
             get {
-                return ResourceManager.GetString("Message.ON11521", resourceCulture);
+                return ResourceManager.GetString("Message.ON20521", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Elementdatenblock nicht vollständig im DS132 enthalten.
         /// </summary>
-        internal static string Message_ON11522 {
+        internal static string Message_ON20522 {
             get {
-                return ResourceManager.GetString("Message.ON11522", resourceCulture);
+                return ResourceManager.GetString("Message.ON20522", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Elementdatenblocklänge ist kleiner als ein Datenblockheader.
         /// </summary>
-        internal static string Message_ON11523 {
+        internal static string Message_ON20523 {
             get {
-                return ResourceManager.GetString("Message.ON11523", resourceCulture);
+                return ResourceManager.GetString("Message.ON20523", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Elementnummer 0 ist unzulässig.
         /// </summary>
-        internal static string Message_ON11524 {
+        internal static string Message_ON20524 {
             get {
-                return ResourceManager.GetString("Message.ON11524", resourceCulture);
+                return ResourceManager.GetString("Message.ON20524", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ein Speichermuster wurde zerstört.
         /// </summary>
-        internal static string Message_ON11525 {
+        internal static string Message_ON20525 {
             get {
-                return ResourceManager.GetString("Message.ON11525", resourceCulture);
+                return ResourceManager.GetString("Message.ON20525", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Unbekannter Rückgabewert bei der Logikbearbeitung.
         /// </summary>
-        internal static string Message_ON11526 {
+        internal static string Message_ON20526 {
             get {
-                return ResourceManager.GetString("Message.ON11526", resourceCulture);
+                return ResourceManager.GetString("Message.ON20526", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Elementnummer konnte nicht gefunden werden..
         /// </summary>
-        internal static string Message_ON11527 {
+        internal static string Message_ON20527 {
             get {
-                return ResourceManager.GetString("Message.ON11527", resourceCulture);
+                return ResourceManager.GetString("Message.ON20527", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Elementdatenblock passt nicht in Pufferspeicher.
         /// </summary>
-        internal static string Message_ON11528 {
+        internal static string Message_ON20528 {
             get {
-                return ResourceManager.GetString("Message.ON11528", resourceCulture);
+                return ResourceManager.GetString("Message.ON20528", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültiger Elementdatentyp beim Auslesen von Elementdaten.
         /// </summary>
-        internal static string Message_ON11529 {
+        internal static string Message_ON20529 {
             get {
-                return ResourceManager.GetString("Message.ON11529", resourceCulture);
+                return ResourceManager.GetString("Message.ON20529", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Elementnummer konnte nicht gefunden werden..
         /// </summary>
-        internal static string Message_ON11530 {
+        internal static string Message_ON20530 {
             get {
-                return ResourceManager.GetString("Message.ON11530", resourceCulture);
+                return ResourceManager.GetString("Message.ON20530", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhafte Verschaltung bzgl. Verschaltungsebene von VKEs.
         /// </summary>
-        internal static string Message_ON11531 {
+        internal static string Message_ON20531 {
             get {
-                return ResourceManager.GetString("Message.ON11531", resourceCulture);
+                return ResourceManager.GetString("Message.ON20531", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Elementdatentyp beim Ermittlen von Elementdatenblockgrößen.
         /// </summary>
-        internal static string Message_ON11532 {
+        internal static string Message_ON20532 {
             get {
-                return ResourceManager.GetString("Message.ON11532", resourceCulture);
+                return ResourceManager.GetString("Message.ON20532", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Maximale Elementanzahl wurde überschritten.
         /// </summary>
-        internal static string Message_ON11533 {
+        internal static string Message_ON20533 {
             get {
-                return ResourceManager.GetString("Message.ON11533", resourceCulture);
+                return ResourceManager.GetString("Message.ON20533", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Elementfunktion passt nicht zur Elementnummer.
         /// </summary>
-        internal static string Message_ON11534 {
+        internal static string Message_ON20534 {
             get {
-                return ResourceManager.GetString("Message.ON11534", resourceCulture);
+                return ResourceManager.GetString("Message.ON20534", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhaftes im DS132 Elementstatus.
         /// </summary>
-        internal static string Message_ON11535 {
+        internal static string Message_ON20535 {
             get {
-                return ResourceManager.GetString("Message.ON11535", resourceCulture);
+                return ResourceManager.GetString("Message.ON20535", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerhafte im DS132 Elementstatus.
         /// </summary>
-        internal static string Message_ON11536 {
+        internal static string Message_ON20536 {
             get {
-                return ResourceManager.GetString("Message.ON11536", resourceCulture);
+                return ResourceManager.GetString("Message.ON20536", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültiger SafetyConnect BMK-Typ.
         /// </summary>
-        internal static string Message_ON11537 {
+        internal static string Message_ON20537 {
             get {
-                return ResourceManager.GetString("Message.ON11537", resourceCulture);
+                return ResourceManager.GetString("Message.ON20537", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültiger DeviceConnect BMK-Typ.
         /// </summary>
-        internal static string Message_ON11538 {
+        internal static string Message_ON20538 {
             get {
-                return ResourceManager.GetString("Message.ON11538", resourceCulture);
+                return ResourceManager.GetString("Message.ON20538", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültiger AS-i BMK-Typ.
         /// </summary>
-        internal static string Message_ON11539 {
+        internal static string Message_ON20539 {
             get {
-                return ResourceManager.GetString("Message.ON11539", resourceCulture);
+                return ResourceManager.GetString("Message.ON20539", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falscher Parameter AS-i 1...4F-DO.
         /// </summary>
-        internal static string Message_ON11540 {
+        internal static string Message_ON20540 {
             get {
-                return ResourceManager.GetString("Message.ON11540", resourceCulture);
+                return ResourceManager.GetString("Message.ON20540", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falscher Parameter Ver- Entriegelungsart, Schutztür mit Zuh..
         /// </summary>
-        internal static string Message_ON11541 {
+        internal static string Message_ON20541 {
             get {
-                return ResourceManager.GetString("Message.ON11541", resourceCulture);
+                return ResourceManager.GetString("Message.ON20541", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falscher Wertebereich für LOCK-RF-Schaltzeit.
         /// </summary>
-        internal static string Message_ON11542 {
+        internal static string Message_ON20542 {
             get {
-                return ResourceManager.GetString("Message.ON11542", resourceCulture);
+                return ResourceManager.GetString("Message.ON20542", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falsche Muting-Betriebsart.
         /// </summary>
-        internal static string Message_ON11543 {
+        internal static string Message_ON20543 {
             get {
-                return ResourceManager.GetString("Message.ON11543", resourceCulture);
+                return ResourceManager.GetString("Message.ON20543", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falsche Startart bei Schutztür mit Zuhaltung (Anlaufzeit &gt; 0).
         /// </summary>
-        internal static string Message_ON11544 {
+        internal static string Message_ON20544 {
             get {
-                return ResourceManager.GetString("Message.ON11544", resourceCulture);
+                return ResourceManager.GetString("Message.ON20544", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falscher Zustand während MS-Auswertung.
         /// </summary>
-        internal static string Message_ON11545 {
+        internal static string Message_ON20545 {
             get {
-                return ResourceManager.GetString("Message.ON11545", resourceCulture);
+                return ResourceManager.GetString("Message.ON20545", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falsche Startart parametriert für ASi 1..4FDO.
         /// </summary>
-        internal static string Message_ON11546 {
+        internal static string Message_ON20546 {
             get {
-                return ResourceManager.GetString("Message.ON11546", resourceCulture);
+                return ResourceManager.GetString("Message.ON20546", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falscher Parameterwert für den Störmeldeausgang.
         /// </summary>
-        internal static string Message_ON11547 {
+        internal static string Message_ON20547 {
             get {
-                return ResourceManager.GetString("Message.ON11547", resourceCulture);
+                return ResourceManager.GetString("Message.ON20547", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falscher Parameterwert Eingangsslaveart für Element ASI 2FDI.
         /// </summary>
-        internal static string Message_ON11548 {
+        internal static string Message_ON20548 {
             get {
-                return ResourceManager.GetString("Message.ON11548", resourceCulture);
+                return ResourceManager.GetString("Message.ON20548", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falscher Parameterwert Zuhaltung bei offener Schutztür.
         /// </summary>
-        internal static string Message_ON11549 {
+        internal static string Message_ON20549 {
             get {
-                return ResourceManager.GetString("Message.ON11549", resourceCulture);
+                return ResourceManager.GetString("Message.ON20549", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültiger LIO BMK-Typ.
         /// </summary>
-        internal static string Message_ON11550 {
+        internal static string Message_ON20550 {
             get {
-                return ResourceManager.GetString("Message.ON11550", resourceCulture);
+                return ResourceManager.GetString("Message.ON20550", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen des DS133, Prozessdatenkonfiguration.
         /// </summary>
-        internal static string Message_ON11551 {
+        internal static string Message_ON20551 {
             get {
-                return ResourceManager.GetString("Message.ON11551", resourceCulture);
+                return ResourceManager.GetString("Message.ON20551", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to In DS133 sind z viele ungültige Prozessdatenblöcke konfig..
         /// </summary>
-        internal static string Message_ON11552 {
+        internal static string Message_ON20552 {
             get {
-                return ResourceManager.GetString("Message.ON11552", resourceCulture);
+                return ResourceManager.GetString("Message.ON20552", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falscher CAL-Zustand bei Start der BMK-Registrierung.
         /// </summary>
-        internal static string Message_ON11553 {
+        internal static string Message_ON20553 {
             get {
-                return ResourceManager.GetString("Message.ON11553", resourceCulture);
+                return ResourceManager.GetString("Message.ON20553", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falscher CAL-Zustand bei der BMK-Registrierung.
         /// </summary>
-        internal static string Message_ON11554 {
+        internal static string Message_ON20554 {
             get {
-                return ResourceManager.GetString("Message.ON11554", resourceCulture);
+                return ResourceManager.GetString("Message.ON20554", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to ungültiger Übergabeparameter (Zeiger bei der BMK-Reg.).
         /// </summary>
-        internal static string Message_ON11555 {
+        internal static string Message_ON20555 {
             get {
-                return ResourceManager.GetString("Message.ON11555", resourceCulture);
+                return ResourceManager.GetString("Message.ON20555", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: ungültige Komponente (log. statt physikalisches Element).
         /// </summary>
-        internal static string Message_ON11556 {
+        internal static string Message_ON20556 {
             get {
-                return ResourceManager.GetString("Message.ON11556", resourceCulture);
+                return ResourceManager.GetString("Message.ON20556", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK für Interfacemodul projektiert, aber nicht vorhanden.
         /// </summary>
-        internal static string Message_ON11557 {
+        internal static string Message_ON20557 {
             get {
-                return ResourceManager.GetString("Message.ON11557", resourceCulture);
+                return ResourceManager.GetString("Message.ON20557", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Subslot im BMK bei DeviceConnect ist nicht 0.
         /// </summary>
-        internal static string Message_ON11558 {
+        internal static string Message_ON20558 {
             get {
-                return ResourceManager.GetString("Message.ON11558", resourceCulture);
+                return ResourceManager.GetString("Message.ON20558", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Eingangsnummer bei DeviceConnect ist zu groß.
         /// </summary>
-        internal static string Message_ON11559 {
+        internal static string Message_ON20559 {
             get {
-                return ResourceManager.GetString("Message.ON11559", resourceCulture);
+                return ResourceManager.GetString("Message.ON20559", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Ausgangsnummer bei DeviceConnect ist zu groß.
         /// </summary>
-        internal static string Message_ON11560 {
+        internal static string Message_ON20560 {
             get {
-                return ResourceManager.GetString("Message.ON11560", resourceCulture);
+                return ResourceManager.GetString("Message.ON20560", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Verwendung sicherer E A am DeviceConnect nicht möglich.
         /// </summary>
-        internal static string Message_ON11561 {
+        internal static string Message_ON20561 {
             get {
-                return ResourceManager.GetString("Message.ON11561", resourceCulture);
+                return ResourceManager.GetString("Message.ON20561", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Querschlusserkennung für DeviceConnect nicht erlaubt.
         /// </summary>
-        internal static string Message_ON11562 {
+        internal static string Message_ON20562 {
             get {
-                return ResourceManager.GetString("Message.ON11562", resourceCulture);
+                return ResourceManager.GetString("Message.ON20562", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Eing.verzögerungszeit für DeviceConnect nicht erlaubt.
         /// </summary>
-        internal static string Message_ON11563 {
+        internal static string Message_ON20563 {
             get {
-                return ResourceManager.GetString("Message.ON11563", resourceCulture);
+                return ResourceManager.GetString("Message.ON20563", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Subslot im BMK bei SafetyConnect ist nicht 0.
         /// </summary>
-        internal static string Message_ON11564 {
+        internal static string Message_ON20564 {
             get {
-                return ResourceManager.GetString("Message.ON11564", resourceCulture);
+                return ResourceManager.GetString("Message.ON20564", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Eingangsnummer bei SafetyConnect ist zu groß.
         /// </summary>
-        internal static string Message_ON11565 {
+        internal static string Message_ON20565 {
             get {
-                return ResourceManager.GetString("Message.ON11565", resourceCulture);
+                return ResourceManager.GetString("Message.ON20565", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Ausgangsnummer bei SafetyConnect ist zu groß.
         /// </summary>
-        internal static string Message_ON11566 {
+        internal static string Message_ON20566 {
             get {
-                return ResourceManager.GetString("Message.ON11566", resourceCulture);
+                return ResourceManager.GetString("Message.ON20566", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: keine E A von Peripheriegerät verwendbar.
         /// </summary>
-        internal static string Message_ON11567 {
+        internal static string Message_ON20567 {
             get {
-                return ResourceManager.GetString("Message.ON11567", resourceCulture);
+                return ResourceManager.GetString("Message.ON20567", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: keine sicherern E A an diesem Peripheriegerät vorhanden.
         /// </summary>
-        internal static string Message_ON11568 {
+        internal static string Message_ON20568 {
             get {
-                return ResourceManager.GetString("Message.ON11568", resourceCulture);
+                return ResourceManager.GetString("Message.ON20568", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Querschlusserkennung nur auf Per.G. mit sicheren Eing..
         /// </summary>
-        internal static string Message_ON11569 {
+        internal static string Message_ON20569 {
             get {
-                return ResourceManager.GetString("Message.ON11569", resourceCulture);
+                return ResourceManager.GetString("Message.ON20569", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Querschlusserkennung ist bei Ausgang projektiert.
         /// </summary>
-        internal static string Message_ON11570 {
+        internal static string Message_ON20570 {
             get {
-                return ResourceManager.GetString("Message.ON11570", resourceCulture);
+                return ResourceManager.GetString("Message.ON20570", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Eingangsverzögerungszeit für SafetyConnect zu groß.
         /// </summary>
-        internal static string Message_ON11571 {
+        internal static string Message_ON20571 {
             get {
-                return ResourceManager.GetString("Message.ON11571", resourceCulture);
+                return ResourceManager.GetString("Message.ON20571", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Eingangsverzögerungszeit ist bei Ausgang projektiert.
         /// </summary>
-        internal static string Message_ON11572 {
+        internal static string Message_ON20572 {
             get {
-                return ResourceManager.GetString("Message.ON11572", resourceCulture);
+                return ResourceManager.GetString("Message.ON20572", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Eing.verzögerungszeit bei Peripheriegerät nicht erlaubt.
         /// </summary>
-        internal static string Message_ON11573 {
+        internal static string Message_ON20573 {
             get {
-                return ResourceManager.GetString("Message.ON11573", resourceCulture);
+                return ResourceManager.GetString("Message.ON20573", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: ungültiger Slot projektiert.
         /// </summary>
-        internal static string Message_ON11574 {
+        internal static string Message_ON20574 {
             get {
-                return ResourceManager.GetString("Message.ON11574", resourceCulture);
+                return ResourceManager.GetString("Message.ON20574", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falscher CAL-Zustand bei Verlassen der BMK-Registrierung.
         /// </summary>
-        internal static string Message_ON11575 {
+        internal static string Message_ON20575 {
             get {
-                return ResourceManager.GetString("Message.ON11575", resourceCulture);
+                return ResourceManager.GetString("Message.ON20575", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falscher CAL-Zustand bei der Vorbereitung der SS zur Logik.
         /// </summary>
-        internal static string Message_ON11576 {
+        internal static string Message_ON20576 {
             get {
-                return ResourceManager.GetString("Message.ON11576", resourceCulture);
+                return ResourceManager.GetString("Message.ON20576", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Max. Anzahl an Peripheriegeräten überschritten.
         /// </summary>
-        internal static string Message_ON11577 {
+        internal static string Message_ON20577 {
             get {
-                return ResourceManager.GetString("Message.ON11577", resourceCulture);
+                return ResourceManager.GetString("Message.ON20577", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Ermitteln der Ein- und Ausgänge eines Per.gerätes.
         /// </summary>
-        internal static string Message_ON11578 {
+        internal static string Message_ON20578 {
             get {
-                return ResourceManager.GetString("Message.ON11578", resourceCulture);
+                return ResourceManager.GetString("Message.ON20578", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Max. Anzahl von Ein- oder Ausgängen pro Per.gerät überschr..
         /// </summary>
-        internal static string Message_ON11579 {
+        internal static string Message_ON20579 {
             get {
-                return ResourceManager.GetString("Message.ON11579", resourceCulture);
+                return ResourceManager.GetString("Message.ON20579", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falscher CAL-Zustand bei Abfrage der Eigangsver.zeit (PER).
         /// </summary>
-        internal static string Message_ON11580 {
+        internal static string Message_ON20580 {
             get {
-                return ResourceManager.GetString("Message.ON11580", resourceCulture);
+                return ResourceManager.GetString("Message.ON20580", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültige Slotnummer bei Abfrage der Eigangsver.zeit (PER).
         /// </summary>
-        internal static string Message_ON11581 {
+        internal static string Message_ON20581 {
             get {
-                return ResourceManager.GetString("Message.ON11581", resourceCulture);
+                return ResourceManager.GetString("Message.ON20581", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültiger Zeiger bei Abfrage der Eigangsver.zeit (PER).
         /// </summary>
-        internal static string Message_ON11582 {
+        internal static string Message_ON20582 {
             get {
-                return ResourceManager.GetString("Message.ON11582", resourceCulture);
+                return ResourceManager.GetString("Message.ON20582", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falscher CAL-Zustand bei Übergabe der Peripheriedaten an CAL.
         /// </summary>
-        internal static string Message_ON11583 {
+        internal static string Message_ON20583 {
             get {
-                return ResourceManager.GetString("Message.ON11583", resourceCulture);
+                return ResourceManager.GetString("Message.ON20583", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültige Slotnummer bei Übergabe der Peripheriedaten an CAL.
         /// </summary>
-        internal static string Message_ON11584 {
+        internal static string Message_ON20584 {
             get {
-                return ResourceManager.GetString("Message.ON11584", resourceCulture);
+                return ResourceManager.GetString("Message.ON20584", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falscher CAL-Zustand bei Rückgabe der Peripheriedaten an PER.
         /// </summary>
-        internal static string Message_ON11585 {
+        internal static string Message_ON20585 {
             get {
-                return ResourceManager.GetString("Message.ON11585", resourceCulture);
+                return ResourceManager.GetString("Message.ON20585", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültige Slotnummer bei Rückgabe der Peripheriedaten an PER.
         /// </summary>
-        internal static string Message_ON11586 {
+        internal static string Message_ON20586 {
             get {
-                return ResourceManager.GetString("Message.ON11586", resourceCulture);
+                return ResourceManager.GetString("Message.ON20586", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falscher CAL-Zustand bei Übergabe der Eing.-Diagnose an CAL.
         /// </summary>
-        internal static string Message_ON11587 {
+        internal static string Message_ON20587 {
             get {
-                return ResourceManager.GetString("Message.ON11587", resourceCulture);
+                return ResourceManager.GetString("Message.ON20587", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültige Slotnummer bei Übergabe der Eing.-Diagnose an CAL.
         /// </summary>
-        internal static string Message_ON11588 {
+        internal static string Message_ON20588 {
             get {
-                return ResourceManager.GetString("Message.ON11588", resourceCulture);
+                return ResourceManager.GetString("Message.ON20588", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültige Eingangsnr. bei Übergabe der Eing.-Diagnose an CAL.
         /// </summary>
-        internal static string Message_ON11589 {
+        internal static string Message_ON20589 {
             get {
-                return ResourceManager.GetString("Message.ON11589", resourceCulture);
+                return ResourceManager.GetString("Message.ON20589", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falscher CAL-Zustand bei Übergabe der Ausg.-Diagnose an CAL.
         /// </summary>
-        internal static string Message_ON11590 {
+        internal static string Message_ON20590 {
             get {
-                return ResourceManager.GetString("Message.ON11590", resourceCulture);
+                return ResourceManager.GetString("Message.ON20590", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültige Slotnummer bei Übergabe der Ausg.-Diagnose an CAL.
         /// </summary>
-        internal static string Message_ON11591 {
+        internal static string Message_ON20591 {
             get {
-                return ResourceManager.GetString("Message.ON11591", resourceCulture);
+                return ResourceManager.GetString("Message.ON20591", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültige Ausgangsnr. bei Übergabe der Ausg.-Diagnose an CAL.
         /// </summary>
-        internal static string Message_ON11592 {
+        internal static string Message_ON20592 {
             get {
-                return ResourceManager.GetString("Message.ON11592", resourceCulture);
+                return ResourceManager.GetString("Message.ON20592", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültiger Fehlercode bei Übergabe der Ausg.-Diagnose an CAL.
         /// </summary>
-        internal static string Message_ON11593 {
+        internal static string Message_ON20593 {
             get {
-                return ResourceManager.GetString("Message.ON11593", resourceCulture);
+                return ResourceManager.GetString("Message.ON20593", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falscher CAL-Zustand bei Durchführung des zyklischen Betriebs.
         /// </summary>
-        internal static string Message_ON11594 {
+        internal static string Message_ON20594 {
             get {
-                return ResourceManager.GetString("Message.ON11594", resourceCulture);
+                return ResourceManager.GetString("Message.ON20594", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to CRC über Konfigurationsdaten falsch oder falscher CAL-Zustand.
         /// </summary>
-        internal static string Message_ON11595 {
+        internal static string Message_ON20595 {
             get {
-                return ResourceManager.GetString("Message.ON11595", resourceCulture);
+                return ResourceManager.GetString("Message.ON20595", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Kommunikation mit dem DeviceConnect nicht möglich.
         /// </summary>
-        internal static string Message_ON11596 {
+        internal static string Message_ON20596 {
             get {
-                return ResourceManager.GetString("Message.ON11596", resourceCulture);
+                return ResourceManager.GetString("Message.ON20596", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler bei Synch. des Zustandes der PROFIBUS Kommunikation.
         /// </summary>
-        internal static string Message_ON11597 {
+        internal static string Message_ON20597 {
             get {
-                return ResourceManager.GetString("Message.ON11597", resourceCulture);
+                return ResourceManager.GetString("Message.ON20597", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler bei Synch. der Eingangsdaten vom DeviceConnect.
         /// </summary>
-        internal static string Message_ON11598 {
+        internal static string Message_ON20598 {
             get {
-                return ResourceManager.GetString("Message.ON11598", resourceCulture);
+                return ResourceManager.GetString("Message.ON20598", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler bei Synch. der Ausgangsdaten zum DeviceConnect.
         /// </summary>
-        internal static string Message_ON11599 {
+        internal static string Message_ON20599 {
             get {
-                return ResourceManager.GetString("Message.ON11599", resourceCulture);
+                return ResourceManager.GetString("Message.ON20599", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Üngültiger Zeiger beim Schreiben der Daten an DC.
         /// </summary>
-        internal static string Message_ON11600 {
+        internal static string Message_ON20600 {
             get {
-                return ResourceManager.GetString("Message.ON11600", resourceCulture);
+                return ResourceManager.GetString("Message.ON20600", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler bei Synch. der Elementkommandos.
         /// </summary>
-        internal static string Message_ON11601 {
+        internal static string Message_ON20601 {
             get {
-                return ResourceManager.GetString("Message.ON11601", resourceCulture);
+                return ResourceManager.GetString("Message.ON20601", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to DS130 DS133: Prozessdatenblock proj. aber kein Interfacemodul.
         /// </summary>
-        internal static string Message_ON11602 {
+        internal static string Message_ON20602 {
             get {
-                return ResourceManager.GetString("Message.ON11602", resourceCulture);
+                return ResourceManager.GetString("Message.ON20602", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler bei der Synchronisation des Gerätezustandes.
         /// </summary>
-        internal static string Message_ON11603 {
+        internal static string Message_ON20603 {
             get {
-                return ResourceManager.GetString("Message.ON11603", resourceCulture);
+                return ResourceManager.GetString("Message.ON20603", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Eingangs-BMK (DC nicht für Eingang verwendet).
         /// </summary>
-        internal static string Message_ON11604 {
+        internal static string Message_ON20604 {
             get {
-                return ResourceManager.GetString("Message.ON11604", resourceCulture);
+                return ResourceManager.GetString("Message.ON20604", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Ausgangs-BMK (DC nicht für Ausgang verwendet (E.zelle)).
         /// </summary>
-        internal static string Message_ON11605 {
+        internal static string Message_ON20605 {
             get {
-                return ResourceManager.GetString("Message.ON11605", resourceCulture);
+                return ResourceManager.GetString("Message.ON20605", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Eingangs-BMK (SC nicht für Eingang verwendet).
         /// </summary>
-        internal static string Message_ON11606 {
+        internal static string Message_ON20606 {
             get {
-                return ResourceManager.GetString("Message.ON11606", resourceCulture);
+                return ResourceManager.GetString("Message.ON20606", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Ausgangs-BMK (SC nicht für Ausgang verwendet (E.zelle)).
         /// </summary>
-        internal static string Message_ON11607 {
+        internal static string Message_ON20607 {
             get {
-                return ResourceManager.GetString("Message.ON11607", resourceCulture);
+                return ResourceManager.GetString("Message.ON20607", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Kein sicherer Ausgang an diesem Gerät vorhanden.
         /// </summary>
-        internal static string Message_ON11608 {
+        internal static string Message_ON20608 {
             get {
-                return ResourceManager.GetString("Message.ON11608", resourceCulture);
+                return ResourceManager.GetString("Message.ON20608", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Kein sicherer Eingang an diesem Gerät vorhanden.
         /// </summary>
-        internal static string Message_ON11609 {
+        internal static string Message_ON20609 {
             get {
-                return ResourceManager.GetString("Message.ON11609", resourceCulture);
+                return ResourceManager.GetString("Message.ON20609", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Weder Eingang noch Ausgang projektiert (AS-i).
         /// </summary>
-        internal static string Message_ON11610 {
+        internal static string Message_ON20610 {
             get {
-                return ResourceManager.GetString("Message.ON11610", resourceCulture);
+                return ResourceManager.GetString("Message.ON20610", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Sowohl Eingang als auch Ausgang ist projektiert (AS-i).
         /// </summary>
-        internal static string Message_ON11611 {
+        internal static string Message_ON20611 {
             get {
-                return ResourceManager.GetString("Message.ON11611", resourceCulture);
+                return ResourceManager.GetString("Message.ON20611", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: kein gültiges Eingangs-BMK (AS-i verwendet).
         /// </summary>
-        internal static string Message_ON11612 {
+        internal static string Message_ON20612 {
             get {
-                return ResourceManager.GetString("Message.ON11612", resourceCulture);
+                return ResourceManager.GetString("Message.ON20612", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: kein gültiges Eingangs- Ausgangs-BMK (AS-i verwendet).
         /// </summary>
-        internal static string Message_ON11613 {
+        internal static string Message_ON20613 {
             get {
-                return ResourceManager.GetString("Message.ON11613", resourceCulture);
+                return ResourceManager.GetString("Message.ON20613", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: kein gültiges Ausgangs-BMK (AS-i verwendet (E.zelle)).
         /// </summary>
-        internal static string Message_ON11614 {
+        internal static string Message_ON20614 {
             get {
-                return ResourceManager.GetString("Message.ON11614", resourceCulture);
+                return ResourceManager.GetString("Message.ON20614", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: keine Ein- oder Ausgänge vom AS-i verwendbar.
         /// </summary>
-        internal static string Message_ON11615 {
+        internal static string Message_ON20615 {
             get {
-                return ResourceManager.GetString("Message.ON11615", resourceCulture);
+                return ResourceManager.GetString("Message.ON20615", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Kein sicherer AS-i-Eingang verwendbar.
         /// </summary>
-        internal static string Message_ON11616 {
+        internal static string Message_ON20616 {
             get {
-                return ResourceManager.GetString("Message.ON11616", resourceCulture);
+                return ResourceManager.GetString("Message.ON20616", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: AS-i Subslotnummer ungültig oder nicht projektiert.
         /// </summary>
-        internal static string Message_ON11617 {
+        internal static string Message_ON20617 {
             get {
-                return ResourceManager.GetString("Message.ON11617", resourceCulture);
+                return ResourceManager.GetString("Message.ON20617", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Ein- Ausgang bei diesem AS-i Slave nicht verfügbar.
         /// </summary>
-        internal static string Message_ON11618 {
+        internal static string Message_ON20618 {
             get {
-                return ResourceManager.GetString("Message.ON11618", resourceCulture);
+                return ResourceManager.GetString("Message.ON20618", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: AS-i Ein- Ausgang ist nicht sicher.
         /// </summary>
-        internal static string Message_ON11619 {
+        internal static string Message_ON20619 {
             get {
-                return ResourceManager.GetString("Message.ON11619", resourceCulture);
+                return ResourceManager.GetString("Message.ON20619", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: F-IN1 F-IN2 und F-IN1&amp;2 bei 8x4-AS-i-Slave benutzt.
         /// </summary>
-        internal static string Message_ON11620 {
+        internal static string Message_ON20620 {
             get {
-                return ResourceManager.GetString("Message.ON11620", resourceCulture);
+                return ResourceManager.GetString("Message.ON20620", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: AS-i Eingangsnummer ausserhalb des gültigen Wertebereich.
         /// </summary>
-        internal static string Message_ON11621 {
+        internal static string Message_ON20621 {
             get {
-                return ResourceManager.GetString("Message.ON11621", resourceCulture);
+                return ResourceManager.GetString("Message.ON20621", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Querschlusserkennung für AS-i nicht erlaubt.
         /// </summary>
-        internal static string Message_ON11622 {
+        internal static string Message_ON20622 {
             get {
-                return ResourceManager.GetString("Message.ON11622", resourceCulture);
+                return ResourceManager.GetString("Message.ON20622", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Eingangsverz. für AS-i zu groß.
         /// </summary>
-        internal static string Message_ON11623 {
+        internal static string Message_ON20623 {
             get {
-                return ResourceManager.GetString("Message.ON11623", resourceCulture);
+                return ResourceManager.GetString("Message.ON20623", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Eingangsverz. für sicheren AS-i Slave zu klein.
         /// </summary>
-        internal static string Message_ON11624 {
+        internal static string Message_ON20624 {
             get {
-                return ResourceManager.GetString("Message.ON11624", resourceCulture);
+                return ResourceManager.GetString("Message.ON20624", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Eingangsverz. bei Ausgang od. Masteraufruf projektiert.
         /// </summary>
-        internal static string Message_ON11625 {
+        internal static string Message_ON20625 {
             get {
-                return ResourceManager.GetString("Message.ON11625", resourceCulture);
+                return ResourceManager.GetString("Message.ON20625", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Eingangsverz. ist kein Vielfaches der Schrittweite.
         /// </summary>
-        internal static string Message_ON11626 {
+        internal static string Message_ON20626 {
             get {
-                return ResourceManager.GetString("Message.ON11626", resourceCulture);
+                return ResourceManager.GetString("Message.ON20626", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: untersch. Eingangsverz.zeiten für sicheren AS-i Slave.
         /// </summary>
-        internal static string Message_ON11627 {
+        internal static string Message_ON20627 {
             get {
-                return ResourceManager.GetString("Message.ON11627", resourceCulture);
+                return ResourceManager.GetString("Message.ON20627", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falscher CAL-Zustand bei Abfrage der Eigangsverz.zeit (AS-i).
         /// </summary>
-        internal static string Message_ON11628 {
+        internal static string Message_ON20628 {
             get {
-                return ResourceManager.GetString("Message.ON11628", resourceCulture);
+                return ResourceManager.GetString("Message.ON20628", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültige Subslotnr. bei Abfrage der Eigangsverz.zeit (AS-i).
         /// </summary>
-        internal static string Message_ON11629 {
+        internal static string Message_ON20629 {
             get {
-                return ResourceManager.GetString("Message.ON11629", resourceCulture);
+                return ResourceManager.GetString("Message.ON20629", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültiger Zeiger bei Abfrage der Eigangsverz.zeit (AS-i).
         /// </summary>
-        internal static string Message_ON11630 {
+        internal static string Message_ON20630 {
             get {
-                return ResourceManager.GetString("Message.ON11630", resourceCulture);
+                return ResourceManager.GetString("Message.ON20630", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to ein AS-i Slave hat sichere und nicht sichere Ausgänge.
         /// </summary>
-        internal static string Message_ON11631 {
+        internal static string Message_ON20631 {
             get {
-                return ResourceManager.GetString("Message.ON11631", resourceCulture);
+                return ResourceManager.GetString("Message.ON20631", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falscher CAL-Zustand bei Lesen nichtsich. sim. Ausgangsdaten.
         /// </summary>
-        internal static string Message_ON11632 {
+        internal static string Message_ON20632 {
             get {
-                return ResourceManager.GetString("Message.ON11632", resourceCulture);
+                return ResourceManager.GetString("Message.ON20632", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falscher CAL-Zustand bei Lesen von CTT2-Ausgangsdaten.
         /// </summary>
-        internal static string Message_ON11633 {
+        internal static string Message_ON20633 {
             get {
-                return ResourceManager.GetString("Message.ON11633", resourceCulture);
+                return ResourceManager.GetString("Message.ON20633", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Falscher CAL-Zustand bei Fortsetzung des zyklischen Betriebs.
         /// </summary>
-        internal static string Message_ON11634 {
+        internal static string Message_ON20634 {
             get {
-                return ResourceManager.GetString("Message.ON11634", resourceCulture);
+                return ResourceManager.GetString("Message.ON20634", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Eingangsverz. bei AUX-Eing. eines 7x4-Slaves projektiert.
         /// </summary>
-        internal static string Message_ON11635 {
+        internal static string Message_ON20635 {
             get {
-                return ResourceManager.GetString("Message.ON11635", resourceCulture);
+                return ResourceManager.GetString("Message.ON20635", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ausgangszelle darf nur F-OUT1 eines 7x4-Slaves ansteuern.
         /// </summary>
-        internal static string Message_ON11636 {
+        internal static string Message_ON20636 {
             get {
-                return ResourceManager.GetString("Message.ON11636", resourceCulture);
+                return ResourceManager.GetString("Message.ON20636", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Falscher 8x4-Eingangstyp (F-IN1, F-IN2 F-IN1&amp;2).
         /// </summary>
-        internal static string Message_ON11637 {
+        internal static string Message_ON20637 {
             get {
-                return ResourceManager.GetString("Message.ON11637", resourceCulture);
+                return ResourceManager.GetString("Message.ON20637", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to 7x4 Gen.(OUT1 nicht mit Ausgangszelle, ASI1-4FDO verbunden).
         /// </summary>
-        internal static string Message_ON11638 {
+        internal static string Message_ON20638 {
             get {
-                return ResourceManager.GetString("Message.ON11638", resourceCulture);
+                return ResourceManager.GetString("Message.ON20638", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to 7x4 Gen.(OUT2-4 nicht mit ASI1-4FDO verbunden).
         /// </summary>
-        internal static string Message_ON11639 {
+        internal static string Message_ON20639 {
             get {
-                return ResourceManager.GetString("Message.ON11639", resourceCulture);
+                return ResourceManager.GetString("Message.ON20639", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to 8x4 Gen.(OUT nicht mit Ausgangszelle verbunden).
         /// </summary>
-        internal static string Message_ON11640 {
+        internal static string Message_ON20640 {
             get {
-                return ResourceManager.GetString("Message.ON11640", resourceCulture);
+                return ResourceManager.GetString("Message.ON20640", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to 7x4 Mon. nicht mit Eingangszelle verbunden.
         /// </summary>
-        internal static string Message_ON11641 {
+        internal static string Message_ON20641 {
             get {
-                return ResourceManager.GetString("Message.ON11641", resourceCulture);
+                return ResourceManager.GetString("Message.ON20641", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Eingangsnummer bei LIO ist zu groß.
         /// </summary>
-        internal static string Message_ON11644 {
+        internal static string Message_ON20644 {
             get {
-                return ResourceManager.GetString("Message.ON11644", resourceCulture);
+                return ResourceManager.GetString("Message.ON20644", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Ausgangsnummer bei LIO ist zu groß.
         /// </summary>
-        internal static string Message_ON11645 {
+        internal static string Message_ON20645 {
             get {
-                return ResourceManager.GetString("Message.ON11645", resourceCulture);
+                return ResourceManager.GetString("Message.ON20645", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Eingangs-BMK (LIO nicht für Eingang verwendet).
         /// </summary>
-        internal static string Message_ON11646 {
+        internal static string Message_ON20646 {
             get {
-                return ResourceManager.GetString("Message.ON11646", resourceCulture);
+                return ResourceManager.GetString("Message.ON20646", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Ausgangs-BMK (LIO nicht für Ausgang verwendet (E.zelle)).
         /// </summary>
-        internal static string Message_ON11647 {
+        internal static string Message_ON20647 {
             get {
-                return ResourceManager.GetString("Message.ON11647", resourceCulture);
+                return ResourceManager.GetString("Message.ON20647", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: keine E A von LIO verwendbar.
         /// </summary>
-        internal static string Message_ON11648 {
+        internal static string Message_ON20648 {
             get {
-                return ResourceManager.GetString("Message.ON11648", resourceCulture);
+                return ResourceManager.GetString("Message.ON20648", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Querschlusserkennung nur auf LIO mit sicherem Eing..
         /// </summary>
-        internal static string Message_ON11649 {
+        internal static string Message_ON20649 {
             get {
-                return ResourceManager.GetString("Message.ON11649", resourceCulture);
+                return ResourceManager.GetString("Message.ON20649", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Querschlusserkennung ist bei Ausgang projektiert.
         /// </summary>
-        internal static string Message_ON11650 {
+        internal static string Message_ON20650 {
             get {
-                return ResourceManager.GetString("Message.ON11650", resourceCulture);
+                return ResourceManager.GetString("Message.ON20650", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Eingangsverzögerungszeit für LIO zu groß.
         /// </summary>
-        internal static string Message_ON11651 {
+        internal static string Message_ON20651 {
             get {
-                return ResourceManager.GetString("Message.ON11651", resourceCulture);
+                return ResourceManager.GetString("Message.ON20651", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Eingangsverzögerungszeit ist bei Ausgang projektiert.
         /// </summary>
-        internal static string Message_ON11652 {
+        internal static string Message_ON20652 {
             get {
-                return ResourceManager.GetString("Message.ON11652", resourceCulture);
+                return ResourceManager.GetString("Message.ON20652", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Eing.verzögerungszeit bei LIO nicht erlaubt.
         /// </summary>
-        internal static string Message_ON11653 {
+        internal static string Message_ON20653 {
             get {
-                return ResourceManager.GetString("Message.ON11653", resourceCulture);
+                return ResourceManager.GetString("Message.ON20653", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Kein sicherer Ausgang an diesem Gerät vorhanden.
         /// </summary>
-        internal static string Message_ON11654 {
+        internal static string Message_ON20654 {
             get {
-                return ResourceManager.GetString("Message.ON11654", resourceCulture);
+                return ResourceManager.GetString("Message.ON20654", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Kein sicherer Eingang an diesem Gerät vorhanden.
         /// </summary>
-        internal static string Message_ON11655 {
+        internal static string Message_ON20655 {
             get {
-                return ResourceManager.GetString("Message.ON11655", resourceCulture);
+                return ResourceManager.GetString("Message.ON20655", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Ausgangsnummer im Merker ist zu groß.
         /// </summary>
-        internal static string Message_ON11656 {
+        internal static string Message_ON20656 {
             get {
-                return ResourceManager.GetString("Message.ON11656", resourceCulture);
+                return ResourceManager.GetString("Message.ON20656", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Ausgangs-BMK (Merker nicht für Ausg. verwendet bzw. Merker in der E.zelle).
         /// </summary>
-        internal static string Message_ON11657 {
+        internal static string Message_ON20657 {
             get {
-                return ResourceManager.GetString("Message.ON11657", resourceCulture);
+                return ResourceManager.GetString("Message.ON20657", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: keine E A vom LIO verwendbar.
         /// </summary>
-        internal static string Message_ON11658 {
+        internal static string Message_ON20658 {
             get {
-                return ResourceManager.GetString("Message.ON11658", resourceCulture);
+                return ResourceManager.GetString("Message.ON20658", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Kein sicherer Ausgang an diesem Gerät vorhanden.
         /// </summary>
-        internal static string Message_ON11659 {
+        internal static string Message_ON20659 {
             get {
-                return ResourceManager.GetString("Message.ON11659", resourceCulture);
+                return ResourceManager.GetString("Message.ON20659", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Querschlusserkennung nur auf Per.G. mit sicheren Eing..
         /// </summary>
-        internal static string Message_ON11660 {
+        internal static string Message_ON20660 {
             get {
-                return ResourceManager.GetString("Message.ON11660", resourceCulture);
+                return ResourceManager.GetString("Message.ON20660", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Querschlusserkennung ist bei Ausgang projektiert.
         /// </summary>
-        internal static string Message_ON11661 {
+        internal static string Message_ON20661 {
             get {
-                return ResourceManager.GetString("Message.ON11661", resourceCulture);
+                return ResourceManager.GetString("Message.ON20661", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Eingangsverzögerungszeit ist bei Ausgang projektiert.
         /// </summary>
-        internal static string Message_ON11662 {
+        internal static string Message_ON20662 {
             get {
-                return ResourceManager.GetString("Message.ON11662", resourceCulture);
+                return ResourceManager.GetString("Message.ON20662", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Ausg.Parameter sind nicht auf null gesetzt.
         /// </summary>
-        internal static string Message_ON11663 {
+        internal static string Message_ON20663 {
             get {
-                return ResourceManager.GetString("Message.ON11663", resourceCulture);
+                return ResourceManager.GetString("Message.ON20663", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Es wurden Ausgangs-Parameter für ein BMK.IN übergeben.
         /// </summary>
-        internal static string Message_ON11664 {
+        internal static string Message_ON20664 {
             get {
-                return ResourceManager.GetString("Message.ON11664", resourceCulture);
+                return ResourceManager.GetString("Message.ON20664", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Max. Rücklesezeit liegt nicht im gültigen Bereich.
         /// </summary>
-        internal static string Message_ON11665 {
+        internal static string Message_ON20665 {
             get {
-                return ResourceManager.GetString("Message.ON11665", resourceCulture);
+                return ResourceManager.GetString("Message.ON20665", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Max. Rücklesezeit liegt nicht im gültigen Bereich.
         /// </summary>
-        internal static string Message_ON11666 {
+        internal static string Message_ON20666 {
             get {
-                return ResourceManager.GetString("Message.ON11666", resourceCulture);
+                return ResourceManager.GetString("Message.ON20666", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Übergebene Zeiger ungültig.
         /// </summary>
-        internal static string Message_ON11667 {
+        internal static string Message_ON20667 {
             get {
-                return ResourceManager.GetString("Message.ON11667", resourceCulture);
+                return ResourceManager.GetString("Message.ON20667", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Übergebene Slotnummer ungültig.
         /// </summary>
-        internal static string Message_ON11668 {
+        internal static string Message_ON20668 {
             get {
-                return ResourceManager.GetString("Message.ON11668", resourceCulture);
+                return ResourceManager.GetString("Message.ON20668", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BMK: Falscher Zustand des CAL für Übergabe der Ausg.Klemmen-Parameter.
         /// </summary>
-        internal static string Message_ON11669 {
+        internal static string Message_ON20669 {
             get {
-                return ResourceManager.GetString("Message.ON11669", resourceCulture);
+                return ResourceManager.GetString("Message.ON20669", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Initialisieren der Speicherverwaltung.
         /// </summary>
-        internal static string Message_ON11671 {
+        internal static string Message_ON20671 {
             get {
-                return ResourceManager.GetString("Message.ON11671", resourceCulture);
+                return ResourceManager.GetString("Message.ON20671", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Löschen der Partitionstabelle.
         /// </summary>
-        internal static string Message_ON11672 {
+        internal static string Message_ON20672 {
             get {
-                return ResourceManager.GetString("Message.ON11672", resourceCulture);
+                return ResourceManager.GetString("Message.ON20672", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Löschen einer Partition.
         /// </summary>
-        internal static string Message_ON11673 {
+        internal static string Message_ON20673 {
             get {
-                return ResourceManager.GetString("Message.ON11673", resourceCulture);
+                return ResourceManager.GetString("Message.ON20673", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Erzeugen einer Partition.
         /// </summary>
-        internal static string Message_ON11674 {
+        internal static string Message_ON20674 {
             get {
-                return ResourceManager.GetString("Message.ON11674", resourceCulture);
+                return ResourceManager.GetString("Message.ON20674", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Abfragen der Partitions ID.
         /// </summary>
-        internal static string Message_ON11675 {
+        internal static string Message_ON20675 {
             get {
-                return ResourceManager.GetString("Message.ON11675", resourceCulture);
+                return ResourceManager.GetString("Message.ON20675", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Schreiben eines Datensatzes.
         /// </summary>
-        internal static string Message_ON11676 {
+        internal static string Message_ON20676 {
             get {
-                return ResourceManager.GetString("Message.ON11676", resourceCulture);
+                return ResourceManager.GetString("Message.ON20676", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Hinzufügen eines neuen Datensatzsegments.
         /// </summary>
-        internal static string Message_ON11677 {
+        internal static string Message_ON20677 {
             get {
-                return ResourceManager.GetString("Message.ON11677", resourceCulture);
+                return ResourceManager.GetString("Message.ON20677", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Lesen eines Datensatzes.
         /// </summary>
-        internal static string Message_ON11678 {
+        internal static string Message_ON20678 {
             get {
-                return ResourceManager.GetString("Message.ON11678", resourceCulture);
+                return ResourceManager.GetString("Message.ON20678", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehler beim Löschen eines Datensatzes.
         /// </summary>
-        internal static string Message_ON11679 {
+        internal static string Message_ON20679 {
             get {
-                return ResourceManager.GetString("Message.ON11679", resourceCulture);
+                return ResourceManager.GetString("Message.ON20679", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to SPI SS Signal nicht erkannt.
         /// </summary>
-        internal static string Message_ON11681 {
+        internal static string Message_ON20681 {
             get {
-                return ResourceManager.GetString("Message.ON11681", resourceCulture);
+                return ResourceManager.GetString("Message.ON20681", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Warnung: Fehlerzähler zyklische Daten kritisch.
         /// </summary>
-        internal static string Message_ON11683 {
+        internal static string Message_ON20683 {
             get {
-                return ResourceManager.GetString("Message.ON11683", resourceCulture);
+                return ResourceManager.GetString("Message.ON20683", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerüberlauf: Konsistenz zyklische Daten.
         /// </summary>
-        internal static string Message_ON11684 {
+        internal static string Message_ON20684 {
             get {
-                return ResourceManager.GetString("Message.ON11684", resourceCulture);
+                return ResourceManager.GetString("Message.ON20684", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Warnung: Fehlerzähler azyklische Daten kritisch.
         /// </summary>
-        internal static string Message_ON11685 {
+        internal static string Message_ON20685 {
             get {
-                return ResourceManager.GetString("Message.ON11685", resourceCulture);
+                return ResourceManager.GetString("Message.ON20685", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fehlerüberlauf: Konsistenz azyklische Daten.
         /// </summary>
-        internal static string Message_ON11686 {
+        internal static string Message_ON20686 {
             get {
-                return ResourceManager.GetString("Message.ON11686", resourceCulture);
+                return ResourceManager.GetString("Message.ON20686", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Kommunikationsstörung: Timeout wurde überschritten.
         /// </summary>
-        internal static string Message_ON11688 {
+        internal static string Message_ON20688 {
             get {
-                return ResourceManager.GetString("Message.ON11688", resourceCulture);
+                return ResourceManager.GetString("Message.ON20688", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültige Telegrammendekennung.
         /// </summary>
-        internal static string Message_ON11689 {
+        internal static string Message_ON20689 {
             get {
-                return ResourceManager.GetString("Message.ON11689", resourceCulture);
+                return ResourceManager.GetString("Message.ON20689", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültige Telegrammfolgenummer.
         /// </summary>
-        internal static string Message_ON11690 {
+        internal static string Message_ON20690 {
             get {
-                return ResourceManager.GetString("Message.ON11690", resourceCulture);
+                return ResourceManager.GetString("Message.ON20690", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültige Telegrammkennung.
         /// </summary>
-        internal static string Message_ON11691 {
+        internal static string Message_ON20691 {
             get {
-                return ResourceManager.GetString("Message.ON11691", resourceCulture);
+                return ResourceManager.GetString("Message.ON20691", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Prüfsummenfehler zyklische Daten.
         /// </summary>
-        internal static string Message_ON11692 {
+        internal static string Message_ON20692 {
             get {
-                return ResourceManager.GetString("Message.ON11692", resourceCulture);
+                return ResourceManager.GetString("Message.ON20692", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültiger Pufferselektor.
         /// </summary>
-        internal static string Message_ON11693 {
+        internal static string Message_ON20693 {
             get {
-                return ResourceManager.GetString("Message.ON11693", resourceCulture);
+                return ResourceManager.GetString("Message.ON20693", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültige Pufferquittung.
         /// </summary>
-        internal static string Message_ON11694 {
+        internal static string Message_ON20694 {
             get {
-                return ResourceManager.GetString("Message.ON11694", resourceCulture);
+                return ResourceManager.GetString("Message.ON20694", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Prüfsummenfehler azyklische Daten.
         /// </summary>
-        internal static string Message_ON11695 {
+        internal static string Message_ON20695 {
             get {
-                return ResourceManager.GetString("Message.ON11695", resourceCulture);
+                return ResourceManager.GetString("Message.ON20695", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ungültiger azyklischer Dienst.
         /// </summary>
-        internal static string Message_ON11696 {
+        internal static string Message_ON20696 {
             get {
-                return ResourceManager.GetString("Message.ON11696", resourceCulture);
+                return ResourceManager.GetString("Message.ON20696", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Nichtverwendeter DMA Interrupt wurde ausgelöst.
         /// </summary>
-        internal static string Message_ON11701 {
+        internal static string Message_ON20701 {
             get {
-                return ResourceManager.GetString("Message.ON11701", resourceCulture);
+                return ResourceManager.GetString("Message.ON20701", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Nichtverwendeter Timer Interrupt wurde ausgelöst.
         /// </summary>
-        internal static string Message_ON11702 {
+        internal static string Message_ON20702 {
             get {
-                return ResourceManager.GetString("Message.ON11702", resourceCulture);
+                return ResourceManager.GetString("Message.ON20702", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Nichtverwendeter UART Interrupt wurde ausgelöst.
         /// </summary>
-        internal static string Message_ON11703 {
+        internal static string Message_ON20703 {
             get {
-                return ResourceManager.GetString("Message.ON11703", resourceCulture);
+                return ResourceManager.GetString("Message.ON20703", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Nichtverwendeter INT Interrupt wurde ausgelöst.
         /// </summary>
-        internal static string Message_ON11704 {
+        internal static string Message_ON20704 {
             get {
-                return ResourceManager.GetString("Message.ON11704", resourceCulture);
+                return ResourceManager.GetString("Message.ON20704", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Nichtverwendeter BUSCOL Interrupt wurde ausgelöst.
         /// </summary>
-        internal static string Message_ON11705 {
+        internal static string Message_ON20705 {
             get {
-                return ResourceManager.GetString("Message.ON11705", resourceCulture);
+                return ResourceManager.GetString("Message.ON20705", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Nichtverwendeter IO Interrupt wurde ausgelöst.
         /// </summary>
-        internal static string Message_ON11706 {
+        internal static string Message_ON20706 {
             get {
-                return ResourceManager.GetString("Message.ON11706", resourceCulture);
+                return ResourceManager.GetString("Message.ON20706", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Nichtverwendeter Reserved Interrupt wurde ausgelöst.
         /// </summary>
-        internal static string Message_ON11707 {
+        internal static string Message_ON20707 {
             get {
-                return ResourceManager.GetString("Message.ON11707", resourceCulture);
+                return ResourceManager.GetString("Message.ON20707", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Nichtverwendeter BRK Interrupt wurde ausgelöst.
         /// </summary>
-        internal static string Message_ON11708 {
+        internal static string Message_ON20708 {
             get {
-                return ResourceManager.GetString("Message.ON11708", resourceCulture);
+                return ResourceManager.GetString("Message.ON20708", resourceCulture);
             }
         }
     }

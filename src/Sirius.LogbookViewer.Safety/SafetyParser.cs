@@ -117,16 +117,21 @@ namespace Sirius.LogbookViewer.Safety
                 
                 // column 2 - source number (Classic) OR source (ES)
                 isNumber = int.TryParse(parts[2], out int sourceNumber);
+                string source;
+                bool isProductSpecific = false;
 
                 if (!isNumber)
                 {
-                    string sourceInCulture = _resManager.GetString(ResourceType.Message, parts[2].Trim());
-                    row.Add(sourceInCulture);
+                    source = _resManager.GetString(ResourceType.Message, parts[2].Trim());
+                    isProductSpecific = _resManager.GetString(ResourceType.Message, parts[2].Trim(), new System.Globalization.CultureInfo("en-US")).Equals("Product-specific");
                 }
                 else
                 {
-                    row.Add(GetSource(sourceNumber));
+                    isProductSpecific = sourceNumber == 4;
+                    source = GetSource(sourceNumber);
                 }
+
+                row.Add(source);
 
                 // column 3 - operating hours
                 row.Add(parts[3].Trim());
@@ -169,9 +174,16 @@ namespace Sirius.LogbookViewer.Safety
                 
                 if (!string.IsNullOrEmpty(parts[6]) && !string.IsNullOrEmpty(parts[7]))
                 {
-                    string messageToSearch = parts[7].Trim().TrimStart(new char[] { '+', '-' }).Trim();
+                    message = parts[7].Trim();
+
+                    if (isProductSpecific)
+                    {
+                        message = message.Replace("Prod_Spec_", string.Empty);
+                    }
+
                     string messageInCulture = _resManager.GetMessage(Math.Abs(objectNumber), Math.Abs(elementNumber));
-                    message = !string.IsNullOrEmpty(messageInCulture) ? parts[7].Trim().Replace(messageToSearch, messageInCulture) : parts[7].Trim();
+                    string messageWithoutSign = message.TrimStart(new char[] { '+', '-' }).Trim();
+                    message = !string.IsNullOrEmpty(messageInCulture) ? message.Replace(messageWithoutSign, messageInCulture) : message;
                 }
                 else if (!string.IsNullOrEmpty(parts[7]))
                 {
