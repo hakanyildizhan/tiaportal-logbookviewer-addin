@@ -258,14 +258,15 @@ namespace Sirius.LogbookViewer.UI.Model
             string columnDisplayValue = arguments.ColumnValue; // Error
             string columnValue = ColumnData.First(c => c.Filter).FilterData.First(d => d.Value.DisplayValue.Equals(columnDisplayValue)).Key; // "1"
             string filterColumn = ColumnData.First(c => c.Filter).Name.Replace(" ", ""); // Type
-            string indexColumnName = ColumnData.First(c => c.IsIndex).Name.Replace(" ", ""); // Index
-
+            
             if (!arguments.Selected)
             {
                 var newMessages = _messages.Where(m => ((IDictionary<string, object>)m)[filterColumn].ToString() != columnValue).ToList();
 
                 if (ColumnData.Any(c => c.IsIndex))
                 {
+                    string indexColumnName = ColumnData.First(c => c.IsIndex).Name.Replace(" ", "");
+
                     for (int i = 1; i <= newMessages.Count(); i++)
                     {
                         ((IDictionary<string, object>)newMessages[i - 1])[indexColumnName] = i;
@@ -280,9 +281,14 @@ namespace Sirius.LogbookViewer.UI.Model
                 var messagesToShow = AllMessages.Where(m => ((IDictionary<string, object>)m)[filterColumn].ToString() == columnValue);
                 messagesToShow.ToList().ForEach(m => Messages.Add(m));
 
-                for (int i = 1; i <= Messages.Count(); i++)
+                if (ColumnData.Any(c => c.IsIndex))
                 {
-                    ((IDictionary<string, object>)Messages[i - 1])[indexColumnName] = i;
+                    string indexColumnName = ColumnData.First(c => c.IsIndex).Name.Replace(" ", "");
+
+                    for (int i = 1; i <= Messages.Count(); i++)
+                    {
+                        ((IDictionary<string, object>)Messages[i - 1])[indexColumnName] = i;
+                    }
                 }
 
                 OnPropertyChanged(nameof(Messages));
