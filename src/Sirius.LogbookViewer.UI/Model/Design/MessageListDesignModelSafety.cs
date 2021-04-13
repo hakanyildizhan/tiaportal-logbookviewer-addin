@@ -46,7 +46,7 @@ namespace Sirius.LogbookViewer.UI.Model
 
             var data = new LogbookData() { ColumnData = columnData, RowData = messages };
             InitializeData(data);
-            InitializeUI(data);
+            InitializeUI();
         }
     }
 }

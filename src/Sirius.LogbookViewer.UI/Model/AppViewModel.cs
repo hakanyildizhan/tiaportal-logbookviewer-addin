@@ -171,7 +171,7 @@ namespace Sirius.LogbookViewer.UI.Model
                             Filter = new FilterViewModel();
                             Filter.Initialize(data);
                             GridIsInitialized = true;
-                            Grid.InitializeUI(data);
+                            Grid.InitializeUI();
                         }
                         catch (Exception ex)
                         {

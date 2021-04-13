@@ -95,7 +95,7 @@ namespace Sirius.LogbookViewer.UI.Model
             AllMessages = messages;
         }
 
-        public void InitializeUI(LogbookData data)
+        public void InitializeUI()
         {
             var gridView = new GridView();
 
