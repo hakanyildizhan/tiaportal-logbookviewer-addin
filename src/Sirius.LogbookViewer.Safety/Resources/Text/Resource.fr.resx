@@ -156,6 +156,18 @@
   <data name="UI.Warning" xml:space="preserve">
     <value>Alarme</value>
   </data>
+	<data name="Message.Source1" xml:space="preserve">
+    <value>Appareil</value>
+  </data>
+	<data name="Message.Source2" xml:space="preserve">
+    <value>Elements</value>
+  </data>
+	<data name="Message.Source3" xml:space="preserve">
+    <value>Communication</value>
+  </data>
+	<data name="Message.Source4" xml:space="preserve">
+    <value>Spécifique au produit</value>
+  </data>
 	<data name="Message.ON5001" xml:space="preserve">
     <value>Réglage usine</value>
 </data>

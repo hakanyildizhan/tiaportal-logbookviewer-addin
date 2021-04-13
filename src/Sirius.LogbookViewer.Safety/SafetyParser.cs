@@ -271,14 +271,9 @@ namespace Sirius.LogbookViewer.Safety
 
         private string GetSource(int sourceNumber)
         {
-            switch (sourceNumber)
-            {
-                case 1: return _resManager.GetString("Device");
-                case 2: return _resManager.GetString("Elements");
-                case 3: return _resManager.GetString("Communication");
-                case 4: return _resManager.GetString("Product-specific");
-                default: return "Unknown";
-            }
+            string resourceKey = $"Message.Source{sourceNumber}";
+            string source = _resManager.GetStringViaKey(resourceKey);
+            return !string.IsNullOrEmpty(source) ? source : "Unknown";
         }
 
         private int GetMessageTypeCode(string messageType)
